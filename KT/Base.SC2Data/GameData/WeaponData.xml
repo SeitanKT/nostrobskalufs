@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CWeaponLegacy id="FrostNeedle">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Icons\FrostNeedle.dds"/>
+        <DisplayEffect value="FrostBeamDamage"/>
+        <TargetFilters value="Visible;Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <RangeSlop value="2"/>
+        <Period value="1.5"/>
+        <Effect value="FrostBeamCreatePersistent"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Fireball">
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Icons\Abilities\Fireball.dds"/>
+        <DisplayEffect value="FireballDamageUnit"/>
+        <TargetFilters value="Ground;Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="12"/>
+        <Range value="12"/>
+        <Period value="4"/>
+        <DamagePoint value="0.625"/>
+        <Effect value="FireballSwitch"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MurlocMilitiaJavelin">
+        <Options index="Disabled" value="1"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="PerkIcons\PerkSharp.dds"/>
+        <DisplayEffect value="MurlocMilitiaJavelinDamage"/>
+        <TargetFilters value="Ground,Visible;Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="6"/>
+        <Range value="6"/>
+        <Period value="2.35"/>
+        <Effect value="MurlocMilitiaJavelinLaunch"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MonstrousFists">
+        <Icon value="Icons\Abilities\MonstrousFists.dds"/>
+        <DisplayEffect value="MonstrousFistsDamage"/>
+        <TargetFilters value="Ground,Visible;Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="10"/>
+        <Range value="1"/>
+        <Period value="3"/>
+        <DamagePoint value="0.4375"/>
+        <Effect value="MonstrousFistsSet"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="TrebuchetWeapon">
+        <Options index="Disabled" value="1"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Icons\Stone.dds"/>
+        <DisplayEffect value="TrebuchetDamageStructure"/>
+        <TargetFilters value="Ground;Ally,Missile,Item,Stasis,Dead,Hidden,Invulnerable"/>
+        <AcquireScanFilters value="-;Player,Ally,Neutral,Enemy"/>
+        <Range value="25"/>
+        <RangeSlop value="0"/>
+        <MinimumRange value="5"/>
+        <Period value="5"/>
+        <DamagePoint value="0.4"/>
+        <Effect value="TrebuchetLaunchSet"/>
+        <RandomDelayMin value="0"/>
+        <RandomDelayMax value="0.5"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="BearMaul">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Icons\BearBite.dds"/>
+        <DisplayEffect value="BearMaulDamage"/>
+        <TargetFilters value="Ground,Visible;Ally,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="7"/>
+        <Range value="0.5"/>
+        <Period value="1.5"/>
+        <Effect value="BearBiteSet"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="DirewolfBite">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Icons\PetMastery.dds"/>
+        <DisplayEffect value="DirewolfBiteDamage"/>
+        <TargetFilters value="Ground,Visible;Ally,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="7"/>
+        <Range value="0.5"/>
+        <Period value="1"/>
+        <Effect value="DirewolfBiteDamage"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CravensFishSticker">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Icons\CravensFishSticker.dds"/>
+        <DisplayEffect value="CravensFishStickerDamage"/>
+        <TargetFilters value="Visible;Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="5.5"/>
+        <Period value="1.5"/>
+        <Effect value="CravensFishStickerLaunchSet"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ArcanePulse">
+        <EditorCategories value="Race:Protoss"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Assets\Textures\btn-ability-kerrigan-abilityefficiency.dds"/>
+        <DisplayEffect value="ArcanePulseDamage"/>
+        <TargetFilters value="Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="10"/>
+        <Range value="4"/>
+        <Period value="1.754"/>
+        <Effect value="ArcanePulseDamage"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="TwinThrowingAxesRanged">
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Icons\Items\TwinThrowingAxes.dds"/>
+        <DisplayEffect value="TwinThrowingAxesDamageRight"/>
+        <TargetFilters value="Visible;Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="1.5"/>
+        <Effect value="TwinThrowingAxesAlternate"/>
+        <Range value="4"/>
+        <DamagePoint value="0.3125"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="WatchTowerWeapon">
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Icons\AutomatedDefenseTurret2.dds"/>
+        <DisplayEffect value="WatchTowerDamage"/>
+        <TargetFilters value="Visible;Ally,Missile,Item,Dead,Hidden,Invulnerable"/>
+        <AcquireFilters value="Biological,Visible;Ally,Light,Structure,Missile,Item,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="8"/>
+        <Range value="8"/>
+        <Arc value="360"/>
+        <Period value="2"/>
+        <Effect value="WatchTowerLaunchMissile"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="KoboldAttackMeleeSlash">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="Melee" value="1"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Icons\Units\WeaponSharp.dds"/>
+        <DisplayEffect value="MeleeDamage"/>
+        <TargetFilters value="Ground,Visible;Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.5"/>
+        <Period value="1.5"/>
+        <Effect value="KoboldAttackSlashSet"/>
+        <DamagePoint value="0.25"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="SavageSword">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Icons\Items\SavageSword.dds"/>
+        <DisplayEffect value="SavageSwordDamage"/>
+        <TargetFilters value="Ground,Visible;Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="8"/>
+        <Range value="0.5"/>
+        <Period value="2"/>
+        <Effect value="SavageSwordDamage"/>
+        <DamagePoint value="0.35"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="FrostBearMaul">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Icons\BearBite.dds"/>
+        <DisplayEffect value="FrostBearMaulDamage"/>
+        <TargetFilters value="Ground,Visible;Ally,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="7"/>
+        <Range value="0.5"/>
+        <Period value="1.5"/>
+        <Effect value="FrostBearBiteSet"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="DemonLordJaryxAttack">
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-monarchblades.dds"/>
+        <DisplayEffect value="DemonLordJaryxAttackDamage"/>
+        <DisplayAttackCount value="2"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="1.5"/>
+        <Period value="2"/>
+        <DamagePoint value="0.55"/>
+        <Effect value="JaryxAttackSet"/>
+        <MinScanRange value="10"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="GhoulClaws">
+        <EditorCategories value="Race:Zerg"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <DisplayEffect value="GhoulDamage"/>
+        <TargetFilters value="Ground,Visible;Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.25"/>
+        <Period value="1.25"/>
+        <DamagePoint value="0.2666"/>
+        <Effect value="GhouldAttackSet"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="InfernalMinionClaws">
+        <EditorCategories value="Race:Zerg"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <DisplayEffect value="InfernalMinionDamage"/>
+        <TargetFilters value="Ground,Visible;Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.5"/>
+        <Period value="2"/>
+        <Effect value="InfernalMinion"/>
+        <MinScanRange value="10"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="FrostWitchWeapon">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Icons\FrostNeedle.dds"/>
+        <DisplayEffect value="FrostWitchDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="1"/>
+        <Period value="1.5"/>
+        <Effect value="FrostWitchAttackSet"/>
+        <DamagePoint value="0.25"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="NightwispAttack">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Icons\Nightwisp.dds"/>
+        <DisplayEffect value="NightwispDamage"/>
+        <TargetFilters value="Visible;Player,Ally,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="1.5"/>
+        <RandomDelayMax value="0"/>
+        <Effect value="NightwispAttackSet"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Smash">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Icons\Alt Stick.dds"/>
+        <TargetFilters value="Ground,Visible;Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.5"/>
+        <Period value="1.5"/>
+        <DamagePoint value="0.3125"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Ballista">
+        <Options index="Disabled" value="1"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Icons\AutomatedDefenseTurret.dds"/>
+        <DisplayEffect value="BallistaDamage"/>
+        <TargetFilters value="Visible;Ally,Missile,Item,Dead,Hidden,Invulnerable"/>
+        <AcquireFilters value="Visible;Player,Ally,Light,Armored,Missile,Item,Dead,Hidden,Invulnerable"/>
+        <Range value="20"/>
+        <Period value="5"/>
+        <DamagePoint value="1.85"/>
+        <Effect value="BallistaLaunchMissile"/>
+        <MinimumRange value="3"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="WolfBite">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Icons\PetMastery.dds"/>
+        <DisplayEffect value="WolfBiteDamage"/>
+        <TargetFilters value="Ground,Visible;Ally,Structure,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinScanRange value="7"/>
+        <Range value="0.5"/>
+        <Period value="1"/>
+        <Effect value="WolfBiteDamage"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="KoboldAttackMeleeBash">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="Melee" value="1"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Icons\Units\WeaponBlunt.dds"/>
+        <DisplayEffect value="MeleeDamage"/>
+        <TargetFilters value="Ground,Visible;Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="0.5"/>
+        <Period value="1.5"/>
+        <Effect value="KoboldAttackBashSet"/>
+        <DamagePoint value="0.25"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Blunderbuss">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Icons\Blunderbuss.dds"/>
+        <DisplayEffect value="BlunderbussDamage"/>
+        <TargetFilters value="Visible;Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="4"/>
+        <Period value="1.5"/>
+        <Effect value="BlunderbussSet"/>
+        <Options index="LinkedCooldown" value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="MurlocDoomhammer">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="Melee" value="1"/>
+        <Icon value="Icons\MurlocDoomhammer.dds"/>
+        <DisplayEffect value="MurlocDoomhammerDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="1"/>
+        <Period value="1.5"/>
+        <Effect value="ChieftainAttackSet"/>
+        <DamagePoint value="0.3125"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="DeathBow">
+        <Options index="DisplayCooldown" value="1"/>
+        <Icon value="Icons\Items\DeathBow.dds"/>
+        <DisplayEffect value="DeathBowDamage"/>
+        <TargetFilters value="Ground,Visible;Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="9"/>
+        <Period value="3"/>
+        <Effect value="DeathBowLaunchMissile"/>
+        <AcquireTargetSorts>
+            <SortArray value="TSFarthestDistance"/>
+        </AcquireTargetSorts>
+        <MinScanRange value="9"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="TrollBossWeapon">
+        <Options index="Melee" value="1"/>
+        <Icon value="Icons\FistWeapon.dds"/>
+        <DisplayEffect value="TrollBossDamage"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="1"/>
+        <Period value="1"/>
+        <Effect value="TrollBossAttackSet"/>
+        <DamagePoint value="0.3125"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="HeavyAutomatedCrossbow">
+        <Icon value="Icons\AutomatedDefenseTurret2.dds"/>
+        <DisplayEffect value="AutomatedDefenseTurretDamage"/>
+        <TargetFilters value="Ground,Visible;Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AcquireFilters value="Biological;Player,Ally,Neutral,Light,Structure,Heroic,Missile,Dead,Hidden,Invulnerable,Summoned"/>
+        <AcquireTargetSorts RequestPercentage="1">
+            <SortArray value="TSLife"/>
+        </AcquireTargetSorts>
+        <MinScanRange value="6"/>
+        <Range value="6"/>
+        <Period value="2"/>
+        <DamagePoint value="0.125"/>
+        <Effect value="AutomatedDefenseTurretLM"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="VenomousArbalest">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Icons\VenomousArbalest.dds"/>
+        <DisplayEffect value="VenomousArbalestDamage"/>
+        <TargetFilters value="Visible;Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="1.5"/>
+        <Effect value="VenomousArbalestSet"/>
+        <Options index="LinkedCooldown" value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="RepeatingCrossbow">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Icons\Items\RepeatingCrossbow.dds"/>
+        <DisplayEffect value="RepeatingCrossbowDamage"/>
+        <TargetFilters value="Visible;Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Period value="1.5"/>
+        <Effect value="RepeatingCrossbowSet"/>
+        <Range value="4.5"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="ViciousJavelin">
+        <EditorCategories value=""/>
+        <InfoTooltipPriority value="0"/>
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Icons\AutomatedDefenseTurret2.dds"/>
+        <DisplayEffect value="ViciousJavelinDamage"/>
+        <TargetFilters value="Visible;Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinimumRange value="1.25"/>
+        <Period value="5"/>
+        <Effect value="ViciousJavelinSet"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="LiquidatorSpellblade">
+        <EditorCategories value=""/>
+        <InfoTooltipPriority value="0"/>
+        <Options index="Disabled" value="1"/>
+        <Options index="Hidden" value="1"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Options index="IgnoreThreat" value="1"/>
+        <Icon value="Icons\Items\LiquidatorSpellblade.dds"/>
+        <DisplayEffect value="MeleeDamage"/>
+        <TargetFilters value="Ground,Visible;Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <MinimumRange value="2"/>
+        <Period value="5"/>
+        <Effect value="LiquidatorSpellbladeSet"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="Wand">
+        <EditorCategories value="Race:Terran"/>
+        <Icon value="Icons\ElderWand.dds"/>
+        <DisplayEffect value="ElderWandDamage"/>
+        <TargetFilters value="Visible;Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="4"/>
+        <Period value="1.5"/>
+        <Effect value="ElderWandLM"/>
+        <Options index="LinkedCooldown" value="0"/>
+    </CWeaponLegacy>
+    <CWeaponLegacy id="CelestialOrb">
+        <EditorCategories value="Race:Terran"/>
+        <Options index="LinkedCooldown" value="0"/>
+        <Icon value="Icons\Items\CelestialOrb.dds"/>
+        <DisplayEffect value="CelestialOrbDamage"/>
+        <TargetFilters value="Visible;Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <Range value="3.5"/>
+        <Period value="1.5"/>
+        <Effect value="CelestialOrbLaunchSet"/>
+    </CWeaponLegacy>
+</Catalog>

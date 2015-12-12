@@ -1,0 +1,995 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CValidatorCombine id="AICombatTriggerValidatorTarget">
+        <CombineArray value="TargetIsKobold"/>
+        <CombineArray value="TargetIsHeroic"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="AICombatTriggerValidatorCaster">
+        <CombineArray value="CasterIsKobold"/>
+        <CombineArray value="CasterIsHeroic"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="AreaSafe">
+        <CombineArray value="EnemiesNearby10"/>
+        <Negate value="1"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="AttackTargetValidator">
+        <CombineArray value="TargetAllyNotKobold"/>
+        <CombineArray value="TargetIsNotAlly"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="BallistaActivated">
+        <Type value="And"/>
+        <CombineArray value="WatchTowerBallista"/>
+        <CombineArray value="WatchTowerGarrisoned"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="BeastAttackValidator">
+        <CombineArray value="TargetIsSheep"/>
+        <CombineArray value="TargetIsBlueJunglefowl"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="CasterHasOutlandishHeartpiercer">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="OutlandishHeartpiercer"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="FireWardNegatorValidator">
+        <CombineArray value="TargetIsCampfireLit"/>
+        <CombineArray value="TargetIsKobold"/>
+        <CombineArray value="TargetIsWatchTower"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="GoldenPolearmEquipped">
+        <Compare value="GT"/>
+        <Behavior value="GoldenPolearm"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="HasOrangeSkin">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="MurlocSlaveOrangeSkin"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationEnumArea id="EnemyKoboldsWithinRadius4">
+        <WhichLocation Value="CasterUnit"/>
+        <AreaArray Radius="4" Validator="TargetIsKobold"/>
+        <Compare value="GE"/>
+        <Count value="1"/>
+        <SearchFilters value="Visible;Player,Ally,Neutral,Missile,Cloaked,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorUnitCompareBehaviorCount id="NoFireWardNegator">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="FireWardNegator"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="NoMurlocFrenzy">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="MurlocFrenzy"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="TargetIsElderTree">
+        <Value value="ElderTree"/>
+    </CValidatorUnitType>
+    <CValidatorCombine id="TargetIsNotFrostWitch">
+        <CombineArray value="TargetIsFrostWitch"/>
+        <Negate value="1"/>
+    </CValidatorCombine>
+    <CValidatorLocationEnumArea id="TurretAutoAcquireValidator">
+        <AreaArray Compare="GT" Count="0" Radius="6"/>
+        <SearchFilters value="Visible;Player,Ally,Neutral,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorLocationEnumArea id="NoOtherSheepNearby">
+        <AreaArray Count="1" Radius="4" Validator="TargetIsSheep"/>
+        <Compare value="Eq"/>
+        <Count value="1"/>
+        <SearchFilters value="-;Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorLocationEnumArea id="LessThan5Sheep">
+        <AreaArray>
+            <Compare value="LT"/>
+            <Count value="5"/>
+            <Radius value="8"/>
+            <Validator value="TargetIsSheep"/>
+        </AreaArray>
+        <Compare value="LT"/>
+        <Count value="5"/>
+        <SearchFilters value="-;Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorUnitType id="TargetIsSheep">
+        <Value value="Sheep"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsStag">
+        <Value value="Stag"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="ThrowAlternate">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="TwinThrowingAxesAlternate"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterHasTwinThrowingAxes">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="TwinThrowingAxes"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterHasMasterRangersMaille">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="MasterRangersMaille"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="CasterHasTamingEquipment">
+        <CombineArray value="CasterHasObedienceRod"/>
+        <CombineArray value="CasterHasMasterRangersMaille"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="TargetHasSpellAbsorb">
+        <Compare value="GT"/>
+        <Behavior value="SpellAbsorb"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterHasNoGoldenHauberkCooldown">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="GoldenHauberkCooldown"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="CasterHasFishingEquipment">
+        <CombineArray value="CasterHasFishingRod"/>
+        <CombineArray value="CasterHasEpicFishingRod"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="CasterHasFishingRod">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="FishingRod"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterHasEpicFishingRod">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="EpicFishingRod"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterHasGravesingersRod">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="GravesingersClaw"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterHasNoMurlocDoomhammerCooldown">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="MurlocDoomhammerCooldown"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterHasSpellBook">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="SpellBook"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterHasNotGravesingersCooldown">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="GravesingersClawCooldown"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterHasTheMurlocket">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="TheMurlocket"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="CullTheHerdTargetValid">
+        <CombineArray value="TargetIsNeutral"/>
+        <CombineArray value="IsBiological"/>
+        <CombineArray value="TargetNotAfflicted"/>
+        <Type value="And"/>
+    </CValidatorCombine>
+    <CValidatorLocationEnumArea id="CullTheHerdAutocastValidator">
+        <AreaArray>
+            <Compare value="GE"/>
+            <Count value="3"/>
+            <Radius value="16"/>
+            <Validator value="CullTheHerdTargetValid"/>
+        </AreaArray>
+        <Compare value="GE"/>
+        <Count value="3"/>
+        <SearchFilters value="Biological;Player,Ally,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorLocationEnumArea id="LazyCozyKobold">
+        <AreaArray Count="0" Radius="8" Validator="LazyCozyTypeValidator"/>
+        <Compare value="Eq"/>
+        <SearchFilters value="-;Player,Ally,Neutral,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorCombine id="LazyCozyTypeValidator">
+        <CombineArray value="TargetNotAfraidOfFire"/>
+        <CombineArray value="TargetIsTamed"/>
+        <CombineArray value="TargetIsNotDirewolf"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="TamedOrNotDirewolf">
+        <CombineArray value="TargetIsTamed"/>
+        <CombineArray value="TargetIsNotDirewolf"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="TargetNotAfraidOfFire">
+        <CombineArray value="TargetAfraidOfFire"/>
+        <Negate value="1"/>
+    </CValidatorCombine>
+    <CValidatorUnitType id="TargetIsWatchTower">
+        <Value value="Fortress"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="CasterIsFishing">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="Fishing"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="NotThrowAlternate">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TwinThrowingAxesAlternate"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetNotSiegeDamage">
+        <Behavior value="UnderSiege"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetAfraidOfFire">
+        <Behavior value="FireWardNegator"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationCompareRange id="TrebuchetMinimumRange">
+        <ResultFailed value="TargetIsTooClose"/>
+        <Compare value="GT"/>
+        <Range value="5"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorUnitType id="TargetIsADT">
+        <Value value="AutomatedDefenseTurret"/>
+    </CValidatorUnitType>
+    <CValidatorCombine id="CasterIsNotFishing">
+        <CombineArray value="CasterIsFishing"/>
+        <Negate value="1"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="GroundskeeperNotPlacingTrap">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="GroundskeeperSpikeTrapPlacing"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterNoHasStructureDeathAnimationLarge">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="StructureDeathAnimationLarge"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterNoHasStructureDeathAnimationMassive">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="StructureDeathAnimationMassive"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterNoHasStructureDeathAnimationMedium">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="StructureDeathAnimationMedium"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterNoHasStructureDeathAnimationSmall">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="StructureDeathAnimationSmall"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="CollectorValidator">
+        <Type value="And"/>
+        <CombineArray value="CasterHasSpellBook"/>
+        <CombineArray value="CasterHasConjurersCharm"/>
+        <CombineArray value="CasterHasNecromancersNecklace"/>
+        <CombineArray value="CasterHasTheMurlocket"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="EmpoweredLightning">
+        <Type value="And"/>
+        <CombineArray value="TargetIsKobold"/>
+        <CombineArray value="TargetIsGE2RangeAway"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareVital id="CasterGE50PercentEnergy">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GE"/>
+        <Type value="Fraction"/>
+        <Value value="0.5"/>
+        <Vital value="Energy"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorLocationEnumArea id="EnemyKoboldsWithinRadius8">
+        <WhichLocation Value="CasterUnit"/>
+        <AreaArray Radius="8" Validator="TargetIsKobold"/>
+        <Compare value="GE"/>
+        <Count value="1"/>
+        <SearchFilters value="Visible;Player,Ally,Neutral,Missile,Cloaked,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorLocationEnumArea id="SlavemasterValidator">
+        <WhichLocation Value="CasterUnit"/>
+        <AreaArray Radius="8" Validator="TargetIsMurlocSlave"/>
+        <Compare value="GE"/>
+        <Count value="5"/>
+        <SearchFilters value="Visible;Ally,Neutral,Enemy,Missile,Cloaked,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorUnitCompareBehaviorCount id="NotMurlocRebelSpirit">
+        <Behavior value="MurlocRebelSpirit"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="StormwizardsRobesCooldown">
+        <Behavior value="StormwizardsRobesImmunity"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareVital id="TargetHasEnergy">
+        <Compare value="GT"/>
+        <Vital value="Energy"/>
+    </CValidatorUnitCompareVital>
+    <CValidatorUnitCompareBehaviorCount id="TargetHasNoCelestialOrbCooldown">
+        <Behavior value="CelestialOrbCooldown"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetHasNoDarkness">
+        <Behavior value="VeilofDarkness"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterHasNecromancersNecklace">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="NecromancersNecklace"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationEnumArea id="KoboldsNearby">
+        <WhichLocation Value="CasterUnitOrPoint"/>
+        <AreaArray Compare="GT" Count="0" Radius="10"/>
+        <SearchFilters value="Biological;Self,Light,Armored,Structure,Heroic,Missile,Item,Cloaked,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorUnitCompareBehaviorCount id="StagNotMadDash">
+        <Behavior value="StagBlindDash"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetHasNoFrostArmor">
+        <Behavior value="FrostArmor"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="TargetIsBearOrWolfAny">
+        <CombineArray value="TargetIsBearAny"/>
+        <CombineArray value="TargetIsWolfAny"/>
+    </CValidatorCombine>
+    <CValidatorLocationCompareRange id="TargetIsGE2RangeAway">
+        <ResultFailed value="TargetIsOutOfRange"/>
+        <WhichLocation Value="TargetUnit"/>
+        <Compare value="GE"/>
+        <Range value="2"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorLocationCompareRange id="FishingMinimumRange">
+        <ResultFailed value="TargetIsTooClose"/>
+        <Compare value="GE"/>
+        <Range value="1"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorCombine id="TargetIsKoboldorStorage">
+        <CombineArray value="TargetIsKobold"/>
+        <CombineArray value="TargetIsStorageHut"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsNotAnnihilated">
+        <Behavior value="Annihilate"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="TargetIsNotInfernalMinion">
+        <CombineArray value="TargetIsInfernalMinion"/>
+        <Negate value="1"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="TargetIsNotUnstableAnomaly">
+        <CombineArray value="TargetIsUnstableAnomaly"/>
+        <Negate value="1"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="TargetIsNotRAB">
+        <CombineArray value="TargetIsRAB"/>
+        <Negate value="1"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="TargetIsNotWizard">
+        <CombineArray value="TargetIsWoundedWizard"/>
+        <Negate value="1"/>
+    </CValidatorCombine>
+    <CValidatorUnitType id="TargetIsUnstableAnomaly">
+        <Value value="UnstableAnomaly"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsRAB">
+        <Value value="RagingArcaneBeast"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsWoundedWizard">
+        <Value value="TheWoundedWizard"/>
+    </CValidatorUnitType>
+    <CValidatorCombine id="TargetIsWoundedWizardOrNotNeutral">
+        <CombineArray value="TargetIsNotNeutral"/>
+        <CombineArray value="TargetIsWoundedWizard"/>
+    </CValidatorCombine>
+    <CValidatorUnitFilters id="TargetIsNotNeutral">
+        <Filters value="-;Neutral"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsNotEnergized">
+        <Behavior value="VeilShrineEnergized"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterIsNotLocked">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="Locked"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationEnumArea id="EnemiesInMeleeRange">
+        <AreaArray Compare="GT" Count="0" Radius="2"/>
+        <SearchFilters value="Visible;Self,Player,Ally,Neutral,Structure,Missile,Cloaked,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorCombine id="InCombat">
+        <Type value="And"/>
+        <CombineArray value="CasterInCombat"/>
+        <CombineArray value="EnemiesInMeleeRange"/>
+    </CValidatorCombine>
+    <CValidatorLocationEnumArea id="MiningFortitudePrecondition">
+        <AreaArray>
+            <Compare value="GT"/>
+            <Count value="0"/>
+            <Radius value="10"/>
+            <Validator value="TargetIsKobold"/>
+        </AreaArray>
+        <SearchFilters value="Visible;Self,Player,Ally,Neutral,Light,Missile,Cloaked,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorUnitFilters id="TargetIsHeroic">
+        <WhichUnit Value="Caster"/>
+        <Filters value="Heroic;-"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitCompareBehaviorCount id="FarmIsDomesticated">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="DomesticFarm"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterHasFrostNeedle">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="FrostNeedle"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterHasFelFireTorch">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="FelFireTorch"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterHasMurlocDoomhammer">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="MurlocDoomhammer"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterHasBloodcleaver">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="Bloodcleaver"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationCompareRange id="SheepOutsideLeashRange">
+        <ResultFailed value="TargetIsOutOfRange"/>
+        <WhichLocation Value="TargetUnit"/>
+        <Compare value="GT"/>
+        <Range value="5"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorLocationCompareRange id="LightLeatherShieldSnareRange">
+        <ResultFailed value="TargetIsOutOfRange"/>
+        <WhichLocation Value="TargetUnit"/>
+        <Compare value="LE"/>
+        <Range value="2.5"/>
+    </CValidatorLocationCompareRange>
+    <CValidatorUnitType id="CasterIsKobold">
+        <WhichUnit Value="Caster"/>
+        <Value value="Kobold"/>
+    </CValidatorUnitType>
+    <CValidatorCombine id="CasterIsNotKobold">
+        <CombineArray value="CasterIsKobold"/>
+        <Negate value="1"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="CasterIsNotKoboldBot">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="KoboldBotNormal"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="TargetIsNotDirewolf">
+        <CombineArray value="TargetIsDirewolf"/>
+        <Negate value="1"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsEnergized">
+        <Compare value="GT"/>
+        <Behavior value="VeilShrineEnergized"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsNotZapped">
+        <Behavior value="MysteriousShrineZapStun"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsNotInArena">
+        <Behavior value="ArenaCombatant"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterIsNotInArena">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ArenaCombatant"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareSpeed id="TargetIsStationary"/>
+    <CValidatorUnitCompareBehaviorCount id="GenericUseItem">
+        <ResultFailed value="Error,Peikko"/>
+        <Behavior value="GenericUseItemCooldown"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareChargeUsed id="Generic2ChargesDepleted">
+        <ChargeLink value="Abil/GenericUseItem2Charges"/>
+        <Location value="Unit"/>
+        <Value value="2"/>
+    </CValidatorUnitCompareChargeUsed>
+    <CValidatorCombine id="TargetIsMineralDeposit">
+        <CombineArray value="TargetIsStoneDeposit"/>
+        <CombineArray value="TargetIsGoldDeposit"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsNotTamed">
+        <Behavior value="Tamed"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="DoomhammerCooldown">
+        <Behavior value="DoomhammerCooldown"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterHasMurlocVengeance">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="VengefulMurlocSkull"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="AfflictionAchievementValidator">
+        <Compare value="GE"/>
+        <Value value="25"/>
+        <Behavior value="AfflictionAchievementCheck"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterHasNoCrabs">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="CrabShipment"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterNotAI">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="KoboldBotNormal"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="CasterIsNightwisp">
+        <WhichUnit Value="Caster"/>
+        <Value value="Nightwisp"/>
+    </CValidatorUnitType>
+    <CValidatorLocationType id="DropoffLoc">
+        <Point value="Pathable"/>
+        <Unit value="TargetIsKoboldorStorage"/>
+    </CValidatorLocationType>
+    <CValidatorUnitCompareBehaviorCount id="ShadowCloakExtraCharge">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="ShadowCloakExtraCharge"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterHasObedienceRod">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="ObedienceRod"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterHasShadowCloak">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="ShadowCloak"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterHasSturdyWoodenStick">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="SturdyWoodenStick"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterHasSharpIronPickaxe">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="SharpIronPickaxe"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterHasWand">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="ElderWand"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="CasterIsDirewolf">
+        <WhichUnit Value="Caster"/>
+        <Value value="Lyote"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="CasterIsGrowing">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="BushGrow"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterIsLightbringer">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="Lightbringer"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitFilters id="CasterIsNotCloaked">
+        <WhichUnit Value="Caster"/>
+        <Filters value="-;Cloaked"/>
+    </CValidatorUnitFilters>
+    <CValidatorLocationEnumArea id="GoldenPolearmProximityValidator">
+        <AreaArray>
+            <Compare value="GT"/>
+            <Count value="1"/>
+            <Radius value="25"/>
+            <Validator value="TargetIsKobold"/>
+        </AreaArray>
+        <SearchFilters value="-;Player,Ally,Stasis,Dead,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorUnitCompareBehaviorCount id="CasterIsSoaked">
+        <Compare value="GT"/>
+        <Behavior value="Raining"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="CasterIsWolf">
+        <WhichUnit Value="Caster"/>
+        <Value value="Dog"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="CasterScutumNotOnHead">
+        <Behavior value="TowerShieldRain"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterWieldsGleamingSpear">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="GoldenPolearm"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="DeadnightFalse">
+        <Behavior value="DeadnightActive"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationEnumArea id="EnemiesNearby10">
+        <AreaArray Compare="GT" Count="0" Radius="10"/>
+        <SearchFilters value="Visible;Self,Player,Ally,Neutral,Light,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorCombine id="HeatValidator">
+        <CombineArray value="TargetIsKobold"/>
+        <CombineArray value="TargetIsMurlocSlave"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareSpeed id="Moving">
+        <Compare value="GT"/>
+    </CValidatorUnitCompareSpeed>
+    <CValidatorCombine id="NaturesGraceTargetValidator">
+        <CombineArray value="TargetIsBerryBush"/>
+        <CombineArray value="TargetIsHerbBush"/>
+        <CombineArray value="TargetTreeIsGrowing"/>
+    </CValidatorCombine>
+    <CValidatorLocationEnumArea id="NoEnemiesNearby10">
+        <WhichLocation Value="CasterUnitOrPoint"/>
+        <AreaArray Count="0" Radius="10"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+        <SearchFilters value="-;Self,Player,Light,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorLocationEnumArea id="NoHostilesNearby">
+        <WhichLocation Value="CasterUnitOrPoint"/>
+        <AreaArray Count="0" Radius="6"/>
+        <SearchFlags index="ExtendByUnitRadius" value="1"/>
+        <SearchFilters value="-;Self,Player,Ally,Neutral,Missile,Item,Dead,Hidden,Invulnerable"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorUnitCompareBehaviorCount id="NotAIFullPause">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="FullPause"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="NotRaining">
+        <Behavior value="Raining"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="NotShelter">
+        <Behavior value="Sheltered"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="RainingandNotShelter">
+        <Type value="And"/>
+        <CombineArray value="CasterIsSoaked"/>
+        <CombineArray value="NotShelter"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="SalvageValidator">
+        <ResultFailed value="Error,CustomErrors\Salvage"/>
+        <Compare value="GT"/>
+        <Behavior value="Salvagable"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="ScrollofTransmutation">
+        <CombineArray value="TargetIsBerryBush"/>
+        <CombineArray value="TargetIsTree"/>
+        <CombineArray value="TargetIsStoneDeposit"/>
+        <CombineArray value="TargetIsBear"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="ScutumUmbrella">
+        <Behavior value="TowerShieldRain"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="Shelter">
+        <Compare value="GT"/>
+        <Behavior value="Sheltered"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="ShelterorNotRaining">
+        <CombineArray value="Shelter"/>
+        <CombineArray value="NotRaining"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="SleepDisruptionFactors">
+        <CombineArray value="Moving"/>
+        <CombineArray value="CasterIsAttacking"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="SpikeTrapDelayNotInProgress">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="SpikeTrapSensorDelay"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="SpikeTrapHasCharges">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="SpikeTrapCharges"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="SpikeTrapNotPadding">
+        <WhichUnit Value="Caster"/>
+        <Behavior value="WoolPadding"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="SpikeTrapPaddingValidator">
+        <CombineArray value="TargetIsKobold"/>
+        <CombineArray value="SpikeTrapNotPadding"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="TargetAIEnabled">
+        <Behavior value="ToggleAI"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="TargetAllyNotKobold">
+        <Type value="And"/>
+        <CombineArray value="TargetIsAlly"/>
+        <CombineArray value="TargetIsNotKobold"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="TargetHasCrabs">
+        <Compare value="GT"/>
+        <Behavior value="CrabShipment"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetHasNoBuckler">
+        <Behavior value="IronBandedBuckler"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="TargetIsBaitable">
+        <Type value="And"/>
+        <CombineArray value="TargetIsBlueJunglefowl"/>
+        <CombineArray value="TargetIsNotBeingBaited"/>
+    </CValidatorCombine>
+    <CValidatorUnitType id="TargetIsBear">
+        <Value value="Bear"/>
+    </CValidatorUnitType>
+    <CValidatorCombine id="TargetIsBearAny">
+        <CombineArray value="TargetIsBear"/>
+        <CombineArray value="TargetIsFrostBear"/>
+    </CValidatorCombine>
+    <CValidatorUnitType id="TargetIsBerryBush">
+        <Value value="BerryBush"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsBlueJunglefowl">
+        <Value value="Pheasant"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsCampfireDead">
+        <Value value="Campfire"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsCampfireLit">
+        <Value value="CampfireLit"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsDirewolf">
+        <Value value="Lyote"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsFrostBear">
+        <Value value="FrostBear"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsHerbBush">
+        <Value value="CulinaryHerbBush"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsInfernalMinion">
+        <Value value="InfernalMinion"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsJaryx">
+        <Value value="DemonLordJaryx"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsFrostWitch">
+        <Value value="FrostWitch"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsKobold">
+        <Value value="Kobold"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsLitCampfire">
+        <Value value="CampfireLit"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsMurlocChieftain">
+        <Value value="MurlocChieftain"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsMurlocSlave">
+        <Value value="MurlocSlave"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsNightwisp">
+        <Value value="Nightwisp"/>
+    </CValidatorUnitType>
+    <CValidatorUnitFilters id="TargetIsNotAlly">
+        <Filters value="-;Self,Ally"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsNotAssisting">
+        <Behavior value="TamedAssisting"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsNotBeingBaited">
+        <Behavior value="BaitedFowl"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsNotKoboldBot">
+        <Behavior value="KoboldBotNormal"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsNotDemonicStruck">
+        <Behavior value="DemonicStrikes"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsNotFainted">
+        <Behavior value="Unconscious"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsNotFeared">
+        <Behavior value="Fear"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsNotImmuneTrample">
+        <Behavior value="TrampledImmunity"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsNotImmuneWarlordSpikes">
+        <Behavior value="WarlordSpikesImmunity"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="TargetIsNotJaryx">
+        <CombineArray value="TargetIsJaryx"/>
+        <Negate value="1"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="TargetIsNotKobold">
+        <CombineArray value="TargetIsKobold"/>
+        <Negate value="1"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="TargetIsNotMurloc">
+        <CombineArray value="TargetIsMurlocChieftain"/>
+        <CombineArray value="TargetIsMurlocSlave"/>
+        <Negate value="1"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="TargetIsNotMurlocChieftain">
+        <CombineArray value="TargetIsMurlocChieftain"/>
+        <Negate value="1"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsNotRzzing">
+        <Behavior value="Resurrecting"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsNotSoaked">
+        <Behavior value="Rain"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="TargetIsNotSpikeTrap">
+        <CombineArray value="TargetIsSpikeTrap"/>
+        <Negate value="1"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="TargetIsNotTrollWarlord">
+        <CombineArray value="TargetIsTrollWarlord"/>
+        <Negate value="1"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsNotUnlockingChest">
+        <Behavior value="UnlockingChestSmart"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="TargetIsOutpost">
+        <Value value="StorageOutpost"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsSpikeTrap">
+        <Value value="SpikeTrap"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsMonument">
+        <Value value="LorenorStatue"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsTreasureChest">
+        <Value value="TreasureChest"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsStorageHut">
+        <Value value="StorageOutpost"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsNotCrafting">
+        <Behavior value="Crafting"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsNotPickingBerries">
+        <Behavior value="PickingBerriesSmart"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsNotMiningGold">
+        <Behavior value="MiningGoldSmart"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsNotCooking">
+        <Behavior value="Cooking"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterHasSiphonLife">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="SiphonLife"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsNotSheltered">
+        <Behavior value="Sheltered"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsNotPickingHerbs">
+        <Behavior value="PickingHerbsSmart"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsNotSleeping">
+        <Behavior value="SleepingBag"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsNotSpiked">
+        <Behavior value="SpikeTrapStun"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="TargetIsStoneDeposit">
+        <Value value="StoneDeposit"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsGoldDeposit">
+        <Value value="GoldDeposit"/>
+    </CValidatorUnitType>
+    <CValidatorCombine id="TargetIsTamable">
+        <CombineArray value="TargetIsWolf"/>
+        <CombineArray value="TargetIsDirewolf"/>
+        <CombineArray value="TargetIsBear"/>
+        <CombineArray value="TargetIsFrostBear"/>
+        <CombineArray value="TargetIsNightwisp"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsTamed">
+        <Compare value="GT"/>
+        <Behavior value="Tamed"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitType id="TargetIsTree">
+        <Value value="MapleTree"/>
+    </CValidatorUnitType>
+    <CValidatorUnitType id="TargetIsTrollWarlord">
+        <Value value="Zulrogg"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsVI">
+        <Compare value="GT"/>
+        <Behavior value="KoboldBotNormal"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsStuck">
+        <Compare value="GE"/>
+        <Value value="10"/>
+        <Behavior value="UnstuckStacks"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="TargetIsWolfAny">
+        <CombineArray value="TargetIsWolf"/>
+        <CombineArray value="TargetIsDirewolf"/>
+    </CValidatorCombine>
+    <CValidatorUnitType id="TargetIsWolf">
+        <Value value="Dog"/>
+    </CValidatorUnitType>
+    <CValidatorUnitCompareVital id="TargetLifeNotFull"/>
+    <CValidatorUnitCompareVital id="TargetLifeFull"/>
+    <CValidatorUnitCompareBehaviorCount id="TargetNodeNotDelayed">
+        <Behavior value="NodeGatherDelay"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetNotAfflicted">
+        <Behavior value="Affliction"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitFilters id="TargetNotBelongsToPlayer">
+        <Filters value="-;Self,Player"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitCompareBehaviorCount id="TargetNotDilapidated">
+        <Behavior value="Dilapidated"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="TargetNotFearImmune">
+        <Type value="And"/>
+        <CombineArray value="TargetIsNotDemonicStruck"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="TargetNotHasBearShamanShroud">
+        <Behavior value="BearShamansShroud"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetNotInfectionImmune">
+        <Behavior value="BoneTalisman"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetNotRecentlyChecked">
+        <Behavior value="CheckFoodRecently"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetNotStalked">
+        <Behavior value="Stalked"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="TargetIsScourable">
+        <CombineArray value="TargetIsStoneDeposit"/>
+        <CombineArray value="TargetIsGoldDeposit"/>
+        <CombineArray value="TargetIsHerbBush"/>
+        <CombineArray value="TargetIsBerryBush"/>
+        <CombineArray value="TargetIsTreasureChest"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="TargetHasNoEmpoweredLightning">
+        <Behavior value="EmpoweredLightning"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetOutpostNoBird">
+        <Behavior value="OutpostGotBird"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsNesting">
+        <Compare value="GT"/>
+        <Behavior value="BirdNesting"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetTreeIsGrowing">
+        <Compare value="GT"/>
+        <Behavior value="GrowingTree"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetTreeIsNotGrowing">
+        <Behavior value="GrowingTree"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorLocationEnumArea id="TestCarry">
+        <AreaArray Radius="0.0625"/>
+    </CValidatorLocationEnumArea>
+    <CValidatorCombine id="TwinThrowingAxesRight">
+        <Type value="And"/>
+        <CombineArray value="CasterHasTwinThrowingAxes"/>
+        <CombineArray value="NotThrowAlternate"/>
+    </CValidatorCombine>
+    <CValidatorCombine id="TwinThrowingAxesLeft">
+        <Type value="And"/>
+        <CombineArray value="CasterHasTwinThrowingAxes"/>
+        <CombineArray value="ThrowAlternate"/>
+    </CValidatorCombine>
+    <CValidatorUnitCompareBehaviorCount id="UnitHasNoAdrenalineRush">
+        <Behavior value="AdrenalineRush"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="UnitHasNoBurning">
+        <Behavior value="Burning"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsNotDomesticAnimal">
+        <Behavior value="DomesticAnimal"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="TargetIsNotMiningStone">
+        <Behavior value="MiningStoneSmart"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="CasterHasConjurersCharm">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="ConjurersCharm"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitFilters id="UnitIsNotHeroic">
+        <Filters value="-;Heroic"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitCompareBehaviorCount id="CasterHasBlunderbuss">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="RoughBlunderbuss"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitFilters id="CasterIsHeroic">
+        <WhichUnit Value="Caster"/>
+        <Filters value="Heroic;-"/>
+    </CValidatorUnitFilters>
+    <CValidatorUnitCompareBehaviorCount id="WatchTowerBallista">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="WatchTowerBallista"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorUnitCompareBehaviorCount id="WatchTowerGarrisoned">
+        <WhichUnit Value="Caster"/>
+        <Compare value="GT"/>
+        <Behavior value="WatchTowerGarrisonTransportBuff"/>
+    </CValidatorUnitCompareBehaviorCount>
+    <CValidatorCombine id="WeaponAnimationTypeDefault">
+        <CombineArray value="TwinThrowingAxesRight"/>
+        <CombineArray value="TwinThrowingAxesLeft"/>
+        <Negate value="1"/>
+    </CValidatorCombine>
+</Catalog>

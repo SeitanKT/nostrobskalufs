@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CGameUI id="Dflt">
+        <ResourceArray index="Minerals" Icon="Icons/Gossip.dds"/>
+        <LoadingScreenHelp index="0" Text="LoadingScreen/KoboldsHint001"/>
+        <LoadingScreenHelp index="1" Text="LoadingScreen/KoboldsHint002"/>
+        <LoadingScreenHelp index="2" Text="LoadingScreen/KoboldsHint003"/>
+        <LoadingScreenHelp index="3" Text="LoadingScreen/KoboldsHint004"/>
+        <LoadingScreenHelp index="4" Text="LoadingScreen/KoboldsHint005"/>
+        <LoadingScreenHelp index="5" Text="LoadingScreen/KoboldsHint006"/>
+        <LoadingScreenHelp index="6" Text="LoadingScreen/KoboldsHint007"/>
+        <LoadingScreenHelp index="7" Text="LoadingScreen/KoboldsHint008"/>
+        <LoadingScreenHelp index="8" Text="LoadingScreen/KoboldsHint009"/>
+        <LoadingScreenHelp index="9" Text="LoadingScreen/KoboldsHint010"/>
+        <LoadingScreenHelp index="10" Text="LoadingScreen/KoboldsHint011"/>
+        <LoadingScreenHelp index="11" Text="LoadingScreen/KoboldsHint012"/>
+        <LoadingScreenHelp index="12" Text="LoadingScreen/KoboldsHint013"/>
+        <LoadingScreenHelp index="13" Text="LoadingScreen/KoboldsHint014"/>
+        <LoadingScreenHelp index="14" Text="LoadingScreen/KoboldsHint015"/>
+        <LoadingScreenHelp index="15" Text="LoadingScreen/KoboldsHint016"/>
+        <LoadingScreenHelp index="16" Text="LoadingScreen/KoboldsHint017"/>
+        <LoadingScreenHelp index="17" Text="LoadingScreen/KoboldsHint018"/>
+        <LoadingScreenHelp index="18" Text="LoadingScreen/KoboldsHint019"/>
+        <LoadingScreenHelp index="19" Text="LoadingScreen/KoboldsHint020"/>
+        <LoadingScreenHelp index="20" Text="LoadingScreen/KoboldsHint021"/>
+        <LoadingScreenHelp index="21" Text="LoadingScreen/KoboldsHint022" Race=""/>
+        <LoadingScreenHelp index="22" Text="LoadingScreen/KoboldsHint023" Race=""/>
+        <LoadingScreenHelp index="23" Text="LoadingScreen/KoboldsHint024" Race=""/>
+        <LoadingScreenHelp index="24" Text="LoadingScreen/KoboldsHint025" Race=""/>
+        <LoadingScreenHelp index="25" Text="LoadingScreen/KoboldsHint029" Race=""/>
+        <LoadingScreenHelp index="26" Text="LoadingScreen/KoboldsHint030" Race=""/>
+        <LoadingScreenHelp index="27" Text="LoadingScreen/KoboldsHint031" Race=""/>
+        <LoadingScreenHelp index="28" Text="LoadingScreen/KoboldsHint032" Race=""/>
+        <LoadingScreenHelp index="29" Text="LoadingScreen/KoboldsHint033" Race=""/>
+        <LoadingScreenHelp index="30" Text="LoadingScreen/KoboldsHint034" Race=""/>
+        <LoadingScreenHelp index="31" Text="LoadingScreen/KoboldsHint035" Race=""/>
+        <LoadingScreenHelp index="32" Text="LoadingScreen/KoboldsHint036" Race=""/>
+        <LoadingScreenHelp index="33" removed="1"/>
+        <LoadingScreenHelp index="34" removed="1"/>
+        <LoadingScreenHelp index="35" removed="1"/>
+        <LoadingScreenHelp index="36" removed="1"/>
+        <LoadingScreenHelp index="37" removed="1"/>
+        <LoadingScreenHelp index="38" removed="1"/>
+        <LoadingScreenHelp index="39" removed="1"/>
+        <LoadingScreenHelp index="40" removed="1"/>
+        <LoadingScreenHelp index="41" removed="1"/>
+        <LoadingScreenHelp index="42" removed="1"/>
+        <LoadingScreenHelp index="43" removed="1"/>
+        <LoadingScreenHelp index="44" removed="1"/>
+        <LoadingScreenHelp index="45" removed="1"/>
+        <LoadingScreenHelp index="46" removed="1"/>
+        <LoadingScreenHelp index="47" removed="1"/>
+        <LoadingScreenHelp index="48" removed="1"/>
+        <LoadingScreenHelp index="49" removed="1"/>
+        <LoadingScreenHelp index="50" removed="1"/>
+        <LoadingScreenHelp index="51" removed="1"/>
+        <LoadingScreenHelp index="52" removed="1"/>
+        <LoadingScreenHelp index="53" removed="1"/>
+        <LoadingScreenHelp index="54" removed="1"/>
+        <LoadingScreenHelp index="55" removed="1"/>
+        <LoadingScreenHelp index="56" removed="1"/>
+        <LoadingScreenHelp index="57" removed="1"/>
+        <LoadingScreenHelp index="58" removed="1"/>
+        <LoadingScreenHelp index="59" removed="1"/>
+        <LoadingScreenHelp index="60" removed="1"/>
+        <LoadingScreenHelp index="61" removed="1"/>
+        <LoadingScreenHelp index="62" removed="1"/>
+    </CGameUI>
+</Catalog>

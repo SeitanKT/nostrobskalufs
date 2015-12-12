@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CTexture id="DayWolf">
+        <File value="Assets\Textures\wolf_day_diff.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="KoboldNormal">
+        <File value="Assets\Textures\2015Kobold_Diffuse.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="MurlocGray">
+        <File value="Assets\Textures\MurlocGray.tga"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="MurlocYellow">
+        <File value="Assets\Textures\MurlocYellow.tga"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="MurlocOrange">
+        <File value="Assets\Textures\MurlocOrange.tga"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="GoldenHauberkHeal">
+        <File value="Assets\Textures\falloff_energy2.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="MurlocBlue">
+        <File value="Assets\Textures\MurlocBlue_Diffuse.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="MurlocWhite">
+        <File value="Assets\Textures\MurlocWhite.tga"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="KoboldSnow">
+        <File value="Assets\Textures\Snobold.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="WhiteBear">
+        <File value="Assets\Textures\TheNewBear_White_Diffuse.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="CurseofBurdenFirestreak">
+        <File value="Assets\Textures\firestreak7green.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="CurseofBurdenImpact">
+        <File value="Assets\Textures\energyring3green.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="CurseofBurdenShield">
+        <File value="Assets\Textures\starflashyellow.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="FelFearImpact">
+        <File value="Assets\Textures\photonenergyanim1_green.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="FelFireTex">
+        <File value="Assets\Textures\flame3_r1b_green.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="FelFlames">
+        <File value="Assets\Textures\newboom1_green.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="LightningCloud">
+        <File value="Assets\Textures\energyring3.dds"/>
+        <Slot value="main.emissive"/>
+    </CTexture>
+    <CTexture id="Nightwisp">
+        <File value="Assets\Textures\hybridholdingcellglassspec.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+    <CTexture id="Nightwisp2">
+        <File value="Assets\Textures\hololines2.dds"/>
+        <Slot value="main.emissive"/>
+    </CTexture>
+    <CTexture id="BloodcleaverHeal">
+        <File value="Assets\Textures\emergytrailred.dds"/>
+        <Slot value="main.diffuse"/>
+    </CTexture>
+</Catalog>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Regions>
+    <region id="1">
+        <name value="Region 001"/>
+        <shape type="circle">
+            <center value="22.3745,231.503"/>
+            <radius value="15"/>
+        </shape>
+    </region>
+    <region id="2">
+        <name value="Arena"/>
+        <shape type="circle">
+            <center value="232.857,235.9128"/>
+            <radius value="15.14"/>
+        </shape>
+    </region>
+    <region id="3">
+        <name value="Region 002"/>
+        <shape type="rect">
+            <quad value="8.6083,8.3176,13.6784,11.173"/>
+        </shape>
+    </region>
+    <region id="4">
+        <name value="Memory"/>
+        <color value="255,255,0,255"/>
+        <shape type="circle">
+            <center value="62.9311,116.3041"/>
+            <radius value="1"/>
+        </shape>
+    </region>
+    <region id="5">
+        <name value="Fish, MarSara, 001"/>
+        <color value="255,0,128,128"/>
+        <shape type="rect">
+            <quad value="129.2878,128.6921,144.2878,145.692"/>
+        </shape>
+        <shape type="rect">
+            <quad value="140.2897,137.19,155.2897,153.19"/>
+        </shape>
+        <shape type="rect">
+            <quad value="148.3198,143,164.3198,155"/>
+        </shape>
+    </region>
+    <region id="6">
+        <name value="Fish, MarSara, 002"/>
+        <color value="255,0,128,128"/>
+        <shape type="rect">
+            <quad value="196.2275,148.2004,221.7763,166.1193"/>
+        </shape>
+        <shape type="rect">
+            <quad value="211.1157,163.18,224.8842,173.14"/>
+        </shape>
+    </region>
+    <region id="7">
+        <name value="Fish, BelShir, 001"/>
+        <color value="255,0,128,255"/>
+        <shape type="rect">
+            <quad value="112.8884,83.4755,140.4992,108.7092"/>
+        </shape>
+        <shape type="rect">
+            <quad value="95.0656,107.26,109.4143,120.22"/>
+        </shape>
+        <shape type="rect">
+            <quad value="139.7856,72.7802,159.5942,95.399"/>
+        </shape>
+    </region>
+    <region id="8">
+        <name value="Fish, BelShir, 002"/>
+        <color value="255,0,128,255"/>
+        <shape type="rect">
+            <quad value="33.0407,106.923,80.8906,127.6687"/>
+        </shape>
+        <shape type="rect">
+            <quad value="67.0078,123.1154,90.9316,141.4841"/>
+        </shape>
+        <shape type="rect">
+            <quad value="46,138,54,146"/>
+        </shape>
+    </region>
+    <region id="9">
+        <name value="Fish, Shakuras, 001"/>
+        <color value="255,255,159,255"/>
+        <shape type="rect">
+            <quad value="27.282,62.475,72.7536,107.826"/>
+        </shape>
+        <shape type="rect">
+            <quad value="47.652,46.8122,70.387,69.487"/>
+        </shape>
+        <shape type="rect">
+            <quad value="15.1503,125.5654,34.8891,147.0742"/>
+        </shape>
+        <shape type="rect">
+            <quad value="65.5493,70.94,94.35,90.94"/>
+        </shape>
+        <shape type="rect">
+            <quad value="86.75,45.44,126.75,80.44"/>
+        </shape>
+    </region>
+    <region id="10">
+        <name value="Fish, Southlands 3, 001"/>
+        <color value="255,64,0,128"/>
+        <shape type="rect">
+            <quad value="28.4772,48.138,47.6811,62.5715"/>
+        </shape>
+    </region>
+    <region id="11">
+        <name value="Fish, Southlands 3, 002"/>
+        <color value="255,64,0,128"/>
+        <shape type="rect">
+            <quad value="125.5,19,142.5,29"/>
+        </shape>
+        <shape type="rect">
+            <quad value="125.5,0,140.5,19"/>
+        </shape>
+    </region>
+    <region id="12">
+        <name value="Fish, Southlands 2, 001"/>
+        <color value="255,255,128,192"/>
+        <shape type="rect">
+            <quad value="39.6142,25.4357,47.6638,41.1616"/>
+        </shape>
+    </region>
+    <region id="13">
+        <name value="Fish, Southlands 2, 002"/>
+        <color value="255,255,128,192"/>
+        <shape type="rect">
+            <quad value="7.2878,107.647,21.3374,123.3728"/>
+        </shape>
+    </region>
+    <region id="14">
+        <name value="Fish, BelShir, 003"/>
+        <color value="255,0,128,255"/>
+        <shape type="rect">
+            <quad value="0.0002,0,40,40"/>
+        </shape>
+        <shape type="rect">
+            <quad value="40,0,72,26"/>
+        </shape>
+        <shape type="rect">
+            <quad value="-0.01,0,17.2097,57.0595"/>
+        </shape>
+        <shape type="rect">
+            <quad value="72,0,102,7"/>
+        </shape>
+        <shape type="rect">
+            <quad value="118,11,126,19"/>
+        </shape>
+    </region>
+    <region id="15">
+        <name value="Fish, Shakuras, 002"/>
+        <color value="255,255,159,255"/>
+        <shape type="rect">
+            <quad value="20.155,44.9184,27.4445,58.3413"/>
+        </shape>
+    </region>
+    <region id="16">
+        <name value="Fish, BelShir, 004"/>
+        <color value="255,0,128,255"/>
+        <shape type="rect">
+            <quad value="126,32,150,48"/>
+        </shape>
+        <shape type="rect">
+            <quad value="144,25,164,45"/>
+        </shape>
+    </region>
+    <region id="17">
+        <name value="Fish, BelShir, 005"/>
+        <color value="255,0,128,255"/>
+        <shape type="rect">
+            <quad value="67,148,101,164"/>
+        </shape>
+        <shape type="rect">
+            <quad value="67,172,93,200"/>
+        </shape>
+        <shape type="rect">
+            <quad value="24,155,56,187"/>
+        </shape>
+    </region>
+    <region id="18">
+        <name value="Fish, BelShir, 006"/>
+        <color value="255,0,128,255"/>
+        <shape type="rect">
+            <quad value="169,183,183,209"/>
+        </shape>
+        <shape type="rect">
+            <quad value="139,176,169,236"/>
+        </shape>
+        <shape type="rect">
+            <quad value="101,184,139,228"/>
+        </shape>
+    </region>
+    <region id="19">
+        <name value="Fish, BelShir, 007"/>
+        <color value="255,0,128,255"/>
+        <shape type="rect">
+            <quad value="204,175,216,191"/>
+        </shape>
+        <shape type="rect">
+            <quad value="192,172,204,188"/>
+        </shape>
+        <shape type="rect">
+            <quad value="165,152,191,180"/>
+        </shape>
+    </region>
+    <region id="20">
+        <name value="Fish, BelShir, 008"/>
+        <color value="255,0,128,255"/>
+        <shape type="rect">
+            <quad value="201,92,215,104"/>
+        </shape>
+        <shape type="rect">
+            <quad value="184,136,224,144"/>
+        </shape>
+        <shape type="rect">
+            <quad value="159,115,173,133"/>
+        </shape>
+        <shape type="rect">
+            <quad value="212,104,236,136"/>
+        </shape>
+        <shape type="rect">
+            <quad value="222,129,250,161"/>
+        </shape>
+        <shape type="rect">
+            <quad value="227,161,235,169"/>
+        </shape>
+    </region>
+    <region id="21">
+        <name value="Fish, Shakuras, 003"/>
+        <color value="255,255,159,255"/>
+        <shape type="rect">
+            <quad value="104,156,136,184"/>
+        </shape>
+    </region>
+    <region id="22">
+        <name value="Fish, Zhakul&apos;Das, 001"/>
+        <color value="255,113,82,62"/>
+        <shape type="rect">
+            <quad value="0,206.0002,64,256"/>
+        </shape>
+        <shape type="rect">
+            <quad value="2,196,10,206"/>
+        </shape>
+        <shape type="rect">
+            <quad value="64,213,96,237"/>
+        </shape>
+        <shape type="rect">
+            <quad value="84,237,96,249"/>
+        </shape>
+    </region>
+    <region id="23">
+        <name value="Fish, Zhakul&apos;Das, 002"/>
+        <color value="255,113,82,62"/>
+        <shape type="rect">
+            <quad value="200,1,256,87"/>
+        </shape>
+        <shape type="rect">
+            <quad value="226,78,254,102"/>
+        </shape>
+        <shape type="rect">
+            <quad value="196,83,200,87"/>
+        </shape>
+        <shape type="rect">
+            <quad value="192,45,200,63"/>
+        </shape>
+        <shape type="rect">
+            <quad value="184,30,196,42"/>
+        </shape>
+    </region>
+    <region id="24">
+        <name value="Arena Throw Area"/>
+        <shape type="circle">
+            <center value="231.4165,234.86"/>
+            <radius value="3.25"/>
+        </shape>
+        <shape type="circle">
+            <center value="234.42,232.859"/>
+            <radius value="2"/>
+        </shape>
+        <shape type="circle">
+            <center value="228.92,236.3596"/>
+            <radius value="2"/>
+        </shape>
+    </region>
+    <region id="25">
+        <name value="Fish, Char, 001"/>
+        <color value="255,255,0,0"/>
+        <shape type="rect">
+            <quad value="224,175.0002,256,201"/>
+        </shape>
+    </region>
+    <region id="26">
+        <name value="Fish, Char, 002"/>
+        <color value="255,255,0,0"/>
+        <shape type="rect">
+            <quad value="173,218.0002,191,250"/>
+        </shape>
+    </region>
+    <region id="27">
+        <name value="Fish, Char, 003"/>
+        <color value="255,255,0,0"/>
+        <shape type="rect">
+            <quad value="200,225.0002,256,253"/>
+        </shape>
+        <shape type="rect">
+            <quad value="220,209,248,225"/>
+        </shape>
+    </region>
+</Regions>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CWater id="BelShir">
+        <State index="0">
+            <Name value="[Default]"/>
+            <Height value="6.000000"/>
+            <Color value="0.109804,0.129412,0.192157,0.380000"/>
+            <ColorFallOff value="0.624000"/>
+            <Specularity value="73.599998"/>
+            <SpecularScaler value="0.050000"/>
+            <UvRate value="0.006673,0.017790,0.000000,0.000000"/>
+            <UvRotate value="0.674744"/>
+            <MeshRoughness value="0.200000"/>
+            <TextureRoughness value="1.000000"/>
+            <ReflectionDistortion value="0.184000"/>
+            <RefractionDistortion value="0.020000"/>
+            <MinReflection value="0.193000"/>
+            <ReflectivityPower value="8.000000"/>
+        </State>
+        <State>
+            <Name value="Alternate Setting"/>
+            <Height value="12.000000"/>
+            <Color value="0.000000,0.086275,0.176471,0.480000"/>
+            <ColorFallOff value="0.624000"/>
+            <Specularity value="73.599998"/>
+            <SpecularScaler value="0.050000"/>
+            <UvRate value="-0.000000,-0.001000,0.000000,0.000000"/>
+            <MeshRoughness value="0.200000"/>
+            <TextureRoughness value="1.000000"/>
+            <ReflectionDistortion value="0.184000"/>
+            <RefractionDistortion value="0.020000"/>
+            <ShadowDistortion value="1.000000"/>
+            <MinReflection value="0.193000"/>
+            <ReflectivityPower value="8.000000"/>
+        </State>
+        <State>
+            <Name value="Alternate Setting 2"/>
+            <Height value="18.000000"/>
+            <Color value="0.000000,0.086275,0.176471,0.480000"/>
+            <ColorFallOff value="0.624000"/>
+            <Specularity value="73.599998"/>
+            <SpecularScaler value="0.050000"/>
+            <UvRate value="-0.000000,-0.001000,0.000000,0.000000"/>
+            <MeshRoughness value="0.200000"/>
+            <TextureRoughness value="1.000000"/>
+            <ReflectionDistortion value="0.184000"/>
+            <RefractionDistortion value="0.020000"/>
+            <ShadowDistortion value="1.000000"/>
+            <MinReflection value="0.193000"/>
+            <ReflectivityPower value="8.000000"/>
+        </State>
+        <State>
+            <Name value="Alternate Setting 3"/>
+            <Height value="24.000000"/>
+            <Color value="0.000000,0.086275,0.176471,0.480000"/>
+            <ColorFallOff value="0.624000"/>
+            <Specularity value="73.599998"/>
+            <SpecularScaler value="0.050000"/>
+            <UvRate value="-0.000000,-0.001000,0.000000,0.000000"/>
+            <MeshRoughness value="0.200000"/>
+            <TextureRoughness value="1.000000"/>
+            <ReflectionDistortion value="0.184000"/>
+            <RefractionDistortion value="0.020000"/>
+            <ShadowDistortion value="1.000000"/>
+            <MinReflection value="0.193000"/>
+            <ReflectivityPower value="8.000000"/>
+        </State>
+        <State>
+            <Name value="Alternate Setting 4"/>
+            <Height value="30.000000"/>
+            <Color value="0.094118,0.349020,0.494118,0.165000"/>
+            <ColorFallOff value="0.105000"/>
+            <CausticsFallOff value="0.200000"/>
+            <Specularity value="200.000000"/>
+            <SpecularScaler value="1.000000"/>
+            <UvRate value="-0.000000,-0.001000,0.000000,0.000000"/>
+            <MeshRoughness value="0.150000"/>
+            <TextureRoughness value="1.000000"/>
+            <ReflectionDistortion value="0.012000"/>
+            <RefractionDistortion value="0.002500"/>
+            <ShadowDistortion value="1.000000"/>
+            <MinReflection value="0.100000"/>
+            <ReflectivityPower value="8.000000"/>
+        </State>
+        <Doodads index="0" removed="1"/>
+    </CWater>
+    <CWater id="BelShirLevel2">
+        <State index="0">
+            <Name value="[Default]"/>
+            <Height value="17.000000"/>
+            <Color value="0.000000,0.086275,0.176471,0.480000"/>
+            <ColorFallOff value="0.624000"/>
+            <Specularity value="73.599998"/>
+            <SpecularScaler value="0.050000"/>
+            <UvRate value="-0.000031,-0.001000,0.000000,0.000000"/>
+            <MeshRoughness value="0.200000"/>
+            <TextureRoughness value="1.000000"/>
+            <ReflectionDistortion value="0.184000"/>
+            <RefractionDistortion value="0.020000"/>
+            <MinReflection value="0.193000"/>
+            <ReflectivityPower value="8.000000"/>
+        </State>
+        <State>
+            <Name value="Alternate Setting"/>
+            <Height value="14.000000"/>
+            <Color value="0.000000,0.086275,0.180392,0.480000"/>
+            <ColorFallOff value="0.624000"/>
+            <Specularity value="73.599998"/>
+            <SpecularScaler value="0.050000"/>
+            <UvRate value="-0.000000,-0.001000,0.000000,0.000000"/>
+            <MeshRoughness value="0.200000"/>
+            <TextureRoughness value="1.000000"/>
+            <ReflectionDistortion value="0.184000"/>
+            <RefractionDistortion value="0.020000"/>
+            <ShadowDistortion value="1.000000"/>
+            <MinReflection value="0.193000"/>
+            <ReflectivityPower value="8.000000"/>
+        </State>
+        <State>
+            <Name value="Alternate Setting 2"/>
+            <Height value="21.000000"/>
+            <Color value="0.000000,0.086275,0.180392,0.480000"/>
+            <ColorFallOff value="0.624000"/>
+            <Specularity value="73.599998"/>
+            <SpecularScaler value="0.050000"/>
+            <UvRate value="-0.000000,-0.001000,0.000000,0.000000"/>
+            <MeshRoughness value="0.200000"/>
+            <TextureRoughness value="1.000000"/>
+            <ReflectionDistortion value="0.184000"/>
+            <RefractionDistortion value="0.020000"/>
+            <ShadowDistortion value="1.000000"/>
+            <MinReflection value="0.193000"/>
+            <ReflectivityPower value="8.000000"/>
+        </State>
+        <State>
+            <Name value="Alternate Setting 3"/>
+            <Height value="28.000000"/>
+            <Color value="0.000000,0.086275,0.180392,0.480000"/>
+            <ColorFallOff value="0.624000"/>
+            <Specularity value="73.599998"/>
+            <SpecularScaler value="0.050000"/>
+            <UvRate value="-0.000000,-0.001000,0.000000,0.000000"/>
+            <MeshRoughness value="0.200000"/>
+            <TextureRoughness value="1.000000"/>
+            <ReflectionDistortion value="0.184000"/>
+            <RefractionDistortion value="0.020000"/>
+            <ShadowDistortion value="1.000000"/>
+            <MinReflection value="0.193000"/>
+            <ReflectivityPower value="8.000000"/>
+        </State>
+        <ReceiveShadows value="1"/>
+        <BeachShoreline value="BelShirBeachShoreline"/>
+        <CliffShoreline value="BelShirCliffShoreline"/>
+    </CWater>
+    <CWater id="Char">
+        <State index="0">
+            <Name value="[Default]"/>
+            <Height value="2.000000"/>
+            <Color value="0.819608,0.294118,0.086275,0.300000"/>
+            <ColorFallOff value="0.100000"/>
+            <Specularity value="60.000000"/>
+            <SpecularScaler value="4.000000"/>
+            <UvRate value="-0.000000,-0.001000,0.000000,0.000000"/>
+            <MeshRoughness value="1.000000"/>
+            <TextureRoughness value="1.000000"/>
+            <ReflectionDistortion value="0.020000"/>
+            <RefractionDistortion value="0.002000"/>
+            <MinReflection value="0.280000"/>
+            <ReflectivityPower value="8.000000"/>
+        </State>
+    </CWater>
+    <CWater id="Haven">
+        <State index="0">
+            <Name value="[Default]"/>
+            <Height value="11.000000"/>
+            <Color value="0.098039,0.349020,0.498039,0.300000"/>
+            <ColorFallOff value="0.100000"/>
+            <Specularity value="100.000000"/>
+            <SpecularScaler value="2.450000"/>
+            <UvRate value="-0.000000,-0.001000,0.000000,0.000000"/>
+            <ReflectionDistortion value="0.012000"/>
+            <RefractionDistortion value="0.020000"/>
+            <MinReflection value="0.300000"/>
+            <ReflectivityPower value="8.000000"/>
+        </State>
+    </CWater>
+    <CWater id="MarSara">
+        <State index="0">
+            <Name value="[Default]"/>
+            <Height value="2.000000"/>
+            <Color value="0.000000,0.000000,0.000000,0.382000"/>
+            <ColorFallOff value="1.000000"/>
+            <Specularity value="10.500000"/>
+            <SpecularScaler value="0.050000"/>
+            <UvRate value="0.000292,0.000956,0.000000,0.000000"/>
+            <MeshRoughness value="0.459000"/>
+            <TextureRoughness value="1.000000"/>
+            <ReflectionDistortion value="0.069000"/>
+            <RefractionDistortion value="0.002500"/>
+            <MinReflection value="0.333000"/>
+            <ReflectivityPower value="8.000000"/>
+        </State>
+    </CWater>
+    <CWater id="Shakuras">
+        <State index="0">
+            <Name value="[Default]"/>
+            <Height value="6.000000"/>
+            <Color value="0.000000,0.400000,0.349020,0.160000"/>
+            <ColorFallOff value="0.050000"/>
+            <Specularity value="408.000000"/>
+            <SpecularScaler value="0.280000"/>
+            <UvRate value="0.000000,-0.001000,0.000000,0.000000"/>
+            <MeshRoughness value="0.108000"/>
+            <TextureRoughness value="1.000000"/>
+            <ReflectionDistortion value="0.020000"/>
+            <RefractionDistortion value="0.001000"/>
+            <MinReflection value="0.280000"/>
+            <ReflectivityPower value="8.000000"/>
+        </State>
+    </CWater>
+    <CWater id="SouthlandsLevel3">
+        <State index="0">
+            <Name value="[Default]"/>
+            <Height value="11.500000"/>
+            <Color value="0.000000,0.400000,0.349020,0.160000"/>
+            <ColorFallOff value="0.050000"/>
+            <Specularity value="200.000000"/>
+            <SpecularScaler value="1.200000"/>
+            <UvRate value="0.000000,-0.001000,0.000000,0.000000"/>
+            <MeshRoughness value="0.250000"/>
+            <TextureRoughness value="1.000000"/>
+            <ReflectionDistortion value="0.020000"/>
+            <RefractionDistortion value="0.001000"/>
+            <MinReflection value="0.280000"/>
+            <ReflectivityPower value="8.000000"/>
+        </State>
+        <ReceiveShadows value="1"/>
+        <BeachShoreline value="BelShirBeachShoreline"/>
+        <CliffShoreline value="BelShirCliffShoreline"/>
+    </CWater>
+    <CWater id="SouthlandsLevel2">
+        <State index="0">
+            <Name value="[Default]"/>
+            <Height value="7.650000"/>
+            <Color value="0.000000,0.400000,0.349020,0.160000"/>
+            <ColorFallOff value="0.050000"/>
+            <Specularity value="200.000000"/>
+            <SpecularScaler value="1.200000"/>
+            <UvRate value="0.000000,-0.001000,0.000000,0.000000"/>
+            <MeshRoughness value="1.000000"/>
+            <TextureRoughness value="1.000000"/>
+            <ReflectionDistortion value="0.020000"/>
+            <RefractionDistortion value="0.001000"/>
+            <MinReflection value="0.280000"/>
+            <ReflectivityPower value="8.000000"/>
+        </State>
+        <ReceiveShadows value="1"/>
+        <BeachShoreline value="BelShirBeachShoreline"/>
+        <CliffShoreline value="BelShirCliffShoreline"/>
+    </CWater>
+    <CWater id="ZhakulDas">
+        <State index="0">
+            <Name value="[Default]"/>
+            <Height value="11.000000"/>
+            <Color value="0.000000,0.000000,0.000000,0.382000"/>
+            <ColorFallOff value="1.000000"/>
+            <Specularity value="10.500000"/>
+            <SpecularScaler value="0.050000"/>
+            <UvRate value="0.000292,0.000956,0.000000,0.000000"/>
+            <MeshRoughness value="0.459000"/>
+            <TextureRoughness value="1.000000"/>
+            <ReflectionDistortion value="0.069000"/>
+            <RefractionDistortion value="0.002500"/>
+            <MinReflection value="0.333000"/>
+            <ReflectivityPower value="8.000000"/>
+        </State>
+    </CWater>
+</Catalog>

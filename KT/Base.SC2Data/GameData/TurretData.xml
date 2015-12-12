@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CTurret id="ADTTurret">
+        <YawArc value="360"/>
+        <YawRate value="360"/>
+        <Idle value="Hold"/>
+    </CTurret>
+    <CTurret id="TrebuchetTurret" parent="FreeRotate">
+        <YawRate value="90"/>
+        <Fidget>
+            <ChanceArray index="Turn" value="0"/>
+        </Fidget>
+    </CTurret>
+    <CTurret id="BallistaTurret">
+        <YawRate value="90"/>
+        <YawArc value="360"/>
+    </CTurret>
+    <CTurret id="WatchTowerTurret02">
+        <YawStart value="90"/>
+        <YawArc value="90"/>
+        <YawRate value="999.8437"/>
+    </CTurret>
+    <CTurret id="WatchTowerTurret01">
+        <YawStart value="-180"/>
+        <YawArc value="90"/>
+        <YawRate value="999.8437"/>
+    </CTurret>
+    <CTurret id="WatchTowerTurret03">
+        <YawArc value="90"/>
+        <YawRate value="999.8437"/>
+    </CTurret>
+    <CTurret id="WatchTowerTurret04">
+        <YawStart value="-90"/>
+        <YawArc value="90"/>
+        <YawRate value="999.8437"/>
+    </CTurret>
+</Catalog>

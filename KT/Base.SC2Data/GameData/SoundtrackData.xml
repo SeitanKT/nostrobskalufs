@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CSoundtrack id="RainIndoors">
+        <CueArray>
+            <MasterLayer Sound="RainIndoors"/>
+        </CueArray>
+    </CSoundtrack>
+    <CSoundtrack id="RainOutdoors">
+        <CueArray>
+            <MasterLayer Sound="RainOutdoors"/>
+        </CueArray>
+    </CSoundtrack>
+</Catalog>

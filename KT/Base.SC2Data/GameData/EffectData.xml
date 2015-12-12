@@ -1,0 +1,4128 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CEffectApplyBehavior id="AFKApply">
+        <EditorCategories value=""/>
+        <Behavior value="KoboldBotNormal"/>
+        <Duration value="120"/>
+        <Flags index="UseDuration" value="1"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="AICombatTriggerApplyCaster">
+        <ValidatorArray index="0" value="CasterIsNotInArena"/>
+        <ValidatorArray value="CasterIsKobold"/>
+        <ValidatorArray value="CasterIsNotKoboldBot"/>
+        <EditorCategories value=""/>
+        <Behavior value="AICombatTrigger"/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="AICombatTriggerSet">
+        <EditorCategories value=""/>
+        <EffectArray value="AICombatTriggerApplyCaster"/>
+        <EffectArray value="AICombatTriggerApplyTarget"/>
+        <ValidatorArray value="AICombatTriggerValidatorCaster"/>
+        <ValidatorArray value="AICombatTriggerValidatorTarget"/>
+        <ValidatorArray value="TargetIsEnemy"/>
+    </CEffectSet>
+    <CEffectSet id="AICombatTriggerStart">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="AICombatTriggerEnd">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="AIHelperEnemyInitial">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="AIHelperEnemyTriggerEnd"/>
+    <CEffectApplyBehavior id="AIHelperEnemyTriggerStart5">
+        <EditorCategories value=""/>
+        <Behavior value="AIHelperEnemy"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="5"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="AcquireTarget">
+        <SearchFilters value="Visible;Player,Ally,Neutral,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetSorts RequestPercentage="1">
+            <SortArray value="TSLife"/>
+        </TargetSorts>
+        <AreaArray Radius="6" Effect="AcquireTargetOrder"/>
+    </CEffectEnumArea>
+    <CEffectIssueOrder id="AcquireTargetOrder">
+        <WhichUnit Value="Caster"/>
+        <Abil value="attack"/>
+        <Player Value="Caster"/>
+        <Target Value="TargetUnit"/>
+    </CEffectIssueOrder>
+    <CEffectApplyBehavior id="AddCampfireSpecialRequirement">
+        <EditorCategories value=""/>
+        <Behavior value="CampfireSpecialRequirement"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="AdrenalineRushCounter">
+        <EditorCategories value=""/>
+    </CEffectDamage>
+    <CEffectSet id="AdrenalineRushTimer">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="AfflictionAchievementApply">
+        <EditorCategories value=""/>
+        <Behavior value="AfflictionAchievementCheck"/>
+    </CEffectApplyBehavior>
+    <CEffectSwitch id="AfflictionAchievementSwitch">
+        <EditorCategories value=""/>
+        <CaseArray Validator="AfflictionAchievementValidator" Effect="AfflictionAchievementTrigger"/>
+        <CaseArray Validator="TargetIsKobold" Effect="AfflictionAchievementApply"/>
+    </CEffectSwitch>
+    <CEffectSet id="AfflictionAchievementTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="AfflictionApply">
+        <EditorCategories value=""/>
+        <Behavior value="Affliction"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="AfflictionApply2">
+        <ValidatorArray index="0" value="TargetNotAfflicted"/>
+        <ValidatorArray value="TargetIsNotWizard"/>
+        <EditorCategories value=""/>
+        <Behavior value="Affliction"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="AfflictionArmorReductionApply">
+        <ValidatorArray index="0" value="CasterHasConjurersCharm"/>
+        <EditorCategories value=""/>
+        <Behavior value="AfflictionArmorShred"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="AfflictionDamage">
+        <EditorCategories value=""/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Amount value="7"/>
+        <Death value="Disintegrate"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="AfflictionSearch">
+        <EditorCategories value=""/>
+        <ImpactLocation Value="OuterUnitOrPoint"/>
+        <ExcludeArray Value="Source"/>
+        <SearchFilters value="Biological;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetSorts>
+            <SortArray value="TSDistanceToOuter"/>
+        </TargetSorts>
+        <AreaArray Radius="5" Effect="SpellAbsorbCheckAfflictionSpread"/>
+        <MaxCount value="1"/>
+    </CEffectEnumArea>
+    <CEffectSet id="AfflictionSet">
+        <EditorCategories value=""/>
+        <EffectArray value="AfflictionDamage"/>
+        <EffectArray value="AfflictionAchievementSwitch"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="AICombatTriggerApplyTarget">
+        <ValidatorArray index="0" value="TargetIsNotInArena"/>
+        <ValidatorArray value="TargetIsKobold"/>
+        <ValidatorArray value="TargetIsNotKoboldBot"/>
+        <EditorCategories value=""/>
+        <Behavior value="AICombatTrigger"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="AnimalScoutTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="ArcaneEruptionDelay">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="AttackItemProcsSetBeforeDamage">
+        <EditorCategories value=""/>
+        <EffectArray value="TamedSet"/>
+        <EffectArray value="GravesingersRodSummonApply"/>
+        <EffectArray value="GoldenPolearmSet"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="BallistaStun">
+        <Behavior value="GenericStun"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="2"/>
+        <ValidatorArray index="0" value="UnitIsBiological"/>
+    </CEffectApplyBehavior>
+    <CEffectIssueOrder id="BeastAttackKobold">
+        <ValidatorArray value="TargetIsKobold"/>
+        <WhichUnit Value="Caster"/>
+        <Abil value="attack"/>
+        <Player Value="Caster"/>
+        <Target Value="TargetUnit"/>
+    </CEffectIssueOrder>
+    <CEffectEnumArea id="BeastSearch">
+        <SearchFilters value="-;Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetSorts RequestPercentage="1">
+            <SortArray value="TSDistance"/>
+        </TargetSorts>
+        <AreaArray Radius="8" Effect="BeastAttack"/>
+        <MaxCount value="1"/>
+    </CEffectEnumArea>
+    <CEffectSwitch id="BeastSwitchInitial">
+        <EditorCategories value=""/>
+        <CaseArray Validator="CasterIsDirewolf" Effect="BeastSwitchSmall"/>
+        <CaseArray Effect="BeastSwitch"/>
+    </CEffectSwitch>
+    <CEffectSwitch id="BeastSwitch">
+        <EditorCategories value=""/>
+        <CaseArray Validator="EnemyKoboldsWithinRadius4" Effect="BeastSearchKobold"/>
+        <CaseDefault value="BeastSearch"/>
+    </CEffectSwitch>
+    <CEffectEnumArea id="BeastSearchKobold">
+        <SearchFilters value="-;Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetSorts RequestPercentage="1">
+            <SortArray value="TSDistance"/>
+        </TargetSorts>
+        <AreaArray Radius="4.5" Effect="BeastAttackKobold"/>
+        <MaxCount value="1"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="BeastSearchSmall">
+        <SearchFilters value="-;Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetSorts RequestPercentage="1">
+            <SortArray value="TSDistance"/>
+        </TargetSorts>
+        <AreaArray Radius="4" Effect="BeastAttack"/>
+        <MaxCount value="1"/>
+    </CEffectEnumArea>
+    <CEffectSwitch id="BeastSwitchSmall">
+        <EditorCategories value=""/>
+        <CaseArray Validator="EnemyKoboldsWithinRadius4" Effect="BeastSearchKobold"/>
+        <CaseDefault value="BeastSearchSmall"/>
+    </CEffectSwitch>
+    <CEffectSet id="BeastSet">
+        <EffectArray value="BeastAttack"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="BeaverScavenger">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="BeaverScavengerFinish">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="BeaverScavengerTrigger">
+        <ValidatorArray value="NotMoving"/>
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="BlinkStalker">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="BurrowFX"/>
+    <CEffectCreatePersistent id="BurrowPersistentFX">
+        <InitialEffect value="BurrowFX"/>
+        <PeriodCount value="4"/>
+        <PeriodicEffectArray value="BurrowFX"/>
+        <PeriodicPeriodArray value="1"/>
+    </CEffectCreatePersistent>
+    <CEffectIssueOrder id="BeastAttack">
+        <ValidatorArray value="BeastAttackValidator"/>
+        <WhichUnit Value="Caster"/>
+        <Abil value="attack"/>
+        <Player Value="Caster"/>
+        <Target Value="TargetUnit"/>
+    </CEffectIssueOrder>
+    <CEffectSet id="ConstructingSound">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectEnumArea id="CullTheHerdSearch">
+        <SearchFilters value="Biological;Player,Ally,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="16" Effect="CullTheHerdApply"/>
+        <MinCount value="1"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="CullTheHerdApply">
+        <ValidatorArray index="0" value="CullTheHerdTargetValid"/>
+        <EditorCategories value=""/>
+        <Behavior value="Affliction"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="DisableRun">
+        <EditorCategories value=""/>
+        <WhichLocation Value="SourceUnit"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="UpdateCombatStats"/>
+        <PeriodicPeriodArray value="0.01"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="FrostArmorApplyAllies">
+        <ValidatorArray index="0" value="TargetIsKobold"/>
+        <Behavior value="FrostArmor"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="FrostArmorSet">
+        <EffectArray value="FrostArmorApply"/>
+        <EffectArray value="FrostArmorSearch"/>
+    </CEffectSet>
+    <CEffectEnumArea id="FrostArmorSearch">
+        <ValidatorArray value="CasterHasFrostNeedle"/>
+        <ExcludeArray/>
+        <SearchFilters value="-;Neutral,Enemy,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="10" Effect="FrostArmorApplyAllies"/>
+    </CEffectEnumArea>
+    <CEffectCreatePersistent id="FrostBeamCreatePersistent">
+        <WhichLocation Value="TargetUnit"/>
+        <TimeScaleSource Value="Caster"/>
+        <Flags index="Channeled" value="1"/>
+        <Flags index="PersistUntilDestroyed" value="1"/>
+        <InitialEffect value="FrostBeamSet"/>
+        <PeriodicEffectArray value="FrostBeamSet"/>
+        <PeriodicPeriodArray value="1"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="FrostBeamDamage" parent="DU_WEAP">
+        <Kind value="Ranged"/>
+        <Amount value="6"/>
+    </CEffectDamage>
+    <CEffectDamage id="FireballDamageUnit" parent="DU_WEAP">
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Kind value="Spell"/>
+        <Amount value="50"/>
+        <AreaArray Radius="0.5" Fraction="1"/>
+        <AreaArray Radius="1" Fraction="0.66"/>
+        <AreaArray Radius="1.5" Fraction="0.33"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Ground;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CEffectDamage>
+    <CEffectSet id="FireballImpactUnit">
+        <EffectArray value="FireballDamageUnit"/>
+    </CEffectSet>
+    <CEffectSet id="FireballImpactPoint">
+        <EffectArray value="FireballDamagePoint"/>
+    </CEffectSet>
+    <CEffectLaunchMissile id="FireballLaunchUnit">
+        <ImpactEffect value="FireballImpactUnit"/>
+        <AmmoUnit value="FireballMissile"/>
+        <Movers Link="FireballMover"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="FireballLaunchPoint">
+        <ImpactLocation Value="TargetUnitOrPoint"/>
+        <ImpactEffect value="FireballImpactPoint"/>
+        <AmmoUnit value="FireballMissile"/>
+        <Movers Link="FireballMover"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="FireballDamagePoint" parent="DU_WEAP">
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Kind value="Spell"/>
+        <Amount value="50"/>
+        <AreaArray Radius="0.5" Fraction="1"/>
+        <AreaArray Radius="1" Fraction="0.66"/>
+        <AreaArray Radius="1.5" Fraction="0.33"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Ground;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+    </CEffectDamage>
+    <CEffectSwitch id="FireballSwitch">
+        <CaseArray Validator="IsStructure" Effect="FireballLaunchUnit"/>
+        <CaseArray Effect="FireballLaunchPoint"/>
+    </CEffectSwitch>
+    <CEffectEnumArea id="FlockBehaviorSearchSheep">
+        <ValidatorArray value="NoOtherSheepNearby"/>
+        <SearchFilters value="-;Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetSorts RequestPercentage="1">
+            <SortArray value="TSDistance"/>
+        </TargetSorts>
+        <AreaArray Radius="16" Effect="FlockBehaviorSetSheep"/>
+    </CEffectEnumArea>
+    <CEffectSet id="FlockBehaviorSetSheep">
+        <ValidatorArray value="TargetIsSheep"/>
+        <ValidatorArray value="LessThan5Sheep"/>
+        <EffectArray value="FlockBehaviorMoveOrder"/>
+        <EffectArray value="FlockBehaviorStopDelay"/>
+    </CEffectSet>
+    <CEffectEnumArea id="FrostBeamSearch">
+        <ValidatorArray value="CasterHasFrostNeedle"/>
+        <SearchFilters value="Visible;Player,Ally,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="6" Effect="FrostBeamCreatePersistent"/>
+        <MaxCount value="1"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="FlockBehaviorStopDelay">
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectIssueOrder id="FlockBehaviorMoveOrder">
+        <WhichUnit Value="Caster"/>
+        <Abil value="move"/>
+        <Target Value="TargetPoint"/>
+    </CEffectIssueOrder>
+    <CEffectSet id="FrostBeamSet">
+        <EffectArray value="AttackItemProcsSetBeforeDamage"/>
+        <EffectArray value="FrostBeamSilence"/>
+        <EffectArray value="FrostBeamDamage"/>
+        <EffectArray value="AttackItemProcsSetRanged"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="FrostBeamSilence">
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="3"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="GenericStunTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectIssueOrder id="FlockBehaviorStopOrderSelf">
+        <WhichUnit Value="Caster"/>
+        <Abil value="stop"/>
+    </CEffectIssueOrder>
+    <CEffectSet id="GiveAllItemsToTarget">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSwitch id="GoldenPolearmProximitySwitch">
+        <EditorCategories value=""/>
+        <CaseArray Validator="GoldenPolearmEquipped" Effect="GoldenPolearmProximityApply"/>
+        <CaseDefault value="GoldenPolearmProximityRemove"/>
+    </CEffectSwitch>
+    <CEffectApplyBehavior id="IronbarkArmorRecoilStun">
+        <EditorCategories value=""/>
+        <WhichUnit Effect="IronbarkArmorTreeBuff" Value="Caster"/>
+        <Behavior value="GenericStun"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="0.5"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="IronbarkArmorStrengthBonus"/>
+    <CEffectApplyBehavior id="IronbarkArmorTreeBuff">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="IronbarkArmorSearch">
+        <SearchFilters value="Armored,Visible;Player,Ally,Enemy,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="12" Effect="IronbarkArmorSwitch"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="IronbarkArmorElderTreeBuff">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectSwitch id="IronbarkArmorSwitch">
+        <EditorCategories value=""/>
+        <CaseArray Validator="TargetIsElderTree" Effect="IronbarkArmorElderTreeBuff"/>
+        <CaseArray Effect="IronbarkArmorTreeBuff"/>
+    </CEffectSwitch>
+    <CEffectApplyBehavior id="IronbarkArmorTreeStack">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="IronbarkArmorElderTreeStack">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="IronbarkArmorTreeStackRemove">
+        <WhichUnit Effect="IronbarkArmorTreeBuff" Value="Caster"/>
+        <BehaviorLink value="IronbarkArmorTreeStack"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="IronbarkArmorElderTreeStackRemove">
+        <WhichUnit Effect="IronbarkArmorElderTreeBuff" Value="Caster"/>
+        <BehaviorLink value="IronbarkArmorElderTreeStack"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="MonstrousFistsSet">
+        <EffectArray value="MonstrousFistsDamage"/>
+        <EffectArray value="MonstrousFistsApply"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="GroundskeeperAcceleratedGrowthApply">
+        <ValidatorArray index="0" value="TargetTreeIsGrowing"/>
+        <EditorCategories value=""/>
+        <Behavior value="GroundskeeperAcceleratedGrowth"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="MonstrousFistsDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <AttributeBonus index="Structure" value="50"/>
+        <Amount value="50"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="MonstrousFistsApply">
+        <ValidatorArray index="0" value="IsBiological"/>
+        <EditorCategories value=""/>
+        <Behavior value="GenericStun"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="0.75"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="MurlocRushTrampleSetSecond">
+        <EditorCategories value=""/>
+        <EffectArray value="MurlocRushTrampleDamage"/>
+        <EffectArray value="DisorientedApply"/>
+        <EffectArray value="TrampledApply"/>
+        <EffectArray value="DilapidatedApply"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="FireWardNegatorApply">
+        <ValidatorArray index="0" value="FireWardNegatorValidator"/>
+        <Behavior value="FireWardNegator"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="PackTrebuchet">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectModifyPlayer id="GoldenPolearmPillage">
+        <Resources index="Minerals" value="1"/>
+    </CEffectModifyPlayer>
+    <CEffectSet id="GoldenPolearmSet">
+        <ValidatorArray value="CasterWieldsGleamingSpear"/>
+        <EditorCategories value=""/>
+        <EffectArray value="ArmorShredApply"/>
+        <EffectArray value="GoldenPolearmAddonApply"/>
+    </CEffectSet>
+    <CEffectCreatePersistent id="RepeatingCrossbowPersistentSetBonus">
+        <EditorCategories value=""/>
+        <PeriodCount value="3"/>
+        <PeriodicEffectArray value="RepeatingCrossbowSearch"/>
+        <PeriodicPeriodArray value="0.1875"/>
+    </CEffectCreatePersistent>
+    <CEffectRemoveBehavior id="ResumeAI">
+        <BehaviorLink value="SuspendKoboldAI"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="ShadowCloakImpactSet">
+        <EffectArray value="ShadowCloakDamage"/>
+        <EffectArray value="ShadowCloakStun"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="ShadowCloakStun">
+        <ValidatorArray index="0" value="CasterHasOutlandishHeartpiercer"/>
+        <EditorCategories value=""/>
+        <Behavior value="GenericStun"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="1.5"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="SiegeDamage">
+        <ValidatorArray index="0" value="IsStructure"/>
+        <EditorCategories value=""/>
+        <Behavior value="UnderSiege"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="SmithyWorking">
+        <EditorCategories value=""/>
+        <Flags index="UseDuration" value="1"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="PalisadeMorphingApply">
+        <Behavior value="PalisadeMorphing"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="SpellAbsorbApply">
+        <EditorCategories value=""/>
+        <Behavior value="SpellAbsorb"/>
+    </CEffectApplyBehavior>
+    <CEffectSwitch id="SpellAbsorbCheckMoltenSphere">
+        <CaseArray Validator="TargetHasSpellAbsorb" Effect="SpellAbsorbSet"/>
+        <CaseArray Effect="MoltenSphereDamage"/>
+    </CEffectSwitch>
+    <CEffectSwitch id="SpellAbsorbCheckArcaneEruption">
+        <CaseArray Validator="TargetHasSpellAbsorb" Effect="SpellAbsorbSet"/>
+        <CaseArray Effect="ArcaneEruptionDamage"/>
+    </CEffectSwitch>
+    <CEffectSwitch id="SpellAbsorbCheckPermafrost">
+        <CaseArray Validator="TargetHasSpellAbsorb" Effect="SpellAbsorbSet"/>
+        <CaseArray Effect="PermafrostTrigger"/>
+    </CEffectSwitch>
+    <CEffectSwitch id="SpellAbsorbCheckShadowCloak">
+        <CaseArray Validator="TargetHasSpellAbsorb" Effect="SpellAbsorbSet"/>
+        <CaseArray Effect="ShadowCloakImpactSet"/>
+    </CEffectSwitch>
+    <CEffectSwitch id="SpellAbsorbCheckTrollSpikes">
+        <CaseArray Validator="TargetHasSpellAbsorb" Effect="SpellAbsorbSet"/>
+        <CaseArray Effect="TrollGroundSpikeSetSecond"/>
+    </CEffectSwitch>
+    <CEffectSwitch id="SpellAbsorbCheckSiphonLife">
+        <CaseArray Validator="TargetHasSpellAbsorb" Effect="SpellAbsorbSet"/>
+        <CaseArray Effect="SiphonLifeTrigger"/>
+    </CEffectSwitch>
+    <CEffectSwitch id="SpellAbsorbCheckAfflictionSpread">
+        <CaseArray Validator="TargetHasSpellAbsorb" Effect="SpellAbsorbSet"/>
+        <CaseArray Effect="AfflictionApply2"/>
+    </CEffectSwitch>
+    <CEffectSwitch id="SpellAbsorbCheckClairvoyance">
+        <CaseArray Validator="TargetHasSpellAbsorb" Effect="SpellAbsorbSet"/>
+        <CaseArray Effect="ClairvoyanceTargetSet"/>
+    </CEffectSwitch>
+    <CEffectSwitch id="SpellAbsorbCheckMurlocCharge">
+        <CaseArray Validator="TargetHasSpellAbsorb" Effect="SpellAbsorbSet"/>
+        <CaseArray Effect="MurlocRushTrampleSetSecond"/>
+    </CEffectSwitch>
+    <CEffectApplyBehavior id="SpellAbsorbCooldownApply">
+        <Behavior value="SpellAbsorbCooldown"/>
+    </CEffectApplyBehavior>
+    <CEffectSwitch id="SpellAbsorbCheckAffliction">
+        <CaseArray Validator="TargetHasSpellAbsorb" Effect="SpellAbsorbSet"/>
+        <CaseArray Effect="AfflictionApply"/>
+    </CEffectSwitch>
+    <CEffectRemoveBehavior id="SpellAbsorbRemove">
+        <BehaviorLink value="SpellAbsorb"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="SpellAbsorbSet">
+        <EffectArray value="SpellAbsorbRemove"/>
+        <EffectArray value="SpellAbsorbCooldownApply"/>
+    </CEffectSet>
+    <CEffectDamage id="RepeaterStats">
+        <EditorCategories value=""/>
+        <Amount value="10"/>
+    </CEffectDamage>
+    <CEffectSet id="TombGuardianShout"/>
+    <CEffectLaunchMissile id="TrebuchetLaunchUnit">
+        <ImpactLocation Value="TargetUnitOrPoint"/>
+        <ImpactEffect value="TrebuchetSetUnit"/>
+        <AmmoUnit value="TrebuchetProjectile"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="TrebuchetDamageUnit" parent="DU_WEAP">
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <AttributeBonus index="Structure" value="200"/>
+        <Kind value="Ranged"/>
+        <KindSplash value="Ranged"/>
+        <Amount value="100"/>
+        <AreaArray Radius="1" Fraction="1"/>
+        <AreaArray Radius="1.75" Fraction="0.66"/>
+        <AreaArray Radius="2.5" Fraction="0.33"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Ground;Ally,Missile,Item,Stasis,Dead,Hidden,Invulnerable"/>
+        <ArmorReduction value="0"/>
+        <Random value="100"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="TrebuchetSearchUnit">
+        <SearchFilters value="Ground;Ally,Missile,Item,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="2.5" Effect="SiegeDamage"/>
+    </CEffectEnumArea>
+    <CEffectSet id="TrebuchetSetUnit">
+        <EffectArray value="TrebuchetDamageUnit"/>
+        <EffectArray value="TrebuchetSearchUnit"/>
+        <TargetLocationType value="UnitOrPoint"/>
+    </CEffectSet>
+    <CEffectSwitch id="TrebuchetTargetTypeSwitch">
+        <CaseArray Validator="IsStructure" Effect="TrebuchetLaunchStructure"/>
+        <CaseArray Effect="TrebuchetLaunchUnit"/>
+    </CEffectSwitch>
+    <CEffectSet id="TrollGroundSpikeSetSecond">
+        <EditorCategories value=""/>
+        <EffectArray value="TrollGroundSpikeDamage"/>
+        <EffectArray value="TrollGroundSpikeDazedApply"/>
+        <EffectArray value="TrollGroundSpikeDebuffApply"/>
+    </CEffectSet>
+    <CEffectSwitch id="TwinThrowingAxesAlternate">
+        <CaseArray Validator="ThrowAlternate" Effect="TwinThrowingAxesSetLeft"/>
+        <CaseArray Effect="TwinThrowingAxesSetRight"/>
+    </CEffectSwitch>
+    <CEffectApplyBehavior id="TwinThrowingAxesAlternateApply">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="TwinThrowingAxesAlternate"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="TwinThrowingAxesAlternateRemove">
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="TwinThrowingAxesAlternate"/>
+    </CEffectRemoveBehavior>
+    <CEffectDamage id="TwinThrowingAxesDamageLeft" parent="DU_WEAP">
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="20"/>
+    </CEffectDamage>
+    <CEffectSet id="TwinThrowingAxesImpactSetLeft">
+        <EditorCategories value=""/>
+        <EffectArray value="AttackItemProcsSetBeforeDamage"/>
+        <EffectArray value="TwinThrowingAxesDamageLeft"/>
+        <EffectArray value="AttackItemProcsSetRanged"/>
+    </CEffectSet>
+    <CEffectLaunchMissile id="TwinThrowingAxesLaunchLeft">
+        <ImpactEffect value="TwinThrowingAxesImpactSetLeft"/>
+        <AmmoUnit value="TwinThrowingAxeMissile"/>
+        <Movers Link="TwinThrowingAxesMover"/>
+    </CEffectLaunchMissile>
+    <CEffectSet id="TwinThrowingAxesSetRight">
+        <EffectArray value="TwinThrowingAxesLaunchRight"/>
+        <EffectArray value="TwinThrowingAxesAlternateApply"/>
+    </CEffectSet>
+    <CEffectSet id="TwinThrowingAxesSetLeft">
+        <EffectArray value="TwinThrowingAxesLaunchLeft"/>
+        <EffectArray value="TwinThrowingAxesAlternateRemove"/>
+    </CEffectSet>
+    <CEffectCreateUnit id="UnpackTrebuchet">
+        <WhichLocation Value="TargetPoint"/>
+        <CreateFlags index="DropOff" value="0"/>
+        <CreateFlags index="ProvideFood" value="0"/>
+        <CreateFlags index="SetFacing" value="1"/>
+        <CreateFlags index="UseFood" value="0"/>
+        <SpawnUnit value="Trebuchet"/>
+        <SpawnRange value="2"/>
+    </CEffectCreateUnit>
+    <CEffectApplyBehavior id="InfirmaryApply">
+        <ValidatorArray index="0" value="TargetIsKobold"/>
+        <EditorCategories value=""/>
+        <Behavior value="InfirmaryRegen"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="InfirmarySearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="Biological;Neutral,Enemy,Missile,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="10" Effect="InfirmaryApply"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="GroundskeeperSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="Armored;Player,Ally,Enemy"/>
+        <AreaArray Radius="10" Effect="GroundskeeperAcceleratedGrowthApply"/>
+    </CEffectEnumArea>
+    <CEffectSet id="GroundskeeperSet">
+        <EditorCategories value=""/>
+        <EffectArray value="GroundskeeperSpikeTrapPlacingApply"/>
+    </CEffectSet>
+    <CEffectSet id="GroundskeeperSpikeTrapPlace">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="GroundskeeperSpikeTrapPlacingApply">
+        <ValidatorArray index="0" value="GroundskeeperNotPlacingTrap"/>
+        <EditorCategories value=""/>
+        <Behavior value="GroundskeeperSpikeTrapPlacing"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="MunitionsSquadBonusAmmoApply">
+        <ValidatorArray index="0" value="TargetIsADT"/>
+        <ValidatorArray value="IsNotConstructing"/>
+        <Behavior value="MunitionsSquadBonusAmmo"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="MunitionsSquadBonusAmmoSearch">
+        <SearchFilters value="Structure;Neutral,Enemy,Missile,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="10" Effect="MunitionsSquadBonusAmmoApply"/>
+    </CEffectEnumArea>
+    <CEffectDamage id="MurlocMilitiaJavelinDamage" parent="DU_WEAP">
+        <ValidatorArray value="AttackTargetValidator"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Amount value="11"/>
+    </CEffectDamage>
+    <CEffectSet id="MurlocMilitiaIntelligenceTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="TrebuchetLaunchSet">
+        <EditorCategories value=""/>
+        <EffectArray value="TrebuchetTargetTypeSwitch"/>
+        <EffectArray value="TrebuchetLoadedRemoveAddonStone"/>
+        <EffectArray value="RemoveLoaded"/>
+        <ValidatorArray value="TargetIsNotInArena"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="RemoveLoaded">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectLaunchMissile id="TrebuchetLaunchStructure">
+        <ImpactEffect value="TrebuchetSetStructure"/>
+        <AmmoUnit value="TrebuchetProjectile"/>
+    </CEffectLaunchMissile>
+    <CEffectSet id="RemoveLoadedSet">
+        <EditorCategories value=""/>
+        <EffectArray value="TrebuchetLoadedRemoveStone"/>
+    </CEffectSet>
+    <CEffectDamage id="TrebuchetDamageStructure" parent="DU_WEAP">
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <AttributeBonus index="Structure" value="200"/>
+        <Kind value="Ranged"/>
+        <KindSplash value="Ranged"/>
+        <Amount value="100"/>
+        <AreaArray Radius="1" Fraction="1"/>
+        <AreaArray Radius="1.75" Fraction="0.66"/>
+        <AreaArray Radius="2.5" Fraction="0.33"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="Ground;Ally,Missile,Item,Stasis,Dead,Hidden,Invulnerable"/>
+        <ArmorReduction value="0"/>
+        <Random value="100"/>
+    </CEffectDamage>
+    <CEffectIssueOrder id="StopSelf">
+        <WhichUnit Value="Caster"/>
+        <Abil value="stop"/>
+    </CEffectIssueOrder>
+    <CEffectDamage id="SelfRessTime">
+        <Amount value="10"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="StructureDeathAnimationMassiveApply">
+        <ValidatorArray index="0" value="CasterNoHasStructureDeathAnimationMassive"/>
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="StructureDeathAnimationMassive"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="StructureDeathDustMassive">
+        <InitialEffect value="StructureDeathDustSpawnMassive"/>
+        <PeriodCount value="20"/>
+        <PeriodicEffectArray value="StructureDeathDustSpawnMassive"/>
+        <PeriodicPeriodArray value="0.5"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="TrebuchetSearchStructure">
+        <SearchFilters value="Ground;Ally,Missile,Item,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="2.5" Effect="SiegeDamage"/>
+    </CEffectEnumArea>
+    <CEffectLaunchMissile id="MurlocMilitiaJavelinLaunch">
+        <ImpactEffect value="MurlocMilitiaJavelinDamage"/>
+        <AmmoUnit value="ViciousSpearMissile"/>
+        <Movers Link="PunisherGrenadesWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="TwinThrowingAxesDamageRight" parent="DU_WEAP">
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="20"/>
+    </CEffectDamage>
+    <CEffectRemoveBehavior id="TrebuchetLoadedRemoveAddonStone">
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="TrebuchetLoadedAddonStone"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="TrebuchetSetStructure">
+        <EffectArray value="TrebuchetDamageStructure"/>
+        <EffectArray value="TrebuchetSearchStructure"/>
+        <TargetLocationType value="UnitOrPoint"/>
+    </CEffectSet>
+    <CEffectRemoveBehavior id="TrebuchetLoadedRemoveStone">
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="TrebuchetLoadedStone"/>
+    </CEffectRemoveBehavior>
+    <CEffectLaunchMissile id="TwinThrowingAxesLaunchRight">
+        <ImpactEffect value="TwinThrowingAxesImpactSetRight"/>
+        <AmmoUnit value="TwinThrowingAxeMissile"/>
+        <Movers Link="TwinThrowingAxesMover"/>
+    </CEffectLaunchMissile>
+    <CEffectApplyBehavior id="TrebuchetLoadedStoneApply">
+        <EditorCategories value=""/>
+        <Behavior value="TrebuchetLoadedStone"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="TwinThrowingAxesImpactSetRight">
+        <EditorCategories value=""/>
+        <EffectArray value="AttackItemProcsSetBeforeDamage"/>
+        <EffectArray value="TwinThrowingAxesDamageRight"/>
+        <EffectArray value="AttackItemProcsSetRanged"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="GoldenPolearmAddonApply">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="GoldenPolearmAddon"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="WarHornApply">
+        <ValidatorArray index="0" value="TargetIsKobold"/>
+        <EditorCategories value=""/>
+        <Behavior value="WarHorn"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="WarHornSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="Biological;Neutral,Enemy,Missile,Dead,Invulnerable"/>
+        <AreaArray Radius="10" Effect="WarHornApply"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="WarlordSpikesCast">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="WarlordSpikesSet">
+        <EditorCategories value=""/>
+        <EffectArray value="WarlordSpikesCast"/>
+        <EffectArray value="TrollGroundSpikeTrigger"/>
+    </CEffectSet>
+    <CEffectDamage id="WatchTowerAmmoMax">
+        <Amount value="20"/>
+    </CEffectDamage>
+    <CEffectSet id="WatchTowerAttackAlert">
+        <ValidatorArray value="TargetIsEnemy"/>
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectDamage id="BallistaDamage" parent="DU_WEAP">
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="125"/>
+    </CEffectDamage>
+    <CEffectSet id="WatchTowerDamagedAlert">
+        <ValidatorArray value="TargetIsEnemy"/>
+        <ValidatorArray value="CasterLifeLT50Percent"/>
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="WatchTowerDeathSound">
+        <EditorCategories value=""/>
+        <TargetLocationType value="Point"/>
+    </CEffectSet>
+    <CEffectCreatePersistent id="StructureDeathSoundMassivePersistent">
+        <InitialEffect value="StructureDeathSoundMassive"/>
+        <PeriodCount value="10"/>
+        <PeriodicEffectArray value="StructureDeathSoundMassive"/>
+        <PeriodicPeriodArray value="1"/>
+    </CEffectCreatePersistent>
+    <CEffectSet id="StructureDeathDustSpawnMassive">
+        <EditorCategories value=""/>
+        <TargetLocationType value="Point"/>
+    </CEffectSet>
+    <CEffectSet id="StructureDeathSoundMassive">
+        <EditorCategories value=""/>
+        <TargetLocationType value="Point"/>
+    </CEffectSet>
+    <CEffectLaunchMissile id="WatchTowerLaunchMissile">
+        <EditorCategories value="Race:Terran"/>
+        <ImpactEffect value="WatchTowerSet"/>
+        <AmmoUnit value="AutomatedDefenseTurretProjectile"/>
+        <Movers Link="WatchTowerArrowMover"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="WatchTowerDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="35"/>
+    </CEffectDamage>
+    <CEffectDamage id="BeerCost">
+        <Amount value="6"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="BallistaLaunchMissile">
+        <EditorCategories value="Race:Terran"/>
+        <ImpactEffect value="BallistaImpactSet"/>
+        <AmmoUnit value="BallistaMissile"/>
+        <Movers Link="WatchTowerArrowMover"/>
+        <ValidatorArray index="0" value="TargetIsNotInArena"/>
+    </CEffectLaunchMissile>
+    <CEffectSet id="WatchTowerSet">
+        <EditorCategories value=""/>
+        <EffectArray value="WatchTowerDamage"/>
+        <EffectArray value="AICombatTriggerSet"/>
+    </CEffectSet>
+    <CEffectDamage id="RoastedLambCost">
+        <Amount value="5"/>
+    </CEffectDamage>
+    <CEffectDamage id="DirewolfBiteDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Amount value="10"/>
+    </CEffectDamage>
+    <CEffectSet id="CollectorRequirement">
+        <ValidatorArray value="CollectorValidator"/>
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectEnumArea id="DreadplateArmorFearSearch">
+        <ValidatorArray value="TargetIsEnemy"/>
+        <ValidatorArray value="CasterLifeLT30Percent"/>
+        <ImpactLocation Value="CasterUnit"/>
+        <SearchFilters value="Biological;Player,Ally,Structure,Heroic,Missile,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="8" Effect="DreadplateArmorFearApply"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="DreadplateArmorFearTriggerApply">
+        <EditorCategories value=""/>
+        <Behavior value="DreadplateArmorFearTrigger"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="DreadplateArmorFearTriggerRemove">
+        <EditorCategories value=""/>
+        <BehaviorLink value="DreadplateArmorFearTrigger"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectDamage id="KillWithDamage">
+        <EditorCategories value=""/>
+        <Amount value="80000"/>
+    </CEffectDamage>
+    <CEffectSet id="HunterRequirement">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="KoboldAttackSlashSet">
+        <ValidatorArray value="AttackTargetValidator"/>
+        <EditorCategories value=""/>
+        <EffectArray value="AttackItemProcsSetBeforeDamage"/>
+        <EffectArray value="MeleeDamage"/>
+        <EffectArray value="SturdyWoodenStickSlowApply"/>
+        <EffectArray value="SharpIronPickaxeBleed2"/>
+        <EffectArray value="MurlocDoomhammerAttackSet"/>
+        <EffectArray value="AttackItemProcsSetMelee"/>
+    </CEffectSet>
+    <CEffectIssueOrder id="MurlocRebelAttack">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Abil value="attack"/>
+        <Target Value="TargetUnit"/>
+    </CEffectIssueOrder>
+    <CEffectEnumArea id="MurlocRebelSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Player,Ally,Neutral,Missile,Item,Cloaked,Dead,Hidden,Invulnerable"/>
+        <TargetSorts>
+            <SortArray value="TSRandom"/>
+        </TargetSorts>
+        <AreaArray Radius="8" Effect="MurlocRebelSet"/>
+    </CEffectEnumArea>
+    <CEffectModifyUnit id="CravensFishStickerEnergyDrain">
+        <ImpactUnit Value="Caster"/>
+        <VitalArray index="Energy" Change="-2"/>
+    </CEffectModifyUnit>
+    <CEffectSet id="CravensFishStickerImpactSetExplosive">
+        <EditorCategories value=""/>
+        <EffectArray value="AttackItemProcsSetBeforeDamage"/>
+        <EffectArray value="CravensFishStickerDamageExplosive"/>
+        <EffectArray value="AttackItemProcsSetRanged"/>
+    </CEffectSet>
+    <CEffectLaunchMissile id="CravensFishStickerLMExplosive">
+        <ImpactEffect value="CravensFishStickerImpactSetExplosive"/>
+        <AmmoUnit value="BoltExplosive"/>
+        <Movers Link="PunisherGrenadesWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectSet id="CravensFishStickerLaunchSetExplosive">
+        <EditorCategories value=""/>
+        <EffectArray value="CravensFishStickerEnergyDrain"/>
+        <EffectArray value="CravensFishStickerLMExplosive"/>
+    </CEffectSet>
+    <CEffectSwitch id="CravensFishStickerLaunchSwitch">
+        <EditorCategories value=""/>
+        <CaseArray Validator="CasterGE50PercentEnergy" Effect="CravensFishStickerLaunchSetExplosive"/>
+        <CaseArray Effect="CravensFishStickerLM"/>
+    </CEffectSwitch>
+    <CEffectSet id="FishingLine">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="FishingRodSet">
+        <EditorCategories value=""/>
+        <TargetLocationType value="Point"/>
+        <ValidatorArray value="CasterHasFishingEquipment"/>
+        <ValidatorArray value="FishingMinimumRange"/>
+        <ValidatorArray value="CasterIsNotFishing"/>
+    </CEffectSet>
+    <CEffectSet id="FishingSuccess">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="FishingTargetBob">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="GravesingersRodCooldownApply">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="GravesingersClawCooldown"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="GravesingersRodSummonApply">
+        <ValidatorArray index="0" value="CasterHasGravesingersRod"/>
+        <ValidatorArray value="IsBiological"/>
+        <EditorCategories value=""/>
+        <Behavior value="GravesingersClawDebuff"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="GravesingersRodSummonSet">
+        <ValidatorArray value="CasterHasNotGravesingersCooldown"/>
+        <EditorCategories value=""/>
+        <EffectArray value="SummonGhoul"/>
+        <EffectArray value="GravesingersRodCooldownApply"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="GravesingersClawActiveApply">
+        <EditorCategories value=""/>
+        <Behavior value="GravesingersClawActive"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="GravesingersClawActiveRemove">
+        <EditorCategories value=""/>
+        <BehaviorLink value="GravesingersClawActive"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="MurlocRebelSet">
+        <EffectArray value="MurlocRebelAttack"/>
+        <EffectArray value="CowerApply"/>
+        <EffectArray value="SlavemasterRequirement"/>
+        <ValidatorArray value="CasterNotAttacking"/>
+    </CEffectSet>
+    <CEffectSet id="MysteriousArcaneRitualFinish">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="NecromancersNecklaceSet">
+        <EffectArray value="UpdateCombatStats"/>
+        <EffectArray value="CollectorRequirement"/>
+    </CEffectSet>
+    <CEffectSet id="ConjurersCharmSet">
+        <EffectArray value="UpdateCombatStats"/>
+        <EffectArray value="CollectorRequirement"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="PetDodging05Sec">
+        <EditorCategories value=""/>
+        <Behavior value="PetDodging"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="1"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="RepeatingCrossbowDamageNoProc" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="20"/>
+    </CEffectDamage>
+    <CEffectSet id="RepeatingCrossbowImpactSetNoProc">
+        <EditorCategories value=""/>
+        <EffectArray value="RepeatingCrossbowDamageNoProc"/>
+        <EffectArray value="AICombatTriggerSet"/>
+    </CEffectSet>
+    <CEffectLaunchMissile id="RepeatingCrossbowLaunchMissileNoProc">
+        <EditorCategories value="Race:Terran"/>
+        <ImpactEffect value="RepeatingCrossbowImpactSetNoProc"/>
+        <AmmoUnit value="GenericWoodenBolt"/>
+        <Movers Link="PunisherGrenadesWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectEnumArea id="RepeatingCrossbowSearch">
+        <EditorCategories value=""/>
+        <ImpactLocation Value="SourceUnit"/>
+        <SearchFilters value="Visible;Self,Player,Ally,Missile,Dead,Hidden,Invulnerable"/>
+        <TargetSorts>
+            <SortArray value="TSRandom"/>
+        </TargetSorts>
+        <AreaArray Arc="45" Radius="8" Effect="RepeatingCrossbowLaunchMissile"/>
+        <MaxCount value="1"/>
+    </CEffectEnumArea>
+    <CEffectCreatePersistent id="RepeatingCrossbowPersistent">
+        <EditorCategories value=""/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="RepeatingCrossbowSearch"/>
+        <PeriodicPeriodArray value="0.1875"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="RepeatingCrossbowRootApply">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="RepeatingCrossbowRoot"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="SlavemasterRequirement">
+        <ValidatorArray value="SlavemasterValidator"/>
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectDamage id="StatsFireAmmonite">
+        <AttributeBonus index="Armored" value="45"/>
+        <AttributeBonus index="Biological" value="20"/>
+        <AttributeBonus index="Heroic" value="60"/>
+    </CEffectDamage>
+    <CEffectDamage id="StatsBlindRainfish">
+        <AttributeBonus index="Armored" value="35"/>
+        <AttributeBonus index="Biological" value="10"/>
+    </CEffectDamage>
+    <CEffectDamage id="StatsGoldenHauberkHeal">
+        <Amount value="20"/>
+    </CEffectDamage>
+    <CEffectDamage id="StatsMasterStrength">
+        <Amount value="16"/>
+    </CEffectDamage>
+    <CEffectDamage id="StatsWaterScorpion">
+        <AttributeBonus index="Armored" value="450"/>
+        <AttributeBonus index="Biological" value="100"/>
+    </CEffectDamage>
+    <CEffectDamage id="StatsStripedLurker">
+        <AttributeBonus index="Armored" value="30"/>
+        <AttributeBonus index="Biological" value="30"/>
+    </CEffectDamage>
+    <CEffectDamage id="StatsHighlandGuppy">
+        <AttributeBonus index="Armored" value="60"/>
+        <AttributeBonus index="Biological" value="20"/>
+    </CEffectDamage>
+    <CEffectDamage id="StatsGiantSunfish">
+        <AttributeBonus index="Armored" value="60"/>
+        <AttributeBonus index="Biological" value="50"/>
+    </CEffectDamage>
+    <CEffectDamage id="StatsForestTrout">
+        <AttributeBonus index="Armored" value="50"/>
+        <AttributeBonus index="Biological" value="50"/>
+        <AttributeBonus index="Heroic" value="35"/>
+    </CEffectDamage>
+    <CEffectDamage id="StatsAlbinoCavefish">
+        <AttributeBonus index="Armored" value="100"/>
+        <AttributeBonus index="Biological" value="80"/>
+    </CEffectDamage>
+    <CEffectDamage id="StatsSlipperyEel">
+        <AttributeBonus index="Armored" value="75"/>
+        <AttributeBonus index="Biological" value="30"/>
+    </CEffectDamage>
+    <CEffectDamage id="FishingTargetEnd">
+        <ImpactLocation Value="SourceUnit"/>
+        <Flags index="Kill" value="1"/>
+    </CEffectDamage>
+    <CEffectDamage id="StatsJewelDanio">
+        <AttributeBonus index="Armored" value="40"/>
+        <AttributeBonus index="Biological" value="60"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="StormwizardsRobesSearch">
+        <SearchFilters value="Visible;Player,Ally,Missile,Item,Cloaked,Dead,Hidden,Invulnerable"/>
+        <TargetSorts>
+            <SortArray value="TSRandom"/>
+        </TargetSorts>
+        <AreaArray Radius="8" Effect="StormwizardsRobesSet"/>
+        <MaxCount value="1"/>
+        <Chance value="0.25"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="StormwizardsRobesApply">
+        <Behavior value="StormwizardsRobesImmunity"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="StormwizardsRobesDamage">
+        <Amount value="10"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Flags index="Notification" value="1"/>
+    </CEffectDamage>
+    <CEffectSet id="StormwizardsRobesSet">
+        <ValidatorArray value="TargetTreeIsNotGrowing"/>
+        <ValidatorArray value="StormwizardsRobesCooldown"/>
+        <ValidatorArray value="TargetIsNotWizard"/>
+        <EffectArray value="StormwizardsRobesDamage"/>
+        <EffectArray value="StormwizardsRobesApply"/>
+    </CEffectSet>
+    <CEffectRemoveBehavior id="StripedLurkerRemoveInvisibility">
+        <EditorCategories value=""/>
+        <BehaviorLink value="StripedLurkerInvisibility"/>
+    </CEffectRemoveBehavior>
+    <CEffectApplyBehavior id="StructureDeathAnimationLargeApply">
+        <ValidatorArray index="0" value="CasterNoHasStructureDeathAnimationLarge"/>
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="StructureDeathAnimationLarge"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="StructureDeathDustLarge">
+        <InitialEffect value="StructureDeathDustSpawnLarge"/>
+        <PeriodCount value="6"/>
+        <PeriodicEffectArray value="StructureDeathDustSpawnLarge"/>
+        <PeriodicPeriodArray value="0.5"/>
+    </CEffectCreatePersistent>
+    <CEffectCreatePersistent id="StructureDeathDustMedium">
+        <InitialEffect value="StructureDeathDustSpawnMedium"/>
+        <PeriodCount value="4"/>
+        <PeriodicEffectArray value="StructureDeathDustSpawnMedium"/>
+        <PeriodicPeriodArray value="0.5"/>
+    </CEffectCreatePersistent>
+    <CEffectSet id="StructureDeathDustSpawnLarge">
+        <EditorCategories value=""/>
+        <TargetLocationType value="Point"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="StructureDeathAnimationMediumApply">
+        <ValidatorArray index="0" value="CasterNoHasStructureDeathAnimationMedium"/>
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="StructureDeathAnimationMedium"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="StructureDeathAnimationSmallApply">
+        <ValidatorArray index="0" value="CasterNoHasStructureDeathAnimationSmall"/>
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="StructureDeathAnimationSmall"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="StructureDeathDustSmall">
+        <InitialEffect value="StructureDeathDustSpawnSmall"/>
+        <PeriodCount value="3"/>
+        <PeriodicEffectArray value="StructureDeathDustSpawnSmall"/>
+        <PeriodicPeriodArray value="0.5"/>
+    </CEffectCreatePersistent>
+    <CEffectSet id="StructureDeathDustSpawnMedium">
+        <EditorCategories value=""/>
+        <TargetLocationType value="Point"/>
+    </CEffectSet>
+    <CEffectSet id="StructureDeathDustSpawnSmall">
+        <EditorCategories value=""/>
+        <TargetLocationType value="Point"/>
+    </CEffectSet>
+    <CEffectCreateUnit id="SummonGhoul">
+        <EditorCategories value=""/>
+        <CreateFlags index="Birth" value="0"/>
+        <CreateFlags index="DropOff" value="0"/>
+        <CreateFlags index="OffsetByRadius" value="0"/>
+        <CreateFlags index="Placement" value="0"/>
+        <CreateFlags index="PlacementIgnoreBlockers" value="1"/>
+        <CreateFlags index="ProvideFood" value="0"/>
+        <CreateFlags index="UseFood" value="0"/>
+        <SpawnUnit value="Ghoul"/>
+    </CEffectCreateUnit>
+    <CEffectDamage id="SynergyBeam">
+        <EditorCategories value=""/>
+    </CEffectDamage>
+    <CEffectDamage id="SynergyBeamSmall">
+        <EditorCategories value=""/>
+    </CEffectDamage>
+    <CEffectSet id="SynergyImpact">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="TetherTrigger">
+        <ValidatorArray value="TargetIsKobold"/>
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="TheKingsSpeechApply">
+        <ValidatorArray index="0" value="TargetNotFearImmune"/>
+        <EditorCategories value=""/>
+        <Behavior value="Fear"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="2"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="TheKingsSpeechSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="Biological;Player,Ally,Structure,Missile,Cloaked,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="4" Effect="TheKingsSpeechApply"/>
+    </CEffectEnumArea>
+    <CEffectDamage id="StagFoodStats">
+        <EditorCategories value=""/>
+        <AttributeBonus index="Armored" value="50"/>
+        <AttributeBonus index="Biological" value="20"/>
+        <AttributeBonus index="Mechanical" value="40"/>
+        <AttributeBonus index="Massive" value="30"/>
+        <AttributeBonus index="Hover" value="100"/>
+        <AttributeBonus index="Heroic" value="15"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="LiquidatorSpelbladePassiveApply">
+        <EditorCategories value=""/>
+        <Behavior value="LiquidatorSpellbladeActive"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="LiquidatorSpellbladePassiveRemove">
+        <EditorCategories value=""/>
+        <BehaviorLink value="LiquidatorSpellbladeActive"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="LiquidatorSpellbladeTrigger"/>
+    <CEffectEnumArea id="MoltenSphereSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Air,Missile,Item,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="2" Effect="SpellAbsorbCheckMoltenSphere"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="EmpoweredLightningApply">
+        <ValidatorArray index="0" value="TargetIsKobold"/>
+        <EditorCategories value=""/>
+        <Behavior value="EmpoweredLightning"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ArcaneEruption">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="EmpoweredLightningApplySound">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectDamage id="EmpoweredLightningDamage">
+        <EditorCategories value=""/>
+        <Amount value="15"/>
+    </CEffectDamage>
+    <CEffectSet id="EmpoweredLightningInitialSet">
+        <EditorCategories value=""/>
+        <EffectArray value="EmpoweredLightningApplySound"/>
+        <EffectArray value="UpdateCombatStats"/>
+    </CEffectSet>
+    <CEffectLaunchMissile id="EmpoweredLightningLM">
+        <EditorCategories value=""/>
+        <ImpactLocation Value="TargetPoint"/>
+        <LaunchOffset value="0,0,2"/>
+        <ImpactEffect value="EmpoweredLightningPersistent"/>
+        <AmmoUnit value="EmpoweredLightningMissile"/>
+    </CEffectLaunchMissile>
+    <CEffectSet id="EmpoweredLightningSet">
+        <EditorCategories value=""/>
+        <EffectArray value="EmpoweredLightningApply"/>
+        <EffectArray value="EmpoweredLightningDamage"/>
+        <EffectArray value="EnergyDrainRemove"/>
+        <ValidatorArray value="TargetIsNotUnstableAnomaly"/>
+        <ValidatorArray value="TargetIsNotRAB"/>
+        <ValidatorArray value="TargetIsNotWizard"/>
+    </CEffectSet>
+    <CEffectCreatePersistent id="EmpoweredLightningPersistent">
+        <EditorCategories value=""/>
+        <PeriodCount value="15"/>
+        <PeriodicEffectArray value="EmpoweredLightningSearch"/>
+        <PeriodicPeriodArray value="1"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="EmpoweredLightningSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Self,Missile,Item,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="2" Effect="EmpoweredLightningSet"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="EnergyBoostApply">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="EnergyBoost"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="EnergyDrainRemove">
+        <EditorCategories value=""/>
+        <BehaviorLink value="EnergyDrain"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="EnergyDrainSet">
+        <ValidatorArray value="TargetIsKobold"/>
+        <ValidatorArray value="TargetHasNoEmpoweredLightning"/>
+        <EditorCategories value=""/>
+        <EffectArray value="EnergyDrain"/>
+        <EffectArray value="EnergyBoostApply"/>
+    </CEffectSet>
+    <CEffectSet id="FirestormContinuousSoundEnd">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="FirestormContinuousSoundStart">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="FrightenWolvesAndBears">
+        <ValidatorArray value="TargetIsBearOrWolfAny"/>
+        <ValidatorArray value="TargetIsNotTamed"/>
+        <ValidatorArray value="TargetAfraidOfFire"/>
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectDamage id="LightningCloudDamage">
+        <EditorCategories value=""/>
+        <Amount value="10"/>
+        <ValidatorArray value="TargetIsNotUnstableAnomaly"/>
+        <ValidatorArray value="TargetIsNotRAB"/>
+    </CEffectDamage>
+    <CEffectSet id="SpellbreakerImpact">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="SpellbreakerTrigger">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="SpellbreakerTriggerSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Player,Ally,Structure,Missile,Item,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="8" Effect="SpellbreakerTrigger"/>
+    </CEffectEnumArea>
+    <CEffectSet id="StagEvasionTrigger">
+        <EditorCategories value=""/>
+        <ValidatorArray value="StagNotMadDash"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="StagInjuredAlert">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="AntlersExpire">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="TrollGroundSpikeSeek">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="TrollGroundSpikePeak">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="BearSprintTrigger">
+        <ValidatorArray value="TargetIsBearAny"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="UnstableAnomalyStun">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="UnstableAnomalySet">
+        <EditorCategories value=""/>
+        <EffectArray value="UnstableAnomalyZapDamage"/>
+        <EffectArray value="UnstableAnomalyStun"/>
+    </CEffectSet>
+    <CEffectDamage id="UnstableAnomalyZapDamage">
+        <EditorCategories value=""/>
+        <Amount value="10"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="LightningCloudSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Self,Missile,Cloaked,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="6" Effect="LightningCloudDamage"/>
+        <MaxCount value="1"/>
+    </CEffectEnumArea>
+    <CEffectDamage id="ArcaneEruptionDamage">
+        <EditorCategories value=""/>
+        <Amount value="50"/>
+    </CEffectDamage>
+    <CEffectSet id="ArcaneEruptionTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectRemoveBehavior id="AristocratRequirementRemove">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="AristocratRequirement"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectApplyBehavior id="ArmorShredApply">
+        <EditorCategories value=""/>
+        <Behavior value="ArmorShred"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="Artisan25LumberCost">
+        <EditorCategories value=""/>
+        <AttributeBonus index="Armored" value="2"/>
+        <AttributeBonus index="Biological" value="3"/>
+        <AttributeBonus index="Heroic" value="2"/>
+    </CEffectDamage>
+    <CEffectDamage id="ArtisanGuildSchematicsCost">
+        <EditorCategories value=""/>
+        <Amount value="50"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="ArtisanshipRepairSearch">
+        <EditorCategories value="Race:Terran"/>
+        <SearchFilters value="Structure;Neutral,Enemy,Missile,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="6" Effect="ArtisanshipRepairTrigger"/>
+    </CEffectEnumArea>
+    <CEffectModifyUnit id="ArtisanshipRepairTrigger">
+        <ValidatorArray value="UnitHasNoBurning"/>
+        <ValidatorArray value="TargetLifeNotFull"/>
+        <ValidatorArray value="TargetNotDilapidated"/>
+        <ValidatorArray value="TargetNotSiegeDamage"/>
+        <ValidatorArray value="IsNotConstructing"/>
+        <EditorCategories value="Race:Terran"/>
+    </CEffectModifyUnit>
+    <CEffectSet id="AttackItemProcsSetMeleeExpanded">
+        <EditorCategories value=""/>
+        <EffectArray value="AICombatTriggerSet"/>
+        <EffectArray value="TriggeredAttackEffects"/>
+    </CEffectSet>
+    <CEffectSet id="AttackItemProcsSetMelee">
+        <EditorCategories value=""/>
+        <EffectArray value="SiphonLifeSet"/>
+        <EffectArray value="VengefulMurlocSkullDamage"/>
+        <EffectArray value="FelFlamesTrigger"/>
+        <EffectArray value="ShadowCloakSet"/>
+        <EffectArray value="BloodcleaverTrigger"/>
+        <EffectArray value="FrostNeedleTrigger"/>
+        <EffectArray value="AttackItemProcsSetMeleeExpanded"/>
+    </CEffectSet>
+    <CEffectSet id="AttackItemProcsSetRanged">
+        <EditorCategories value=""/>
+        <EffectArray value="SiphonLifeSet"/>
+        <EffectArray value="VengefulMurlocSkullDamage"/>
+        <EffectArray value="FelFlamesTrigger"/>
+        <EffectArray value="ShadowCloakSet"/>
+        <EffectArray value="AICombatTriggerSet"/>
+        <EffectArray value="TriggeredAttackEffects"/>
+    </CEffectSet>
+    <CEffectDamage id="AutogrowStat">
+        <EditorCategories value=""/>
+    </CEffectDamage>
+    <CEffectDamage id="AutomatedDefenseTurretCap">
+        <EditorCategories value=""/>
+        <Amount value="1"/>
+    </CEffectDamage>
+    <CEffectDamage id="BearMaulDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Amount value="10"/>
+    </CEffectDamage>
+    <CEffectSet id="BearAttackRoar">
+        <EditorCategories value=""/>
+        <Chance value="0.1"/>
+    </CEffectSet>
+    <CEffectSet id="BearBiteSet">
+        <EditorCategories value=""/>
+        <EffectArray value="BearMaulDamage"/>
+        <EffectArray value="BearSlackRemoveStacks"/>
+        <EffectArray value="BearAttackRoar"/>
+    </CEffectSet>
+    <CEffectDamage id="BearShamanWillpower">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/ForestingStats"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="BearSprintApply">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="AnimalRush"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="BirdLookingForNestFound">
+        <ValidatorArray value="TargetIsStorageHut"/>
+        <ValidatorArray value="TargetOutpostNoBird"/>
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="ClairvoyanceApply">
+        <ValidatorArray index="0" value="TargetIsKobold"/>
+        <EditorCategories value=""/>
+        <Behavior value="Clairvoyance"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="ClairvoyanceImpactSet">
+        <EditorCategories value=""/>
+        <EffectArray value="ClairvoyanceSearch"/>
+        <EffectArray value="ClairvoyancePersistent"/>
+        <TargetLocationType value="Point"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="ClairvoyanceNecromancerBonus">
+        <ValidatorArray index="0" value="CasterHasNecromancersNecklace"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="BirdLookingForNestSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="Structure;Missile,Dead,Hidden"/>
+        <AreaArray Radius="8" Effect="BirdLookingForNestFound"/>
+        <MaxCount value="1"/>
+    </CEffectEnumArea>
+    <CEffectSet id="ClairvoyanceTargetSet">
+        <EditorCategories value=""/>
+        <EffectArray value="ClairvoyanceApply"/>
+        <EffectArray value="ClairvoyanceNecromancerBonus"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="BirdScoutFind">
+        <ValidatorArray index="0" value="TargetIsKobold"/>
+        <ValidatorArray value="TargetNotStalked"/>
+        <EditorCategories value=""/>
+        <Behavior value="Stalked"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="BirdScoutSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="Visible;Player,Ally,Neutral,Dead"/>
+        <AreaArray Radius="10" Effect="BirdScoutFind"/>
+        <MaxCount value="1"/>
+    </CEffectEnumArea>
+    <CEffectSet id="BirdServiceExpire">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectDamage id="CelestialOrbHealAmount">
+        <EditorCategories value=""/>
+        <Amount value="10"/>
+    </CEffectDamage>
+    <CEffectSet id="CelestialOrbLaunchSet">
+        <EditorCategories value=""/>
+        <EffectArray value="CelestialOrbLM"/>
+        <EffectArray value="CelestialOrbSearch"/>
+    </CEffectSet>
+    <CEffectSet id="CelestialOrbHeal">
+        <ValidatorArray value="TargetLifeNotFull"/>
+        <ValidatorArray value="TargetIsWoundedWizardOrNotNeutral"/>
+        <ValidatorArray value="TargetHasNoCelestialOrbCooldown"/>
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectCreatePersistent id="EnableRun">
+        <EditorCategories value=""/>
+        <WhichLocation Value="SourceUnit"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffectArray value="UpdateCombatStats"/>
+        <PeriodicPeriodArray value="0.01"/>
+    </CEffectCreatePersistent>
+    <CEffectEnumArea id="CelestialOrbSearch">
+        <EditorCategories value=""/>
+        <ImpactLocation Value="CasterUnit"/>
+        <ExcludeArray Value="Source"/>
+        <SearchFilters value="Biological;Enemy,Structure,Missile,Dead,Hidden,Invulnerable"/>
+        <TargetSorts>
+            <SortArray value="TSLifeFraction"/>
+        </TargetSorts>
+        <AreaArray Radius="8" Effect="CelestialOrbHeal"/>
+        <MaxCount value="1"/>
+    </CEffectEnumArea>
+    <CEffectSet id="CowardlyArcherTrigger">
+        <ValidatorArray value="EnemiesInMeleeRange"/>
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectEnumArea id="DeathBoltSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Player,Ally,Missile,Dead,Hidden,Invulnerable"/>
+        <TargetSorts>
+            <SortArray value="TSDistance"/>
+        </TargetSorts>
+        <AreaArray Radius="0.5" Effect="DeathBowImpactSet"/>
+        <MaxCount value="1"/>
+    </CEffectEnumArea>
+    <CEffectDamage id="DeathBowDamage" parent="DU_WEAP">
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="50"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="AnnihilateLaunch">
+        <EditorCategories value="Race:Terran"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <ImpactOffset value="0,0,1"/>
+        <AmmoUnit value="AnnihilateProjectile"/>
+        <Movers Link="AnnihilateMover"/>
+        <DeathType value="Normal"/>
+        <LaunchOffset value="0,0,1"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="ArcanePulseDamage" parent="DU_WEAP">
+        <Kind value="Ranged"/>
+        <Amount value="25"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="EnergyDrain">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="EnergyDrainSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Player,Ally,Neutral,Structure,Item,Cloaked,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="10" Effect="EnergyDrainSet"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="AnnihilateApply">
+        <EditorCategories value=""/>
+        <Behavior value="Annihilate"/>
+        <ValidatorArray index="0" value="TargetIsNotAnnihilated"/>
+        <ValidatorArray value="TargetIsKobold"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="AnnihilateEnd">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="AnnihilateTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectEnumArea id="AnnihilateSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Self,Missile,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="1" Effect="AnnihilateDamage"/>
+        <ValidatorArray value="TargetIsNotRAB"/>
+    </CEffectEnumArea>
+    <CEffectSet id="LightLeatherShieldTrigger">
+        <ValidatorArray value="TargetIsKobold"/>
+    </CEffectSet>
+    <CEffectDamage id="AnnihilateDamage">
+        <EditorCategories value=""/>
+        <Amount value="10"/>
+        <ValidatorArray value="TargetIsNotUnstableAnomaly"/>
+        <ValidatorArray value="TargetIsNotWizard"/>
+    </CEffectDamage>
+    <CEffectSet id="LightningCloudSet">
+        <EditorCategories value=""/>
+        <Chance value="0.2"/>
+        <EffectArray value="LightningCloudSearch"/>
+    </CEffectSet>
+    <CEffectSet id="LightningCloudWander">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="FelFireTorchSet">
+        <EditorCategories value=""/>
+        <EffectArray value="LazyCozyKoboldApply"/>
+        <EffectArray value="FelFireTorchWardSearch"/>
+    </CEffectSet>
+    <CEffectDamage id="MasterRangersMailleStats">
+        <EditorCategories value=""/>
+    </CEffectDamage>
+    <CEffectEnumArea id="FelFireTorchWardSearch">
+        <ValidatorArray value="CasterIsNotCloaked"/>
+        <ValidatorArray value="NoFireWardNegator"/>
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Player,Ally,Structure,Missile,Item,Dead"/>
+        <AreaArray Radius="2" Effect="FrightenWolvesAndBears"/>
+    </CEffectEnumArea>
+    <CEffectLaunchMissile id="TrampleKnockback">
+        <ValidatorArray index="0" value="TargetIsPathable"/>
+        <LaunchLocation Value="CasterUnit"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <Flags index="2D" value="1"/>
+        <Flags index="Placement" value="1"/>
+        <Flags index="PlacementIgnoreBlockers" value="1"/>
+        <Flags index="PlacementIgnoreCliffTest" value="1"/>
+        <Movers Link="TrampleKnockback"/>
+        <DeathType value="Unknown"/>
+    </CEffectLaunchMissile>
+    <CEffectLaunchMissile id="LootFountainEffect">
+        <ValidatorArray index="0" removed="1"/>
+        <LaunchLocation Value="CasterUnit"/>
+        <ImpactLocation Value="TargetPoint"/>
+        <Flags index="2D" value="1"/>
+        <Flags index="PlacementIgnoreBlockers" value="1"/>
+        <Flags index="PlacementIgnoreCliffTest" value="1"/>
+        <Movers Link="LootFountainEffect"/>
+        <DeathType value="Unknown"/>
+    </CEffectLaunchMissile>
+    <CEffectCreatePersistent id="MysteriousShrineZapper">
+        <EditorCategories value=""/>
+        <PeriodCount value="7"/>
+        <PeriodicEffectArray value="MysteriousShrineZapSearch"/>
+        <PeriodicPeriodArray value="0.125"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="SavageSwordDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="50"/>
+    </CEffectDamage>
+    <CEffectSet id="DeathBowImpactSet">
+        <EditorCategories value=""/>
+        <EffectArray value="DeathBowDamage"/>
+        <EffectArray value="Suicide"/>
+    </CEffectSet>
+    <CEffectLaunchMissile id="DeathBowLaunchMissile">
+        <ImpactEffect value="DeathBowDamage"/>
+        <AmmoUnit value="DeathBolt"/>
+        <Movers Link="DeathBoltMover"/>
+        <ImpactLocation Value="TargetPoint"/>
+    </CEffectLaunchMissile>
+    <CEffectCreateUnit id="DemonwardSummon">
+        <EditorCategories value=""/>
+        <SpawnEffect value="DemonwardTimedLife"/>
+        <SpawnUnit value="InfernalMinion"/>
+        <SpawnCount value="2"/>
+    </CEffectCreateUnit>
+    <CEffectApplyBehavior id="DemonwardTimedLife">
+        <EditorCategories value=""/>
+        <Behavior value="PublicTimedLife"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="20"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="CelestialOrbDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="20"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="CelestialOrbLM">
+        <ValidatorArray index="0" value="AttackTargetValidator"/>
+        <EditorCategories value="Race:Terran"/>
+        <ImpactEffect value="CelestialOrbImpactSet"/>
+        <AmmoUnit value="CelestialOrbMissile"/>
+        <Movers Link="CelestialOrbWeaponMover"/>
+    </CEffectLaunchMissile>
+    <CEffectSet id="CelestialOrbImpactSet">
+        <EditorCategories value=""/>
+        <EffectArray value="AttackItemProcsSetBeforeDamage"/>
+        <EffectArray value="CelestialOrbDamage"/>
+        <EffectArray value="AttackItemProcsSetRanged"/>
+    </CEffectSet>
+    <CEffectRemoveBehavior id="GrowingTreeEnd">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="ForestConnection"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectDamage id="MagicalDamageDummy">
+        <EditorCategories value=""/>
+    </CEffectDamage>
+    <CEffectDamage id="MeleeDamageDummyNoText">
+        <EditorCategories value=""/>
+        <ArmorReduction value="1"/>
+        <Kind value="Melee"/>
+    </CEffectDamage>
+    <CEffectSet id="MiningFortitudeTrigger">
+        <ValidatorArray value="MiningFortitudePrecondition"/>
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectDamage id="MysteriousShrineZap">
+        <EditorCategories value=""/>
+        <Amount value="50"/>
+    </CEffectDamage>
+    <CEffectSet id="MysteriousShrineZapEnd">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectDamage id="RangedDamageDummy">
+        <EditorCategories value=""/>
+        <ArmorReduction value="1"/>
+        <Kind value="Melee"/>
+    </CEffectDamage>
+    <CEffectDamage id="RangedDamageDummyNoText">
+        <EditorCategories value=""/>
+        <ArmorReduction value="1"/>
+        <Kind value="Melee"/>
+    </CEffectDamage>
+    <CEffectSet id="UnstableAnomaly">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="UnstableAnomalySpawner">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="VeilShrineActiveExpire">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="VeilShrineEnergizedEnd">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="VeilShrineEnergizedStart">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="VeilShrineFlashBeamEnd">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectEnumArea id="MysteriousShrineZapSearch">
+        <EditorCategories value=""/>
+        <AreaArray Radius="8" Effect="MysteriousShrineZapSet"/>
+        <SearchFilters value="-;Structure,Missile,Dead,Hidden,Invulnerable"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="MysteriousShrineZapStun">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="MysteriousShrineZapSet">
+        <EditorCategories value=""/>
+        <EffectArray value="MysteriousShrineZap"/>
+        <EffectArray value="MysteriousShrineZapStun"/>
+        <ValidatorArray value="TargetIsKobold"/>
+        <ValidatorArray value="TargetIsNotZapped"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="VeilShrineFlashBeamStart">
+        <EditorCategories value=""/>
+        <Behavior value="VeilShrineFlashBeamBuff"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="SpikeTrapApplyBoss">
+        <ValidatorArray index="0" value="TargetIsNotSpiked"/>
+        <EditorCategories value=""/>
+        <Behavior value="SpikeTrapStun"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="0.75"/>
+    </CEffectApplyBehavior>
+    <CEffectSwitch id="SpikeTrapImpactSwitch">
+        <EditorCategories value=""/>
+        <CaseArray Validator="UnitIsNotHeroic" Effect="SpikeTrapApply"/>
+        <CaseArray Effect="SpikeTrapApplyBoss"/>
+    </CEffectSwitch>
+    <CEffectSet id="TriggeredAttackEffects"/>
+    <CEffectDamage id="MeleeDamageDummy">
+        <EditorCategories value=""/>
+        <ArmorReduction value="1"/>
+        <Kind value="Melee"/>
+    </CEffectDamage>
+    <CEffectRemoveBehavior id="IronBandedBucklerBlockerRemove2">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="IronBandedBucklerBlocker"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="IronBandedBucklerFinalSet">
+        <EditorCategories value=""/>
+        <EffectArray value="IronBandedBucklerBlockerRemove2"/>
+        <EffectArray value="IronBandedBucklerCooldownRemove"/>
+    </CEffectSet>
+    <!--Triggers when a nearby unit dies-->
+    <CEffectSet id="BloodcleaverTrigger">
+        <ValidatorArray value="CasterHasBloodcleaver"/>
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="CookingSound">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="CraftingSound">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="DiggingTruffles">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="DiggingTrufflesEnd">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="GatheringResourcesProgress">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="GenericUseItemApplyCooldown">
+        <ValidatorArray index="0" value="GenericUseItem"/>
+        <EditorCategories value=""/>
+        <Behavior value="GenericUseItemCooldown"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="GoldenHauberkTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="KoboldTestBuildApply">
+        <EditorCategories value=""/>
+        <Behavior value="KoboldTestBuild"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="KoboldTestBuildFacing">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="MurlocDoomhammerAttackSet">
+        <ValidatorArray value="UnitIsBiological"/>
+        <ValidatorArray value="CasterHasMurlocDoomhammer"/>
+        <ValidatorArray value="DoomhammerCooldown"/>
+        <EditorCategories value=""/>
+        <EffectArray value="DisorientedProc"/>
+        <EffectArray value="DoomhammerCooldown"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="DoomhammerCooldown">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="FrostArmorDrainApply">
+        <EditorCategories value=""/>
+        <Behavior value="FrostArmorDrain"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="FrostArmorDrainEnd">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="FrostArmorDrainTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectDamage id="FrostNeedleDamageDummy">
+        <EditorCategories value=""/>
+    </CEffectDamage>
+    <CEffectDamage id="BloodcleaverDamageDummy">
+        <EditorCategories value=""/>
+    </CEffectDamage>
+    <CEffectSet id="BloodcleaverDrain">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="BloodcleaverDrainApply">
+        <EditorCategories value=""/>
+        <Behavior value="BloodcleaverDrain"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="BloodcleaverSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="Biological;Self,Missile,Item,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="8" Effect="BloodcleaverDrainApply"/>
+    </CEffectEnumArea>
+    <CEffectDamage id="BloodcleaverStats">
+        <EditorCategories value=""/>
+        <ArmorReduction value="20"/>
+        <Amount value="1"/>
+    </CEffectDamage>
+    <CEffectSet id="BloodthirstyPirateGreed">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectDamage id="MoltenSphereDamage">
+        <ValidatorArray value="TargetIsNotJaryx"/>
+        <ValidatorArray value="TargetIsNotWizard"/>
+        <Amount value="100"/>
+    </CEffectDamage>
+    <CEffectSet id="MoltenSphereTrigger">
+        <EditorCategories value=""/>
+        <Chance value="0.5"/>
+    </CEffectSet>
+    <CEffectSet id="BlunderbussSet">
+        <EditorCategories value=""/>
+        <EffectArray value="AttackItemProcsSetBeforeDamage"/>
+        <EffectArray value="BlunderbussDamage"/>
+        <EffectArray value="AttackItemProcsSetRanged"/>
+        <ValidatorArray value="AttackTargetValidator"/>
+    </CEffectSet>
+    <CEffectSet id="BlunderbussTimeCounter">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectCreatePersistent id="ClairvoyancePersistent">
+        <ExpireDelay value="5"/>
+        <RevealRadius value="9"/>
+        <RevealFlags index="Unfog" value="1"/>
+        <RevealFlags index="Detect" value="1"/>
+    </CEffectCreatePersistent>
+    <CEffectSet id="BoneTalismanExpire">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="BushRegrowthTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectDamage id="BuyPriceCoefficient">
+        <EditorCategories value=""/>
+        <Amount value="1"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="ChallengeBannerSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Player,Structure,Missile,Dead,Hidden"/>
+        <TargetSorts>
+            <SortArray value="TSRandom"/>
+        </TargetSorts>
+        <AreaArray Radius="3" Effect="ChallengeBannerTrigger"/>
+        <MaxCount value="1"/>
+    </CEffectEnumArea>
+    <CEffectSet id="ChallengeBannerTrigger">
+        <ValidatorArray value="TargetIsKobold"/>
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectEnumArea id="GastronomistTutorSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Player,Structure,Missile,Dead,Hidden"/>
+        <AreaArray Radius="8" Effect="GastronomistsTutelageApply"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="GastronomistsTutelageApply">
+        <ValidatorArray index="0" value="TargetIsKobold"/>
+        <EditorCategories value=""/>
+        <Behavior value="TheGastronomistsTutelage"/>
+    </CEffectApplyBehavior>
+    <CEffectIssueOrder id="ChieftainAttack">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Abil value="attack"/>
+        <Target Value="TargetUnit"/>
+        <ValidatorArray value="TargetIsNotTamed"/>
+        <ValidatorArray value="TargetIsNotDirewolf"/>
+    </CEffectIssueOrder>
+    <CEffectSet id="ChieftainAttackSet">
+        <EditorCategories value=""/>
+        <EffectArray value="MurlocDoomhammerDamage"/>
+        <EffectArray value="DilapidatedApply"/>
+        <EffectArray value="AICombatTriggerSet"/>
+    </CEffectSet>
+    <CEffectEnumArea id="ChieftainSearch">
+        <ValidatorArray value="CasterNotInCombat"/>
+        <ValidatorArray value="CasterNotAttacking"/>
+        <EditorCategories value=""/>
+        <SearchFilters value="Light,Biological;Structure,Missile,Item,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="6" Effect="ChieftainAttack"/>
+        <MaxCount value="1"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="ClairvoyanceSearch">
+        <EditorCategories value=""/>
+        <ImpactLocation Value="TargetPoint"/>
+        <AreaArray Radius="9" Effect="SpellAbsorbCheckClairvoyance"/>
+        <SearchFilters value="-;Player,Ally,Neutral,Structure,Missile,Dead,Hidden,Invulnerable"/>
+    </CEffectEnumArea>
+    <CEffectDamage id="CleansingDraughtStamina">
+        <EditorCategories value=""/>
+        <Amount value="10"/>
+    </CEffectDamage>
+    <CEffectSet id="CoiffureCareCounter">
+        <ValidatorArray value="TargetIsNotSoaked"/>
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectCreateUnit id="ConstructHuntersLodge">
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetPoint"/>
+        <CreateFlags index="Placement" value="0"/>
+        <SpawnEffect value="HuntersLodgeSpawnTrigger"/>
+        <SpawnUnit value="HuntersLodge"/>
+    </CEffectCreateUnit>
+    <CEffectCreateUnit id="ConstructWorkbench">
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetPoint"/>
+        <CreateFlags index="Placement" value="0"/>
+        <SpawnUnit value="Workbench"/>
+    </CEffectCreateUnit>
+    <CEffectSet id="ConstructionTrigger">
+        <EditorCategories value=""/>
+        <TargetLocationType value="Point"/>
+    </CEffectSet>
+    <CEffectSet id="CookingExpertiseIIIFinal">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectDamage id="CravensFishStickerDamageExplosive" parent="DU_WEAP">
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Kind value="Ranged"/>
+        <KindSplash value="Ranged"/>
+        <Amount value="40"/>
+        <AreaArray Radius="1.5" Fraction="1"/>
+        <ExcludeArray Value="Target"/>
+        <SearchFilters value="-;Player,Ally,Missile,Item,Dead,Hidden,Invulnerable"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="CravensFishStickerLM">
+        <ImpactEffect value="CravensFishStickerImpactSet"/>
+        <AmmoUnit value="BoltNormal"/>
+        <Movers Link="PunisherGrenadesWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectSet id="CravensFishStickerLaunchSet">
+        <ValidatorArray value="AttackTargetValidator"/>
+        <EditorCategories value=""/>
+        <EffectArray value="CravensFishStickerApplyAddon"/>
+        <EffectArray value="CravensFishStickerLaunchSwitch"/>
+    </CEffectSet>
+    <CEffectSet id="CravensFishStickerImpactSet">
+        <EditorCategories value=""/>
+        <EffectArray value="AttackItemProcsSetBeforeDamage"/>
+        <EffectArray value="CravensFishStickerDamage"/>
+        <EffectArray value="AttackItemProcsSetRanged"/>
+    </CEffectSet>
+    <CEffectSet id="CookingExpertiseIIIInitial">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="CravensFishStickerApplyAddon">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="CravensFishStickerAddon"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="CravensFishStickerDamage" parent="DU_WEAP">
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="20"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="DilapidatedApply">
+        <ValidatorArray index="0" value="IsStructure"/>
+        <EditorCategories value=""/>
+        <Behavior value="Dilapidated"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="TetherSearch">
+        <ValidatorArray value="Moving"/>
+        <EditorCategories value=""/>
+        <SearchFilters value="Biological;Self,Structure,Missile,Item,Cloaked,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="4" Effect="TetherDamage"/>
+        <ExcludeArray Value="Outer"/>
+    </CEffectEnumArea>
+    <CEffectDamage id="DemonLordJaryxAttackDamage" parent="DU_WEAP">
+        <Amount value="48"/>
+    </CEffectDamage>
+    <CEffectCreatePersistent id="DemonLordJaryxAttackPersistent">
+        <EditorCategories value="Race:Zerg"/>
+        <WhichLocation Value="TargetUnit"/>
+        <PeriodCount value="2"/>
+        <PeriodicEffectArray value="DemonLordJaryxAttackDamage"/>
+        <PeriodicPeriodArray value="0"/>
+        <PeriodicPeriodArray value="0.2"/>
+    </CEffectCreatePersistent>
+    <CEffectApplyBehavior id="DemonicStrikesApply">
+        <EditorCategories value=""/>
+        <Behavior value="DemonicStrikes"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="DemonicSummon">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectDamage id="DespairKill">
+        <EditorCategories value=""/>
+        <Flags index="Kill" value="1"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="DirewolfSprintApply">
+        <ValidatorArray index="0" value="CasterIsDirewolf"/>
+        <EditorCategories value=""/>
+        <Chance value="0.1"/>
+        <Behavior value="AnimalRush"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="FrostBearStun">
+        <ValidatorArray index="0" value="UnitIsBiological"/>
+        <ValidatorArray value="UnitIsNotHeroic"/>
+        <EditorCategories value=""/>
+        <Chance value="0.1"/>
+        <Behavior value="Disoriented"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="0.25"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="DisorientedApply">
+        <ValidatorArray index="0" value="UnitIsBiological"/>
+        <EditorCategories value=""/>
+        <Behavior value="Disoriented"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="0.75"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="TrollGroundSpikeDazedApply">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <Behavior value="Disoriented"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="1.5"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="DisorientedProc">
+        <EditorCategories value=""/>
+        <Behavior value="Disoriented"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="1.5"/>
+        <ValidatorArray index="0" value="TargetIsNotRAB"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="DreadHowlApply">
+        <ValidatorArray index="0" value="TargetNotFearImmune"/>
+        <EditorCategories value=""/>
+        <Behavior value="Fear"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="3"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="DreadHowlCastApply">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="JaryxRoarCast"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="DreadHowlSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="Biological;Player,Ally,Structure,Missile,Cloaked,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="8" Effect="DreadHowlApply"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="DreadplateArmorFearApply">
+        <EditorCategories value=""/>
+        <Behavior value="Fear"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="2"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="DreadHowlSet">
+        <EditorCategories value=""/>
+        <EffectArray value="DreadHowlSearch"/>
+        <EffectArray value="DreadHowlCastApply"/>
+    </CEffectSet>
+    <CEffectRemoveBehavior id="DullEdgeRemove">
+        <EditorCategories value=""/>
+        <BehaviorLink value="DullEdge"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectEnumArea id="ElderTreeShelterSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Structure,Missile,Dead,Hidden"/>
+        <AreaArray Radius="2" Effect="ShelteredApply"/>
+    </CEffectEnumArea>
+    <CEffectSet id="FearTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectDamage id="FelFireTorchIntensity">
+        <EditorCategories value=""/>
+    </CEffectDamage>
+    <CEffectDamage id="FelFlamesDamage">
+        <EditorCategories value=""/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Amount value="1"/>
+    </CEffectDamage>
+    <CEffectSet id="FelFlamesTrigger">
+        <ValidatorArray value="CasterHasFelFireTorch"/>
+        <ValidatorArray value="UnitIsBiological"/>
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectCreatePersistent id="FindChallenger">
+        <EditorCategories value=""/>
+        <PeriodCount value="90"/>
+        <PeriodicEffectArray value="FindChallengerSearch"/>
+        <PeriodicPeriodArray value="1"/>
+    </CEffectCreatePersistent>
+    <CEffectDestroyPersistent id="FindChallengerDestroy">
+        <EditorCategories value=""/>
+        <WhichLocation Value="OriginPoint"/>
+        <Effect value="FindChallenger"/>
+        <Count value="1"/>
+        <Radius value="1"/>
+    </CEffectDestroyPersistent>
+    <CEffectEnumArea id="FindChallengerSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Structure,Missile,Item,Dead,Hidden"/>
+        <AreaArray Radius="4" Effect="FindChallengerSet"/>
+        <MaxCount value="1"/>
+    </CEffectEnumArea>
+    <CEffectSet id="FindChallengerSet">
+        <ValidatorArray value="TargetIsKobold"/>
+        <EditorCategories value=""/>
+        <EffectArray value="FindChallengerTrigger"/>
+        <EffectArray value="FindChallengerDestroy"/>
+    </CEffectSet>
+    <CEffectSet id="FindChallengerTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="FirestormTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="FirestormApply">
+        <Behavior value="FirestormDoT"/>
+    </CEffectApplyBehavior>
+    <CEffectCreatePersistent id="FirestormPersistent">
+        <EditorCategories value="Race:Protoss"/>
+        <InitialEffect value="FirestormSearch"/>
+        <PeriodCount value="16"/>
+        <PeriodicEffectArray value="FirestormSearch"/>
+        <PeriodicPeriodArray value="0.25"/>
+        <AINotifyEffect value="FirestormSearch"/>
+    </CEffectCreatePersistent>
+    <CEffectDamage id="FirestormDamage">
+        <Amount value="15"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="FirestormSearch">
+        <SearchFilters value="-;Self,Missile,Destructible,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="0.3125" Effect="FirestormSwitch"/>
+    </CEffectEnumArea>
+    <CEffectSwitch id="FirestormSwitch">
+        <ValidatorArray value="TargetIsNotSpikeTrap"/>
+        <ValidatorArray value="TargetIsNotJaryx"/>
+        <ValidatorArray value="TargetIsNotWizard"/>
+        <EditorCategories value=""/>
+        <CaseArray Validator="TargetIsInfernalMinion" Effect="InfernalMinionAblazeApply"/>
+        <CaseArray Effect="FirestormApply"/>
+    </CEffectSwitch>
+    <CEffectEnumArea id="FindCrabSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Structure,Missile,Dead,Hidden"/>
+        <AreaArray Radius="4" Effect="FindCrabTrigger"/>
+    </CEffectEnumArea>
+    <CEffectSet id="FindCrabTrigger">
+        <ValidatorArray value="TargetHasCrabs"/>
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="FindTruffle">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="FowlBaitApply">
+        <ValidatorArray index="0" value="TargetIsBaitable"/>
+        <EditorCategories value=""/>
+        <Behavior value="BaitedFowl"/>
+    </CEffectApplyBehavior>
+    <CEffectSwitch id="GoldenPolearmValidateEnemies">
+        <EditorCategories value=""/>
+        <CaseArray Validator="GoldenPolearmProximityValidator" Effect="GoldenPolearmProximityApply"/>
+        <CaseDefault value="GoldenPolearmProximityRemove"/>
+    </CEffectSwitch>
+    <CEffectEnumArea id="FowlBaitSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Self,Player,Ally,Enemy,Structure,Missile,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="40" Effect="FowlBaitApply"/>
+    </CEffectEnumArea>
+    <CEffectSet id="FowlBaitTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectIssueOrder id="FowlStopOrder">
+        <EditorCategories value=""/>
+        <Abil value="stop"/>
+    </CEffectIssueOrder>
+    <CEffectDamage id="FrostBearMaulDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Amount value="10"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="FrostArmorApply">
+        <Behavior value="FrostArmor"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="FrostArmorDamage">
+        <AttributeBonus index="Robotic" value="1"/>
+        <Amount value="1"/>
+    </CEffectDamage>
+    <CEffectSet id="FrostBearBiteSet">
+        <EditorCategories value=""/>
+        <EffectArray value="FrostBearMaulDamage"/>
+        <EffectArray value="FrostBearStun"/>
+        <EffectArray value="BearAttackRoar"/>
+    </CEffectSet>
+    <CEffectSet id="FrostNeedleTrigger">
+        <ValidatorArray value="CasterHasFrostNeedle"/>
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectDamage id="FrostbiteDamageLow">
+        <EditorCategories value=""/>
+        <Amount value="2.5"/>
+    </CEffectDamage>
+    <CEffectSet id="GhoulBurrowEnd">
+        <EditorCategories value=""/>
+        <EffectArray value="SuicideRemove"/>
+    </CEffectSet>
+    <CEffectDamage id="GhoulDamage">
+        <EditorCategories value="Race:Zerg"/>
+        <ResponseFlags index="Acquire" value="1"/>
+        <ResponseFlags index="Flee" value="1"/>
+        <ArmorReduction value="1"/>
+        <Flags index="Notification" value="1"/>
+        <Kind value="Melee"/>
+        <Amount value="8"/>
+        <SearchFlags index="CallForHelp" value="1"/>
+        <SearchFlags index="OffsetByUnitRadius" value="1"/>
+    </CEffectDamage>
+    <CEffectSet id="GhouldAttackSet">
+        <EditorCategories value=""/>
+        <EffectArray value="GhoulDamage"/>
+        <EffectArray value="InfectionApply"/>
+    </CEffectSet>
+    <CEffectDamage id="GladiatorsStrength">
+        <EditorCategories value=""/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="GoldenPolearmProximityApply">
+        <EditorCategories value=""/>
+        <Behavior value="GoldenPolearmProximity"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="GoldenPolearmProximityRemove">
+        <EditorCategories value=""/>
+        <BehaviorLink value="GoldenPolearmProximity"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="GoldenPolearmProximitySound">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="GoldScoutTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="GoldenHauberkHealTrigger">
+        <EditorCategories value=""/>
+        <ValidatorArray value="TargetIsWoundedWizardOrNotNeutral"/>
+    </CEffectSet>
+    <CEffectEnumArea id="GoldenHauberkHealSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Enemy,Structure,Missile,Item,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="8" Effect="GoldenHauberkHealTrigger"/>
+        <ValidatorArray value="CasterHasNoGoldenHauberkCooldown"/>
+    </CEffectEnumArea>
+    <CEffectDamage id="GrandForesterDuration">
+        <EditorCategories value=""/>
+        <Amount value="480"/>
+    </CEffectDamage>
+    <CEffectSet id="GrandForesterUpdate">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="GuardianSpiritApply">
+        <EditorCategories value=""/>
+        <Behavior value="GuardianSpirit"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="GuardianSpiritLingeringHeal">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectDamage id="GuardianSpiritStats">
+        <EditorCategories value=""/>
+        <AttributeBonus index="Armored" value="1"/>
+        <AttributeBonus index="Biological" value="100"/>
+        <Amount value="2"/>
+    </CEffectDamage>
+    <CEffectSet id="GuardianSpiritTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="HeatSet">
+        <EditorCategories value=""/>
+        <EffectArray value="LazyCozyKoboldApply"/>
+        <EffectArray value="HeatApply"/>
+    </CEffectSet>
+    <CEffectSet id="HeavyTowerShieldTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="HuntKoboldsGhoulApply">
+        <EditorCategories value=""/>
+        <Behavior value="HuntKobolds"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="HuntKoboldsSet">
+        <EditorCategories value=""/>
+        <EffectArray value="HuntKoboldsTrigger"/>
+        <EffectArray value="DirewolfSprintApply"/>
+        <ValidatorArray value="TargetIsNotFeared"/>
+    </CEffectSet>
+    <CEffectSet id="HuntKoboldsTrigger">
+        <ValidatorArray value="NotMoving"/>
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="InfernalMinionAblazeApply">
+        <EditorCategories value=""/>
+        <Behavior value="InfernalMinionAblaze"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="InfernalMinionDamage" parent="AcidSalivaU">
+        <Kind value="Melee"/>
+        <Death value="Eviscerate"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="DemonicGrowthApply">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="DemonicGrowth"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="HuntersLodgeSpawnTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="InfectionApply">
+        <EditorCategories value=""/>
+        <Behavior value="Infection"/>
+        <ValidatorArray index="0" value="TargetNotInfectionImmune"/>
+        <ValidatorArray value="UnitIsBiological"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="InfectionRemove">
+        <EditorCategories value=""/>
+        <BehaviorLink value="Infection"/>
+        <Count value="10"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="InfernalMinion">
+        <EditorCategories value=""/>
+        <EffectArray value="InfernalMinionDamage"/>
+        <EffectArray value="DemonicGrowthApply"/>
+    </CEffectSet>
+    <CEffectDamage id="InfusedLumberBuyPrice">
+        <EditorCategories value=""/>
+        <Amount value="75"/>
+    </CEffectDamage>
+    <CEffectDamage id="InfusedLumberSellPrice">
+        <EditorCategories value=""/>
+        <Amount value="50"/>
+    </CEffectDamage>
+    <CEffectDamage id="IronOreBuyPrice">
+        <EditorCategories value=""/>
+        <Amount value="30"/>
+    </CEffectDamage>
+    <CEffectDamage id="IronOreSellPrice">
+        <EditorCategories value=""/>
+        <Amount value="20"/>
+    </CEffectDamage>
+    <CEffectSet id="IronStuddedVestAbsorbSet">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="JaryxAttackSet">
+        <EditorCategories value=""/>
+        <EffectArray value="DemonLordJaryxAttackPersistent"/>
+        <EffectArray value="DemonicStrikesApply"/>
+        <EffectArray value="DilapidatedApply"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="KoboldCanEatApply">
+        <EditorCategories value=""/>
+        <Behavior value="KoboldCanEat"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="KoboldCanEatRemove">
+        <EditorCategories value=""/>
+        <BehaviorLink value="KoboldCanEat"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="LanternApplySet">
+        <EditorCategories value=""/>
+        <EffectArray value="LazyCozyKoboldApply"/>
+        <EffectArray value="FireWardSearchSmall"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="LazyCozyKoboldApply">
+        <ValidatorArray index="0" value="LazyCozyKobold"/>
+        <ValidatorArray value="TargetIsNotKoboldBot"/>
+        <EditorCategories value=""/>
+        <Behavior value="LazyCozyKobold"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="LeatherBuyPrice">
+        <EditorCategories value=""/>
+        <Amount value="15"/>
+    </CEffectDamage>
+    <CEffectDamage id="LeatherSellPrice">
+        <EditorCategories value=""/>
+        <Amount value="10"/>
+    </CEffectDamage>
+    <CEffectSet id="LightCampfireSelect">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="LightCampfireSpawnSet">
+        <EditorCategories value=""/>
+        <EffectArray value="AddCampfireSpecialRequirement"/>
+        <EffectArray value="LightCampfireSelect"/>
+    </CEffectSet>
+    <CEffectSet id="LightsOut">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectDamage id="LumberBuyPrice">
+        <EditorCategories value=""/>
+        <Amount value="18"/>
+    </CEffectDamage>
+    <CEffectDamage id="LumberSellPrice">
+        <EditorCategories value=""/>
+        <Amount value="12"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="MagicVulnerabilityApply">
+        <EditorCategories value=""/>
+        <Behavior value="MagicVulnerability"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="MineralTapStats">
+        <EditorCategories value=""/>
+        <Amount value="10"/>
+    </CEffectDamage>
+    <CEffectDamage id="MurlocDoomhammerDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Amount value="35"/>
+    </CEffectDamage>
+    <CEffectDamage id="FrostWitchDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Amount value="35"/>
+    </CEffectDamage>
+    <CEffectSet id="MurlocDropoffPoint">
+        <ValidatorArray value="DropoffLoc"/>
+        <EditorCategories value=""/>
+        <TargetLocationType value="UnitOrPoint"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="MurlocFrenzyApply">
+        <ValidatorArray index="0" value="CasterLifeLT50Percent"/>
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="MurlocFrenzy"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="MurlocFrenzyRemove">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="MurlocInitiativeEnd">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="MurlocInvigorationApply">
+        <EditorCategories value=""/>
+        <Behavior value="MurlocInvigoration"/>
+        <ValidatorArray index="0" value="TargetIsKobold"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="MurlocInvigorationSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Neutral,Enemy,Structure,Missile,Item,Dead,Hidden"/>
+        <AreaArray Radius="8" Effect="MurlocInvigorationApply"/>
+    </CEffectEnumArea>
+    <CEffectSet id="MurlocOrderChef">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="MurlocOrderDrop">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="MurlocOrderGatherLumber">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="MurlocOrderMineGold">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="MurlocOrderMineStone">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="MurlocOrderPickBerries">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="MurlocOrderPickHerbs">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="MurlocOrderReturn">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="MurlocOrderStop">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="MurlocRage">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <ValidatorArray index="0" value="CasterHasNoMurlocDoomhammerCooldown"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="MurlocRageFinalSet">
+        <EditorCategories value=""/>
+        <EffectArray value="UpdateCombatStats"/>
+    </CEffectSet>
+    <CEffectSet id="MurlocRageInitialSet">
+        <EditorCategories value=""/>
+        <EffectArray value="UpdateCombatStats"/>
+    </CEffectSet>
+    <CEffectSet id="MurlocDoomhammerTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectEnumArea id="MurlocRushSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Player,Ally,Neutral,Structure,Missile,Item,Hidden,Invulnerable"/>
+        <TargetSorts>
+            <SortArray value="TSRandom"/>
+        </TargetSorts>
+        <AreaArray Radius="8" Effect="MurlocRushTrigger"/>
+        <MaxCount value="1"/>
+    </CEffectEnumArea>
+    <CEffectDamage id="MurlocRushTrampleDamage">
+        <EditorCategories value=""/>
+        <ArmorReduction value="1"/>
+        <Kind value="Melee"/>
+        <Amount value="10"/>
+    </CEffectDamage>
+    <CEffectSet id="MurlocRushTrampleSet">
+        <ValidatorArray value="TargetIsNotImmuneTrample"/>
+        <ValidatorArray value="TargetIsNotSpikeTrap"/>
+        <EditorCategories value=""/>
+        <EffectArray value="TrampledImmunityApply"/>
+        <EffectArray value="SpellAbsorbCheckMurlocCharge"/>
+    </CEffectSet>
+    <CEffectEnumArea id="MurlocRushTrampleSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Self,Missile,Item,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="2" Effect="MurlocRushTrampleSet"/>
+    </CEffectEnumArea>
+    <CEffectSet id="MurlocRushTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="MurlocSkullFragments">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectDamage id="RotatingBladeDamage">
+        <EditorCategories value=""/>
+        <ArmorReduction value="1"/>
+        <Kind value="Melee"/>
+        <Amount value="10"/>
+    </CEffectDamage>
+    <CEffectDamage id="MurlocSlaveCost">
+        <EditorCategories value=""/>
+        <Amount value="45"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="GoodHostApply">
+        <EditorCategories value=""/>
+        <Behavior value="GoodHost"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="GoodHostSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Neutral,Enemy,Structure,Missile,Dead,Hidden"/>
+        <AreaArray Radius="5" Effect="GoodHostApply"/>
+    </CEffectEnumArea>
+    <CEffectSet id="NaturesGraceTrigger">
+        <ValidatorArray value="NaturesGraceTargetValidator"/>
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="NightwispAttackSet">
+        <EditorCategories value=""/>
+        <EffectArray value="NightwispDamage"/>
+        <EffectArray value="MagicVulnerabilityApply"/>
+    </CEffectSet>
+    <CEffectDamage id="NightwispDamage" parent="DU_WEAP_MISSILE">
+        <EditorCategories value="Race:Terran"/>
+        <Visibility value="Visible"/>
+        <Amount value="8"/>
+        <Death value="Fire"/>
+    </CEffectDamage>
+    <CEffectDamage id="OutlandishHeartpiercerBonus">
+        <EditorCategories value=""/>
+        <Amount value="20"/>
+    </CEffectDamage>
+    <CEffectSet id="Permafrost">
+        <EditorCategories value=""/>
+        <EffectArray value="PermafrostApplyChannel"/>
+        <EffectArray value="PermafrostApply"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="PermafrostApply">
+        <EditorCategories value=""/>
+        <Behavior value="Permafrost"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ShreddedApply">
+        <ValidatorArray index="0" value="UnitIsBiological"/>
+        <EditorCategories value=""/>
+        <Behavior value="RotatingBladeBleed"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="PermafrostApplyChannel">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="PermafrostChannel"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="RotatingBladeSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Self,Player,Missile,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="1" Effect="RotatingBladeSet"/>
+    </CEffectEnumArea>
+    <CEffectDamage id="ShreddedDamage">
+        <EditorCategories value=""/>
+        <Kind value="Melee"/>
+        <Amount value="5"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="PermafrostApplyChannelLonger">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="PermafrostChannel"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="4.5"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="RotatingBladeSet">
+        <ValidatorArray value="TargetIsNotSpikeTrap"/>
+        <EditorCategories value=""/>
+        <EffectArray value="RotatingBladeDamage"/>
+        <EffectArray value="ShreddedApply"/>
+        <EffectArray value="DilapidatedApply"/>
+    </CEffectSet>
+    <CEffectDamage id="PermafrostDamage">
+        <EditorCategories value=""/>
+        <Amount value="20"/>
+    </CEffectDamage>
+    <CEffectDamage id="PermafrostDamageSecondary">
+        <Amount value="20"/>
+        <ValidatorArray value="TargetIsNotFrostWitch"/>
+    </CEffectDamage>
+    <CEffectDamage id="PermafrostDespawnOrb">
+        <ValidatorArray value="CasterIsNightwisp"/>
+        <Flags index="Kill" value="1"/>
+    </CEffectDamage>
+    <CEffectSet id="PermafrostEnd">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectEnumArea id="PermafrostSearch">
+        <EditorCategories value=""/>
+        <ExcludeArray Value="Outer"/>
+        <SearchFilters value="-;Structure,Missile,Item,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="2.5" Effect="PermafrostDamageSecondary"/>
+    </CEffectEnumArea>
+    <CEffectSet id="PermafrostTargetSet">
+        <EffectArray value="PermafrostDamage"/>
+        <EffectArray value="PermafrostSearch"/>
+    </CEffectSet>
+    <CEffectSet id="PermafrostTrigger">
+        <ValidatorArray value="TargetIsKobold"/>
+        <EditorCategories value=""/>
+        <EffectArray value="PermafrostApplyChannelLonger"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="GatheringResourcesDelay">
+        <EditorCategories value=""/>
+        <Behavior value="ResourceScourDelay"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="PetStats">
+        <EditorCategories value=""/>
+        <AttributeBonus index="Armored" value="0.4"/>
+        <AttributeBonus index="Biological" value="4"/>
+        <AttributeBonus index="Heroic" value="0.5"/>
+        <Amount value="1"/>
+    </CEffectDamage>
+    <CEffectSet id="PredatoryKnowledge1min">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectDamage id="RadiantGemBuyPrice">
+        <EditorCategories value=""/>
+        <Amount value="60"/>
+    </CEffectDamage>
+    <CEffectDamage id="RadiantGemSellPrice">
+        <EditorCategories value=""/>
+        <Amount value="40"/>
+    </CEffectDamage>
+    <CEffectSet id="RecentlyDamaged">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="RetreatEndTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="SpikedShadowstoneScutumCooldownApply">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="SpikedShadowstoneScutumCooldown"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="SpikedShadowstoneScutumBlockerApply">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="SpikedShadowstoneScutumBlocker"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="SpikedShadowstoneScutumFinalSet">
+        <EditorCategories value=""/>
+        <EffectArray value="SpikedShadowstoneScutumBlockerRemove2"/>
+        <EffectArray value="SpikedShadowstoneScutumCooldownRemove"/>
+    </CEffectSet>
+    <CEffectSet id="SpikedShadowstoneScutumSetInitial">
+        <EditorCategories value=""/>
+        <EffectArray value="SpikedShadowstoneScutumRainApply"/>
+        <EffectArray value="SpikedShadowstoneScutumApply"/>
+        <EffectArray value="SpikedShadowstoneScutumCooldownApply"/>
+    </CEffectSet>
+    <CEffectRemoveBehavior id="IronBandedBucklerBlockerRemove">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="IronBandedBucklerBlocker"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="SpikedShadowstoneScutumExclamation">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectDamage id="Generic2ChargesDepleted">
+        <ValidatorArray value="Generic2ChargesDepleted"/>
+        <EditorCategories value=""/>
+        <Flags index="Kill" value="1"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="IronBandedBucklerCooldownApply">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="IronBandedBucklerCooldown"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="ShooBirds">
+        <EditorCategories value=""/>
+        <AreaArray Radius="0.5" Effect="ShooBirdsTrigger"/>
+    </CEffectEnumArea>
+    <CEffectSet id="ShooBirdsTrigger">
+        <ValidatorArray value="TargetIsNesting"/>
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectDamage id="ShadowCloakDamage">
+        <EditorCategories value=""/>
+        <Amount value="50"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="IronBandedBucklerBlockerApply">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="IronBandedBucklerBlocker"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="SalvageStructure">
+        <EditorCategories value=""/>
+        <ValidatorArray value="SalvageValidator"/>
+    </CEffectSet>
+    <CEffectSet id="ScrollofTransmutation">
+        <ValidatorArray value="ScrollofTransmutation"/>
+        <ValidatorArray value="TargetTreeIsNotGrowing"/>
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="ShadowCloakSet">
+        <ValidatorArray value="CasterHasShadowCloak"/>
+        <EditorCategories value=""/>
+        <EffectArray value="SpellAbsorbCheckShadowCloak"/>
+        <EffectArray value="ShadowCloakSwitch"/>
+    </CEffectSet>
+    <CEffectDamage id="SellPriceCoefficient">
+        <EditorCategories value=""/>
+        <Amount value="1"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="ShadowCloakExtraChargeApply">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <Behavior value="ShadowCloakExtraCharge"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="ShadowCloakExtraChargeRemove">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="ShadowCloakExtraCharge"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="ShadowCloakFinalSet">
+        <EditorCategories value=""/>
+        <EffectArray value="UpdateCombatStats"/>
+        <EffectArray value="ShadowCloakExtraChargeRemove"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="ShadowCloakStopAttack">
+        <EditorCategories value="Race:Terran"/>
+        <WhichUnit Value="Caster"/>
+        <ValidatorArray index="0" value="CasterNotAI"/>
+    </CEffectApplyBehavior>
+    <CEffectSwitch id="ShadowCloakSwitch">
+        <EditorCategories value=""/>
+        <CaseArray Validator="ShadowCloakExtraCharge" Effect="ShadowCloakExtraChargeRemove"/>
+        <CaseArray Effect="ShadowCloakTurnOff"/>
+    </CEffectSwitch>
+    <CEffectIssueOrder id="ShadowCloakTurnOff">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Abil value="ShadowCloak"/>
+        <AbilCmdIndex value="1"/>
+    </CEffectIssueOrder>
+    <CEffectSet id="ShadowCloakInitialSet">
+        <EditorCategories value=""/>
+        <EffectArray value="UpdateCombatStats"/>
+        <EffectArray value="ShadowCloakStopAttack"/>
+        <EffectArray value="ShadowCloakExtraChargeApply"/>
+    </CEffectSet>
+    <CEffectDamage id="ShadowstoneBuyPrice">
+        <EditorCategories value=""/>
+        <Amount value="45"/>
+    </CEffectDamage>
+    <CEffectDamage id="ShadowstoneSellPrice">
+        <EditorCategories value=""/>
+        <Amount value="30"/>
+    </CEffectDamage>
+    <CEffectSet id="SheepLeashTrigger">
+        <EditorCategories value=""/>
+        <ValidatorArray value="FarmIsDomesticated"/>
+        <ValidatorArray value="SheepOutsideLeashRange"/>
+    </CEffectSet>
+    <CEffectSet id="ShovelDig">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="SiphonLifeApply">
+        <EditorCategories value=""/>
+        <Behavior value="SiphonLife"/>
+        <Count value="3"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="SiphonLifeDummyDamage">
+        <EditorCategories value=""/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+    </CEffectDamage>
+    <CEffectRemoveBehavior id="SiphonLifeRemove">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="SiphonLife"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="SiphonLifeSet">
+        <ValidatorArray value="CasterHasSiphonLife"/>
+        <ValidatorArray value="UnitIsBiological"/>
+        <EditorCategories value=""/>
+        <EffectArray value="SiphonLifeRemove"/>
+        <EffectArray value="SpellAbsorbCheckSiphonLife"/>
+    </CEffectSet>
+    <CEffectDamage id="SiphonLifeStats">
+        <EditorCategories value=""/>
+        <Amount value="16"/>
+    </CEffectDamage>
+    <CEffectSet id="SiphonLifeTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="SittinAnimDammet">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectEnumArea id="SkeletalFingersTransmuteSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Structure,Missile,Dead,Hidden"/>
+        <AreaArray Radius="4" Effect="SkeletalFingersTransmuteTrig"/>
+    </CEffectEnumArea>
+    <CEffectSet id="SkeletalFingersTransmuteTrig">
+        <ValidatorArray value="TargetIsKobold"/>
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectRemoveBehavior id="SleepingBagRemove">
+        <ValidatorArray index="0" value="SleepDisruptionFactors"/>
+        <EditorCategories value=""/>
+        <BehaviorLink value="SleepingBag"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectDamage id="Smash" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Amount value="10"/>
+        <ValidatorArray value="AttackTargetValidator"/>
+        <AttributeBonus index="Armored" value="5"/>
+    </CEffectDamage>
+    <CEffectDamage id="CheffingStats2">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/ForestingStats"/>
+        <AttributeBonus index="Light" value="70"/>
+        <AttributeBonus index="Armored" value="24"/>
+        <AttributeBonus index="Biological" value="48"/>
+        <AttributeBonus index="Massive" value="20"/>
+        <AttributeBonus index="Hover" value="25"/>
+        <AttributeBonus index="Heroic" value="66"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="CowerApply">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="Cower"/>
+        <ValidatorArray index="0" value="CasterHasNoCrabs"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="CowerExhaustedApply">
+        <EditorCategories value=""/>
+        <Behavior value="CowerExhausted"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="MurlocActionTrigger">
+        <EditorCategories value=""/>
+        <ValidatorArray value="NotMurlocRebelSpirit"/>
+    </CEffectSet>
+    <CEffectSet id="MurlocContractTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="ResurrectingApply">
+        <EditorCategories value=""/>
+        <Behavior value="Resurrecting"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="FireWardSearchSmall">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Player,Ally,Structure,Missile,Item,Dead"/>
+        <AreaArray Radius="2.5" Effect="FireWardTrigger"/>
+        <ValidatorArray value="CasterIsNotCloaked"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="LanternLightApply">
+        <EditorCategories value=""/>
+        <Behavior value="LanternLight"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="LanternLightRemove">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <BehaviorLink value="LanternLight"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="LanternTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="LevelAttributeStackApply">
+        <EditorCategories value=""/>
+        <Behavior value="LevelAttributeStack"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="MineralTapApply">
+        <EditorCategories value=""/>
+        <Behavior value="MineralTap"/>
+        <ValidatorArray index="0" value="TargetIsMineralDeposit"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="NaturesGraceStats">
+        <EditorCategories value=""/>
+        <ImpactLocation Value="TargetUnit"/>
+        <AttributeBonus index="Armored" value="35"/>
+        <AttributeBonus index="Biological" value="2"/>
+    </CEffectDamage>
+    <CEffectDamage id="BlunderbussDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <Amount value="20"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Kind value="Ranged"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="RainApply">
+        <ValidatorArray index="0" value="TargetIsNotSheltered"/>
+        <ValidatorArray value="ScutumUmbrella"/>
+        <ValidatorArray value="NotHidden"/>
+        <EditorCategories value=""/>
+        <Behavior value="Rain"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ShelteredApply">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <Behavior value="Sheltered"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="SpikedShadowstoneScutumBlockerRemove2">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="SpikedShadowstoneScutumBlocker"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="SpikedShadowstoneScutumCooldownRemove">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="SpikedShadowstoneScutumCooldown"/>
+    </CEffectRemoveBehavior>
+    <CEffectRemoveBehavior id="RestingRemove">
+        <EditorCategories value=""/>
+        <BehaviorLink value="Resting"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectEnumArea id="ShelterSearch2">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Neutral,Enemy,Structure,Missile,Dead,Hidden"/>
+        <AreaArray Radius="2" Effect="ShelteredApply"/>
+    </CEffectEnumArea>
+    <CEffectSet id="SpikedShadowstoneScutumBlockerSet">
+        <EditorCategories value=""/>
+        <EffectArray value="SpikedShadowstoneScutumBlockerRemove"/>
+        <EffectArray value="SpikedShadowstoneScutumCooldownApply"/>
+    </CEffectSet>
+    <CEffectSet id="ShelterSet">
+        <EditorCategories value=""/>
+        <EffectArray value="ShelterSearch"/>
+        <EffectArray value="ShelterSearch2"/>
+    </CEffectSet>
+    <CEffectRemoveBehavior id="SpikedShadowstoneScutumBlockerRemove">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="SpikedShadowstoneScutumBlocker"/>
+    </CEffectRemoveBehavior>
+    <CEffectApplyBehavior id="SleepingBagApply">
+        <EditorCategories value=""/>
+        <Behavior value="SleepingBag"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="SleepingBagDelayApply">
+        <EditorCategories value=""/>
+        <Behavior value="SleepingBagDelay"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="SmokeDetectionTrigger">
+        <EditorCategories value=""/>
+        <ValidatorArray value="TargetHasNoDarkness"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="SnowApply">
+        <ValidatorArray index="0" value="TargetIsNotSheltered"/>
+        <ValidatorArray value="ScutumUmbrella"/>
+        <ValidatorArray value="NotHidden"/>
+        <EditorCategories value=""/>
+        <Behavior value="Snow"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="SpikeTrapApplyDull">
+        <EditorCategories value=""/>
+        <Behavior value="DullEdge"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="SpikeTrapGlowApply">
+        <EditorCategories value=""/>
+        <Behavior value="SpikeTrapGlow"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="SpikeTrapSharpen">
+        <EditorCategories value=""/>
+        <EffectArray value="DullEdgeRemove"/>
+        <EffectArray value="SpikeTrapChargesApply"/>
+        <EffectArray value="SpikeTrapApplySensor"/>
+    </CEffectSet>
+    <CEffectSet id="SpikeTrapSpawnEffect">
+        <EditorCategories value=""/>
+        <EffectArray value="SpikeTrapChargesApply"/>
+        <EffectArray value="SpikeTrapGlowApply"/>
+    </CEffectSet>
+    <CEffectRemoveBehavior id="IronBandedBucklerCooldownRemove">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="IronBandedBucklerCooldown"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="IronBandedBucklerBlockerSet">
+        <EditorCategories value=""/>
+        <EffectArray value="IronBandedBucklerBlockerRemove"/>
+        <EffectArray value="IronBandedBucklerCooldownApply"/>
+    </CEffectSet>
+    <CEffectSwitch id="SpikeTrapSwitch">
+        <EditorCategories value=""/>
+        <CaseArray Validator="SpikeTrapHasCharges" Effect="SpikeTrapApplySensor"/>
+        <CaseDefault value="SpikeTrapApplyDull"/>
+    </CEffectSwitch>
+    <CEffectSet id="StalkedTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectRemoveBehavior id="StarvingRemove">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <BehaviorLink value="Starving"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectApplyBehavior id="GallopApply">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="BeaverRush"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="GallopExhaustedApply">
+        <EditorCategories value=""/>
+        <Behavior value="BeaverExhausted"/>
+    </CEffectApplyBehavior>
+    <CEffectCreateUnit id="ConstructStorageHut">
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetPoint"/>
+        <CreateFlags index="Placement" value="0"/>
+        <SpawnUnit value="StorageOutpost"/>
+        <SpawnEffect value="StorageOutpostSpawnTrigger"/>
+    </CEffectCreateUnit>
+    <CEffectSet id="SendPackHorseTrigger">
+        <EditorCategories value=""/>
+        <ValidatorArray value="Pathable"/>
+        <TargetLocationType value="UnitOrPoint"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="SpikedShadowstoneScutumApply">
+        <ValidatorArray index="0" value="ShelterorNotRaining"/>
+        <EditorCategories value=""/>
+        <Behavior value="TowerShield"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="StatsHealth2">
+        <EditorCategories value=""/>
+        <AttributeBonus index="Armored" value="100"/>
+        <AttributeBonus index="Biological" value="100"/>
+        <AttributeBonus index="Heroic" value="100"/>
+    </CEffectDamage>
+    <CEffectDamage id="StatsHealth1">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/StatsHealth"/>
+        <AttributeBonus index="Armored" value="100"/>
+        <AttributeBonus index="Biological" value="100"/>
+        <AttributeBonus index="Heroic" value="100"/>
+    </CEffectDamage>
+    <CEffectDamage id="StatsHealth3">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/StatsHealth2"/>
+        <AttributeBonus index="Armored" value="100"/>
+        <AttributeBonus index="Biological" value="100"/>
+        <AttributeBonus index="Heroic" value="100"/>
+    </CEffectDamage>
+    <CEffectDamage id="StatsHealth4">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/StatsHealth2"/>
+        <AttributeBonus index="Armored" value="100"/>
+        <AttributeBonus index="Biological" value="100"/>
+        <AttributeBonus index="Heroic" value="100"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="SpikedShadowstoneScutumRainApply">
+        <ValidatorArray index="0" value="RainingandNotShelter"/>
+        <EditorCategories value=""/>
+        <Behavior value="TowerShieldRain"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="StatsHealth5">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/StatsHealth2"/>
+        <AttributeBonus index="Armored" value="100"/>
+        <AttributeBonus index="Biological" value="100"/>
+        <AttributeBonus index="Heroic" value="100"/>
+    </CEffectDamage>
+    <CEffectDamage id="StatsHealth6">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/StatsHealth2"/>
+        <AttributeBonus index="Armored" value="100"/>
+        <AttributeBonus index="Biological" value="100"/>
+        <AttributeBonus index="Heroic" value="100"/>
+    </CEffectDamage>
+    <CEffectSet id="SpikedShadowstoneScutumRainSet">
+        <EditorCategories value=""/>
+        <EffectArray value="SpikedShadowstoneScutumRainApply"/>
+        <EffectArray value="SpikedShadowstoneScutumApply"/>
+    </CEffectSet>
+    <CEffectDamage id="StatsHealth7">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/StatsHealth2"/>
+        <AttributeBonus index="Armored" value="100"/>
+        <AttributeBonus index="Biological" value="100"/>
+        <AttributeBonus index="Heroic" value="100"/>
+    </CEffectDamage>
+    <CEffectDamage id="StatsHealth8">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/StatsHealth2"/>
+        <AttributeBonus index="Armored" value="100"/>
+        <AttributeBonus index="Biological" value="100"/>
+        <AttributeBonus index="Heroic" value="100"/>
+    </CEffectDamage>
+    <CEffectDamage id="StatsHealth10">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/StatsHealth2"/>
+        <AttributeBonus index="Armored" value="100"/>
+        <AttributeBonus index="Biological" value="100"/>
+        <AttributeBonus index="Heroic" value="100"/>
+    </CEffectDamage>
+    <CEffectDamage id="StatsHealth9">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/StatsHealth2"/>
+        <AttributeBonus index="Armored" value="100"/>
+        <AttributeBonus index="Biological" value="100"/>
+        <AttributeBonus index="Heroic" value="100"/>
+    </CEffectDamage>
+    <CEffectDamage id="StatsMaterialReserves2">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/StatsMaterialReserves"/>
+    </CEffectDamage>
+    <CEffectDamage id="ResurrectionCost">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/StatsMaterialReserves"/>
+        <AttributeBonus index="Armored" value="1"/>
+        <AttributeBonus index="Biological" value="1"/>
+        <AttributeBonus index="Heroic" value="1"/>
+    </CEffectDamage>
+    <CEffectDamage id="StatsMaterialReserves3">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/StatsMaterialReserves"/>
+    </CEffectDamage>
+    <CEffectDamage id="StoneBuyPrice">
+        <EditorCategories value=""/>
+        <Amount value="15"/>
+    </CEffectDamage>
+    <CEffectDamage id="StoneSellPrice">
+        <EditorCategories value=""/>
+        <Amount value="10"/>
+    </CEffectDamage>
+    <CEffectDamage id="StorageHutCapacity">
+        <EditorCategories value=""/>
+        <Amount value="26"/>
+        <AttributeBonus index="Armored" value="10"/>
+    </CEffectDamage>
+    <CEffectSet id="SummonMinions">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="SummonsTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="TameBirdTrigger">
+        <EditorCategories value=""/>
+        <TargetLocationType value="Point"/>
+    </CEffectSet>
+    <CEffectSet id="TamedAITrigger">
+        <EditorCategories value=""/>
+        <ValidatorArray value="CasterIsNotDiggingTruffles"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="TamedApply">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <Behavior value="Tamed"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="TamedRemove">
+        <EditorCategories value=""/>
+        <BehaviorLink value="Tamed"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="TamedSet">
+        <ValidatorArray value="CasterHasTamingEquipment"/>
+        <ValidatorArray value="TargetIsTamable"/>
+        <ValidatorArray value="TargetNotBelongsToPlayer"/>
+        <EditorCategories value=""/>
+        <Chance value="0.15"/>
+    </CEffectSet>
+    <CEffectSet id="TavernSpawnTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="TavernWizardApply">
+        <EditorCategories value=""/>
+        <Behavior value="TavernWizard"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="TentSpawnTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectDamage id="TetherDamage" parent="DU_WEAP_MISSILE">
+        <Amount value="20"/>
+        <ValidatorArray value="TargetIsNotJaryx"/>
+        <ValidatorArray value="TargetIsNotInfernalMinion"/>
+        <LaunchLocation Value="CasterUnit"/>
+    </CEffectDamage>
+    <CEffectSet id="TextTagged">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="ThickHideOOCRegen">
+        <ValidatorArray index="0" value="CasterNotInCombat"/>
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="TorchApplySet">
+        <EditorCategories value=""/>
+        <EffectArray value="LazyCozyKoboldApply"/>
+        <EffectArray value="TorchWard"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="TorchLightbringerBonusApply">
+        <ValidatorArray index="0" value="CasterIsLightbringer"/>
+        <EditorCategories value=""/>
+        <Behavior value="TorchLightbringerBonus"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="TorchLightbringerBonusRemove">
+        <EditorCategories value=""/>
+        <BehaviorLink value="TorchLightbringerBonus"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectDamage id="TorchStats">
+        <ValidatorArray value="TorchStatsTargetFilters"/>
+        <EditorCategories value=""/>
+        <AttributeBonus index="Armored" value="2"/>
+        <AttributeBonus index="Biological" value="2"/>
+        <Amount value="120"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="TrampledApply">
+        <EditorCategories value=""/>
+        <Behavior value="Trampled"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="TrampledImmunityApply">
+        <EditorCategories value=""/>
+        <Behavior value="TrampledImmunity"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="TrollBossAttackSet">
+        <EditorCategories value=""/>
+        <EffectArray value="TrollBossDamage"/>
+        <EffectArray value="DilapidatedApply"/>
+        <EffectArray value="AICombatTriggerSet"/>
+    </CEffectSet>
+    <CEffectSet id="FrostWitchAttackSet">
+        <EditorCategories value=""/>
+        <EffectArray value="FrostWitchDamage"/>
+        <EffectArray value="DilapidatedApply"/>
+        <EffectArray value="AICombatTriggerSet"/>
+    </CEffectSet>
+    <CEffectDamage id="TrollBossDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Amount value="35"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="TrollFrenzyApply">
+        <ValidatorArray index="0" value="TargetIsKobold"/>
+        <EditorCategories value=""/>
+        <Behavior value="TrollFrenzy"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="TrollFrenzySearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Neutral,Enemy,Structure,Missile,Item,Dead,Hidden"/>
+        <AreaArray Radius="8" Effect="TrollFrenzyApply"/>
+    </CEffectEnumArea>
+    <CEffectSet id="TrollNoseBoneExpire">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectDamage id="TrophyBonuses">
+        <EditorCategories value=""/>
+    </CEffectDamage>
+    <CEffectDamage id="TrophyCount">
+        <EditorCategories value=""/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="UnconsciousApply2">
+        <EditorCategories value=""/>
+        <Behavior value="Unconscious"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="4"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="UnlivingStrengthApply">
+        <EditorCategories value=""/>
+        <Behavior value="UnlivingStrength"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="UnlivingStrengthExpire">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="UnlivingStrengthInitial">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="UpdateBuildingTooltip">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="UpdateCombatStats"/>
+    <CEffectApplyBehavior id="VeilShrineActive">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="VeilShrineEnergized">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="VeilShrinePadFailFlash">
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="VeilShrinePadActiveFind">
+        <ValidatorArray value="TargetIsKobold"/>
+        <EditorCategories value=""/>
+        <EffectArray value="VeilShrineEnergized"/>
+    </CEffectSet>
+    <CEffectEnumArea id="VeilShrinePadActiveSearch">
+        <EditorCategories value=""/>
+        <AreaArray Radius="0.65" Effect="VeilShrinePadActiveFind"/>
+        <MaxCount value="1"/>
+    </CEffectEnumArea>
+    <CEffectSet id="VeilShrinePreviewTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectDamage id="VengefulMurlocSkullDamage">
+        <ValidatorArray value="CasterHasMurlocVengeance"/>
+        <ValidatorArray value="TargetIsNotMurloc"/>
+        <EditorCategories value=""/>
+        <Amount value="4"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="RepeatingCrossbowLaunchMissile">
+        <EditorCategories value="Race:Terran"/>
+        <ImpactEffect value="RepeatingCrossbowImpactSet"/>
+        <AmmoUnit value="GenericWoodenBolt"/>
+        <Movers Link="PunisherGrenadesWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectApplyBehavior id="VenomousArbalestApply">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="VenomousArbalestAddon"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="RepeatingCrossbowDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="20"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="RepeatingCrossbowApply">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="RepeatingCrossbowAddon"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="RepeatingCrossbowImpactSet">
+        <EditorCategories value=""/>
+        <EffectArray value="AttackItemProcsSetBeforeDamage"/>
+        <EffectArray value="RepeatingCrossbowDamage"/>
+        <EffectArray value="AttackItemProcsSetRanged"/>
+    </CEffectSet>
+    <CEffectSet id="RepeatingCrossbowSet">
+        <ValidatorArray value="AttackTargetValidator"/>
+        <EditorCategories value=""/>
+        <EffectArray value="RepeatingCrossbowApply"/>
+        <EffectArray value="RepeatingCrossbowLaunchMissile"/>
+        <EffectArray value="RepeatingCrossbowRootApply"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="ViciousJavelinDisableApply">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ViciousJavelinDisable"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="AutomatedDefenseTurretDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="35"/>
+    </CEffectDamage>
+    <CEffectDamage id="VenomousArbalestDamage" parent="DU_WEAP">
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="20"/>
+    </CEffectDamage>
+    <CEffectDamage id="ViciousJavelinDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="20"/>
+    </CEffectDamage>
+    <CEffectIssueOrder id="AttackQueued">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <CmdFlags index="Queued" value="1"/>
+        <Target Value="TargetUnit"/>
+    </CEffectIssueOrder>
+    <CEffectApplyBehavior id="LiquidatorSpellbladeDisableApply">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="LiquidatorSpellbladeDisable"/>
+    </CEffectApplyBehavior>
+    <CEffectLaunchMissile id="ViciousJavelinLM">
+        <EditorCategories value="Race:Terran"/>
+        <ImpactEffect value="ViciousJavelinImpactSet"/>
+        <AmmoUnit value="ViciousSpearMissile"/>
+        <Movers Link="PunisherGrenadesWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectSet id="ViciousJavelinImpactSet">
+        <EditorCategories value=""/>
+        <EffectArray value="AttackItemProcsSetBeforeDamage"/>
+        <EffectArray value="ViciousJavelinDamage"/>
+        <EffectArray value="AttackItemProcsSetRanged"/>
+    </CEffectSet>
+    <CEffectLaunchMissile id="VenomousArbalestLaunchMissile">
+        <EditorCategories value="Race:Terran"/>
+        <ImpactEffect value="VenomousArbalestImpactSet"/>
+        <AmmoUnit value="VenomousArbalestBolt"/>
+        <Movers Link="PunisherGrenadesWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectSet id="VenomousArbalestImpactSet">
+        <EditorCategories value=""/>
+        <EffectArray value="AttackItemProcsSetBeforeDamage"/>
+        <EffectArray value="VenomousArbalestDamage"/>
+        <EffectArray value="AttackItemProcsSetRanged"/>
+        <EffectArray value="VenomousArbalestPoisonApply"/>
+    </CEffectSet>
+    <CEffectSet id="AutomatedDefenseTurretSet">
+        <EditorCategories value=""/>
+        <EffectArray value="AutomatedDefenseTurretDamage"/>
+        <EffectArray value="AutomatedDefenseTurretDazed"/>
+        <EffectArray value="AICombatTriggerSet"/>
+    </CEffectSet>
+    <CEffectSet id="LiquidatorSpellbladeSet">
+        <ValidatorArray value="AttackTargetValidator"/>
+        <ValidatorArray value="CasterNotHoldingPosition"/>
+        <ValidatorArray value="TargetIsPathable"/>
+        <EditorCategories value=""/>
+        <EffectArray value="LiquidatorSpellbladeTrigger"/>
+        <EffectArray value="LiquidatorSpellbladeRecoilApply"/>
+        <EffectArray value="KoboldAttackBashSet"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="ViciousJavelinRecoilApply">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="ViciousJavelinRecoil"/>
+    </CEffectApplyBehavior>
+    <CEffectLaunchMissile id="AutomatedDefenseTurretLM">
+        <EditorCategories value="Race:Terran"/>
+        <ImpactEffect value="AutomatedDefenseTurretSet"/>
+        <AmmoUnit value="AutomatedDefenseTurretProjectile"/>
+        <Movers Link="PunisherGrenadesWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectApplyBehavior id="LiquidatorSpellbladeRecoilApply">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="LiquidatorSpellbladeRecoil"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="ViciousJavelinSnareApply">
+        <ValidatorArray index="0" value="UnitIsBiological"/>
+        <EditorCategories value=""/>
+        <Behavior value="ViciousJavelinSnare"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="ViciousJavelinSet">
+        <ValidatorArray value="AttackTargetValidator"/>
+        <EditorCategories value=""/>
+        <EffectArray value="ViciousJavelinLM"/>
+        <EffectArray value="ViciousJavelinRecoilApply"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="AutomatedDefenseTurretDazed">
+        <ValidatorArray index="0" value="UnitIsBiological"/>
+        <EditorCategories value=""/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="ElderWandImpactSet">
+        <EditorCategories value=""/>
+        <EffectArray value="AttackItemProcsSetBeforeDamage"/>
+        <EffectArray value="ElderWandDamage"/>
+        <EffectArray value="AttackItemProcsSetRanged"/>
+        <EffectArray value="ElderWandTrigger"/>
+    </CEffectSet>
+    <CEffectDamage id="ElderWandDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Kind value="Ranged"/>
+        <Amount value="20"/>
+    </CEffectDamage>
+    <CEffectLaunchMissile id="ElderWandLM">
+        <ValidatorArray index="0" value="AttackTargetValidator"/>
+        <EditorCategories value="Race:Terran"/>
+        <ImpactEffect value="ElderWandImpactSet"/>
+        <AmmoUnit value="ElderWandMissile"/>
+        <Movers Link="PunisherGrenadesWeapon"/>
+    </CEffectLaunchMissile>
+    <CEffectSet id="ViciousJavelinSound">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectDamage id="ElderWandBonusDamage">
+        <EditorCategories value=""/>
+    </CEffectDamage>
+    <CEffectSet id="ElderWandTrigger">
+        <ValidatorArray value="CasterHasWand"/>
+        <ValidatorArray value="TargetHasEnergy"/>
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="VenomousArbalestPoisonApply">
+        <ValidatorArray index="0" value="UnitIsBiological"/>
+        <EditorCategories value=""/>
+        <Behavior value="VenomousArbalestPoison"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="VenomousArbalestPoisonDamage">
+        <EditorCategories value=""/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Kind value="Melee"/>
+        <Amount value="5"/>
+    </CEffectDamage>
+    <CEffectSet id="VenomousArbalestPoisonSound">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="VenomousArbalestSet">
+        <ValidatorArray value="AttackTargetValidator"/>
+        <EditorCategories value=""/>
+        <EffectArray value="VenomousArbalestApply"/>
+        <EffectArray value="VenomousArbalestLaunchMissile"/>
+    </CEffectSet>
+    <CEffectSet id="TrollGroundSpikeSet">
+        <ValidatorArray value="TargetIsNotImmuneWarlordSpikes"/>
+        <EditorCategories value=""/>
+        <EffectArray value="TrollGroundSpikeImmunityApply"/>
+        <EffectArray value="SpellAbsorbCheckTrollSpikes"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="TrollGroundSpikeImmunityApply">
+        <EditorCategories value=""/>
+        <Behavior value="WarlordSpikesImmunity"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="TrollGroundSpikeDamage">
+        <ArmorReduction value="1"/>
+        <Kind value="Melee"/>
+        <Amount value="10"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="TrollGroundSpikeDebuffApply">
+        <EditorCategories value=""/>
+        <Behavior value="WarlordSpikesImpaled"/>
+    </CEffectApplyBehavior>
+    <CEffectEnumArea id="TrollGroundSpikeSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Player,Ally,Missile,Cloaked,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="0.5" Effect="TrollGroundSpikeSet"/>
+    </CEffectEnumArea>
+    <CEffectSet id="TrollGroundSpikeTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="BallistaImpactSet">
+        <EditorCategories value=""/>
+        <EffectArray value="BallistaDamage"/>
+        <EffectArray value="BallistaStun"/>
+        <EffectArray value="AICombatTriggerSet"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="WatchTowerTunnelerCrewApply">
+        <EditorCategories value=""/>
+        <Behavior value="WatchTowerTunnelerCrew"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="WellFedDexExpire">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="WellFedDexInitial">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="WellFedDexApply">
+        <EditorCategories value=""/>
+        <Behavior value="WellFedDex"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="WhirlingBladesApply">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="WhirlingBlades"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="WhirlingBladesTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectDamage id="WhirlwindDamage">
+        <EditorCategories value=""/>
+        <Amount value="5"/>
+    </CEffectDamage>
+    <CEffectSet id="WhirlwindImpactSet">
+        <EditorCategories value=""/>
+        <EffectArray value="WhirlwindDamage"/>
+        <EffectArray value="WhirlwindSlowApply"/>
+    </CEffectSet>
+    <CEffectSet id="WhirlwindRotate">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectEnumArea id="WhirlwindSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Player,Ally,Missile,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="2" Effect="WhirlwindImpactSet"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="WhirlwindSelfStunApply">
+        <EditorCategories value=""/>
+        <Behavior value="WhirlwindSelfStun"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="WhirlwindSet">
+        <EffectArray value="WhirlwindSearch"/>
+        <EffectArray value="WhirlwindSelfStunApply"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="WhirlwindSlowApply">
+        <EditorCategories value=""/>
+        <Behavior value="WhirlwindSlow"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="WhiteBearFangExpire">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="WolfRetaliationApply">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="AnimalRush"/>
+    </CEffectApplyBehavior>
+    <CEffectIssueOrder id="WolfRetaliationOrder">
+        <ValidatorArray value="TargetIsKobold"/>
+        <ValidatorArray value="TargetIsNotKoboldBot"/>
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Abil value="attack"/>
+        <Player Value="Caster"/>
+        <Target Value="TargetUnit"/>
+    </CEffectIssueOrder>
+    <CEffectSet id="WolfRetaliationSet">
+        <EditorCategories value=""/>
+        <EffectArray value="WolfRetaliationOrder"/>
+        <EffectArray value="WolfRetaliationApply"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="WolfsbaneApply">
+        <EditorCategories value=""/>
+        <Behavior value="WolfsbanePassive"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="WolfsbaneRemove">
+        <EditorCategories value=""/>
+        <BehaviorLink value="WolfsbanePassive"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="WolfsbaneRemoveSet">
+        <EditorCategories value=""/>
+        <EffectArray value="WolfsbaneRemove"/>
+        <EffectArray value="WolfsbaneStrongerRemove"/>
+    </CEffectSet>
+    <CEffectEnumArea id="WolfsbaneSearch">
+        <SearchFilters value="-;Player,Ally,Stasis,Dead,Invulnerable"/>
+        <AreaArray Radius="20" Effect="FireWardNegatorApply"/>
+    </CEffectEnumArea>
+    <CEffectSet id="WolfsbaneSet">
+        <EditorCategories value=""/>
+        <EffectArray value="UpdateCombatStats"/>
+        <EffectArray value="WolfsbaneRemove"/>
+    </CEffectSet>
+    <CEffectDamage id="WolfsbaneSpeed">
+        <EditorCategories value=""/>
+        <Amount value="30"/>
+        <ArmorReduction value="20"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="WolfsbaneStrongerApply">
+        <EditorCategories value=""/>
+        <Behavior value="WolfsbanePassiveStronger"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="WolfsbaneStrongerRemove">
+        <EditorCategories value=""/>
+        <BehaviorLink value="WolfsbanePassiveStronger"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="WolfsbaneTrigger">
+        <EditorCategories value=""/>
+        <EffectArray value="WolfsbaneSearch"/>
+    </CEffectSet>
+    <CEffectDamage id="WoolBuyPrice">
+        <EditorCategories value=""/>
+        <Amount value="15"/>
+    </CEffectDamage>
+    <CEffectDamage id="WoolSellPrice">
+        <EditorCategories value=""/>
+        <Amount value="10"/>
+    </CEffectDamage>
+    <CEffectSet id="WorkingAnimationTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="CraftingApply">
+        <EditorCategories value=""/>
+        <Behavior value="Crafting"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="DebugKillKobold">
+        <EditorCategories value=""/>
+        <Amount value="1000"/>
+    </CEffectDamage>
+    <CEffectDamage id="GoldReserves">
+        <EditorCategories value=""/>
+    </CEffectDamage>
+    <CEffectSet id="GatheringResourcesStart">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="KoboldAttackBashSet">
+        <ValidatorArray value="AttackTargetValidator"/>
+        <EditorCategories value=""/>
+        <EffectArray value="AttackItemProcsSetBeforeDamage"/>
+        <EffectArray value="MeleeDamage"/>
+        <EffectArray value="SturdyWoodenStickSlowApply"/>
+        <EffectArray value="SharpIronPickaxeBleed2"/>
+        <EffectArray value="MurlocDoomhammerAttackSet"/>
+        <EffectArray value="AttackItemProcsSetMelee"/>
+    </CEffectSet>
+    <CEffectDamage id="SharpIronPickaxeBleed">
+        <EditorCategories value=""/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Kind value="Melee"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="SharpIronPickaxeBleed2">
+        <ValidatorArray index="0" value="CasterHasSharpIronPickaxe"/>
+        <ValidatorArray value="UnitIsBiological"/>
+        <EditorCategories value=""/>
+        <Behavior value="IronPickaxeBleed"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="LevelUp">
+        <EditorCategories value=""/>
+        <EffectArray value="LevelAttributeStackApply"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="CookingApply">
+        <EditorCategories value=""/>
+        <Behavior value="Cooking"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="Physique">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/ForestingStats"/>
+        <AttributeBonus index="Armored" value="20"/>
+        <AttributeBonus index="Biological" value="18"/>
+        <AttributeBonus index="Heroic" value="25"/>
+    </CEffectDamage>
+    <CEffectEnumArea id="HeatSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Neutral,Enemy,Structure,Missile,Dead"/>
+        <AreaArray Radius="5" Effect="HeatSet"/>
+    </CEffectEnumArea>
+    <CEffectEnumArea id="FireWardSearch">
+        <SearchFilters value="-;Player,Ally,Structure,Missile,Item,Dead"/>
+        <AreaArray Radius="5" Effect="FireWardTrigger"/>
+        <ValidatorArray value="CasterIsNotCloaked"/>
+        <ValidatorArray value="NoFireWardNegator"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="GrowingTreeApply">
+        <EditorCategories value=""/>
+        <Behavior value="GrowingTree"/>
+    </CEffectApplyBehavior>
+    <CEffectModifyUnit id="GrowingTreeModify">
+        <EditorCategories value=""/>
+        <VitalArray index="Life" Change="0.47"/>
+    </CEffectModifyUnit>
+    <CEffectModifyUnit id="GrowingTreeModifyInitial">
+        <EditorCategories value=""/>
+        <VitalArray index="Life" Change="-85"/>
+    </CEffectModifyUnit>
+    <CEffectRemoveBehavior id="GrowingTreeRemove">
+        <ValidatorArray index="0" value="TargetLifeFull"/>
+        <EditorCategories value=""/>
+        <BehaviorLink value="GrowingTree"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectSet id="GrowingTreeSet">
+        <EditorCategories value=""/>
+        <EffectArray value="GrowingTreeModifyInitial"/>
+        <EffectArray value="GrowingTreeApply"/>
+    </CEffectSet>
+    <CEffectSet id="GrowingTreeSetPeriodic">
+        <EditorCategories value=""/>
+        <EffectArray value="GrowingTreeModify"/>
+        <EffectArray value="GrowingTreeRemove"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="SpikeTrapApplySensor">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="SpikeTrapSensor"/>
+        <ValidatorArray index="0" value="SpikeTrapHasCharges"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="SpikeTrapChargesApply">
+        <EditorCategories value=""/>
+        <Behavior value="SpikeTrapCharges"/>
+        <Count value="3"/>
+    </CEffectApplyBehavior>
+    <CEffectRemoveBehavior id="SpikeTrapChargesRemove">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="SpikeTrapCharges"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectApplyBehavior id="SpikeTrapSensorDelayApply">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <Behavior value="SpikeTrapSensorDelay"/>
+        <ValidatorArray index="0" value="SpikeTrapDelayNotInProgress"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="StatsFoodReserves">
+        <EditorCategories value=""/>
+        <AttributeBonus index="Light" value="5"/>
+        <AttributeBonus index="Armored" value="1"/>
+        <AttributeBonus index="Biological" value="2"/>
+        <AttributeBonus index="Mechanical" value="7"/>
+        <AttributeBonus index="Robotic" value="9"/>
+        <AttributeBonus index="Psionic" value="8"/>
+        <AttributeBonus index="Massive" value="6"/>
+        <AttributeBonus index="Hover" value="4"/>
+        <AttributeBonus index="Heroic" value="3"/>
+    </CEffectDamage>
+    <CEffectDamage id="StatsMaterialReserves">
+        <EditorCategories value=""/>
+    </CEffectDamage>
+    <CEffectEnumArea id="StorageHutSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="Item;Structure,Missile,Dead,Hidden"/>
+        <AreaArray Radius="4" Effect="StorageHutTrigger"/>
+        <MaxCount value="1"/>
+    </CEffectEnumArea>
+    <CEffectSet id="StorageHutTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="SturdyWoodenStickSlowApply">
+        <ValidatorArray index="0" value="CasterHasSturdyWoodenStick"/>
+        <ValidatorArray value="UnitIsBiological"/>
+        <EditorCategories value=""/>
+        <Behavior value="SturdyWoodenStickSlow"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="WellFedApply">
+        <EditorCategories value=""/>
+        <Behavior value="WellFedEndurance"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="WellFedStrengthApply">
+        <EditorCategories value=""/>
+        <Behavior value="WellFedStrength"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="WellFedEnduranceExpire">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="WellFedBeerApply">
+        <EditorCategories value=""/>
+        <Behavior value="WellFedBeer"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="WellFedStrengthExpire">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="WellFedEnduranceInitial">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="WellFedBeerExpire">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="WellFedStrengthInitial">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="WellFedBeerInitial">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectDamage id="Wit">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/ForestingStats"/>
+        <AttributeBonus index="Armored" value="20"/>
+        <AttributeBonus index="Biological" value="18"/>
+    </CEffectDamage>
+    <CEffectDamage id="TreeHitter" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <ArmorReduction value="0"/>
+    </CEffectDamage>
+    <CEffectCreateUnit id="PlantTree">
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetPoint"/>
+        <CreateFlags index="Placement" value="0"/>
+        <SpawnEffect value="GrowingTreeSet"/>
+        <SpawnUnit value="MapleTree"/>
+    </CEffectCreateUnit>
+    <CEffectDamage id="ForestingStats">
+        <EditorCategories value=""/>
+        <AttributeBonus index="Light" value="180"/>
+    </CEffectDamage>
+    <CEffectDamage id="ExcavatingStats">
+        <EditorCategories value=""/>
+    </CEffectDamage>
+    <CEffectDamage id="CheffingStats">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/ForestingStats"/>
+        <AttributeBonus index="Light" value="30"/>
+        <AttributeBonus index="Mechanical" value="28"/>
+        <AttributeBonus index="Robotic" value="120"/>
+        <AttributeBonus index="Psionic" value="110"/>
+        <AttributeBonus index="Massive" value="80"/>
+        <AttributeBonus index="Structure" value="34"/>
+        <AttributeBonus index="Hover" value="50"/>
+        <AttributeBonus index="Heroic" value="20"/>
+    </CEffectDamage>
+    <CEffectDamage id="ForagingStats">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/ForestingStats"/>
+    </CEffectDamage>
+    <CEffectDamage id="ArtisanshipStats">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/ForestingStats"/>
+    </CEffectDamage>
+    <CEffectRemoveBehavior id="FrostbiteRemove">
+        <ValidatorArray index="0" removed="1"/>
+        <EditorCategories value=""/>
+        <BehaviorLink value="Frostbite"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectApplyBehavior id="KoboldBotApply">
+        <EditorCategories value=""/>
+        <Behavior value="KoboldBotNormal"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="KoboldBotTrigger">
+        <EditorCategories value=""/>
+        <ValidatorArray value="TargetAIEnabled"/>
+        <ValidatorArray value="TargetIsNotCooking"/>
+        <ValidatorArray value="TargetIsNotCrafting"/>
+        <ValidatorArray value="TargetIsNotFainted"/>
+        <ValidatorArray value="TargetIsNotFeared"/>
+        <ValidatorArray value="NotAIFullPause"/>
+        <ValidatorArray value="TargetIsNotRzzing"/>
+    </CEffectSet>
+    <CEffectSet id="TorchTimedLifeTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectEnumArea id="TorchWard">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/CampfireWardSearch"/>
+        <SearchFilters value="-;Player,Ally,Structure,Missile,Item,Dead"/>
+        <AreaArray Radius="2" Effect="FireWardTrigger"/>
+        <ValidatorArray value="CasterIsNotCloaked"/>
+    </CEffectEnumArea>
+    <CEffectSet id="FireWardTrigger">
+        <ValidatorArray value="TargetIsWolfAny"/>
+        <ValidatorArray value="TargetIsNotTamed"/>
+    </CEffectSet>
+    <CEffectCreateUnit id="ConstructFarm">
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetPoint"/>
+        <SpawnUnit value="Farm"/>
+        <CreateFlags index="Placement" value="0"/>
+    </CEffectCreateUnit>
+    <CEffectCreateUnit id="ConstructSmithy">
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetPoint"/>
+        <SpawnUnit value="Smithy"/>
+        <CreateFlags index="Placement" value="0"/>
+    </CEffectCreateUnit>
+    <CEffectCreateUnit id="ConstructSpikeTrap">
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetPoint"/>
+        <SpawnUnit value="SpikeTrap"/>
+        <CreateFlags index="Placement" value="0"/>
+        <SpawnEffect value="SpikeTrapSpawnEffect"/>
+    </CEffectCreateUnit>
+    <CEffectCreateUnit id="ConstructTavern">
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetPoint"/>
+        <SpawnUnit value="Tavern"/>
+        <CreateFlags index="Placement" value="0"/>
+        <SpawnEffect value="TavernSpawnTrigger"/>
+    </CEffectCreateUnit>
+    <CEffectSet id="FarmSpawnTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectDamage id="WolfBiteDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Amount value="10"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="FrostbiteApply">
+        <EditorCategories value=""/>
+        <Behavior value="Frostbite"/>
+        <ValidatorArray index="0" value="UnitHasNoAdrenalineRush"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="RestingApply">
+        <EditorCategories value=""/>
+        <Behavior value="Resting"/>
+        <ValidatorArray index="0" value="TargetIsKobold"/>
+    </CEffectApplyBehavior>
+    <CEffectApplyBehavior id="HeatApply">
+        <EditorCategories value=""/>
+        <Behavior value="Heat"/>
+        <ValidatorArray index="0" value="HeatValidator"/>
+    </CEffectApplyBehavior>
+    <CEffectCreateUnit id="LightCampfire">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/ConstructTent"/>
+        <WhichLocation Value="CasterPoint"/>
+        <SpawnUnit value="CampfireLit"/>
+        <SpawnEffect value="LightCampfireSpawnSet"/>
+    </CEffectCreateUnit>
+    <CEffectDamage id="MeleeDamage" parent="DU_WEAP">
+        <EditorCategories value="Race:Terran"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Amount value="20"/>
+    </CEffectDamage>
+    <CEffectCreateUnit id="ConstructTent">
+        <EditorCategories value=""/>
+        <WhichLocation Value="TargetPoint"/>
+        <SpawnUnit value="Tent"/>
+        <CreateFlags index="Placement" value="0"/>
+        <SpawnEffect value="TentSpawnTrigger"/>
+    </CEffectCreateUnit>
+    <CEffectCreateUnit id="ConstructCampfire">
+        <EditorCategories value=""/>
+        <Marker Link="Effect/ConstructTent"/>
+        <WhichLocation Value="TargetPoint"/>
+        <SpawnUnit value="CampfireLit"/>
+        <CreateFlags index="Placement" value="0"/>
+    </CEffectCreateUnit>
+    <CEffectSet id="LightCampfireSet">
+        <EditorCategories value=""/>
+        <EffectArray value="Kill"/>
+        <EffectArray value="LightCampfire"/>
+    </CEffectSet>
+    <CEffectEnumArea id="ShelterSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Neutral,Enemy,Structure,Missile,Dead,Hidden"/>
+        <AreaArray Radius="5" Effect="RestingApply"/>
+    </CEffectEnumArea>
+    <CEffectApplyBehavior id="SpikeTrapApply">
+        <EditorCategories value=""/>
+        <Behavior value="SpikeTrapStun"/>
+        <ValidatorArray index="0" value="TargetIsNotSpiked"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="SpikeTrapDamage">
+        <EditorCategories value=""/>
+        <AttributeBonus index="Light" value="50"/>
+        <Amount value="50"/>
+        <ValidatorArray value="TargetIsNotSpiked"/>
+        <ArmorReduction value="1"/>
+        <AINotifyFlags index="HurtEnemy" value="1"/>
+        <Kind value="Melee"/>
+    </CEffectDamage>
+    <CEffectRemoveBehavior id="SpikeTrapRemove">
+        <EditorCategories value=""/>
+        <WhichUnit Value="Caster"/>
+        <BehaviorLink value="SpikeTrapSensor"/>
+        <Count value="1"/>
+    </CEffectRemoveBehavior>
+    <CEffectEnumArea id="SpikeTrapSearch">
+        <EditorCategories value=""/>
+        <SearchFilters value="-;Player,Ally,Structure,Missile,Item,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="0.625" Effect="SpikeTrapSet"/>
+        <MaxCount value="1"/>
+    </CEffectEnumArea>
+    <CEffectSet id="SpikeTrapSet">
+        <EditorCategories value=""/>
+        <EffectArray value="SpikeTrapDamage"/>
+        <EffectArray value="SpikeTrapImpactSwitch"/>
+        <EffectArray value="SpikeTrapChargesRemove"/>
+        <EffectArray value="SpikeTrapSensorDelayApply"/>
+        <ValidatorArray value="TargetIsNotDomesticAnimal"/>
+        <ValidatorArray value="SpikeTrapPaddingValidator"/>
+    </CEffectSet>
+    <CEffectApplyBehavior id="StarvingApply">
+        <EditorCategories value=""/>
+        <Behavior value="Starving"/>
+    </CEffectApplyBehavior>
+    <CEffectDamage id="StarvingDamage">
+        <EditorCategories value=""/>
+        <Amount value="3"/>
+    </CEffectDamage>
+    <CEffectDamage id="FrostbiteDamage">
+        <EditorCategories value=""/>
+        <Amount value="5"/>
+    </CEffectDamage>
+    <CEffectApplyBehavior id="UnconsciousApply">
+        <EditorCategories value=""/>
+        <Behavior value="Unconscious"/>
+        <Flags index="UseDuration" value="1"/>
+        <Duration value="8"/>
+    </CEffectApplyBehavior>
+    <CEffectSet id="UnconsciousEndTrigger">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectSet id="WorkingAnimationEnd">
+        <EditorCategories value=""/>
+    </CEffectSet>
+    <CEffectDamage id="damagetest"/>
+</Catalog>

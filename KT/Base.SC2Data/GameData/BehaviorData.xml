@@ -1,0 +1,4513 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CBehaviorBuff id="ADTAllowedStacks">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="100"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="AIGatheringToCraft">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="20"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="AIHelperEnemy">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="100"/>
+        <MaxStackCountPerCaster value="1"/>
+        <InitialEffect value="AIHelperEnemyInitial"/>
+        <FinalEffect value="AIHelperEnemyTriggerEnd"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="AIProwlsStag">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="3"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="AIRecentCombat">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Beast">
+        <InfoFlags index="Hidden" value="1"/>
+        <Period value="5"/>
+        <PeriodicEffect value="BeastSwitchInitial"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BeastLeash">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <BuffFlags index="Extend" value="1"/>
+        <Duration value="1"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="Beast"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BeaverCargo">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BeaverPen">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BeaverScavenger">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="10"/>
+        <Period value="0.25"/>
+        <InitialEffect value="BeaverScavengerTrigger"/>
+        <PeriodicEffect value="BeaverScavengerTrigger"/>
+        <ExpireEffect value="KillWithDamage"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BlinkStalker">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="5"/>
+        <PeriodicEffect value="BlinkStalker"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BriefPassivity">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1"/>
+        <Modification>
+            <StateFlags index="Passive" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CanBecomeGate">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CanBuildWatchTower">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CommonSword">
+        <InfoFlags index="Hidden" value="1"/>
+        <DisableValidatorArray value="CasterIsKobold"/>
+        <Modification>
+            <WeaponDisableArray value="KoboldAttackMeleeBash"/>
+            <AttributeChangeArray Attribute="Physique" Points="10"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FlockBehaviorSheep">
+        <InfoFlags index="Hidden" value="1"/>
+        <Period value="10"/>
+        <PeriodicEffect value="FlockBehaviorSearchSheep"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FlockBehaviorStopDelay">
+        <InfoFlags index="Hidden" value="1"/>
+        <Duration value="1"/>
+        <DurationRandomMin value="1"/>
+        <ExpireEffect value="FlockBehaviorStopOrderSelf"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FrostBeamSilence">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Icons\FrostNeedle.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <AbilLinkDisableArray value="NaturesGrace"/>
+            <AbilLinkDisableArray value="MineralTap"/>
+            <AbilLinkDisableArray value="Clairvoyance"/>
+            <AbilLinkDisableArray value="FrostArmor"/>
+            <AbilLinkDisableArray value="SiphonLife"/>
+            <AbilLinkDisableArray value="Affliction"/>
+            <AbilLinkDisableArray value="ShadowCloak"/>
+            <AbilLinkDisableArray value="GuardianSpirit"/>
+            <AbilLinkDisableArray value="MysteriousArcaneRitual"/>
+            <AbilLinkDisableArray value="MurlocRush"/>
+            <AbilLinkDisableArray value="WarlordSpikes"/>
+            <AbilLinkDisableArray value="WhirlingBlades"/>
+            <AbilLinkDisableArray value="Permafrost"/>
+            <AbilLinkDisableArray value="LightsOut"/>
+            <AbilLinkDisableArray value="Firestorm"/>
+            <AbilLinkDisableArray value="Tether"/>
+            <AbilLinkDisableArray value="DreadHowl"/>
+            <AbilLinkDisableArray value="ArcaneEruption"/>
+            <AbilLinkDisableArray value="Annihilate"/>
+            <AbilLinkDisableArray value="EmpoweredLightning"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GenericNightBehavior">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GenericStun">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InitialEffect value="GenericStunTrigger"/>
+        <Modification>
+            <StateFlags index="Stun" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GroundskeeperAcceleratedGrowth">
+        <InfoIcon value="Icons\Shovel.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="2.25"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="InfirmaryRegen">
+        <InfoFlags index="Hidden" value="1"/>
+        <Duration value="2.25"/>
+        <InitialEffect value="UpdateCombatStats"/>
+        <FinalEffect value="UpdateCombatStats"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CommonArmor">
+        <InfoFlags index="Hidden" value="1"/>
+        <DisableValidatorArray value="CasterIsKobold"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="4"/>
+            <AttributeChangeArray Attribute="Wit" Points="6"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="IronbarkArmorTreeBuff">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="100"/>
+        <MaxStackCountPerCaster value="1"/>
+        <Duration value="2.25"/>
+        <InitialEffect value="IronbarkArmorTreeStack"/>
+        <FinalEffect value="IronbarkArmorTreeStackRemove"/>
+        <Modification>
+            <DeathResponse Chance="1" Effect="IronbarkArmorRecoilStun"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="IronbarkArmorElderTreeBuff">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="100"/>
+        <MaxStackCountPerCaster value="1"/>
+        <Duration value="2.25"/>
+        <InitialEffect value="IronbarkArmorElderTreeStack"/>
+        <FinalEffect value="IronbarkArmorElderTreeStackRemove"/>
+        <Modification>
+            <DeathResponse Chance="1" Effect="IronbarkArmorRecoilStun"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="IronbarkArmorTreeStack">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="100"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="IronbarkArmorElderTreeStack">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="100"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="3"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CommonBuckler">
+        <InfoFlags index="Hidden" value="1"/>
+        <DisableValidatorArray value="CasterIsKobold"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="FlowerBoquet"/>
+            <AttributeChangeArray Attribute="Physique" Points="6"/>
+            <DeathResponse>
+                <Cost>
+                    <Charge Link="Behavior/SturdyWoodenStick"/>
+                    <Cooldown Link="Behavior/SturdyWoodenStick"/>
+                </Cost>
+            </DeathResponse>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MasterRangersMailleCooldown">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="180"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MasterRangersMailleStrEnd">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="5"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="4"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MasterRangersMailleIntWil">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="5"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Wit" Points="4"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MunitionsSquadBonusAmmo">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoIcon value="Icons\Abilities\WatchTowerMunitionSquad.dds"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MurlocMilitiaJavelin">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <WeaponEnableArray value="MurlocMilitiaJavelin"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MurlocMilitiaIntelligence">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.625"/>
+        <PeriodicEffect value="MurlocMilitiaIntelligenceTrigger"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MurlocMilitiaTimedLife">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <Duration value="30"/>
+        <ExpireEffect value="SuicideRemove"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MurlocSlaveOrangeSkin">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FireWardNegator">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1.25"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="LazyCozyKobold"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PalisadeCandle">
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PrivateTimedLife10Sec" parent="TimedLife">
+        <Duration value="10"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="RemoveLoaded">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="2"/>
+        <ExpireEffect value="RemoveLoadedSet"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SetRepeater">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Requirements value="Repeater"/>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ShareVision">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="100"/>
+        <MaxStackCountPerCaster value="1"/>
+        <Modification>
+            <ModifyFlags index="ShareSight" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SpellAbsorb">
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SpellAbsorbCooldown">
+        <InfoFlags index="Hidden" value="1"/>
+        <Duration value="45"/>
+        <ExpireEffect value="SpellAbsorbApply"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SuspendKoboldAI">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="KoboldBotNormal"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ThrowingFrenzy">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\Items\TwinThrowingAxes.dds"/>
+        <BuffFlags index="RefreshStack" value="1"/>
+        <MaxStackCount value="5"/>
+        <Duration value="3"/>
+        <InitialEffect value="UpdateCombatStats"/>
+        <RefreshEffect value="UpdateCombatStats"/>
+        <FinalEffect value="UpdateCombatStats"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TwinThrowingAxesAlternate">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UnderSiege">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Icons\Stone.dds"/>
+        <Duration value="10"/>
+        <Modification>
+            <ModifyFlags index="Reveal" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SmithyWorking">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="100"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PalisadeMorphing">
+        <InfoFlags index="Hidden" value="1"/>
+        <Duration value="1.35"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TargetAcquisitionAll">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <WeaponEnableArray value="HeavyAutomatedCrossbowAll"/>
+            <WeaponDisableArray value="HeavyAutomatedCrossbow"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TrebuchetLoadedAddonStone">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\Stone.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <WeaponEnableArray value="TrebuchetWeapon"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TrebuchetLoadedStone">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <WeaponEnableArray value="TrebuchetWeapon"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TwinThrowingAxes">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="CasterIsKobold"/>
+        <Modification>
+            <WeaponDisableArray value="KoboldAttackMeleeBash"/>
+            <WeaponDisableArray value="ViciousJavelin"/>
+            <AttributeChangeArray Attribute="Physique" Points="32"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GoldenPolearmAddonBack">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GoldenPolearmAddon">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="3"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="GoldenPolearmAddonBack"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WarHorn">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\Abilities\WatchTowerWarHorn.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="30"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="15"/>
+            <AttributeChangeArray Attribute="Wit" Points="10"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="IronbarkArmor">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="CasterIsKobold"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="5"/>
+        </Modification>
+        <Period value="2"/>
+        <PeriodicEffect value="IronbarkArmorSearch"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WarlordSpikesCast">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="2.25"/>
+        <ExpireEffect value="HuntKoboldsTrigger"/>
+        <Modification>
+            <ModifyFlags index="SuppressMoving" value="1"/>
+            <ModifyFlags index="SuppressTurning" value="1"/>
+            <StateFlags index="SuppressAttack" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WatchTowerArcaneSanctum">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WatchTowerAttackAlert">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DamageResponse Chance="1" Handled="WatchTowerAttackAlert">
+            <Cost>
+                <Cooldown TimeUse="60"/>
+            </Cost>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WatchTowerArmory">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WatchTowerBallista">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BallistaActivated">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="BallistaActivated"/>
+        <Modification>
+            <WeaponEnableArray value="Ballista"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WatchTowerStructuralReinforcement">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DamageResponse Chance="1" ModifyFraction="0.25">
+            <RequireEffectArray value="ArcaneEruptionDamage"/>
+            <RequireEffectArray value="ArcanePulseDamage"/>
+            <RequireEffectArray value="AnnihilateDamage"/>
+            <RequireEffectArray value="LightningCloudDamage"/>
+            <RequireEffectArray value="DemonLordJaryxAttackDamage"/>
+            <RequireEffectArray value="FirestormDamage"/>
+            <RequireEffectArray value="MoltenSphereDamage"/>
+            <RequireEffectArray value="MurlocDoomhammerDamage"/>
+            <RequireEffectArray value="MurlocRushTrampleDamage"/>
+            <RequireEffectArray value="TrollGroundSpikeDamage"/>
+            <RequireEffectArray value="TrollBossDamage"/>
+            <RequireEffectArray value="RotatingBladeDamage"/>
+            <RequireEffectArray value="FrostWitchDamage"/>
+            <RequireEffectArray value="PermafrostDamageSecondary"/>
+            <RequireEffectArray value="MonstrousFistsDamage"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WatchTowerDamagedAlert">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DamageResponse Chance="1" Handled="WatchTowerDamagedAlert">
+            <Cost>
+                <Cooldown TimeUse="60"/>
+            </Cost>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WatchTowerNoStorageRope">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WatchTowerFullAmmo">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WatchTowerGroundskeeper">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="2"/>
+        <PeriodicEffect value="GroundskeeperSet"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GroundskeeperSpikeTrapPlacing">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="60"/>
+        <ExpireEffect value="GroundskeeperSpikeTrapPlace"/>
+        <DurationRandomMin value="20"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WatchTowerMunitionsSquad">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="5"/>
+        <PeriodicEffect value="MunitionsSquadBonusAmmoSearch"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WatchTowerNightLight">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.25"/>
+        <PeriodicEffect value="FireWardSearch"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WatchTowerNoMine">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WatchTowerTunnelerCrew">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="30"/>
+        <DurationRandomMin value="10"/>
+        <ExpireEffect value="WatchTowerTunnelerCrewApply"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="WatchTowerNoMine"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WatchTowerMurlocMilitia">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WatchTowerInfirmary">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="2"/>
+        <PeriodicEffect value="InfirmarySearch"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WatchTowerWarHorn">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WatchTowerNoAmmo">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <WeaponDisableArray value="WatchTowerWeapon"/>
+            <WeaponDisableArray value="WatchTowerWeapon02"/>
+            <WeaponDisableArray value="WatchTowerWeapon03"/>
+            <WeaponDisableArray value="WatchTowerWeapon04"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WatchTowerConstruction">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WatchTowerGarrisonTransportBuff">
+        <InfoFlags index="Hidden" value="1"/>
+        <MaxStackCount value="4"/>
+        <Modification AttackSpeedMultiplier="1.25" WeaponRange="1">
+            <BehaviorLinkDisableArray value="VeilofDarknessGeneral"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FireworksTimedLife" parent="TimedLife">
+        <Duration value="30"/>
+        <DurationRandomMin value="10"/>
+        <ExpireEffect value="SuicideRemove"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StructureDeathAnimationMassive">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="10"/>
+        <FinalEffect value="SuicideRemove"/>
+        <Modification>
+            <StateFlags index="Invulnerable" value="1"/>
+            <StateFlags index="Unselectable" value="1"/>
+            <StateFlags index="Untargetable" value="1"/>
+            <WeaponDisableArray value="WatchTowerWeapon"/>
+            <WeaponDisableArray value="Ballista"/>
+            <DeathResponse>
+                <Cost>
+                    <Charge Link="Behavior/StructureDeathAnimationSmall"/>
+                    <Cooldown Link="Behavior/StructureDeathAnimationSmall"/>
+                </Cost>
+            </DeathResponse>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StructureMassive">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DamageResponse>
+            <Chance value="1"/>
+            <Fatal value="1"/>
+            <Handled value="StructureDeathAnimationMassiveApply"/>
+            <ModifyFraction value="0"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WatchTowerGarrisonCargoBuff">
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WatchTowerStorage">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="WatchTowerNoStorageRope"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WatchTowerCanteen">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WatchTowerLookout">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification Detect="6"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WeaponAnimationTypeCrossbow">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WeaponAnimationTypeAlternatingThrow">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WinterHat">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ArtisanKnowledgeDreadplateArmor">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Coward">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Icons\Items\NecromancersNecklace.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="60"/>
+        <Modification>
+            <ModifyFlags index="ShareSight" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EpicFishingRod">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="CasterIsKobold"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="9"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ForestConnectionEnergy">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\PlantTree.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="100"/>
+        <Duration value="10"/>
+        <InitialEffect value="UpdateCombatStats"/>
+        <RefreshEffect value="UpdateCombatStats"/>
+        <FinalEffect value="UpdateCombatStats"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GoldenHauberkCooldown">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="90"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MurlocDoomhammerCooldown">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="90"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HunterRequirement">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="600"/>
+        <ExpireEffect value="HunterRequirement"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MetalArmor">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="10"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MurlocRebelSpirit">
+        <InfoIcon value="Icons\Items\TheMurlocket.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="EnemyKoboldsWithinRadius8"/>
+        <Period value="1"/>
+        <PeriodicEffect value="MurlocRebelSearch"/>
+        <Modification AttackSpeedMultiplier="1.25">
+            <StateFlags index="Uncommandable" value="1"/>
+            <DamageDealtScaled index="Melee" value="5"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SkipChatCombat60">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="60"/>
+        <DurationRandomMin value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StructureLarge">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DamageResponse>
+            <Chance value="1"/>
+            <Fatal value="1"/>
+            <Handled value="StructureDeathAnimationLargeApply"/>
+            <ModifyFraction value="0"/>
+        </DamageResponse>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StructureDeathAnimationLarge">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="3"/>
+        <FinalEffect value="SuicideRemove"/>
+        <Modification>
+            <StateFlags index="Invulnerable" value="1"/>
+            <StateFlags index="Unselectable" value="1"/>
+            <StateFlags index="Untargetable" value="1"/>
+            <DeathResponse>
+                <Cost>
+                    <Charge Link="Behavior/StructureDeathAnimationSmall"/>
+                    <Cooldown Link="Behavior/StructureDeathAnimationSmall"/>
+                </Cost>
+            </DeathResponse>
+        </Modification>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StructureDeathAnimationMedium">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="2"/>
+        <FinalEffect value="SuicideRemove"/>
+        <Modification>
+            <StateFlags index="Invulnerable" value="1"/>
+            <StateFlags index="Unselectable" value="1"/>
+            <StateFlags index="Untargetable" value="1"/>
+            <WeaponDisableArray value="HeavyAutomatedCrossbow"/>
+            <DeathResponse>
+                <Cost>
+                    <Charge Link="Behavior/StructureDeathAnimationSmall"/>
+                    <Cooldown Link="Behavior/StructureDeathAnimationSmall"/>
+                </Cost>
+            </DeathResponse>
+        </Modification>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StructureMedium">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DamageResponse>
+            <Chance value="1"/>
+            <Fatal value="1"/>
+            <Handled value="StructureDeathAnimationMediumApply"/>
+            <ModifyFraction value="0"/>
+        </DamageResponse>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StructureSmall">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DamageResponse>
+            <Chance value="1"/>
+            <Fatal value="1"/>
+            <Handled value="StructureDeathAnimationSmallApply"/>
+            <ModifyFraction value="0"/>
+        </DamageResponse>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StructureDeathAnimationSmall">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1.5"/>
+        <FinalEffect value="SuicideRemove"/>
+        <Modification>
+            <StateFlags index="Invulnerable" value="1"/>
+            <StateFlags index="SuppressAttack" value="1"/>
+            <StateFlags index="Unselectable" value="1"/>
+            <StateFlags index="Untargetable" value="1"/>
+        </Modification>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TheMurlocket">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InitialEffect value="CollectorRequirement"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Nightcrawler">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\Items\Nightcrawler.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="300"/>
+        <Modification SightBonus="-2"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="JewelDanio">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\Items\JewelDanio.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="360"/>
+        <Modification Detect="4" DetectFilters="Biological;-"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StormwizardsRobesImmunity">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="4"/>
+        <DurationRandomMin value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TigerRage">
+        <InfoIcon value="Icons\Items\TigerGourami.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <Duration value="10"/>
+        <Modification MoveSpeedMultiplier="1.25" AttackSpeedMultiplier="1.25"/>
+        <DamageResponse Chance="1" Fatal="1" ModifyFraction="0"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TrollGroundSpikeTimedLife" parent="TimedLife">
+        <Duration value="1"/>
+        <ExpireEffect value="SuicideRemove"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StripedLurker">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\Items\StripedLurker.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="360"/>
+        <FinalEffect value="StripedLurkerRemoveInvisibility"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ArcaneEruptionDelay">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.75"/>
+        <FinalEffect value="ArcaneEruption"/>
+        <Modification>
+            <StateFlags index="Stun" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ArcaneEruptionTimer">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <Duration value="7.25"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Candle">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="10"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="9"/>
+            <AttributeChangeArray Attribute="Wit" Points="6"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CelestialOrbCooldown">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Cooking20">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Fishing">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="NotMoving"/>
+        <RemoveValidatorArray value="CasterHasFishingEquipment"/>
+        <Duration value="10"/>
+        <InfoIcon value="Icons\Items\FishingRod.dds"/>
+        <ExpireEffect value="FishingSuccess"/>
+        <Modification>
+            <ModifyFlags index="SuppressTurning" value="1"/>
+            <StateFlags index="SuppressAttack" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FishingBobber">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <RemoveValidatorArray value="CasterIsFishing"/>
+        <Duration value="10"/>
+        <FinalEffect value="FishingTargetEnd"/>
+        <DisplayDuration index="Self" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FishingRod">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="CasterIsKobold"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="5"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FishingTargetBob">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="1"/>
+        <InitialEffect value="FishingTargetBob"/>
+        <PeriodicEffect value="FishingTargetBob"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HighlandGuppy">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\Items\HighlandGuppy.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="360"/>
+        <InitialEffect value="UpdateCombatStats"/>
+        <FinalEffect value="UpdateCombatStats"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="AlbinoCavefish">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\Items\AlbinoCavefish.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="360"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StripedLurkerInvisibility">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="NotMoving"/>
+        <DisableValidatorArray value="CasterNotAttacking"/>
+        <Duration value="360"/>
+        <Modification>
+            <StateFlags index="Cloak" value="1"/>
+            <StateFlags index="Passive" value="1"/>
+        </Modification>
+        <BuffFlags index="UpdateDurationWhileDisabled" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ToxicFrog">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\Items\ToxicFrog.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="20"/>
+        <InitialEffect value="UpdateCombatStats"/>
+        <FinalEffect value="UpdateCombatStats"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GravesingersClaw">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="CasterIsKobold"/>
+        <InitialEffect value="GravesingersClawActiveApply"/>
+        <FinalEffect value="GravesingersClawActiveRemove"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="FlowerBoquet"/>
+            <AttributeChangeArray Attribute="Physique" Points="4"/>
+            <AttributeChangeArray Attribute="Wit" Points="7"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GravesingersClawCooldown">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="5"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="GravesingersClawActive"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GravesingersClawDebuff">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Icons\Items\GravesingersClaw.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="10"/>
+        <MaxStackCountPerCaster value="1"/>
+        <Duration value="5"/>
+        <InitialEffect value="UpdateCombatStats"/>
+        <FinalEffect value="UpdateCombatStats"/>
+        <Modification>
+            <DeathResponse Chance="1" Effect="GravesingersRodSummonSet"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="KoboldDigestion">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="10"/>
+        <InitialEffect value="KoboldCanEatRemove"/>
+        <FinalEffect value="KoboldCanEatApply"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="LiquidatorSpellbladeActive">
+        <InfoIcon value="Icons\Items\LiquidatorSpellblade.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GravesingersClawActive">
+        <InfoIcon value="Icons\Items\GravesingersClaw.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MoltenSphereSpawner">
+        <InfoFlags index="Hidden" value="1"/>
+        <Period value="1"/>
+        <PeriodicEffect value="MoltenSphereTrigger"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DemonicGrowth">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-zerg-fungalgrowth-color.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="20"/>
+        <Modification>
+            <DamageDealtFraction index="Melee" value="0.2"/>
+            <VitalMaxFractionArray index="Life" value="0.05"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FirestormContinuousSound">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InitialEffect value="FirestormContinuousSoundStart"/>
+        <FinalEffect value="FirestormContinuousSoundEnd"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MysteriousArcaneRitual">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <Duration value="10"/>
+        <ExpireEffect value="MysteriousArcaneRitualFinish"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PermafrostVisualTimer">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <Duration value="4.5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="RepeatingCrossbowRoot">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.375"/>
+        <Modification>
+            <ModifyFlags index="SuppressMoving" value="1"/>
+            <ModifyFlags index="SuppressTurning" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StagBlindDash">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="5"/>
+        <FinalEffect value="FowlStopOrder"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StagEvasion">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="1"/>
+        <PeriodicEffect value="StagEvasionTrigger"/>
+        <DamageResponse Chance="1" Handled="StagInjuredAlert"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EnergyBoost">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="10"/>
+        <Duration value="1"/>
+        <Modification>
+            <VitalRegenArray index="Energy" value="1.5"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SpellbreakerTrigger">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1.25"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Spellbroken">
+        <Alignment value="Negative"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="6"/>
+        <InfoIcon value="Icons\Items\SpellbreakerArmor.dds"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StagInjuredAlert">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="3"/>
+        <InitialEffect value="StagEvasionTrigger"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StagSprint">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification MoveSpeedMultiplier="3"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <Duration value="5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TrollGroundSpikeSeek">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.0625"/>
+        <ExpireEffect value="TrollGroundSpikeSeek"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="AntlersStack">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="100"/>
+        <FinalEffect value="AntlersExpire"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TrollGroundSpikePeak">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.5"/>
+        <ExpireEffect value="TrollGroundSpikePeak"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TrollGroundSpikeOrigin">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TrollGroundSpikeDelay">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="2"/>
+        <ExpireEffect value="TrollGroundSpikeSearch"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UnstableAnomalyTimedLife">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Duration value="2"/>
+        <ExpireEffect value="Kill"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Nearground">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <PlaneDelta index="Ground" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SpellbreakerArmor">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="CasterIsKobold"/>
+        <Modification DetectArc="0" RadarArc="0">
+            <VitalMaxFractionArray index="Life" value="0.06"/>
+            <AttributeChangeArray Attribute="Physique" Points="15"/>
+            <AttributeChangeArray Attribute="Wit" Points="10"/>
+        </Modification>
+        <Period value="1"/>
+        <PeriodicEffect value="SpellbreakerTriggerSearch"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EmpoweredLightning">
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-feedback-color.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1.25"/>
+        <InitialEffect value="EmpoweredLightningInitialSet"/>
+        <FinalEffect value="UpdateCombatStats"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="LightningCloudAura">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.5"/>
+        <PeriodicEffect value="LightningCloudSet"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ArcaneEruption">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="6.5"/>
+        <Period value="1.25"/>
+        <PeriodicEffect value="ArcaneEruptionTrigger"/>
+        <Modification>
+            <StateFlags index="Stun" value="1"/>
+        </Modification>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ClairvoyanceNecromancerBonus">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="10"/>
+        <Modification MoveSpeedMultiplier="0.75"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EnergyDrain">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-psistorm-color.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1.25"/>
+        <InitialEffect value="UpdateCombatStats"/>
+        <FinalEffect value="UpdateCombatStats"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EnergyDrainAura">
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="1"/>
+        <PeriodicEffect value="EnergyDrainSearch"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Annihilate">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-phasemine-zeratul.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="4.5"/>
+        <Period value="0.75"/>
+        <PeriodicEffect value="AnnihilateTrigger"/>
+        <FinalEffect value="AnnihilateEnd"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="LightningCloudWander">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="5"/>
+        <PeriodicEffect value="LightningCloudWander"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="NecromancersNecklace">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InitialEffect value="NecromancersNecklaceSet"/>
+        <FinalEffect value="UpdateCombatStats"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FieryCrown">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="AdrenalineRush">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\Abilities\AdrenalineRushOn.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="1"/>
+        <InitialEffect value="UpdateCombatStats"/>
+        <PeriodicEffect value="AdrenalineRushTimer"/>
+        <FinalEffect value="UpdateCombatStats"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="AdrenalineRushReady">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="AfflictionArmorShred">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="12"/>
+        <Modification LifeArmorBonus="-5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ArenaCombatant">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Clairvoyance">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Icons\Clairvoyance.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="10"/>
+        <Modification>
+            <ModifyFlags index="Reveal" value="1"/>
+            <ModifyFlags index="Detected" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Constructing">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InitialEffect value="ConstructingSound"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CowardlyArcher">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.5"/>
+        <PeriodicEffect value="CowardlyArcherTrigger"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DeathBoltProxyCheck">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.125"/>
+        <PeriodicEffect value="DeathBoltSearch"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Demonward">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="FlowerBoquet"/>
+            <AttributeChangeArray Attribute="Physique" Points="5"/>
+            <AttributeChangeArray Attribute="Wit" Points="8"/>
+            <DeathResponse>
+                <Cost>
+                    <Charge Link="Behavior/SturdyWoodenStick"/>
+                    <Cooldown Link="Behavior/SturdyWoodenStick"/>
+                </Cost>
+            </DeathResponse>
+        </Modification>
+        <DamageResponse Chance="1" ModifyFraction="0.7">
+            <RequireEffectArray value="DemonLordJaryxAttackDamage"/>
+            <RequireEffectArray value="InfernalMinionDamage"/>
+            <RequireEffectArray value="FirestormDamage"/>
+            <RequireEffectArray value="TetherDamage"/>
+            <RequireEffectArray value="MoltenSphereDamage"/>
+            <RequireEffectArray value="GhoulDamage"/>
+            <RequireEffectArray value="FireballDamagePoint"/>
+            <RequireEffectArray value="FireballDamageUnit"/>
+            <RequireEffectArray value="MonstrousFistsDamage"/>
+        </DamageResponse>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CelestialOrb">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="CasterIsKobold"/>
+        <Modification>
+            <WeaponDisableArray value="KoboldAttackMeleeBash"/>
+            <WeaponDisableArray value="ViciousJavelin"/>
+            <AttributeChangeArray Attribute="Physique" Points="2"/>
+            <AttributeChangeArray Attribute="Wit" Points="3"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HighRangersChainmailEnrage">
+        <Alignment value="Positive"/>
+        <InfoIcon value="PerkIcons\AnimalHandler.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1"/>
+        <Modification MoveSpeedMultiplier="1.35" AttackSpeedMultiplier="0.65"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="OrbofDarknessDenied">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SpellbreakerHaste">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1.5"/>
+        <FinalEffect value="UpdateCombatStats"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UnlimitedPower">
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-blink-color.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Requirements value="UnlimitedPower"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MasterRangersMailleStrDex">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="5"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="4"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="AnnihilateAura">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.3332"/>
+        <PeriodicEffect value="AnnihilateSearch"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TheGastronomistsTutelage">
+        <InfoIcon value="Icons\Cooking.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.75"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MoltenSphereTimed">
+        <InfoFlags index="Hidden" value="1"/>
+        <Duration value="5"/>
+        <ExpireEffect value="Kill"/>
+        <Modification>
+            <StateFlags index="Stun" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TreeDamageReduction">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DamageResponse Chance="1" ModifyFraction="0.75">
+            <Kind index="Spell" value="0"/>
+            <Kind index="Melee" value="0"/>
+            <Kind index="Splash" value="0"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UnstableAnomaly">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.25"/>
+        <PeriodicEffect value="UnstableAnomaly"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UnstableAnomalySpawner">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="10"/>
+        <PeriodicEffect value="UnstableAnomalySpawner"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UnstableAnomalyStun">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1.5"/>
+        <Modification>
+            <StateFlags index="Stun" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="VeilofDarknessGeneral">
+        <Alignment value="Negative"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-protoss-shieldslevel0.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification SightMaximum="0"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UnburrowSpawn">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="5"/>
+        <Modification>
+            <StateFlags index="Invulnerable" value="1"/>
+            <StateFlags index="Stun" value="1"/>
+            <StateFlags index="Untargetable" value="1"/>
+            <BehaviorLinkDisableArray value="CowardlyArcher"/>
+        </Modification>
+        <ExpireEffect value="TombGuardianShout"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="LiquidatorSpellblade">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="CasterIsKobold"/>
+        <Modification>
+            <WeaponEnableArray value="LiquidatorSpellblade"/>
+            <WeaponDisableArray value="KoboldAttackMeleeBash"/>
+            <AttributeChangeArray Attribute="Physique" Points="7"/>
+            <AttributeChangeArray Attribute="Wit" Points="13"/>
+        </Modification>
+        <InitialEffect value="LiquidatorSpelbladePassiveApply"/>
+        <FinalEffect value="LiquidatorSpellbladePassiveRemove"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="LiquidatorSpellbladeDisable">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="9.5"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="LiquidatorSpellbladeActive"/>
+            <WeaponDisableArray value="LiquidatorSpellblade"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="LiquidatorSpellbladeRecoil">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.5"/>
+        <ExpireEffect value="LiquidatorSpellbladeDisableApply"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="RepeatingCrossbow">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="CasterIsKobold"/>
+        <Modification>
+            <WeaponDisableArray value="KoboldAttackMeleeBash"/>
+            <WeaponDisableArray value="ViciousJavelin"/>
+            <AttributeChangeArray Attribute="Physique" Points="6"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="RepeatingCrossbowAddon">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="2"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="RepeatingCrossbowAddonBack"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="RepeatingCrossbowAddonBack">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WarlocksVestments">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="CasterIsKobold"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Wit" Points="10"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MasterRangersMaille">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="CasterIsKobold"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="10"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HolyArmor">
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GoblinLoot">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="InCombat">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="InCombat"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="KoboldJustEaten32">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="3.2"/>
+        <InitialEffect value="KoboldCanEatRemove"/>
+        <FinalEffect value="KoboldCanEatApply"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="KoboldJustEaten64">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="6.4"/>
+        <InitialEffect value="KoboldCanEatRemove"/>
+        <FinalEffect value="KoboldCanEatApply"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="LightLeatherShield">
+        <InfoFlags index="Hidden" value="1"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="FlowerBoquet"/>
+            <AttributeChangeArray Attribute="Physique" Points="7"/>
+            <DeathResponse>
+                <Cost>
+                    <Charge Link="Behavior/SturdyWoodenStick"/>
+                    <Cooldown Link="Behavior/SturdyWoodenStick"/>
+                </Cost>
+            </DeathResponse>
+        </Modification>
+        <DamageResponse Chance="1" Handled="LightLeatherShieldTrigger">
+            <Kind index="Spell" value="0"/>
+            <Kind index="Splash" value="0"/>
+            <RequireEffectArray value="MeleeDamage"/>
+            <RequireEffectArray value="BlunderbussDamage"/>
+            <RequireEffectArray value="CelestialOrbDamage"/>
+            <RequireEffectArray value="ElderWandDamage"/>
+            <RequireEffectArray value="VenomousArbalestDamage"/>
+            <RequireEffectArray value="CravensFishStickerDamage"/>
+            <RequireEffectArray value="CravensFishStickerDamageExplosive"/>
+            <RequireEffectArray value="ViciousJavelinDamage"/>
+            <RequireEffectArray value="RepeatingCrossbowDamage"/>
+            <RequireEffectArray value="RepeatingCrossbowDamageNoProc"/>
+            <RequireEffectArray value="TwinThrowingAxesDamageLeft"/>
+            <RequireEffectArray value="TwinThrowingAxesDamageRight"/>
+            <RequireEffectArray value="FrostBeamDamage"/>
+        </DamageResponse>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Attacking">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="CasterIsFiringWeapon"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Locked">
+        <InfoIcon value="Icons\LockStorage.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MiningFortitude">
+        <Alignment value="Positive"/>
+        <InfoIcon value="PerkIcons\PerkExcavating.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="2.125"/>
+        <DamageResponse Chance="1" ModifyFraction="0.9"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Mining20">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MysteriousShrineZapStun">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1"/>
+        <FinalEffect value="MysteriousShrineZapEnd"/>
+        <Modification>
+            <StateFlags index="Stun" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="VeilShrineFlashBeamBuff">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.5"/>
+        <FinalEffect value="VeilShrineFlashBeamEnd"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SetHeavyIron">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Requirements value="SetHeavyIron"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="3"/>
+        </Modification>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="JudgmentGavel">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="11"/>
+            <AttributeChangeArray Attribute="Wit" Points="4"/>
+        </Modification>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BarnetConstruction">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BarnetsMonument">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BaseStats">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="63"/>
+            <AttributeChangeArray Attribute="Wit" Points="38"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BirdNoLand">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="4"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="BirdLookingForNest"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BloodcleaverDrain">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="10"/>
+        <MaxStackCountPerCaster value="1"/>
+        <Duration value="1.0625"/>
+        <Modification>
+            <DeathResponse Chance="1" Effect="BloodcleaverDrain"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BloodcleaverHaste">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="10"/>
+        <InitialEffect value="UpdateCombatStats"/>
+        <FinalEffect value="UpdateCombatStats"/>
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\Bloodcleaver.dds"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ChestBeingUnlocked">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DoomhammerCooldown">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="10"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DropandRemove">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.0625"/>
+        <ExpireEffect value="Kill"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FullAmmo">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GenericUseItemCooldown">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.25"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Fortified">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DamageResponse Chance="1" ModifyFraction="0.5">
+            <Kind index="Spell" value="0"/>
+            <Kind index="Melee" value="0"/>
+            <Kind index="Splash" value="0"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FreshLumber">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="10"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FrostArmorDrain">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Icons\FrostArmor.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="5"/>
+        <Period value="1"/>
+        <PeriodicEffect value="FrostArmorDrainTrigger"/>
+        <FinalEffect value="FrostArmorDrainEnd"/>
+        <Modification MoveSpeedMultiplier="0.5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FrostNeedle">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <WeaponDisableArray value="KoboldAttackMeleeBash"/>
+            <WeaponDisableArray value="ViciousJavelin"/>
+            <AttributeChangeArray Attribute="Wit" Points="20"/>
+        </Modification>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FrostbitePositive">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Icons\Frostbite.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="1"/>
+        <InitialEffect value="UpdateCombatStats"/>
+        <PeriodicEffect value="FrostbiteDamageLow"/>
+        <FinalEffect value="UpdateCombatStats"/>
+        <DamageResponse Chance="1" ModifyFraction="0.9"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GuardianSpiritLingering">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\GuardianSpirit.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="10"/>
+        <Period value="2"/>
+        <PeriodicEffect value="GuardianSpiritLingeringHeal"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="KoboldTestBuild">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.25"/>
+        <FinalEffect value="KoboldTestBuildFacing"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PickingBerriesSmart">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.125"/>
+        <PeriodicEffect value="GatheringResourcesProgress"/>
+        <InfoIcon value="Icons\HandfulofBerries.dds"/>
+        <Modification>
+            <StateFlags index="Passive" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MiningStoneSmart">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.125"/>
+        <PeriodicEffect value="GatheringResourcesProgress"/>
+        <InfoIcon value="Icons\Stone.dds"/>
+        <Modification>
+            <StateFlags index="Passive" value="1"/>
+            <BehaviorLinkDisableArray value="Resting"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MiningGoldSmart">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.125"/>
+        <PeriodicEffect value="GatheringResourcesProgress"/>
+        <InfoIcon value="Icons\Gossip.dds"/>
+        <Modification>
+            <StateFlags index="Passive" value="1"/>
+            <BehaviorLinkDisableArray value="Resting"/>
+            <DeathResponse>
+                <Cost>
+                    <Charge Link="Behavior/MiningStoneSmart"/>
+                    <Cooldown Link="Behavior/MiningStoneSmart"/>
+                </Cost>
+            </DeathResponse>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MurlocRage">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\MurlocSlave.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="15"/>
+        <InitialEffect value="MurlocRageInitialSet"/>
+        <FinalEffect value="MurlocRageFinalSet"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GoldenHauberk">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="13"/>
+            <AttributeChangeArray Attribute="Wit" Points="2"/>
+        </Modification>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Inspired">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\Kobold.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InitialEffect value="UpdateCombatStats"/>
+        <FinalEffect value="UpdateCombatStats"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FrostBarrier">
+        <Cost>
+            <Charge Link="Behavior/SturdyWoodenStick"/>
+            <Cooldown Link="Behavior/SturdyWoodenStick"/>
+        </Cost>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="FlowerBoquet"/>
+            <AttributeChangeArray Attribute="Physique" Points="6"/>
+            <AttributeChangeArray Attribute="Wit" Points="14"/>
+            <DeathResponse>
+                <Cost>
+                    <Charge Link="Behavior/SturdyWoodenStick"/>
+                    <Cooldown Link="Behavior/SturdyWoodenStick"/>
+                </Cost>
+            </DeathResponse>
+        </Modification>
+        <DamageResponse>
+            <Cost>
+                <Charge Link="Behavior/SturdyWoodenStick"/>
+                <Cooldown Link="Behavior/SturdyWoodenStick"/>
+            </Cost>
+        </DamageResponse>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="KingsReward">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="NodeGatherDelay">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.25"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Permafrost">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Icons\FrostArmor.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="4"/>
+        <Period value="1"/>
+        <PeriodicEffect value="PermafrostTargetSet"/>
+        <FinalEffect value="PermafrostEnd"/>
+        <Modification>
+            <StateFlags index="Stun" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PermafrostChannel">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="4"/>
+        <Modification>
+            <StateFlags index="Stun" value="1"/>
+        </Modification>
+        <FinalEffect value="PermafrostDespawnOrb"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PetDodging">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1.5"/>
+        <ExpireEffect value="FowlStopOrder"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PickingHerbsSmart">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.125"/>
+        <PeriodicEffect value="GatheringResourcesProgress"/>
+        <InfoIcon value="Icons\SpicyHerbs2.dds"/>
+        <Modification>
+            <StateFlags index="Passive" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="IronBandedBucklerBlocker">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DamageResponse Chance="1" Handled="IronBandedBucklerBlockerSet" ModifyFraction="0">
+            <Kind index="Spell" value="0"/>
+            <Kind index="Splash" value="0"/>
+            <RequireEffectArray value="FrostBearMaulDamage"/>
+            <RequireEffectArray value="BearMaulDamage"/>
+            <RequireEffectArray value="WolfBiteDamage"/>
+            <RequireEffectArray value="MeleeDamage"/>
+            <RequireEffectArray value="BlunderbussDamage"/>
+            <RequireEffectArray value="ElderWandDamage"/>
+            <RequireEffectArray value="CravensFishStickerDamage"/>
+            <RequireEffectArray value="VenomousArbalestDamage"/>
+            <RequireEffectArray value="NightwispDamage"/>
+            <RequireEffectArray value="TrollBossDamage"/>
+            <RequireEffectArray value="MurlocDoomhammerDamage"/>
+            <RequireEffectArray value="FrostWitchDamage"/>
+            <RequireEffectArray value="DemonLordJaryxAttackDamage"/>
+            <RequireEffectArray value="DirewolfBiteDamage"/>
+            <RequireEffectArray value="CelestialOrbDamage"/>
+            <RequireEffectArray value="ArcanePulseDamage"/>
+            <RequireEffectArray value="RepeatingCrossbowDamage"/>
+            <RequireEffectArray value="RepeatingCrossbowDamageNoProc"/>
+            <RequireEffectArray value="TwinThrowingAxesDamageLeft"/>
+            <RequireEffectArray value="TwinThrowingAxesDamageRight"/>
+            <RequireEffectArray value="Smash"/>
+            <RequireEffectArray value="AutomatedDefenseTurretDamage"/>
+            <RequireEffectArray value="WatchTowerDamage"/>
+            <RequireEffectArray value="MonstrousFistsDamage"/>
+            <RequireEffectArray value="GhoulDamage"/>
+            <RequireEffectArray value="MurlocMilitiaJavelinDamage"/>
+            <RequireEffectArray value="ViciousJavelinDamage"/>
+            <RequireEffectArray value="FrostBeamDamage"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="IronBandedBucklerCooldown">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-lostvinking-bomb.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="15"/>
+        <ExpireEffect value="IronBandedBucklerBlockerApply"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UnlockingChestSmart">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.125"/>
+        <PeriodicEffect value="GatheringResourcesProgress"/>
+        <InfoIcon value="PerkIcons\PerkGoldenHands.dds"/>
+        <Modification>
+            <StateFlags index="Passive" value="1"/>
+        </Modification>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <Duration value="6.25"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="RecentlyDamaged">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="15"/>
+        <MaxStackCountPerCaster value="1"/>
+        <Duration value="0.85"/>
+        <FinalEffect value="RecentlyDamaged"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ResourceScourDelay">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="GatherResourcesScan"/>
+        </Modification>
+        <Duration value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Salvagable">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SkipChatResurrect60">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="60"/>
+        <DurationRandomMin value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SkipChatRetreat60">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="60"/>
+        <DurationRandomMin value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Sombrero">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ArmorShred">
+        <Alignment value="Negative"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="4"/>
+        <Modification LifeArmorBonus="-6" DetectArc="0" RadarArc="0"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Affliction">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-zerg-explode-color.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="12"/>
+        <Period value="1"/>
+        <PeriodicEffect value="AfflictionSet"/>
+        <DamageResponse Chance="1" Fatal="1" Handled="AfflictionSearch"/>
+        <InitialEffect value="AfflictionArmorReductionApply"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="AfflictionAchievementCheck">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <BuffFlags index="RefreshStack" value="1"/>
+        <MaxStackCount value="250"/>
+        <MaxStackCountPerCaster value="25"/>
+        <Duration value="1.25"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="AncientArtifactFragment">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InitialEffect value="SummonsTrigger"/>
+        <RefreshEffect value="SummonsTrigger"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="AnimalHandler">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DamageResponse Chance="1" ModifyFraction="0.9">
+            <RequireEffectArray value="BearMaulDamage"/>
+            <RequireEffectArray value="WolfBiteDamage"/>
+            <RequireEffectArray value="FrostBearMaulDamage"/>
+            <RequireEffectArray value="DirewolfBiteDamage"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="AnimalScout">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="2.5"/>
+        <PeriodicEffect value="AnimalScoutTrigger"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="AristocratRequirement">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DamageResponse Chance="1" Handled="AristocratRequirementRemove"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ArmorShredSpikeTrap">
+        <Alignment value="Negative"/>
+        <InfoIcon value="PerkIcons\PerkSharp.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="6"/>
+        <Modification LifeArmorBonus="-5" DetectArc="0" RadarArc="0"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Artisanship25">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ArtisanKnowledgeOutlandishHeartpiercer">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ArtisanKnowledgeVenomousArbalest">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Artisanship10">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Artisanship15">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BearSprintTrigger">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DamageResponse Chance="0.25" Handled="BearSprintApply">
+            <Kind index="Spell" value="0"/>
+            <Kind index="Melee" value="0"/>
+            <Kind index="Splash" value="0"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Artisanship5">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Artisanship20">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BerserkersBattleAxe">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <WeaponDisableArray value="KoboldAttackMeleeBash"/>
+            <AttributeChangeArray Attribute="Physique" Points="12"/>
+        </Modification>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ArtisanshipRepairAura">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="2"/>
+        <PeriodicEffect value="ArtisanshipRepairSearch"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BaitedFowl">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="10"/>
+        <Period value="3"/>
+        <PeriodicEffect value="FowlBaitTrigger"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BearShamanWillpowerStack">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="40"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Wit" Points="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BearShamansShroud">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="4"/>
+            <AttributeChangeArray Attribute="Wit" Points="10"/>
+        </Modification>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BirdLookingForNest">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="2.5"/>
+        <PeriodicEffect value="BirdLookingForNestSearch"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BirdNesting">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="1"/>
+        <PeriodicEffect value="SittinAnimDammet"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BirdScouting">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="1"/>
+        <PeriodicEffect value="BirdScoutSearch"/>
+        <Duration value="180"/>
+        <FinalEffect value="BirdServiceExpire"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BloodthirstyPirateHat">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="10"/>
+        <PeriodicEffect value="BloodthirstyPirateGreed"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="AdmiralHat"/>
+            <BehaviorLinkDisableArray value="DevoutCap"/>
+            <BehaviorLinkDisableArray value="Fez"/>
+            <BehaviorLinkDisableArray value="MonkHeadwear"/>
+            <BehaviorLinkDisableArray value="Sombrero"/>
+            <BehaviorLinkDisableArray value="SunHat"/>
+            <BehaviorLinkDisableArray value="TopHat"/>
+            <BehaviorLinkDisableArray value="WizardsHat"/>
+            <BehaviorLinkDisableArray value="WinterHat"/>
+            <BehaviorLinkDisableArray value="FieryCrown"/>
+            <AttributeChangeArray Attribute="Physique" Points="20"/>
+        </Modification>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BoneTalisman">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InitialEffect value="InfectionRemove"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BoneTalismanStack">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="100"/>
+        <FinalEffect value="BoneTalismanExpire"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CampfireExpert">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CampfireSpecialRequirement">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.25"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ChallengeBannerCheck">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="1"/>
+        <PeriodicEffect value="ChallengeBannerSearch"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ChallengeBannerCheckSuppress">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="5"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="ChallengeBannerCheck"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CheckFoodRecently">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ChefsInspiration">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\ChefsHat.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="30"/>
+        <InitialEffect value="UpdateCombatStats"/>
+        <FinalEffect value="UpdateCombatStats"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ChieftainRuthlessness">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="2"/>
+        <PeriodicEffect value="ChieftainSearch"/>
+        <DamageResponse Chance="1" Handled="MurlocFrenzyApply">
+            <Cost>
+                <Cooldown TimeUse="5"/>
+            </Cost>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CombatTraining">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="2"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CookingExpertiseI">
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="10"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CookingExpertiseII">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\FastFood.dds"/>
+        <Duration value="30"/>
+        <Modification DetectArc="0" RadarArc="0"/>
+        <InitialEffect value="UpdateCombatStats"/>
+        <FinalEffect value="UpdateCombatStats"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CookingExpertiseIII">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\ChefsHat.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="30"/>
+        <InitialEffect value="CookingExpertiseIIIInitial"/>
+        <FinalEffect value="CookingExpertiseIIIFinal"/>
+        <Modification DetectArc="0" RadarArc="0">
+            <AttributeChangeArray Attribute="Wit" Points="10"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CrabShipment">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <AbilLinkDisableArray value="Run"/>
+            <BehaviorLinkDisableArray value="Running"/>
+            <AttributeChangeArray Attribute="Physique" Points="12"/>
+        </Modification>
+        <InitialEffect value="DisableRun"/>
+        <FinalEffect value="EnableRun"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CravensFishStickerAddon">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="2"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="CrossbowBack"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CravensFishSticker">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <WeaponDisableArray value="KoboldAttackMeleeBash"/>
+            <WeaponDisableArray value="ViciousJavelin"/>
+            <AttributeChangeArray Attribute="Physique" Points="14"/>
+            <AttributeChangeArray Attribute="Wit" Points="6"/>
+        </Modification>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="AnimalRush">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="5"/>
+        <DurationRandomMin value="2"/>
+        <InitialEffect value="BearSprintTrigger"/>
+        <Modification MoveSpeedMultiplier="2"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CrossbowBack">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Tether">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-terran-corvidreactor.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="10"/>
+        <Period value="0.25"/>
+        <PeriodicEffect value="TetherSearch"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DeadnightActive">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DemonRoam">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="5"/>
+        <PeriodicEffect value="HuntKoboldsTrigger"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DemonicStrikes">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-zerg-meleeattacks-level0.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <BuffFlags index="RefreshStack" value="1"/>
+        <MaxStackCount value="50"/>
+        <Duration value="30"/>
+        <Modification LifeArmorBonus="-0.2" DetectArc="0" RadarArc="0"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Fez">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DiggingTruffles">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1.5"/>
+        <FinalEffect value="DiggingTrufflesEnd"/>
+        <Modification>
+            <ModifyFlags index="DisableAbils" value="1"/>
+            <ModifyFlags index="SuppressMoving" value="1"/>
+            <ModifyFlags index="SuppressTurning" value="1"/>
+        </Modification>
+        <InfoFlags index="Hidden" value="1"/>
+        <DurationRandomMin value="1"/>
+        <ExpireEffect value="FindTruffle"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Dilapidated">
+        <Alignment value="Negative"/>
+        <InfoIcon value="PerkIcons\PerkMasterCraftsman.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="30"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Disoriented">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <StateFlags index="Stun" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DomesticFarm">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\Sheep.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DreadplateArmor">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InitialEffect value="DreadplateArmorFearTriggerApply"/>
+        <FinalEffect value="DreadplateArmorFearTriggerRemove"/>
+        <Modification DetectArc="0" RadarArc="0">
+            <VitalMaxFractionArray index="Life" value="0.06"/>
+            <AttributeChangeArray Attribute="Physique" Points="16"/>
+        </Modification>
+        <DamageResponse Chance="1" ModifyFraction="0.9">
+            <Kind index="Melee" value="0"/>
+            <Kind index="Ranged" value="0"/>
+            <Kind index="Splash" value="0"/>
+        </DamageResponse>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DreadplateArmorFearTrigger">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DamageResponse Chance="1" Handled="DreadplateArmorFearSearch">
+            <Cost>
+                <Cooldown Location="Unit" TimeUse="90"/>
+            </Cost>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DullEdge">
+        <Alignment value="Negative"/>
+        <InfoIcon value="PerkIcons\PerkSharp.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ElderTreeSheltering">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.125"/>
+        <PeriodicEffect value="ElderTreeShelterSearch"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ElderWand">
+        <InfoFlags index="Hidden" value="1"/>
+        <Modification>
+            <WeaponDisableArray value="KoboldAttackMeleeBash"/>
+            <WeaponDisableArray value="ViciousJavelin"/>
+            <AttributeChangeArray Attribute="Wit" Points="5"/>
+            <DeathResponse>
+                <Cost>
+                    <Charge Link="Behavior/SturdyWoodenStick"/>
+                    <Cooldown Link="Behavior/SturdyWoodenStick"/>
+                </Cost>
+            </DeathResponse>
+        </Modification>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EnergyReserves">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InitialEffect value="UpdateCombatStats"/>
+        <FinalEffect value="UpdateCombatStats"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="AICombatTrigger">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="5"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InitialEffect value="AICombatTriggerStart"/>
+        <FinalEffect value="AICombatTriggerEnd"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="EnigmaticStaff">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="7"/>
+            <AttributeChangeArray Attribute="Wit" Points="6"/>
+            <DeathResponse>
+                <Cost>
+                    <Charge Link="Behavior/SturdyWoodenStick"/>
+                    <Cooldown Link="Behavior/SturdyWoodenStick"/>
+                </Cost>
+            </DeathResponse>
+        </Modification>
+        <DamageResponse Chance="1" ModifyFraction="0.85">
+            <Cost>
+                <Charge Link="Behavior/SturdyWoodenStick"/>
+                <Cooldown Link="Behavior/SturdyWoodenStick"/>
+            </Cost>
+            <Kind index="Melee" value="0"/>
+            <Kind index="Ranged" value="0"/>
+            <Kind index="Splash" value="0"/>
+        </DamageResponse>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Fear">
+        <Alignment value="Negative"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.5"/>
+        <PeriodicEffect value="FearTrigger"/>
+        <Modification>
+            <StateFlags index="Passive" value="1"/>
+            <StateFlags index="SuppressAttack" value="1"/>
+            <StateFlags index="Uncommandable" value="1"/>
+        </Modification>
+        <InitialEffect value="FearTrigger"/>
+        <InfoIcon value="Assets\Textures\btn-ability-zerg-corruption_multi.dds"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FelFireTorch">
+        <Cost>
+            <Charge Link="Behavior/SturdyWoodenStick"/>
+            <Cooldown Link="Behavior/SturdyWoodenStick"/>
+        </Cost>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="FlowerBoquet"/>
+            <AttributeChangeArray Attribute="Wit" Points="20"/>
+            <DeathResponse>
+                <Cost>
+                    <Charge Link="Behavior/SturdyWoodenStick"/>
+                    <Cooldown Link="Behavior/SturdyWoodenStick"/>
+                </Cost>
+            </DeathResponse>
+        </Modification>
+        <Period value="0.625"/>
+        <PeriodicEffect value="FelFireTorchSet"/>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FelFireTorchGracePeriod">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="6"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FelFlames">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Icons\Items\FelFireTorch.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="5"/>
+        <Period value="0.5"/>
+        <PeriodicEffect value="FelFlamesDamage"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FirestormDoT">
+        <Alignment value="Negative"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Protoss,AbilityorEffectType:Units"/>
+        <Duration value="0.315"/>
+        <Period value="0.25"/>
+        <InitialEffect value="DilapidatedApply"/>
+        <PeriodicEffect value="FirestormDamage"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FindCrab">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="1"/>
+        <PeriodicEffect value="FindCrabSearch"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="VeilShrineEnergized">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-protoss-graviticbooster.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.625"/>
+        <InitialEffect value="VeilShrineEnergizedStart"/>
+        <ExpireEffect value="VeilShrineEnergizedEnd"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="VeilShrineActive">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <Duration value="25"/>
+        <Period value="1"/>
+        <PeriodCount value="4"/>
+        <PeriodicEffect value="VeilShrinePreviewTrigger"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <ExpireEffect value="VeilShrineActiveExpire"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="VeilShrineFailFlashLead">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.25"/>
+        <FinalEffect value="VeilShrinePadFailFlash"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="VeilShrinePadActive">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.5"/>
+        <PeriodicEffect value="VeilShrinePadActiveSearch"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="VeilShrinePadInactive"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="VeilShrinePadFlash">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="VeilShrinePadFailFlash">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="VeilofDarkness">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-upgrade-protoss-shieldslevel0.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification SightBonus="-3"/>
+        <Period value="2"/>
+        <PeriodicEffect value="NearbyAlliedWatchTowers"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="VeilShrinePadInactive">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ViciousJavelinDisable">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="4.5"/>
+        <Modification>
+            <WeaponDisableArray value="ViciousJavelin"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ViciousJavelinRecoil">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.3125"/>
+        <ExpireEffect value="ViciousJavelinDisableApply"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ViciousJavelinSnare">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Icons\AutomatedDefenseTurret2.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.5"/>
+        <InitialEffect value="ViciousJavelinSound"/>
+        <Modification MoveSpeedMultiplier="0.5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GastronomistTutor">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.5"/>
+        <PeriodicEffect value="GastronomistTutorSearch"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ViciouslySharpArmblade">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="1"/>
+        <PeriodicEffect value="TrollFrenzySearch"/>
+        <Modification>
+            <WeaponDisableArray value="KoboldAttackMeleeBash"/>
+            <AttributeChangeArray Attribute="Physique" Points="20"/>
+        </Modification>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Foraging5">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ForestConnection">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\PlantTree.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="100"/>
+        <InitialEffect value="UpdateCombatStats"/>
+        <RefreshEffect value="UpdateCombatStats"/>
+        <FinalEffect value="UpdateCombatStats"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FowlBait">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\HandfulofBerries.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <Duration value="120"/>
+        <Period value="10"/>
+        <PeriodicEffect value="FowlBaitSearch"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FowlStopDelay">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1.5"/>
+        <DurationRandomMin value="1"/>
+        <FinalEffect value="FowlStopOrder"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FullPause">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GoldenPolearmProximity">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\Items\RadiantBattlescythe.dds"/>
+        <Period value="1"/>
+        <InitialEffect value="GoldenPolearmProximitySound"/>
+        <PeriodicEffect value="GoldenPolearmProximitySwitch"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BeaverStamina">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\RunWalk.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification MoveSpeedMultiplier="2.5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GoldenPolearm">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="CasterIsKobold"/>
+        <Period value="1"/>
+        <PeriodicEffect value="GoldenPolearmValidateEnemies"/>
+        <Modification>
+            <WeaponDisableArray value="KoboldAttackMeleeBash"/>
+            <AttributeChangeArray Attribute="Physique" Points="12"/>
+            <DeathResponse>
+                <Cost>
+                    <Charge Link="Behavior/SturdyWoodenStick"/>
+                    <Cooldown Link="Behavior/SturdyWoodenStick"/>
+                </Cost>
+            </DeathResponse>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GarishGladiatorsGarb">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification DetectArc="0" RadarArc="0">
+            <AttributeChangeArray Attribute="Physique" Points="16"/>
+        </Modification>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GhoulBurrow">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1.25"/>
+        <Modification>
+            <ModifyFlags index="DisableAbils" value="1"/>
+            <ModifyFlags index="SuppressMoving" value="1"/>
+            <ModifyFlags index="SuppressTurning" value="1"/>
+        </Modification>
+        <FinalEffect value="GhoulBurrowEnd"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GhoulResistance">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DamageResponse Chance="1" ModifyFraction="0.5">
+            <RequireEffectArray value="AfflictionDamage"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GhoulUnburrow">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="2"/>
+        <FinalEffect value="HuntKoboldsGhoulApply"/>
+        <Modification>
+            <ModifyFlags index="DisableAbils" value="1"/>
+            <ModifyFlags index="SuppressMoving" value="1"/>
+            <ModifyFlags index="SuppressTurning" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GladiatorsStrength">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="10"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GoldScout">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="2.5"/>
+        <PeriodicEffect value="GoldScoutTrigger"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GoodHostTent">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="1"/>
+        <PeriodicEffect value="GoodHostSearch"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GrandForestersFavoured">
+        <Alignment value="Positive"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="420"/>
+        <InfoIcon value="Icons\PlantTree.dds"/>
+        <Period value="1"/>
+        <PeriodicEffect value="GrandForesterUpdate"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BushRegrowth">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\Guileberry.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <BuffFlags index="RefreshStack" value="1"/>
+        <Duration value="20"/>
+        <ExpireEffect value="BushRegrowthTrigger"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GuardianSpirit">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\GuardianSpirit.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="20"/>
+        <Period value="1"/>
+        <PeriodicEffect value="GuardianSpiritTrigger"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SpikedShadowstoneScutumBlocker">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DamageResponse Chance="1" Handled="SpikedShadowstoneScutumBlockerSet" ModifyFraction="0">
+            <Kind index="Spell" value="0"/>
+            <Kind index="Splash" value="0"/>
+            <RequireEffectArray value="FrostBearMaulDamage"/>
+            <RequireEffectArray value="BearMaulDamage"/>
+            <RequireEffectArray value="WolfBiteDamage"/>
+            <RequireEffectArray value="MeleeDamage"/>
+            <RequireEffectArray value="BlunderbussDamage"/>
+            <RequireEffectArray value="ElderWandDamage"/>
+            <RequireEffectArray value="CravensFishStickerDamage"/>
+            <RequireEffectArray value="VenomousArbalestDamage"/>
+            <RequireEffectArray value="NightwispDamage"/>
+            <RequireEffectArray value="TrollBossDamage"/>
+            <RequireEffectArray value="MurlocDoomhammerDamage"/>
+            <RequireEffectArray value="FrostWitchDamage"/>
+            <RequireEffectArray value="DemonLordJaryxAttackDamage"/>
+            <RequireEffectArray value="DirewolfBiteDamage"/>
+            <RequireEffectArray value="CelestialOrbDamage"/>
+            <RequireEffectArray value="ArcanePulseDamage"/>
+            <RequireEffectArray value="RepeatingCrossbowDamage"/>
+            <RequireEffectArray value="RepeatingCrossbowDamageNoProc"/>
+            <RequireEffectArray value="TwinThrowingAxesDamageLeft"/>
+            <RequireEffectArray value="TwinThrowingAxesDamageRight"/>
+            <RequireEffectArray value="Smash"/>
+            <RequireEffectArray value="AutomatedDefenseTurretDamage"/>
+            <RequireEffectArray value="WatchTowerDamage"/>
+            <RequireEffectArray value="MonstrousFistsDamage"/>
+            <RequireEffectArray value="GhoulDamage"/>
+            <RequireEffectArray value="MurlocMilitiaJavelinDamage"/>
+            <RequireEffectArray value="ViciousJavelinDamage"/>
+            <RequireEffectArray value="FrostBeamDamage"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SpikedShadowstoneScutumCooldown">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-lostvinking-bomb.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="10"/>
+        <ExpireEffect value="SpikedShadowstoneScutumBlockerApply"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TavernBeerSupply">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="OutpostCandles">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TextTagged">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.25"/>
+        <FinalEffect value="TextTagged"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ThickHideOOCRegen">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1.0625"/>
+        <Modification>
+            <VitalRegenArray index="Life" value="3"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TopHat">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SunHat">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HeavyTowerShield">
+        <Cost>
+            <Charge Link="Behavior/SturdyWoodenStick"/>
+            <Cooldown Link="Behavior/SturdyWoodenStick"/>
+        </Cost>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="FlowerBoquet"/>
+            <AttributeChangeArray Attribute="Physique" Points="8"/>
+            <DeathResponse>
+                <Cost>
+                    <Charge Link="Behavior/SturdyWoodenStick"/>
+                    <Cooldown Link="Behavior/SturdyWoodenStick"/>
+                </Cost>
+            </DeathResponse>
+        </Modification>
+        <DamageResponse Chance="1" Handled="HeavyTowerShieldTrigger" ModifyFraction="0.8">
+            <Cost>
+                <Charge Link="Behavior/SturdyWoodenStick"/>
+                <Cooldown Link="Behavior/SturdyWoodenStick"/>
+            </Cost>
+            <Kind index="Spell" value="0"/>
+            <Kind index="Melee" value="0"/>
+            <Kind index="Splash" value="0"/>
+        </DamageResponse>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HuntKobolds">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="1"/>
+        <PeriodicEffect value="HuntKoboldsSet"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="HuntsmansJacket">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="10"/>
+        </Modification>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Infection">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-zerg-banelingspooge.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <BuffFlags index="RefreshStack" value="1"/>
+        <MaxStackCount value="10"/>
+        <Duration value="5"/>
+        <Modification>
+            <MoveSpeedMultiplier value="0.95"/>
+            <LifeArmorBonus value="-0.5"/>
+            <DetectArc value="0"/>
+            <RadarArc value="0"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="InfernalMinionAblaze">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="3"/>
+        <DurationBonusMax value="1"/>
+        <Modification MoveSpeedMultiplier="2" AttackSpeedMultiplier="2"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="InfernalMinionSpawn">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.6875"/>
+        <Modification>
+            <StateFlags index="Stun" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Initiative">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <FinalEffect value="MurlocInitiativeEnd"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="IronStuddedVest">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification DetectArc="0" RadarArc="0">
+            <AttributeChangeArray Attribute="Physique" Points="9"/>
+            <AttributeChangeArray Attribute="Wit" Points="3"/>
+        </Modification>
+        <DisableValidatorArray value="CasterIsKobold"/>
+        <InitialEffect value="SpellAbsorbCooldownApply"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="JaryxFirestormCast">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.875"/>
+        <Modification>
+            <ModifyFlags index="DisableAbils" value="1"/>
+            <ModifyFlags index="SuppressMoving" value="1"/>
+            <ModifyFlags index="SuppressTurning" value="1"/>
+            <StateFlags index="Passive" value="1"/>
+            <StateFlags index="SuppressAttack" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="JaryxRoarCast">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1.75"/>
+        <Modification>
+            <ModifyFlags index="DisableAbils" value="1"/>
+            <ModifyFlags index="SuppressMoving" value="1"/>
+            <ModifyFlags index="SuppressTurning" value="1"/>
+            <StateFlags index="Passive" value="1"/>
+            <StateFlags index="SuppressAttack" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="KoboldCanEat">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="KoboldJustEaten8">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="8"/>
+        <InitialEffect value="KoboldCanEatRemove"/>
+        <FinalEffect value="KoboldCanEatApply"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="KoboldJustEaten4">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="4"/>
+        <InitialEffect value="KoboldCanEatRemove"/>
+        <FinalEffect value="KoboldCanEatApply"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="LazyCozyKobold">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1"/>
+        <Modification>
+            <StateFlags index="Passive" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Lightbringer">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MagicVulnerability">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Icons\Nightwisp.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="5"/>
+        <DamageResponse Chance="1" ModifyFraction="1.1">
+            <Kind index="Melee" value="0"/>
+            <Kind index="Ranged" value="0"/>
+            <Kind index="Splash" value="0"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MagnificentChefsHat">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="AdmiralHat"/>
+            <BehaviorLinkDisableArray value="DevoutCap"/>
+            <BehaviorLinkDisableArray value="Fez"/>
+            <BehaviorLinkDisableArray value="MonkHeadwear"/>
+            <BehaviorLinkDisableArray value="Sombrero"/>
+            <BehaviorLinkDisableArray value="SunHat"/>
+            <BehaviorLinkDisableArray value="TopHat"/>
+            <BehaviorLinkDisableArray value="WizardsHat"/>
+            <BehaviorLinkDisableArray value="WinterHat"/>
+            <BehaviorLinkDisableArray value="FieryCrown"/>
+            <AttributeChangeArray Attribute="Physique" Points="6"/>
+            <AttributeChangeArray Attribute="Wit" Points="8"/>
+        </Modification>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Mining15">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MiningExpertise">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Requirements value="SetMiningExpertise"/>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MurlocChef">
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Icons\FastFood.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="2"/>
+        <PeriodicEffect value="MurlocActionTrigger"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MurlocEquipment">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <MoveSpeedMultiplier value="1.2"/>
+            <LifeArmorBonus value="3"/>
+            <DetectArc value="0"/>
+            <RadarArc value="0"/>
+            <DamageDealtScaled index="Melee" value="5"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MurlocForcedReturn">
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Icons\Backpack.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="2"/>
+        <PeriodicEffect value="MurlocActionTrigger"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MurlocFrenzy">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\MurlocSlave.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="10"/>
+        <Modification MoveSpeedMultiplier="2.5" AttackSpeedMultiplier="1.5"/>
+        <FinalEffect value="MurlocFrenzyRemove"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MurlocInvigoration">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\MurlocDoomhammer.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1.25"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MurlocReturnItems">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\Backpack.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="2"/>
+        <PeriodicEffect value="MurlocActionTrigger"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MurlocRushSetup">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <ModifyFlags index="DisableAbils" value="1"/>
+            <ModifyFlags index="SuppressMoving" value="1"/>
+            <ModifyFlags index="SuppressTurning" value="1"/>
+        </Modification>
+        <InfoFlags index="Hidden" value="1"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <Duration value="1.9"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MurlocRushTrample">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.125"/>
+        <PeriodicEffect value="MurlocRushTrampleSearch"/>
+        <FinalEffect value="DisorientedApply"/>
+        <Modification LifeArmorBonus="10" DetectArc="0" RadarArc="0">
+            <ModifyFlags index="SuppressMoving" value="1"/>
+        </Modification>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Mysticism">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Wit" Points="2"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Cooking10">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Cooking15">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Cooking5">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Crafting">
+        <Alignment value="Positive"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="1"/>
+        <PeriodicEffect value="WorkingAnimationTrigger"/>
+        <FinalEffect value="WorkingAnimationEnd"/>
+        <InfoIcon value="Icons\Construct.dds"/>
+        <Modification>
+            <StateFlags index="Passive" value="1"/>
+            <StateFlags index="SuppressAttack" value="1"/>
+            <AbilLinkDisableArray value="KoboldTestBuild"/>
+            <AbilLinkDisableArray value="SalvageStructure"/>
+            <AbilLinkDisableArray value="FishingRod"/>
+        </Modification>
+        <InitialEffect value="CraftingSound"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Cower">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\MurlocSlave.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="5"/>
+        <FinalEffect value="CowerExhaustedApply"/>
+        <Modification MoveSpeedMultiplier="2.5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CowerExhausted">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Icons\MurlocSlave.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="CowerTrigger">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DamageResponse Chance="1" Handled="CowerApply" TargetFilters="-;Ally">
+            <Cost>
+                <Cooldown TimeUse="10"/>
+            </Cost>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FrostArmor">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\FrostArmor.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="10"/>
+        <DamageResponse Chance="1" Handled="FrostArmorDamage" TargetFilters="-;Player,Ally,Dead,Hidden,Invulnerable">
+            <Kind index="Spell" value="0"/>
+            <Kind index="Splash" value="0"/>
+            <ExcludeEffectArray value="FrostArmorDamage"/>
+            <ExcludeEffectArray value="SharpIronPickaxeBleed"/>
+            <ExcludeEffectArray value="VenomousArbalestPoisonDamage"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MurlocContract">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <Duration value="300"/>
+        <ExpireEffect value="MurlocContractTrigger"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MurlocFetchHerbs">
+        <Alignment value="Positive"/>
+        <Cost>
+            <Charge Link="Behavior/MurlocFetchStone"/>
+            <Cooldown Link="Behavior/MurlocFetchStone"/>
+        </Cost>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Icons\Lambent Sunflower.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="2"/>
+        <PeriodicEffect value="MurlocActionTrigger"/>
+        <Modification>
+            <DeathResponse>
+                <Cost>
+                    <Charge Link="Behavior/MurlocFetchStone"/>
+                    <Cooldown Link="Behavior/MurlocFetchStone"/>
+                </Cost>
+            </DeathResponse>
+        </Modification>
+        <DamageResponse>
+            <Cost>
+                <Charge Link="Behavior/MurlocFetchStone"/>
+                <Cooldown Link="Behavior/MurlocFetchStone"/>
+            </Cost>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MurlocFetchGold">
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Icons\Gossip.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="2"/>
+        <PeriodicEffect value="MurlocActionTrigger"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MurlocFetchBerries">
+        <Alignment value="Positive"/>
+        <Cost>
+            <Charge Link="Behavior/MurlocFetchStone"/>
+            <Cooldown Link="Behavior/MurlocFetchStone"/>
+        </Cost>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Icons\HandfulofBerries.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="2"/>
+        <PeriodicEffect value="MurlocActionTrigger"/>
+        <Modification>
+            <DeathResponse>
+                <Cost>
+                    <Charge Link="Behavior/MurlocFetchStone"/>
+                    <Cooldown Link="Behavior/MurlocFetchStone"/>
+                </Cost>
+            </DeathResponse>
+        </Modification>
+        <DamageResponse>
+            <Cost>
+                <Charge Link="Behavior/MurlocFetchStone"/>
+                <Cooldown Link="Behavior/MurlocFetchStone"/>
+            </Cost>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MurlocFetchStone">
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Icons\Stone.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="2"/>
+        <PeriodicEffect value="MurlocActionTrigger"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MurlocFetchLumber">
+        <Alignment value="Positive"/>
+        <Cost>
+            <Charge Link="Behavior/MurlocFetchStone"/>
+            <Cooldown Link="Behavior/MurlocFetchStone"/>
+        </Cost>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Icons\Lumber.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="2"/>
+        <PeriodicEffect value="MurlocActionTrigger"/>
+        <Modification>
+            <DeathResponse>
+                <Cost>
+                    <Charge Link="Behavior/MurlocFetchStone"/>
+                    <Cooldown Link="Behavior/MurlocFetchStone"/>
+                </Cost>
+            </DeathResponse>
+        </Modification>
+        <DamageResponse>
+            <Cost>
+                <Charge Link="Behavior/MurlocFetchStone"/>
+                <Cooldown Link="Behavior/MurlocFetchStone"/>
+            </Cost>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DullPickaxe">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <WeaponDisableArray value="KoboldAttackMeleeBash"/>
+            <AttributeChangeArray Attribute="Physique" Points="4"/>
+        </Modification>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GoodHost">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1.0625"/>
+        <InitialEffect value="UpdateCombatStats"/>
+        <FinalEffect value="UpdateCombatStats"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MysticsTribalShield">
+        <InfoFlags index="Hidden" value="1"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="FlowerBoquet"/>
+            <AttributeChangeArray Attribute="Physique" Points="4"/>
+            <AttributeChangeArray Attribute="Wit" Points="5"/>
+            <DeathResponse>
+                <Cost>
+                    <Charge Link="Behavior/SturdyWoodenStick"/>
+                    <Cooldown Link="Behavior/SturdyWoodenStick"/>
+                </Cost>
+            </DeathResponse>
+        </Modification>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="NaturalTenacity">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DamageResponse Chance="1" ModifyFraction="0.7">
+            <RequireEffectArray value="WolfBiteDamage"/>
+            <RequireEffectArray value="GhoulDamage"/>
+            <RequireEffectArray value="BearMaulDamage"/>
+            <RequireEffectArray value="FrostBearMaulDamage"/>
+            <RequireEffectArray value="AfflictionDamage"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Nudgable">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="RotatingBladeBleed">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Icons\FistWeapon.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="4"/>
+        <Period value="1"/>
+        <PeriodicEffect value="ShreddedDamage"/>
+        <Modification LifeArmorMultiplier="0.5" DetectArc="0" RadarArc="0"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="RotatingBladeAura">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.3332"/>
+        <PeriodicEffect value="RotatingBladeSearch"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ObedienceRod">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="4"/>
+        </Modification>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="OutlandishHeartpiercer">
+        <Cost>
+            <Charge Link="Behavior/SturdyWoodenStick"/>
+            <Cooldown Link="Behavior/SturdyWoodenStick"/>
+        </Cost>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="FlowerBoquet"/>
+            <AttributeChangeArray Attribute="Physique" Points="16"/>
+            <DeathResponse>
+                <Cost>
+                    <Charge Link="Behavior/SturdyWoodenStick"/>
+                    <Cooldown Link="Behavior/SturdyWoodenStick"/>
+                </Cost>
+            </DeathResponse>
+        </Modification>
+        <DamageResponse>
+            <Cost>
+                <Charge Link="Behavior/SturdyWoodenStick"/>
+                <Cooldown Link="Behavior/SturdyWoodenStick"/>
+            </Cost>
+        </DamageResponse>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PredatoryKnowledgeCounter">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="60"/>
+        <PeriodicEffect value="PredatoryKnowledge1min"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="OutpostGotBird">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Raining">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="1"/>
+        <PeriodicEffect value="CoiffureCareCounter"/>
+        <InitialEffect value="UpdateCombatStats"/>
+        <FinalEffect value="UpdateCombatStats"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="RawMeatDecay">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Icons\Raw Wolf Meat.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <DisableValidatorArray value="NotHidden"/>
+        <Duration value="60"/>
+        <FinalEffect value="Kill"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Retreat5">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="5"/>
+        <DurationRandomMin value="1"/>
+        <FinalEffect value="RetreatEndTrigger"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SalvageAllowed">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ShadowCloak">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification DetectArc="0" RadarArc="0">
+            <StateFlags index="Cloak" value="1"/>
+            <StateFlags index="Passive" value="1"/>
+            <VitalRegenArray index="Energy" value="-3.5"/>
+        </Modification>
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-permanentlycloaked-darktemplar.dds"/>
+        <RemoveValidatorArray value="CanSpendEnergy"/>
+        <RemoveValidatorArray value="hasEnergy"/>
+        <InitialEffect value="ShadowCloakInitialSet"/>
+        <FinalEffect value="ShadowCloakFinalSet"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ShadowCloakExtraCharge">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="CasterHasConjurersCharm"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ShadowCloakStopAttack">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Duration value="0.07"/>
+        <Modification>
+            <StateFlags index="Passive" value="1"/>
+            <AbilClassDisableArray index="CAbilAttack" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SheepLeash">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="5"/>
+        <PeriodicEffect value="SheepLeashTrigger"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ShipmentAvailable">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ShovelKnowledge">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SkeletalFingersTransmute">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="1"/>
+        <PeriodicEffect value="SkeletalFingersTransmuteSearch"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SkipChatCraft60">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="60"/>
+        <DurationRandomMin value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SkipChatPet120">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="120"/>
+        <DurationRandomMin value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SkipChatQuest120">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="120"/>
+        <DurationRandomMin value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SkipChatSpell60">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="60"/>
+        <DurationRandomMin value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SkipChatTaunt30">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="30"/>
+        <DurationRandomMin value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SkipChatTraps180">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="180"/>
+        <DurationRandomMin value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SlowSpikeTrap">
+        <Alignment value="Negative"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="PerkIcons\PerkSharp.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="3.25"/>
+        <Modification MoveSpeedMultiplier="0.4"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SmokeDetection">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="2.5"/>
+        <PeriodicEffect value="SmokeDetectionTrigger"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SmokedLambSirloinReq">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Snow">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Icons\Soaked.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1.0625"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Snowing">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="1"/>
+        <PeriodicEffect value="CoiffureCareCounter"/>
+        <InitialEffect value="UpdateCombatStats"/>
+        <FinalEffect value="UpdateCombatStats"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SouthernTribeUniform">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="RecentlyResurrected">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Resurrecting">
+        <Alignment value="Positive"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="1"/>
+        <PeriodicEffect value="WorkingAnimationTrigger"/>
+        <FinalEffect value="WorkingAnimationEnd"/>
+        <InfoIcon value="Icons\GuardianSpirit.dds"/>
+        <Modification>
+            <StateFlags index="Passive" value="1"/>
+            <StateFlags index="SuppressAttack" value="1"/>
+            <AbilLinkDisableArray value="KoboldTestBuild"/>
+            <AbilLinkDisableArray value="SalvageStructure"/>
+        </Modification>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <Duration value="15"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DomesticAnimal">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BeaverRush">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\RunWalk.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="5"/>
+        <FinalEffect value="GallopExhaustedApply"/>
+        <Modification MoveSpeedMultiplier="2.5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BeaverExhausted">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Icons\RunWalk.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="BeaverTrigger">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DamageResponse Chance="1" Handled="GallopApply" TargetFilters="-;Player,Ally">
+            <Cost>
+                <Cooldown TimeUse="10"/>
+            </Cost>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="LanternLight">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\Lantern.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.25"/>
+        <PeriodicEffect value="LanternApplySet"/>
+        <Modification DetectArc="0" RadarArc="0"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Lantern">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="FlowerBoquet"/>
+            <AttributeChangeArray Attribute="Physique" Points="6"/>
+            <AttributeChangeArray Attribute="Wit" Points="4"/>
+            <DeathResponse>
+                <Cost>
+                    <Charge Link="Behavior/SturdyWoodenStick"/>
+                    <Cooldown Link="Behavior/SturdyWoodenStick"/>
+                </Cost>
+            </DeathResponse>
+        </Modification>
+        <Period value="1"/>
+        <InitialEffect value="LanternTrigger"/>
+        <PeriodicEffect value="LanternTrigger"/>
+        <FinalEffect value="LanternLightRemove"/>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="IronPickaxeBleed">
+        <Alignment value="Negative"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="3"/>
+        <Period value="0.5"/>
+        <PeriodicEffect value="SharpIronPickaxeBleed"/>
+        <InfoIcon value="Icons\Alt Pick.dds"/>
+        <MaxStackCount value="20"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="LevelAttributeStack">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="9"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="3"/>
+            <AttributeChangeArray Attribute="Wit" Points="2"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MineralTap">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\MineralTap.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="30"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Cooking">
+        <Alignment value="Positive"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="1"/>
+        <PeriodicEffect value="WorkingAnimationTrigger"/>
+        <FinalEffect value="WorkingAnimationEnd"/>
+        <InfoIcon value="Icons\Cooking.dds"/>
+        <Modification>
+            <StateFlags index="Passive" value="1"/>
+            <StateFlags index="SuppressAttack" value="1"/>
+            <AbilLinkDisableArray value="KoboldTestBuild"/>
+            <AbilLinkDisableArray value="SalvageStructure"/>
+            <AbilLinkDisableArray value="FishingRod"/>
+        </Modification>
+        <InitialEffect value="CookingSound"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <Duration value="60"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Rain">
+        <Alignment value="Negative"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1.0625"/>
+        <InfoIcon value="Icons\Soaked.dds"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GrowingTree">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\PlantTree.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="1"/>
+        <PeriodicEffect value="GrowingTreeSetPeriodic"/>
+        <FinalEffect value="GrowingTreeEnd"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MurlocDoomhammer">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="20"/>
+        </Modification>
+        <Period value="1"/>
+        <PeriodicEffect value="MurlocInvigorationSearch"/>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Sheltered">
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.1875"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SiphonLife">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\SiphonLife.dds"/>
+        <MaxStackCount value="5"/>
+        <Duration value="10"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SleepingBag">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\SleepingBag.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification SightMaximum="2">
+            <StateFlags index="SuppressFidgeting" value="1"/>
+        </Modification>
+        <Period value="0.25"/>
+        <PeriodicEffect value="SleepingBagRemove"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SleepingBagDelay">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1"/>
+        <FinalEffect value="SleepingBagApply"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SpellBook">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InitialEffect value="CollectorRequirement"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SpikeTrapGlow">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SpikeTrapSpawnEffect">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.0625"/>
+        <InitialEffect value="SpikeTrapSpawnEffect"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SpikedShadowstoneScutum">
+        <Cost>
+            <Charge Link="Behavior/SturdyWoodenStick"/>
+            <Cooldown Link="Behavior/SturdyWoodenStick"/>
+        </Cost>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="1"/>
+        <InitialEffect value="SpikedShadowstoneScutumSetInitial"/>
+        <PeriodicEffect value="SpikedShadowstoneScutumRainSet"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="20"/>
+            <DeathResponse>
+                <Cost>
+                    <Charge Link="Behavior/SturdyWoodenStick"/>
+                    <Cooldown Link="Behavior/SturdyWoodenStick"/>
+                </Cost>
+            </DeathResponse>
+        </Modification>
+        <FinalEffect value="SpikedShadowstoneScutumFinalSet"/>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Stalked">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="4"/>
+        <PeriodicEffect value="StalkedTrigger"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StorageOutpostCapacity1">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StorageOutpostCapacity12">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StorageOutpostCapacity11">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StorageOutpostCapacity2">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StorageOutpostCapacity3">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StorageOutpostCapacity4">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StorageOutpostCapacity5">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StorageOutpostCapacity6">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StorageOutpostCapacity7">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StorageOutpostCapacity8">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StorageOutpostCapacity9">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StorageOutpostCapacity10">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Strobe">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="DevoutCap">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="MonkHeadwear">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Superstition">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DamageResponse Chance="1" ModifyFraction="0.95">
+            <Cost>
+                <Charge Link="Behavior/GuardianShield"/>
+                <Cooldown Link="Behavior/GuardianShield"/>
+            </Cost>
+            <Kind index="Melee" value="0"/>
+            <Kind index="Ranged" value="0"/>
+            <Kind index="Splash" value="0"/>
+        </DamageResponse>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Survivalist">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification DetectArc="0" RadarArc="0">
+            <VitalMaxFractionArray index="Life" value="0.03"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SynergyPassive">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification DetectArc="0" RadarArc="0">
+            <VitalMaxArray index="Life" value="25"/>
+        </Modification>
+        <InitialEffect value="SynergyImpact"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SynergyProc">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\Synergy.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="6"/>
+        <Modification MoveSpeedMultiplier="1.3" AttackSpeedMultiplier="1.3"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Tamed">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\ObedienceRod.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="1"/>
+        <PeriodicEffect value="TamedAITrigger"/>
+        <DamageResponse Chance="1" ModifyFraction="0.5">
+            <Kind index="Spell" value="0"/>
+            <Kind index="Ranged" value="0"/>
+            <Kind index="Splash" value="0"/>
+            <RequireEffectArray value="SpikeTrapDamage"/>
+        </DamageResponse>
+        <Modification>
+            <StateFlags index="SuppressFidgeting" value="1"/>
+            <BehaviorLinkDisableArray value="WolfRetaliation"/>
+            <BehaviorLinkDisableArray value="HuntKobolds"/>
+            <BehaviorLinkDisableArray value="BearSprintTrigger"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TavernWizard">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ToggleAI">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="AdmiralHat">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="AutomatedDefenseTurretDazed">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Icons\AutomatedDefenseTurret.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="5"/>
+        <Modification>
+            <MoveSpeedMultiplier value="0.8"/>
+            <LifeArmorBonus value="-5"/>
+            <DetectArc value="0"/>
+            <RadarArc value="0"/>
+        </Modification>
+        <Period value="0.0625"/>
+        <PeriodCount value="32"/>
+        <PeriodicEffect value="AutomatedDefenseTurretFacing"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TurretOutOfAmmo">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <WeaponDisableArray value="HeavyAutomatedCrossbow"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ViciousJavelin">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="CasterIsKobold"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="FlowerBoquet"/>
+            <WeaponEnableArray value="ViciousJavelin"/>
+            <AttributeChangeArray Attribute="Physique" Points="10"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StormwizardsRobes">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="CasterIsKobold"/>
+        <Period value="0.25"/>
+        <PeriodicEffect value="StormwizardsRobesSearch"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Wit" Points="16"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WellFedStag">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\Items\StagSoup.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="360"/>
+        <InitialEffect value="UpdateCombatStats"/>
+        <FinalEffect value="UpdateCombatStats"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="GiantSunfish">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\Items\GiantSunfish.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="360"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SlipperyEel">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\Items\SlipperyEel.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="360"/>
+        <InitialEffect value="UpdateCombatStats"/>
+        <FinalEffect value="UpdateCombatStats"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WhirlwindSelfStun">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.25"/>
+        <Period value="0.0625"/>
+        <PeriodicEffect value="WhirlwindRotate"/>
+        <Modification>
+            <StateFlags index="Stun" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WhirlwindSlow">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1.5"/>
+        <Modification MoveSpeedMultiplier="0.5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WizardsHat">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TorchLightbringerBonus">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="2"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TorchTimedLife">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="120"/>
+        <FinalEffect value="TorchTimedLifeTrigger"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TorchTimedLifePerked">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="150"/>
+        <FinalEffect value="TorchTimedLifeTrigger"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TowerShield">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1.0625"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="FlowerBoquet"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TowerShieldRain">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1.0625"/>
+        <InitialEffect value="SpikedShadowstoneScutumExclamation"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Trampled">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Icons\RunWalk.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="3.5"/>
+        <DurationRandomMin value="1"/>
+        <Modification>
+            <MoveSpeedMultiplier value="0.3"/>
+            <LifeArmorMultiplier value="0.5"/>
+            <DetectArc value="0"/>
+            <RadarArc value="0"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TrampledImmunity">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TrollFrenzy">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\FistWeapon.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1.25"/>
+        <InitialEffect value="UpdateCombatStats"/>
+        <FinalEffect value="UpdateCombatStats"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="TrollNoseBoneStack">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="100"/>
+        <FinalEffect value="TrollNoseBoneExpire"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UnlivingStrength">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\DraughtDecay.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="30"/>
+        <InitialEffect value="UnlivingStrengthInitial"/>
+        <ExpireEffect value="UnlivingStrengthExpire"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="10"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UpdateBuildingTooltip">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.0625"/>
+        <InitialEffect value="UpdateBuildingTooltip"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="UpdateBuildingTooltip116Dealy">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.0625"/>
+        <FinalEffect value="UpdateBuildingTooltip"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="VengefulMurlocSkull">
+        <Cost>
+            <Charge Link="Behavior/SturdyWoodenStick"/>
+            <Cooldown Link="Behavior/SturdyWoodenStick"/>
+        </Cost>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="FlowerBoquet"/>
+            <AttributeChangeArray Attribute="Wit" Points="6"/>
+            <DeathResponse>
+                <Cost>
+                    <Charge Link="Behavior/SturdyWoodenStick"/>
+                    <Cooldown Link="Behavior/SturdyWoodenStick"/>
+                </Cost>
+            </DeathResponse>
+        </Modification>
+        <DamageResponse>
+            <Cost>
+                <Charge Link="Behavior/SturdyWoodenStick"/>
+                <Cooldown Link="Behavior/SturdyWoodenStick"/>
+            </Cost>
+        </DamageResponse>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="VenomousArbalest">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <WeaponDisableArray value="KoboldAttackMeleeBash"/>
+            <WeaponDisableArray value="ViciousJavelin"/>
+            <AttributeChangeArray Attribute="Physique" Points="10"/>
+            <AttributeChangeArray Attribute="Wit" Points="4"/>
+        </Modification>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="VenomousArbalestAddon">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="2"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="VenomousArbalestBack"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="VenomousArbalestBack">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="VenomousArbalestPoison">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Assets\Textures\btn-ability-zerg-sporecloud.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="20"/>
+        <Period value="0.5"/>
+        <InitialEffect value="VenomousArbalestPoisonSound"/>
+        <PeriodicEffect value="VenomousArbalestPoisonDamage"/>
+        <Modification DetectArc="0" RadarArc="0"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WarlordSpikesImmunity">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.5"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WarlordSpikesImpaled">
+        <Alignment value="Negative"/>
+        <InfoIcon value="Icons\RunWalk.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="3"/>
+        <Modification MoveSpeedMultiplier="0.4" DetectArc="0" RadarArc="0"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WellFedDex">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\GrilledWolfEntrecote.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="180"/>
+        <InitialEffect value="WellFedDexInitial"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="5"/>
+        </Modification>
+        <FinalEffect value="WellFedDexExpire"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WhirlingBlades">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="6"/>
+        <Period value="1"/>
+        <PeriodCount value="1"/>
+        <PeriodicEffect value="WhirlingBladesTrigger"/>
+        <Modification LifeArmorBonus="10" DetectArc="0" RadarArc="0">
+            <ModifyFlags index="DisableAbils" value="1"/>
+            <ModifyFlags index="SuppressMoving" value="1"/>
+            <ModifyFlags index="SuppressTurning" value="1"/>
+        </Modification>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <ExpireEffect value="HuntKoboldsTrigger"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WhiteBearToothStack">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="100"/>
+        <FinalEffect value="WhiteBearFangExpire"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FlowerBoquet">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="ConjurersCharm">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InitialEffect value="ConjurersCharmSet"/>
+        <FinalEffect value="UpdateCombatStats"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WolfRetaliation">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DamageResponse Chance="1" Handled="WolfRetaliationSet"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Wolfsbane">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <WeaponDisableArray value="KoboldAttackMeleeBash"/>
+            <AttributeChangeArray Attribute="Physique" Points="15"/>
+        </Modification>
+        <InitialEffect value="WolfsbaneTrigger"/>
+        <PeriodicEffect value="WolfsbaneTrigger"/>
+        <FinalEffect value="WolfsbaneTrigger"/>
+        <Period value="1"/>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SpikeTrapCharges">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <MaxStackCount value="3"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SpikeTrapSensorDelay">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="7"/>
+        <InitialEffect value="SpikeTrapRemove"/>
+        <ExpireEffect value="SpikeTrapSwitch"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="StorageHut">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="1"/>
+        <PeriodicEffect value="StorageHutSearch"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="IronBandedBuckler">
+        <InfoFlags index="Hidden" value="1"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="FlowerBoquet"/>
+            <AttributeChangeArray Attribute="Physique" Points="8"/>
+            <DeathResponse>
+                <Cost>
+                    <Charge Link="Behavior/SturdyWoodenStick"/>
+                    <Cooldown Link="Behavior/SturdyWoodenStick"/>
+                </Cost>
+            </DeathResponse>
+        </Modification>
+        <InitialEffect value="IronBandedBucklerCooldownApply"/>
+        <FinalEffect value="IronBandedBucklerFinalSet"/>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="RoughBlunderbuss">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <WeaponDisableArray value="KoboldAttackMeleeBash"/>
+            <WeaponDisableArray value="ViciousJavelin"/>
+            <AttributeChangeArray Attribute="Physique" Points="8"/>
+        </Modification>
+        <Period value="1"/>
+        <PeriodicEffect value="BlunderbussTimeCounter"/>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SturdyWoodenStickSlow">
+        <Alignment value="Negative"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="2"/>
+        <Modification MoveSpeedMultiplier="0.75" AttackSpeedMultiplier="0.75"/>
+        <InfoIcon value="Icons\Alt Stick.dds"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WellFedEndurance">
+        <Alignment value="Positive"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="180"/>
+        <InitialEffect value="WellFedEnduranceInitial"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="5"/>
+        </Modification>
+        <InfoIcon value="Icons\SpicedLambFeast.dds"/>
+        <FinalEffect value="WellFedEnduranceExpire"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WellFedStrength">
+        <Alignment value="Positive"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="180"/>
+        <InitialEffect value="WellFedStrengthInitial"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="5"/>
+        </Modification>
+        <InfoIcon value="Icons\BeerBraisedPheasant.dds"/>
+        <FinalEffect value="WellFedStrengthExpire"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WellFedBeer">
+        <Alignment value="Positive"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="90"/>
+        <InitialEffect value="WellFedBeerInitial"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="2"/>
+        </Modification>
+        <InfoIcon value="Icons\Beer.dds"/>
+        <FinalEffect value="WellFedBeerExpire"/>
+    </CBehaviorBuff>
+    <CBehaviorAttribute id="Wit">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-feedback-color.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorAttribute>
+    <CBehaviorBuff id="Burning">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.5"/>
+        <PeriodicEffect value="HeatSearch"/>
+        <InfoIcon value="Icons\LightCampfire.dds"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FireWard">
+        <Alignment value="Positive"/>
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.25"/>
+        <PeriodicEffect value="FireWardSearch"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WarmWoolTunic">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="6"/>
+            <AttributeChangeArray Attribute="Wit" Points="2"/>
+        </Modification>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorAttribute id="Physique">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Assets\Textures\btn-ability-protoss-blink-color.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorAttribute>
+    <CBehaviorBuff id="LeatherCoat">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="3"/>
+            <AttributeChangeArray Attribute="Wit" Points="7"/>
+        </Modification>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="FarmSpawn">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="30"/>
+        <PeriodicEffect value="FarmSpawnTrigger"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Frostbite">
+        <Alignment value="Negative"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="1"/>
+        <PeriodicEffect value="FrostbiteDamage"/>
+        <Modification>
+            <AbilLinkDisableArray value="Run"/>
+            <BehaviorLinkDisableArray value="Running"/>
+        </Modification>
+        <InfoIcon value="Icons\Frostbite.dds"/>
+        <InitialEffect value="DisableRun"/>
+        <FinalEffect value="DisableRun"/>
+    </CBehaviorBuff>
+    <CBehaviorVeterancy id="HeroLevel">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <VeterancyLevelArray>
+            <Modification>
+                <DeathResponse>
+                    <Type index="Remove" value="1"/>
+                </DeathResponse>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="280">
+            <Modification>
+                <DeathResponse>
+                    <Type index="Remove" value="1"/>
+                </DeathResponse>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="390">
+            <Modification>
+                <DeathResponse>
+                    <Type index="Remove" value="1"/>
+                </DeathResponse>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="500">
+            <Modification>
+                <DeathResponse>
+                    <Type index="Remove" value="1"/>
+                </DeathResponse>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="610">
+            <Modification>
+                <DeathResponse>
+                    <Type index="Remove" value="1"/>
+                </DeathResponse>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="720">
+            <Modification>
+                <DeathResponse>
+                    <Type index="Remove" value="1"/>
+                </DeathResponse>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="830">
+            <Modification>
+                <DeathResponse>
+                    <Type index="Remove" value="1"/>
+                </DeathResponse>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="940">
+            <Modification>
+                <DeathResponse>
+                    <Type index="Remove" value="1"/>
+                </DeathResponse>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="1050">
+            <Modification>
+                <DeathResponse>
+                    <Type index="Remove" value="1"/>
+                </DeathResponse>
+            </Modification>
+        </VeterancyLevelArray>
+        <VeterancyLevelArray MinVeterancyXP="1160">
+            <Modification>
+                <DeathResponse>
+                    <Type index="Remove" value="1"/>
+                </DeathResponse>
+            </Modification>
+        </VeterancyLevelArray>
+    </CBehaviorVeterancy>
+    <CBehaviorBuff id="HeavyIronBreastplate">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="14"/>
+        </Modification>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="KoboldBotNormal">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.875"/>
+        <PeriodicEffect value="KoboldBotTrigger"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="KoboldBotInitialDelay">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.5"/>
+        <DurationRandomMin value="1"/>
+        <ExpireEffect value="KoboldBotApply"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Heat">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Campfire.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.75"/>
+        <InitialEffect value="LazyCozyKoboldApply"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Running">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InitialEffect value="UpdateCombatStats"/>
+        <FinalEffect value="UpdateCombatStats"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Shelter">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.125"/>
+        <PeriodicEffect value="ShelterSet"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Resting">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Tent.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="0.1875"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SpikeTrapSensor">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.25"/>
+        <PeriodicEffect value="SpikeTrapSearch"/>
+        <Modification>
+            <StateFlags index="Cloak" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SpikeTrapStun">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="1.5"/>
+        <Modification>
+            <StateFlags index="Stun" value="1"/>
+        </Modification>
+    </CBehaviorBuff>
+    <!--Enabled if the unit is standing still, allows gathering.-->
+    <CBehaviorBuff id="Stationary">
+        <InfoFlags index="Hidden" value="1"/>
+        <DisableValidatorArray value="CasterIsStationary"/>
+        <Modification>
+            <BehaviorLinkEnableArray value="MiningStoneSmart"/>
+            <BehaviorLinkEnableArray value="MiningGoldSmart"/>
+            <BehaviorLinkEnableArray value="PickingBerriesSmart"/>
+            <BehaviorLinkEnableArray value="PickingHerbsSmart"/>
+            <BehaviorLinkEnableArray value="UnlockingChestSmart"/>
+        </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Starving">
+        <Alignment value="Negative"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="1"/>
+        <PeriodicEffect value="StarvingDamage"/>
+        <InfoIcon value="Icons\RawLamb.dds"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Torch">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\Torch.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Period value="0.5"/>
+        <PeriodicEffect value="TorchApplySet"/>
+        <Modification>
+            <BehaviorLinkDisableArray value="FlowerBoquet"/>
+            <AttributeChangeArray Attribute="Physique" Points="4"/>
+        </Modification>
+        <InitialEffect value="TorchLightbringerBonusApply"/>
+        <FinalEffect value="TorchLightbringerBonusRemove"/>
+        <InfoFlags index="Hidden" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Unconscious">
+        <Alignment value="Negative"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <FinalEffect value="UnconsciousEndTrigger"/>
+        <Modification>
+            <ModifyFlags index="DisableAbils" value="1"/>
+            <ModifyFlags index="SuppressMoving" value="1"/>
+            <ModifyFlags index="SuppressTurning" value="1"/>
+        </Modification>
+        <InfoIcon value="Icons\Unconscious.dds"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SturdyWoodenStick">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <AttributeChangeArray Attribute="Physique" Points="8"/>
+        </Modification>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="SharpIronPickaxe">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <WeaponDisableArray value="KoboldAttackMeleeBash"/>
+            <AttributeChangeArray Attribute="Physique" Points="12"/>
+        </Modification>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="Bloodcleaver">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Modification>
+            <WeaponDisableArray value="KoboldAttackMeleeBash"/>
+            <AttributeChangeArray Attribute="Physique" Points="20"/>
+        </Modification>
+        <Period value="1"/>
+        <PeriodicEffect value="BloodcleaverSearch"/>
+        <DisableValidatorArray value="CasterIsKobold"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WolfsbanePassive">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\Wolfsbane.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InitialEffect value="UpdateCombatStats"/>
+        <FinalEffect value="UpdateCombatStats"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WolfsbanePassiveStronger">
+        <Alignment value="Positive"/>
+        <Cost>
+            <Charge Link="Behavior/WolfsbanePassive"/>
+            <Cooldown Link="Behavior/WolfsbanePassive"/>
+        </Cost>
+        <InfoIcon value="Icons\Wolfsbane.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Duration value="20"/>
+        <InitialEffect value="WolfsbaneSet"/>
+        <ExpireEffect value="WolfsbaneApply"/>
+        <Modification>
+            <DeathResponse>
+                <Cost>
+                    <Charge Link="Behavior/WolfsbanePassive"/>
+                    <Cooldown Link="Behavior/WolfsbanePassive"/>
+                </Cost>
+            </DeathResponse>
+        </Modification>
+        <DamageResponse>
+            <Cost>
+                <Charge Link="Behavior/WolfsbanePassive"/>
+                <Cooldown Link="Behavior/WolfsbanePassive"/>
+            </Cost>
+        </DamageResponse>
+        <FinalEffect value="UpdateCombatStats"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WolfsbaneTitle">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoIcon value="PerkIcons\PerkSurvivalist.dds"/>
+        <Alignment value="Positive"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WoolPadding">
+        <Alignment value="Positive"/>
+        <InfoIcon value="Icons\Alt Wool.dds"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WorkProgress1">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <Duration value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WorkProgress2">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <Duration value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WorkProgress3">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <Duration value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WorkProgress4">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <Duration value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WorkProgress5">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <Duration value="1"/>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="WorkProgress6">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <DisplayDuration index="Self" value="1"/>
+        <DisplayDuration index="Ally" value="1"/>
+        <DisplayDuration index="Neutral" value="1"/>
+        <DisplayDuration index="Enemy" value="1"/>
+        <Duration value="1"/>
+    </CBehaviorBuff>
+</Catalog>

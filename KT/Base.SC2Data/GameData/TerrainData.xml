@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CTerrain id="HavenEx1">
+        <BlendTextures index="6" value="MarSaraDirt"/>
+        <BlendTextures index="7" value="Typhon6"/>
+    </CTerrain>
+</Catalog>

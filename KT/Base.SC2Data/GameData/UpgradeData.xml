@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CUpgrade id="PetUpgradePredatoryKnowledge">
+        <Icon value="Icons\PredatoryWisdom.dds"/>
+        <Race value="Terr"/>
+    </CUpgrade>
+    <CUpgrade id="PetUpgradeNaturalTenacity">
+        <Icon value="Icons\NaturalTenacity.dds"/>
+        <Race value="Terr"/>
+    </CUpgrade>
+    <CUpgrade id="PetUpgradeCompanionship">
+        <Icon value="Icons\Companionship.dds"/>
+        <Race value="Terr"/>
+    </CUpgrade>
+    <CUpgrade id="PetUpgradeViciousness">
+        <Icon value="Icons\Viciousness.dds"/>
+        <Race value="Terr"/>
+    </CUpgrade>
+    <CUpgrade id="PetUpgradeInspirationalMaster">
+        <Icon value="Icons\InspirationalMaster.dds"/>
+        <Race value="Terr"/>
+    </CUpgrade>
+    <CUpgrade id="SpellShadowCloak">
+        <Icon value="Assets\Textures\btn-ability-protoss-permanentlycloaked-darktemplar.dds"/>
+        <Race value="Terr"/>
+    </CUpgrade>
+    <CUpgrade id="SpellFrostArmor">
+        <Icon value="Icons\FrostArmor.dds"/>
+        <Race value="Terr"/>
+    </CUpgrade>
+    <CUpgrade id="SpellSiphonLife">
+        <Icon value="Icons\SiphonLife.dds"/>
+        <Race value="Terr"/>
+    </CUpgrade>
+    <CUpgrade id="SpellMineralTap">
+        <Icon value="Icons\MineralTap.dds"/>
+        <Race value="Terr"/>
+    </CUpgrade>
+    <CUpgrade id="SpellNaturesGrace">
+        <Icon value="Icons\NaturesGrace.dds"/>
+        <Race value="Terr"/>
+    </CUpgrade>
+    <CUpgrade id="SpellClairvoyance">
+        <Icon value="Icons\Clairvoyance.dds"/>
+        <Race value="Terr"/>
+    </CUpgrade>
+    <CUpgrade id="SpellAffliction">
+        <Icon value="Assets\Textures\btn-ability-zerg-explode-color.dds"/>
+        <Race value="Terr"/>
+    </CUpgrade>
+    <CUpgrade id="SpellGuardianSpirit">
+        <Icon value="Icons\GuardianSpirit.dds"/>
+        <Race value="Terr"/>
+    </CUpgrade>
+    <CUpgrade id="PetUpgradeThickHide">
+        <Icon value="Icons\ThickHide.dds"/>
+        <Race value="Terr"/>
+    </CUpgrade>
+    <CUpgrade id="CookingUpgrade">
+        <Icon value="Icons\Cooking.dds"/>
+        <MaxLevel value="0"/>
+    </CUpgrade>
+</Catalog>

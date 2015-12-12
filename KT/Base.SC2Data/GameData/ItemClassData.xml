@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CItemClass id="Armor"/>
+    <CItemClass id="Offhand"/>
+    <CItemClass id="OffhandHelper"/>
+    <CItemClass id="Resource"/>
+    <CItemClass id="MainHand"/>
+</Catalog>

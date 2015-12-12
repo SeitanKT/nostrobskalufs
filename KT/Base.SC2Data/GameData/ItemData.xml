@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CItem id="CheatItem">
+        <Class value="Resource"/>
+    </CItem>
+    <CItem id="CommonSword">
+        <Class value="MainHand"/>
+        <EquipBehaviorArray value="CommonSword"/>
+        <EquipWeaponArray Link="KoboldAttackMeleeSlash"/>
+    </CItem>
+    <CItemAbil id="FireAmmonite">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Requirements value="KoboldCanEat"/>
+        <Abil value="GenericUseItem"/>
+    </CItemAbil>
+    <CItemAbil id="EpicFishingRod">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="MainHand"/>
+        <EquipBehaviorArray value="EpicFishingRod"/>
+        <Abil value="FishingRod"/>
+        <Requirements value="NotBusy"/>
+    </CItemAbil>
+    <CItemAbil id="BlindRainfish">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Requirements value="KoboldCanEat"/>
+        <Abil value="GenericUseItem"/>
+    </CItemAbil>
+    <CItem id="CommonBuckler">
+        <Class value="Offhand"/>
+        <EquipBehaviorArray value="CommonBuckler"/>
+    </CItem>
+    <CItem id="CommonArmor">
+        <Class value="Armor"/>
+        <EquipBehaviorArray value="CommonArmor"/>
+    </CItem>
+    <CItem id="OffhandBlockedHelper">
+        <Flags index="CanDrop" value="0"/>
+        <Class value="OffhandHelper"/>
+        <Level value="1000"/>
+    </CItem>
+    <CItemAbil id="TrebuchetPacked">
+        <Flags index="DropOnDeath" value="1"/>
+        <Flags index="KillWhenDepleted" value="1"/>
+        <Class value="Resource"/>
+        <Abil value="UnpackTrebuchet"/>
+    </CItemAbil>
+    <CItemAbil id="LumberParts">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Abil value="GenericUseItem"/>
+    </CItemAbil>
+    <CItemAbil id="TigerGourami">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Abil value="GenericUseItem"/>
+        <Requirements value="HasPets"/>
+    </CItemAbil>
+    <CItem id="TheMurlocket">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <CarryBehaviorArray value="TheMurlocket"/>
+    </CItem>
+    <CItemAbil id="Nightcrawler">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Requirements value="KoboldCanEat"/>
+        <Abil value="GenericUseItem"/>
+    </CItemAbil>
+    <CItem id="StormwizardsRobes">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Armor"/>
+        <EquipBehaviorArray value="StormwizardsRobes"/>
+        <Level value="13"/>
+    </CItem>
+    <CItemAbil id="MurlocTreat">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Abil value="GenericUseItem"/>
+    </CItemAbil>
+    <CItemAbil id="KoboldFireworks">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Abil value="GenericUseItem"/>
+    </CItemAbil>
+    <CItem id="IronbarkArmor">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Armor"/>
+        <EquipBehaviorArray value="IronbarkArmor"/>
+        <Level value="6"/>
+    </CItem>
+    <CItem id="TwinThrowingAxes">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="MainHand"/>
+        <Level value="11"/>
+        <EquipBehaviorArray value="TwinThrowingAxes"/>
+        <EquipWeaponArray Link="TwinThrowingAxesRanged"/>
+    </CItem>
+    <CItemAbil id="WaterScorpion">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Requirements value="KoboldCanEat"/>
+        <Abil value="GenericUseItem"/>
+    </CItemAbil>
+    <CItemAbil id="StripedLurker">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Requirements value="KoboldCanEat"/>
+        <Abil value="GenericUseItem"/>
+    </CItemAbil>
+    <CItem id="AncientArtifactFragment">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <CarryBehaviorArray value="AncientArtifactFragment"/>
+    </CItem>
+    <CItem id="Candle">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <CarryBehaviorArray value="Candle"/>
+    </CItem>
+    <CItemAbil id="FishingRod">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="MainHand"/>
+        <EquipBehaviorArray value="FishingRod"/>
+        <Requirements value="NotBusy"/>
+    </CItemAbil>
+    <CItemAbil id="HighlandGuppy">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Requirements value="KoboldCanEat"/>
+        <Abil value="GenericUseItem"/>
+    </CItemAbil>
+    <CItemAbil id="SlipperyEel">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Requirements value="KoboldCanEat"/>
+        <Abil value="GenericUseItem"/>
+    </CItemAbil>
+    <CItem id="GravesingersClaw">
+        <Face value="GravesingersRod"/>
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Offhand"/>
+        <Level value="9"/>
+        <EquipBehaviorArray value="GravesingersClaw"/>
+    </CItem>
+    <CItemAbil id="GiantSunfish">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Requirements value="KoboldCanEat"/>
+        <Abil value="GenericUseItem"/>
+    </CItemAbil>
+    <CItemAbil id="AlbinoCavefish">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Requirements value="KoboldCanEat"/>
+        <Abil value="GenericUseItem"/>
+    </CItemAbil>
+    <CItemAbil id="JewelDanio">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Requirements value="KoboldCanEat"/>
+        <Abil value="GenericUseItem"/>
+    </CItemAbil>
+    <CItemAbil id="ToxicFrog">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Requirements value="KoboldCanEat"/>
+        <Abil value="GenericUseItem"/>
+    </CItemAbil>
+    <CItemAbil id="StagStew">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Requirements value="KoboldCanEat"/>
+        <Abil value="GenericUseItem"/>
+    </CItemAbil>
+    <CItem id="BerserkersBattleAxe">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="MainHand"/>
+        <Level value="6"/>
+        <EquipBehaviorArray value="BerserkersBattleAxe"/>
+        <EquipWeaponArray Link="KoboldAttackMeleeSlash"/>
+    </CItem>
+    <CItemAbil id="BearPelt">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Abil value="GenericUseItem"/>
+    </CItemAbil>
+    <CItem id="BearShamansShroud">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Armor"/>
+        <Level value="5"/>
+        <EquipBehaviorArray value="BearShamansShroud"/>
+    </CItem>
+    <CItemAbil id="Beer">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Abil value="DrinkBeer"/>
+        <Requirements value="KoboldCanEat"/>
+    </CItemAbil>
+    <CItem id="Antlers">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+    </CItem>
+    <CItemAbil id="RawStagMeat">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Requirements value="KoboldCanEat"/>
+        <Abil value="GenericUseItem"/>
+    </CItemAbil>
+    <CItem id="SpellbreakerArmor">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Armor"/>
+        <Level value="15"/>
+        <EquipBehaviorArray value="SpellbreakerArmor"/>
+    </CItem>
+    <CItem id="NecromancersNecklace">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <CarryBehaviorArray value="NecromancersNecklace"/>
+    </CItem>
+    <CItemAbil id="Demonward">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Offhand"/>
+        <Level value="8"/>
+        <EquipBehaviorArray value="Demonward"/>
+    </CItemAbil>
+    <CItem id="MasterRangersMaille">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Armor"/>
+        <Level value="8"/>
+        <EquipBehaviorArray value="MasterRangersMaille"/>
+    </CItem>
+    <CItem id="CelestialOrb">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="MainHand"/>
+        <Level value="5"/>
+        <EquipBehaviorArray value="CelestialOrb"/>
+        <EquipWeaponArray Link="CelestialOrb"/>
+    </CItem>
+    <CItemAbil id="LiquidatorSpellblade">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="MainHand"/>
+        <Level value="13"/>
+        <EquipBehaviorArray value="LiquidatorSpellblade"/>
+        <Abil value="LiquidatorSpellbladeCooldown"/>
+        <EquipWeaponArray Link="KoboldAttackMeleeSlash"/>
+    </CItemAbil>
+    <CItem id="RepeatingCrossbow">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="MainHand"/>
+        <Level value="10"/>
+        <EquipBehaviorArray value="RepeatingCrossbow"/>
+        <EquipBehaviorArray value="RepeatingCrossbowAddonBack"/>
+        <EquipBehaviorArray value="SetRepeater"/>
+        <EquipWeaponArray Link="RepeatingCrossbow"/>
+    </CItem>
+    <CItemAbil id="ForestTrout">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Requirements value="KoboldCanEat"/>
+        <Abil value="GenericUseItem"/>
+    </CItemAbil>
+    <CItem id="WarlocksVestments">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Armor"/>
+        <Level value="4"/>
+        <EquipBehaviorArray value="WarlocksVestments"/>
+    </CItem>
+    <CItem id="LightLeatherShield">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Offhand"/>
+        <Level value="1"/>
+        <EquipBehaviorArray value="LightLeatherShield"/>
+    </CItem>
+    <CItem id="JudgmentGavel">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="MainHand"/>
+        <Level value="8"/>
+        <EquipBehaviorArray value="JudgmentGavel"/>
+    </CItem>
+    <CItemAbil id="FrostNeedle">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="MainHand"/>
+        <Level value="17"/>
+        <EquipBehaviorArray value="FrostNeedle"/>
+        <Abil value="FrostNeedleTransform"/>
+        <EquipWeaponArray Link="FrostNeedle"/>
+    </CItemAbil>
+    <CItem id="BloodthirstyPirateHat">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Armor"/>
+        <Level value="10"/>
+        <EquipBehaviorArray value="BloodthirstyPirateHat"/>
+    </CItem>
+    <CItem id="BoneTalisman">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <CarryBehaviorArray value="BoneTalisman"/>
+    </CItem>
+    <CItemAbil id="CleansingDraught">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Abil value="GenericUseItem3Charges"/>
+    </CItemAbil>
+    <CItem id="CrabShipment">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <CarryBehaviorArray value="CrabShipment"/>
+        <EquipBehaviorArray value=""/>
+    </CItem>
+    <CItem id="CravensFishSticker">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="MainHand"/>
+        <Level value="19"/>
+        <EquipBehaviorArray value="CravensFishSticker"/>
+        <EquipBehaviorArray value="CrossbowBack"/>
+        <EquipWeaponArray Link="CravensFishSticker"/>
+    </CItem>
+    <CItemAbil id="DemonicSoulPrison">
+        <Flags index="DropOnDeath" value="1"/>
+        <Flags index="KillWhenDepleted" value="1"/>
+        <Class value="Resource"/>
+        <Abil value="DemonicSummon"/>
+    </CItemAbil>
+    <CItem id="DreadplateArmor">
+        <Face value="DeathchillArmor"/>
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Armor"/>
+        <Level value="12"/>
+        <EquipBehaviorArray value="DreadplateArmor"/>
+    </CItem>
+    <CItemAbil id="DraughtofDecay">
+        <Flags index="DropOnDeath" value="1"/>
+        <Flags index="KillWhenDepleted" value="1"/>
+        <Class value="Resource"/>
+        <Abil value="ConsumeDraughtofDecay"/>
+    </CItemAbil>
+    <CItem id="ElderWand">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="MainHand"/>
+        <EquipBehaviorArray value="ElderWand"/>
+        <EquipWeaponArray Link="Wand"/>
+        <Level value="9"/>
+    </CItem>
+    <CItem id="EnigmaticStaff">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="MainHand"/>
+        <EquipBehaviorArray value="EnigmaticStaff"/>
+        <Level value="7"/>
+    </CItem>
+    <CItem id="FelFireTorch">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Offhand"/>
+        <Level value="12"/>
+        <EquipBehaviorArray value="FelFireTorch"/>
+    </CItem>
+    <CItemAbil id="OrbofDarkness">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Requirements value="OrbofDarkness"/>
+        <Abil value="GenericUseItem"/>
+    </CItemAbil>
+    <CItem id="ViciouslySharpArmblade">
+        <Face value="FistBlade"/>
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="MainHand"/>
+        <Level value="16"/>
+        <EquipBehaviorArray value="ViciouslySharpArmblade"/>
+        <EquipWeaponArray Link="KoboldAttackMeleeSlash"/>
+    </CItem>
+    <CItem id="GoldenPolearm">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="MainHand"/>
+        <Level value="3"/>
+        <EquipBehaviorArray value="GoldenPolearm"/>
+        <EquipBehaviorArray value="GoldenPolearmAddonBack"/>
+        <EquipWeaponArray Link="KoboldAttackMeleeSlash"/>
+    </CItem>
+    <CItem id="GarishGladiatorsGarb">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Armor"/>
+        <Level value="14"/>
+        <EquipBehaviorArray value="GarishGladiatorsGarb"/>
+    </CItem>
+    <CItemEffectInstant id="GoldPurse">
+        <Face value=""/>
+        <Flags index="KillWhenDepleted" value="1"/>
+        <Class value="Resource"/>
+        <Effect value=""/>
+        <EffectCost>
+            <Cooldown Location="Unit" TimeUse="60"/>
+        </EffectCost>
+    </CItemEffectInstant>
+    <CItemAbil id="GoldenHauberk">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Armor"/>
+        <Level value="9"/>
+        <EquipBehaviorArray value="GoldenHauberk"/>
+        <Abil value="GoldenHauberkHeal"/>
+    </CItemAbil>
+    <CItem id="HeavyTowerShield">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Offhand"/>
+        <Level value="6"/>
+        <EquipBehaviorArray value="HeavyTowerShield"/>
+    </CItem>
+    <CItem id="HuntsmansJacket">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Armor"/>
+        <Level value="2"/>
+        <EquipBehaviorArray value="HuntsmansJacket"/>
+    </CItem>
+    <CItem id="InfusedLumber">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+    </CItem>
+    <CItemAbil id="FrostBarrier">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Offhand"/>
+        <Level value="4294967295"/>
+        <EquipBehaviorArray value="FrostBarrier"/>
+        <Abil value="FrostBarrierTransform"/>
+    </CItemAbil>
+    <CItemAbil id="IronShovel">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Abil value="GenericUseItem2Charges"/>
+    </CItemAbil>
+    <CItem id="IronStuddedVest">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Armor"/>
+        <Level value="3"/>
+        <EquipBehaviorArray value="IronStuddedVest"/>
+    </CItem>
+    <CItem id="MagnificentChefsHat">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Armor"/>
+        <EquipBehaviorArray value="MagnificentChefsHat"/>
+        <Level value="11"/>
+    </CItem>
+    <CItem id="MurlocSkull">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+    </CItem>
+    <CItem id="ConjurersCharm">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <CarryBehaviorArray value="ConjurersCharm"/>
+    </CItem>
+    <CItemAbil id="MurlocSkullFragment">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Abil value="MurlocSkullFragments"/>
+    </CItemAbil>
+    <CItem id="MysticsTribalShield">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Offhand"/>
+        <EquipBehaviorArray value="MysticsTribalShield"/>
+        <Level value="4"/>
+    </CItem>
+    <CItem id="ObedienceRod">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="MainHand"/>
+        <Level value="4294967295"/>
+        <EquipBehaviorArray value="ObedienceRod"/>
+    </CItem>
+    <CItem id="OutlandishHeartpiercer">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Offhand"/>
+        <Level value="10"/>
+        <EquipBehaviorArray value="OutlandishHeartpiercer"/>
+    </CItem>
+    <CItemAbil id="RawWolfMeat">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Abil value="GenericUseItem"/>
+        <Requirements value="KoboldCanEat"/>
+    </CItemAbil>
+    <CItemAbil id="MurlocDoomhammer">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="MainHand"/>
+        <Level value="15"/>
+        <EquipBehaviorArray value="MurlocDoomhammer"/>
+    </CItemAbil>
+    <CItem id="DullPickaxe">
+        <Class value="MainHand"/>
+        <EquipBehaviorArray value="DullPickaxe"/>
+        <EquipWeaponArray Link="KoboldAttackMeleeSlash"/>
+    </CItem>
+    <CItemAbil id="ReapersHand">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Abil value="GenericUseItem"/>
+    </CItemAbil>
+    <CItemAbil id="Sageberry">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Requirements value="KoboldCanEat"/>
+        <Abil value="GenericUseItem"/>
+    </CItemAbil>
+    <CItemAbil id="ScrollofTransmutation">
+        <Flags index="DropOnDeath" value="1"/>
+        <Flags index="KillWhenDepleted" value="1"/>
+        <Class value="Resource"/>
+    </CItemAbil>
+    <CItem id="SkeletalFinger">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+    </CItem>
+    <CItemAbil id="SmokedLambSirloin">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Abil value="GenericUseItem"/>
+        <Requirements value="KoboldCanEat"/>
+    </CItemAbil>
+    <CItem id="SpikedShadowstoneScutum">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Offhand"/>
+        <EquipBehaviorArray value="SpikedShadowstoneScutum"/>
+        <Level value="11"/>
+    </CItem>
+    <CItem id="TrollNoseBone">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+    </CItem>
+    <CItem id="VengefulMurlocSkull">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Offhand"/>
+        <EquipBehaviorArray value="VengefulMurlocSkull"/>
+        <Level value="7"/>
+    </CItem>
+    <CItem id="VenomousArbalest">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="MainHand"/>
+        <Level value="14"/>
+        <EquipBehaviorArray value="VenomousArbalest"/>
+        <EquipBehaviorArray value="VenomousArbalestBack"/>
+        <EquipWeaponArray Link="VenomousArbalest"/>
+    </CItem>
+    <CItemAbil id="ViciousJavelin">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Offhand"/>
+        <Level value="5"/>
+        <EquipBehaviorArray value="ViciousJavelin"/>
+        <Abil value="JavelinCooldown"/>
+    </CItemAbil>
+    <CItem id="WhiteBearFang">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+    </CItem>
+    <CItemAbil id="WolfSteak">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Abil value="GenericUseItem"/>
+        <Requirements value="KoboldCanEat"/>
+    </CItemAbil>
+    <CItemAbil id="SleepingBag">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Requirements value="NotBusy"/>
+    </CItemAbil>
+    <CItem id="SpellBook">
+        <Class value="Resource"/>
+        <CarryBehaviorArray value="SpellBook"/>
+    </CItem>
+    <CItem id="Lantern">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Offhand"/>
+        <EquipBehaviorArray value="Lantern"/>
+        <Level value="2"/>
+    </CItem>
+    <CItem id="LambentSunflower">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+    </CItem>
+    <CItem id="RadiantGem">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+    </CItem>
+    <CItem id="Shadowstone">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+    </CItem>
+    <CItemAbil id="GrilledWolfEntrecote">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Abil value="GenericUseItem"/>
+        <Requirements value="KoboldCanEat"/>
+    </CItemAbil>
+    <CItem id="Wolfsbane">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="MainHand"/>
+        <EquipBehaviorArray value="Wolfsbane"/>
+        <Level value="12"/>
+        <EquipWeaponArray Link="KoboldAttackMeleeSlash"/>
+    </CItem>
+    <CItem id="SpicyHerbs">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+    </CItem>
+    <CItemAbil id="RawPheasant">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Abil value="GenericUseItem"/>
+        <Requirements value="KoboldCanEat"/>
+    </CItemAbil>
+    <CItemAbil id="RoastedPheasantWithBerrySauce">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Abil value="GenericUseItem"/>
+        <Requirements value="KoboldCanEat"/>
+    </CItemAbil>
+    <CItemAbil id="SpicedLambFeast">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Abil value="GenericUseItem"/>
+        <Requirements value="KoboldCanEat"/>
+    </CItemAbil>
+    <CItemAbil id="BeerBraisedPheasant">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Abil value="GenericUseItem"/>
+        <Requirements value="KoboldCanEat"/>
+    </CItemAbil>
+    <CItem id="IronBandedBuckler">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Offhand"/>
+        <EquipBehaviorArray value="IronBandedBuckler"/>
+        <Level value="3"/>
+    </CItem>
+    <CItem id="RoughBlunderbuss">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="MainHand"/>
+        <EquipBehaviorArray value="RoughBlunderbuss"/>
+        <Level value="4"/>
+        <EquipWeaponArray Link="Blunderbuss"/>
+    </CItem>
+    <CItem id="WarmWoolTunic">
+        <Face value="ThickWoolTunic"/>
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Armor"/>
+        <EquipBehaviorArray value="WarmWoolTunic"/>
+    </CItem>
+    <CItemAbil id="RoastedLamb">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Abil value="GenericUseItem"/>
+        <Requirements value="KoboldCanEat"/>
+    </CItemAbil>
+    <CItemAbil id="HandfulofBerries">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Abil value="GenericUseItem"/>
+        <Requirements value="KoboldCanEat"/>
+    </CItemAbil>
+    <CItem id="LeatherCoat">
+        <Face value="WarmFurCoat"/>
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Armor"/>
+        <Level value="1"/>
+        <EquipBehaviorArray value="LeatherCoat"/>
+    </CItem>
+    <CItem id="HeavyIronBreastplate">
+        <Class value="Armor"/>
+        <EquipBehaviorArray value="HeavyIronBreastplate"/>
+        <Flags index="DropOnDeath" value="1"/>
+        <Level value="7"/>
+    </CItem>
+    <CItem id="Lumber">
+        <Class value="Resource"/>
+        <Flags index="DropOnDeath" value="1"/>
+    </CItem>
+    <CItemAbil id="RawLamb">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Resource"/>
+        <Abil value="GenericUseItem"/>
+        <Requirements value="KoboldCanEat"/>
+    </CItemAbil>
+    <CItem id="Stone">
+        <Class value="Resource"/>
+        <Flags index="DropOnDeath" value="1"/>
+    </CItem>
+    <CItem id="IronOre">
+        <Class value="Resource"/>
+        <Flags index="DropOnDeath" value="1"/>
+    </CItem>
+    <CItem id="SharpIronPickaxe">
+        <Class value="MainHand"/>
+        <EquipBehaviorArray value="SharpIronPickaxe"/>
+        <Flags index="DropOnDeath" value="1"/>
+        <Level value="2"/>
+        <EquipWeaponArray Link="KoboldAttackMeleeSlash"/>
+    </CItem>
+    <CItem id="Torch">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="Offhand"/>
+        <EquipBehaviorArray value="Torch"/>
+        <Level value="4294967295"/>
+    </CItem>
+    <CItem id="Bloodcleaver">
+        <Flags index="DropOnDeath" value="1"/>
+        <Class value="MainHand"/>
+        <Level value="18"/>
+        <EquipBehaviorArray value="Bloodcleaver"/>
+        <EquipWeaponArray Link="KoboldAttackMeleeSlash"/>
+    </CItem>
+    <CItem id="Wool">
+        <Class value="Resource"/>
+        <Flags index="DropOnDeath" value="1"/>
+    </CItem>
+    <CItem id="SturdyWoodenStick">
+        <Class value="MainHand"/>
+        <EquipBehaviorArray value="SturdyWoodenStick"/>
+        <Flags index="DropOnDeath" value="1"/>
+        <Level value="1"/>
+    </CItem>
+    <CItem id="Leather">
+        <Class value="Resource"/>
+        <Flags index="DropOnDeath" value="1"/>
+    </CItem>
+</Catalog>

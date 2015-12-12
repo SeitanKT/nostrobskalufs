@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CAttachMethodFilter id="AMFilterWeapon04">
+        <Keys Keyword="Weapon" Index="4"/>
+    </CAttachMethodFilter>
+    <CAttachMethodPattern id="WatchTowerAttack01">
+        <Keyword value="Weapon"/>
+        <Driver value="WatchTowerAttack01"/>
+    </CAttachMethodPattern>
+</Catalog>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CRequirement id="AdrenalineRush">
+        <NodeArray index="Use" Link="CountBehaviorAdrenalineRushReadyInProgressOrBetterAtUnit768849980"/>
+        <NodeArray index="Show" Link="CountBehaviorMining20InProgressOrBetterAtUnit"/>
+    </CRequirement>
+    <CRequirement id="Artisanship25">
+        <NodeArray index="Use" Link="CountBehaviorArtisanship25InProgressOrBetter3384357290TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="Artisanship20">
+        <NodeArray index="Use" Link="CountBehaviorArtisanship20InProgressOrBetter3764517242TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="Artisanship5">
+        <NodeArray index="Use" Link="CountBehaviorArtisanship5InProgressOrBetter957008387"/>
+    </CRequirement>
+    <CRequirement id="Artisanship10">
+        <NodeArray index="Use" Link="CountBehaviorArtisanship10InProgressOrBetter49372639"/>
+    </CRequirement>
+    <CRequirement id="Artisanship15">
+        <NodeArray index="Use" Link="CountBehaviorArtisanship15InProgressOrBetter366465547"/>
+    </CRequirement>
+    <CRequirement id="AutomatedDefenseTurretReq">
+        <NodeArray index="Use" Link="AndAndGTE2500158815CountUnitLumberInProgressOrBetterAtUnit1GTE3715153190CountUnitStoneInProgressOrBetterAtUnit1GTE1626786172CountUnitIronOreInProgressOrBetterAtUnit11764370913LT3079143258CountUnitAutomatedDefenseTurretInProgressOrBetterCountBehaviorADTAllowedStacksInProgressOrBetterAtUnit"/>
+    </CRequirement>
+    <CRequirement id="BirdNesting">
+        <NodeArray index="Use" Link="AndCountBehaviorOutpostGotBirdInProgressOrBetterAtUnit814322279Not2641820968CountBehaviorVeilofDarknessGeneralInProgressOrBetterAtUnit"/>
+    </CRequirement>
+    <CRequirement id="FishingRod">
+        <NodeArray index="Use" Link="NotOrCountBehaviorCookingInProgressOrBetterAtUnitCountBehaviorCraftingInProgressOrBetterAtUnit"/>
+    </CRequirement>
+    <CRequirement id="CreatePalisadeGate">
+        <NodeArray index="Show" Link="CountBehaviorCanBecomeGateInProgressOrBetterAtUnit"/>
+    </CRequirement>
+    <CRequirement id="Repeater">
+        <NodeArray index="Use" Link="AndCountBehaviorRepeatingCrossbowInProgressOrBetterAtUnitCountBehaviorBearShamansShroudInProgressOrBetterAtUnit"/>
+    </CRequirement>
+    <CRequirement id="SiphonLife">
+        <NodeArray index="Use" Link="Not447609479CountBehaviorSiphonLifeInProgressOrBetterAtUnit"/>
+    </CRequirement>
+    <CRequirement id="TrebuchetNotLoaded">
+        <NodeArray index="Use" Link="Not158058704OrCountBehaviorTrebuchetLoadedStoneInProgressOrBetterAtUnit"/>
+    </CRequirement>
+    <CRequirement id="WarHorn">
+        <NodeArray index="Use" Link="CountBehaviorWatchTowerWarHornInProgressOrBetterAtUnit2634937426"/>
+    </CRequirement>
+    <CRequirement id="CampfireExpertDisabled">
+        <NodeArray index="Show" Link="NotCountBehaviorCampfireExpertInProgressOrBetterTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="CampfireExpertEnabled">
+        <NodeArray index="Show" Link="CountBehaviorCampfireExpertInProgressOrBetterTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="CampfireRequirement">
+        <NodeArray index="Use" Link="And1764370913GTECountUnitLumberInProgressOrBetterAtUnit1GTECountUnitStoneInProgressOrBetterAtUnit1NotCountBehaviorArenaCombatantInProgressOrBetterAtUnit"/>
+    </CRequirement>
+    <CRequirement id="WatchTowerArmory">
+        <NodeArray index="Use" Link="Not2382461100CountBehaviorWatchTowerArcaneSanctumInProgressOrBetterAtUnit"/>
+    </CRequirement>
+    <CRequirement id="WatchTowerArcaneSanctum">
+        <NodeArray index="Use" Link="Not1909066809CountBehaviorWatchTowerArmoryInProgressOrBetterAtUnit"/>
+    </CRequirement>
+    <CRequirement id="WatchTowerNotFullAmmo">
+        <NodeArray index="Use" Link="Eq646987027CountBehaviorWatchTowerFullAmmoInProgressOrBetterAtUnitTechTreeCheat0"/>
+    </CRequirement>
+    <CRequirement id="WatchTowerRequirement">
+        <NodeArray index="Use" Link="AndAndGTE3573744135CountUnitLumberInProgressOrBetterAtUnit10GTE2984890790CountUnitStoneInProgressOrBetterAtUnit6NotCountBehaviorArenaCombatantInProgressOrBetterAtUnit"/>
+        <NodeArray index="Show" Link="CountBehaviorCanBuildWatchTowerInProgressOrBetterAtUnit"/>
+    </CRequirement>
+    <CRequirement id="WatchTowerStorage">
+        <NodeArray index="Use" Link="AndCountBehaviorWatchTowerStorageInProgressOrBetterAtUnit3053736559TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="InspirationalMaster">
+        <NodeArray index="Show" Link="CountUpgradePetUpgradeInspirationalMasterCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="Cooking20">
+        <NodeArray index="Use" Link="AndCountBehaviorCooking20InProgressOrBetter4085972241TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="Cooking5">
+        <NodeArray index="Use" Link="AndCountBehaviorCooking5InProgressOrBetter2625724741"/>
+    </CRequirement>
+    <CRequirement id="Cooking10">
+        <NodeArray index="Use" Link="AndCountBehaviorCooking10InProgressOrBetter479621985"/>
+    </CRequirement>
+    <CRequirement id="Cooking15">
+        <NodeArray index="Use" Link="AndCountBehaviorCooking15InProgressOrBetter1732521956"/>
+    </CRequirement>
+    <CRequirement id="DreadplateArmorRequirement">
+        <NodeArray index="Show" Link="CountBehaviorArtisanKnowledgeDreadplateArmorInProgressOrBetter463194432TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="Foraging5">
+        <NodeArray index="Use" Link="AndCountBehaviorForaging5InProgressOrBetter903969518TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="HasPets">
+        <NodeArray index="Use" Link="GT4279902525SumCountUnitDogInProgressOrBetterCountUnitLyoteInProgressOrBetterCountUnitBearInProgressOrBetterCountUnitFrostBearInProgressOrBetterCountUnitNightwispInProgressOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="HuntersLodgeRequirement">
+        <NodeArray index="Use" Link="Or1764370913AndGTECountUnitLumberInProgressOrBetterAtUnit2GTECountUnitLeatherInProgressOrBetterAtUnit3NotCountBehaviorArenaCombatantInProgressOrBetterAtUnitAndGTECountUnitLumberInProgressOrBetterAtUnit1GTECountUnitLeatherInProgressOrBetterAtUnit3CountBehaviorArtisanship25InProgressOrBetterAtUnitNotCountBehaviorArenaCombatantInProgressOrBetterAtUnit"/>
+    </CRequirement>
+    <CRequirement id="InvestigateShrine">
+        <NodeArray index="Use" Link="Eq3329464127CountBehaviorVeilShrineActiveInProgressOrBetterAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="IronShovelReq">
+        <NodeArray index="Show" Link="CountBehaviorShovelKnowledgeInProgressOrBetterTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="KoboldCanEat">
+        <NodeArray index="Use" Link="CountBehaviorKoboldCanEatInProgressOrBetterAtUnit2536377718TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="LiquidatorSpellbladeCooldown">
+        <NodeArray index="Use" Link="GT01"/>
+    </CRequirement>
+    <CRequirement id="Mining15">
+        <NodeArray index="Use" Link="CountBehaviorMining15InProgressOrBetter1080069951TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="MurlocInitiativeRequirement">
+        <NodeArray index="Use" Link="CountBehaviorInitiativeInProgressOrBetterAtUnit1297694111TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="NaturalTenacity">
+        <NodeArray index="Show" Link="CountUpgradePetUpgradeNaturalTenacityCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="Companionship">
+        <NodeArray index="Show" Link="CountUpgradePetUpgradeCompanionshipCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="ThickHide">
+        <NodeArray index="Show" Link="CountUpgradePetUpgradeThickHideCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="NoActiveGuardianSpirit">
+        <NodeArray index="Use" Link="Not751573913CountBehaviorGuardianSpiritInProgressOrBetterAtUnitTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="OrbofDarkness">
+        <NodeArray index="Use" Link="Eq1660618275CountBehaviorOrbofDarknessDeniedInProgressOrBetterAtUnit0"/>
+    </CRequirement>
+    <CRequirement id="OutlandishHeartpiercerRequirement">
+        <NodeArray index="Show" Link="CountBehaviorArtisanKnowledgeOutlandishHeartpiercerInProgressOrBetter1864640120TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="OutpostHasLeather">
+        <NodeArray index="Use" Link="CountBehaviorOutpostHasLeatherInProgressOrBetterAtUnit449645907TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="OutpostHasStone">
+        <NodeArray index="Use" Link="CountBehaviorOutpostHasStoneInProgressOrBetterAtUnit349332834TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="OutpostHasWool">
+        <NodeArray index="Use" Link="CountBehaviorOutpostHasWoolInProgressOrBetterAtUnit3916060807TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="OutpostRequirement">
+        <NodeArray index="Use" Link="Or1764370913AndGTECountUnitLumberInProgressOrBetterAtUnit3GTESumCountUnitWoolInProgressOrBetterAtUnitCountUnitLeatherInProgressOrBetterAtUnit2NotCountBehaviorArenaCombatantInProgressOrBetterAtUnitAndGTECountUnitLumberInProgressOrBetterAtUnit2GTESumCountUnitWoolInProgressOrBetterAtUnitCountUnitLeatherInProgressOrBetterAtUnit2CountBehaviorArtisanship25InProgressOrBetterAtUnitNotCountBehaviorArenaCombatantInProgressOrBetterAtUnit"/>
+    </CRequirement>
+    <CRequirement id="Salvage">
+        <NodeArray index="Show" Link="CountBehaviorSalvageAllowedInProgressOrBetterAtUnit3676018472TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="FullAmmo">
+        <NodeArray index="Use" Link="Eq646987027CountBehaviorFullAmmoInProgressOrBetterAtUnitTechTreeCheat0"/>
+    </CRequirement>
+    <CRequirement id="SetHeavyIron">
+        <NodeArray index="Use" Link="AndCountBehaviorHeavyIronBreastplateInProgressOrBetterAtUnitCountBehaviorHeavyTowerShieldInProgressOrBetterAtUnit"/>
+    </CRequirement>
+    <CRequirement id="SetMiningExpertise">
+        <NodeArray index="Use" Link="AndCountUnitRadiantGemInProgressOrBetterAtUnitCountUnitShadowstoneInProgressOrBetterAtUnit"/>
+    </CRequirement>
+    <CRequirement id="NotBusy">
+        <NodeArray index="Use" Link="Not4287374710OrCountBehaviorMiningGoldSmartInProgressOrBetterAtUnitCountBehaviorMiningStoneSmartInProgressOrBetterAtUnitCountBehaviorPickingBerriesSmartInProgressOrBetterAtUnitCountBehaviorPickingHerbsSmartInProgressOrBetterAtUnitCountBehaviorUnlockingChestSmartInProgressOrBetterAtUnitCountBehaviorResurrectingInProgressOrBetterAtUnitCountBehaviorCraftingInProgressOrBetterAtUnitCountBehaviorCookingInProgressOrBetterAtUnitCountBehaviorSleepingBagInProgressOrBetterAtUnitCountBehaviorFishingInProgressOrBetterAtUnit"/>
+    </CRequirement>
+    <CRequirement id="ShipmentAvailable">
+        <NodeArray index="Use" Link="CountBehaviorShipmentAvailableInProgressOrBetterAtUnit1746049535TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="SmithyRequirement">
+        <NodeArray index="Use" Link="And1764370913GTECountUnitLumberInProgressOrBetterAtUnit1GTECountUnitStoneInProgressOrBetterAtUnit1GTECountUnitLeatherInProgressOrBetterAtUnit1NotCountBehaviorArenaCombatantInProgressOrBetterAtUnit"/>
+    </CRequirement>
+    <CRequirement id="FastFoodReq">
+        <NodeArray index="Use" Link="AndOr3621697714GTECountUnitBeerBraisedPheasantInProgressOrBetterAtUnit1GTECountUnitGrilledWolfEntrecoteInProgressOrBetterAtUnit1GTECountUnitRoastedLambInProgressOrBetterAtUnit1GTECountUnitRoastedPheasantWithBerrySauceInProgressOrBetterAtUnit1GTECountUnitSmokedLambSirloinInProgressOrBetterAtUnit1GTECountUnitSpicedLambFeastInProgressOrBetterAtUnit1GTECountUnitWolfSteakInProgressOrBetterAtUnit1GTECountUnitBeerInProgressOrBetterAtUnit1GTECountUnitHandfulofBerriesInProgressOrBetterAtUnit1GTECountUnitRawLambInProgressOrBetterAtUnit1GTECountUnitRawPheasantInProgressOrBetterAtUnit1GTECountUnitRawWolfMeatInProgressOrBetterAtUnit1GTECountUnitRawStagMeatInProgressOrBetterAtUnit1GTECountUnitStagStewInProgressOrBetterAtUnit1GTECountUnitGiantSunfishInProgressOrBetterAtUnit1GTECountUnitSlipperyEelInProgressOrBetterAtUnit1GTECountUnitForestTroutInProgressOrBetterAtUnit1GTECountUnitHighlandGuppyInProgressOrBetterAtUnit1GTECountUnitAlbinoCavefishInProgressOrBetterAtUnit1GTECountUnitStripedLurkerInProgressOrBetterAtUnit1GTECountUnitJewelDanioInProgressOrBetterAtUnit1GTECountUnitWaterScorpionInProgressOrBetterAtUnit1GTECountUnitFireAmmoniteInProgressOrBetterAtUnit1"/>
+    </CRequirement>
+    <CRequirement id="SmokedLambSirloinReq">
+        <NodeArray index="Use" Link="Or1732521956CountBehaviorSmokedLambSirloinReqInProgressOrBetterAtUnitTechTreeCheatCountBehaviorCooking15InProgressOrBetterAtUnitTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="BarnetsMonument">
+        <NodeArray index="Use" Link="And1764370913GTECountUnitLumberInProgressOrBetterAtUnit9GTECountUnitStoneInProgressOrBetterAtUnit9"/>
+        <NodeArray index="Show" Link="CountBehaviorBarnetsMonumentInProgressOrBetterAtUnitTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="SpikeTrapRequirement">
+        <NodeArray index="Use" Link="GTE1764370913CountUnitIronOreInProgressOrBetterAtUnit1"/>
+    </CRequirement>
+    <CRequirement id="SpikeTrapSharpen">
+        <NodeArray index="Use" Link="CountBehaviorDullEdgeInProgressOrBetterAtUnit1429808821"/>
+    </CRequirement>
+    <CRequirement id="Tamed">
+        <NodeArray index="Use" Link="CountBehaviorTamedInProgressOrBetterAtUnitTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="TavernRequirement">
+        <NodeArray index="Use" Link="Or1764370913AndGTECountUnitLumberInProgressOrBetterAtUnit2GTECountUnitStoneInProgressOrBetterAtUnit2NotCountBehaviorArenaCombatantInProgressOrBetterAtUnitAndGTECountUnitLumberInProgressOrBetterAtUnit1GTECountUnitStoneInProgressOrBetterAtUnit2CountBehaviorArtisanship25InProgressOrBetterAtUnitNotCountBehaviorArenaCombatantInProgressOrBetterAtUnit"/>
+    </CRequirement>
+    <CRequirement id="PalisadeRequirement">
+        <NodeArray index="Use" Link="And1764370913GTESumCountUnitLumberInProgressOrBetterAtUnitCountUnitLumberPartsInProgressOrBetterAtUnit1NotCountBehaviorArenaCombatantInProgressOrBetterAtUnit"/>
+    </CRequirement>
+    <CRequirement id="TavernWizard">
+        <NodeArray index="Use" Link="Or299854450CountBehaviorTavernWizardInProgressOrBetterAtUnitTechTreeCheatCountBehaviorKoboldBotNormalInProgressOrBetterAtUnitTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="SpellBook">
+        <NodeArray index="Use" Link="Or3316995077CountBehaviorSpellBookInProgressOrBetterAtUnitTechTreeCheatCountBehaviorConjurersCharmInProgressOrBetterAtUnitTechTreeCheatCountBehaviorNecromancersNecklaceInProgressOrBetterAtUnitTechTreeCheatCountBehaviorTheMurlocketInProgressOrBetterAtUnitTechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="Viciousness">
+        <NodeArray index="Show" Link="CountUpgradePetUpgradeViciousnessCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="UnlimitedPower">
+        <NodeArray index="Show" Link="And1853434226CountBehaviorNecromancersNecklaceInProgressOrBetterAtUnitCountBehaviorConjurersCharmInProgressOrBetterAtUnit"/>
+    </CRequirement>
+    <CRequirement id="PredatoryKnowledge">
+        <NodeArray index="Show" Link="CountUpgradePetUpgradePredatoryKnowledgeCompleteOnly"/>
+    </CRequirement>
+    <CRequirement id="CalltoArms">
+        <NodeArray index="Use" Link="CountBehaviorWatchTowerMurlocMilitiaInProgressOrBetterAtUnit2831665971"/>
+    </CRequirement>
+    <CRequirement id="WatchTowerTunnelingCrew">
+        <NodeArray index="Use" Link="CountBehaviorWatchTowerStorageInProgressOrBetterAtUnit3053736559"/>
+    </CRequirement>
+    <CRequirement id="WizardTrinket">
+        <NodeArray index="Show" Link="CountBehaviorWizardsTrinketInProgressOrBetterAtUnit3752717162TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="TentRequirement">
+        <NodeArray index="Use" Link="And1764370913GTECountUnitLumberInProgressOrBetterAtUnit1OrGTECountUnitLeatherInProgressOrBetterAtUnit1GTECountUnitWoolInProgressOrBetterAtUnit1NotCountBehaviorArenaCombatantInProgressOrBetterAtUnit"/>
+    </CRequirement>
+    <CRequirement id="VenomousArbalestRequirement">
+        <NodeArray index="Show" Link="CountBehaviorArtisanKnowledgeVenomousArbalestInProgressOrBetter1777812149TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="NecromancersNecklace">
+        <NodeArray index="Show" Link="CountBehaviorNecromancersNecklaceInProgressOrBetterAtUnit1167997277TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="WolfsbaneRequirement">
+        <NodeArray index="Show" Link="CountBehaviorWolfsbaneTitleInProgressOrBetter1243223104TechTreeCheat"/>
+    </CRequirement>
+    <CRequirement id="WorkbenchRequirement">
+        <NodeArray index="Use" Link="And1764370913GTECountUnitLumberInProgressOrBetterAtUnit1GTECountUnitLeatherInProgressOrBetterAtUnit1NotCountBehaviorArenaCombatantInProgressOrBetterAtUnit"/>
+    </CRequirement>
+</Catalog>

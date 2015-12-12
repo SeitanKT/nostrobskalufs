@@ -1,0 +1,2297 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CAbilEffectInstant id="AcquireTarget">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="AutoCast" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="0.5"/>
+        </Cost>
+        <AutoCastFilters value="Visible;Player,Ally,Neutral,Stasis,Dead,Hidden,Invulnerable"/>
+        <AutoCastValidatorArray value="TurretAutoAcquireValidator"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="AcquireTarget"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="Affliction">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="SpellAbsorbCheckAffliction"/>
+        <Cost>
+            <Vital index="Energy" value="80"/>
+            <Charge Link="Abil/NaturesGrace"/>
+            <Cooldown Link="Abil/NaturesGrace"/>
+        </Cost>
+        <TargetFilters value="Biological;Player,Ally,Missile,Item,Dead,Hidden,Invulnerable"/>
+        <Range value="6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Affliction">
+            <Flags index="ShowInGlossary" value="0"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="Annihilate">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="AnnihilateApply"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="10"/>
+            <Cooldown TimeStart="6" TimeUse="8"/>
+        </Cost>
+        <TargetFilters value="-;Player,Ally,Neutral,Structure,Missile,Item,Cloaked,Dead,Hidden,Invulnerable"/>
+        <TargetSorts>
+            <SortArray value="TSRandom"/>
+        </TargetSorts>
+        <Range value="10"/>
+        <AutoCastFilters value="Visible;Player,Ally,Neutral,Structure,Missile,Item,Cloaked,Hidden,Invulnerable"/>
+        <AutoCastRange value="10"/>
+        <AutoCastValidatorArray value="EnemiesNearby10"/>
+        <AutoCastValidatorArray value="TargetIsKobold"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Annihilate"/>
+        <AcquireAttackers value="1"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="AttackOrderADT">
+        <Effect index="0" value="AcquireTargetOrder"/>
+        <Flags index="AutoCast" value="1"/>
+        <Cost/>
+        <Range value="6"/>
+        <AutoCastFilters value="Visible;Player,Ally,Neutral,Stasis,Dead,Hidden,Invulnerable"/>
+        <AutoCastRange value="6"/>
+        <AutoCastValidatorArray value="NotAttacking"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Attack"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="BeaverScavengerActivate">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="BeaverScavenger"/>
+        <Cost/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="BeaverScavenger"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="BeaverScavengerFinish">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/BeaverScavengerActivate"/>
+            <Cooldown Link="Abil/BeaverScavengerActivate"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="BeaverScavengerFinish"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CraftIronbarkArmor">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CraftIronbarkArmor"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CraftTrebuchet">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CraftTrebuchet"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CullTheHerd">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="CullTheHerdSearch"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="50"/>
+            <Cooldown TimeUse="20"/>
+        </Cost>
+        <AutoCastValidatorArray value="CullTheHerdAutocastValidator"/>
+        <PrepTime value="0.5"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CullTheHerd"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CreatePalisadeGate">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CreatePalisadeGate" Requirements="CreatePalisadeGate"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="Ballista">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <SmartPriority value="100"/>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Ballista"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="GiveAllItemsToTarget">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost/>
+        <Range value="0"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="GiveAllItemsToTarget"/>
+    </CAbilEffectTarget>
+    <CAbilMorph id="PalisadeGateClose">
+        <OrderArray index="0" Color="255,0,255,0" Model="Assets\UI\Cursors\WayPointConfirmSwarm\WayPointConfirmSwarm.m3" LineTexture="Assets\Textures\WayPointLine.dds"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PalisadeGateClose"/>
+        <Flags index="IgnoreFacing" value="1"/>
+        <InfoArray Unit="PalisadeGateClosed" CollideRange="0">
+            <SectionArray index="Abils">
+                <EffectArray index="Start" value="PalisadeMorphingApply"/>
+            </SectionArray>
+            <SectionArray index="Actor">
+                <DurationArray index="Duration" value="1"/>
+            </SectionArray>
+            <SectionArray index="Mover">
+                <DurationArray index="Duration" value="1"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Delay" value="1"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
+    <CAbilEffectInstant id="ForgeTwinThrowingAxes">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ForgeTwinThrowingAxes"/>
+    </CAbilEffectInstant>
+    <CAbilMorph id="PalisadeGateOpen">
+        <OrderArray index="0" Color="255,0,255,0" Model="Assets\UI\Cursors\WayPointConfirmSwarm\WayPointConfirmSwarm.m3" LineTexture="Assets\Textures\WayPointLine.dds"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PalisadeGateOpen"/>
+        <Flags index="IgnoreFacing" value="1"/>
+        <Flags index="IgnorePlacement" value="0"/>
+        <Flags index="MoveBlockers" value="1"/>
+        <InfoArray Unit="PalisadeGateOpen" CollideRange="0">
+            <SectionArray index="Abils">
+                <EffectArray index="Start" value="PalisadeMorphingApply"/>
+            </SectionArray>
+            <SectionArray index="Mover">
+                <DurationArray index="Duration" value="1"/>
+            </SectionArray>
+            <SectionArray index="Stats">
+                <DurationArray index="Delay" value="1"/>
+            </SectionArray>
+        </InfoArray>
+    </CAbilMorph>
+    <CAbilEffectInstant id="PackTrebuchet">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <CastIntroTime value="10"/>
+        <ShowProgressArray index="Approach" value="1"/>
+        <ShowProgressArray index="Prep" value="1"/>
+        <ShowProgressArray index="Cast" value="1"/>
+        <ShowProgressArray index="Channel" value="1"/>
+        <ShowProgressArray index="Finish" value="1"/>
+        <CancelableArray index="Approach" value="1"/>
+        <CancelableArray index="Prep" value="1"/>
+        <CancelableArray index="Cast" value="1"/>
+        <CancelableArray index="Channel" value="1"/>
+        <CancelableArray index="Finish" value="1"/>
+        <ProgressButtonArray index="Approach" value="PackTrebuchet"/>
+        <ProgressButtonArray index="Wait" value="PackTrebuchet"/>
+        <ProgressButtonArray index="Prep" value="PackTrebuchet"/>
+        <ProgressButtonArray index="Cast" value="PackTrebuchet"/>
+        <ProgressButtonArray index="Channel" value="PackTrebuchet"/>
+        <ProgressButtonArray index="Finish" value="PackTrebuchet"/>
+        <ProgressButtonArray index="Bail" value="PackTrebuchet"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PackTrebuchet"/>
+        <CmdButtonArray index="Cancel" DefaultButtonFace="Cancel"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="BeaverPen">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <SmartPriority value="300"/>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="BeaverPen" Requirements="WatchTowerArmory"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="ResumeAI">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="Transient" value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ResumeAI"/>
+    </CAbilEffectInstant>
+    <CAbilRally id="WatchTowerRally">
+        <EditorCategories value="Race:Neutral,AbilityorEffectType:Structures"/>
+        <CmdButtonArray index="Rally1" DefaultButtonFace="WatchTowerRally"/>
+    </CAbilRally>
+    <CAbilEffectTarget id="UnpackTrebuchet">
+        <OrderArray index="0" Model="Assets\UI\Cursors\WayPointConfirmSwarm\WayPointConfirmSwarm.m3"/>
+        <Cost>
+            <Charge>
+                <CountMax value="1"/>
+                <CountStart value="1"/>
+                <CountUse value="1"/>
+                <HideCount value="1"/>
+            </Charge>
+            <Cooldown Link="Abil/InfestedTerrans"/>
+        </Cost>
+        <Range value="2"/>
+        <UninterruptibleArray index="Prep" value="1"/>
+        <UninterruptibleArray index="Cast" value="1"/>
+        <UninterruptibleArray index="Channel" value="1"/>
+        <UninterruptibleArray index="Finish" value="1"/>
+        <ProducedUnitArray value="Trebuchet"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TrebuchetPacked"/>
+        <PlaceUnit value="Trebuchet"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="WatchTowerArmory">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <SmartPriority value="300"/>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="WatchTowerArmory" Requirements="WatchTowerArmory"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TunnelerCrew">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <SmartPriority value="200"/>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TunnelerCrew"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="WarHorn">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="WarHornSearch"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout" TimeUse="60"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="WarHorn" Requirements="WarHorn"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="Canteen">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Canteen"/>
+        <Flags index="Transient" value="1"/>
+        <SmartPriority value="200"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="Groundskeeper">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Groundskeeper"/>
+        <SmartPriority value="200"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="ArcaneSanctum">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <SmartPriority value="300"/>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ArcaneSanctum" Requirements="WatchTowerArcaneSanctum"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="MunitionsSquad">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <SmartPriority value="200"/>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MunitionsSquad"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="WatchTowerMurlocMilitia">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="WatchTowerMurlocMilitia"/>
+        <SmartPriority value="300"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CalltoArms">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout" TimeUse="60"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CalltoArms" Requirements="CalltoArms"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TrebuchetLoadStone">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="BestUnit" value="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TrebuchetLoadStone" Requirements="TrebuchetNotLoaded"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="WatchTowerWarHorn">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="WatchTowerWarHorn"/>
+        <SmartPriority value="300"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="WatchTowerRefillAmmunition">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="WatchTowerRefillAmmunition" Requirements="WatchTowerNotFullAmmo"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="Lookout">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Lookout"/>
+        <SmartPriority value="100"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="Storage">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Storage"/>
+        <Flags index="Transient" value="1"/>
+        <SmartPriority value="100"/>
+    </CAbilEffectInstant>
+    <CAbilInventory id="WatchTowerInventory">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Range value="4"/>
+        <MaxDropRange value="4"/>
+        <InfoArray Container="WatchTowerContainer" EmptyFace="WatchTowerStorage" Requirements="WatchTowerStorage">
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+            <Classes value="Resource"/>
+        </InfoArray>
+    </CAbilInventory>
+    <CAbilEffectInstant id="WatchTowerBarracks">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="WatchTowerBarracks"/>
+        <Flags index="Transient" value="1"/>
+        <SmartPriority value="100"/>
+    </CAbilEffectInstant>
+    <CAbilTransport id="WatchTowerGarrison">
+        <OrderArray index="0" Color="255,0,255,0" Model="Assets\UI\Cursors\WayPointConfirmSwarm\WayPointConfirmSwarm.m3" LineTexture="Assets\Textures\WayPointLine.dds"/>
+        <AbilSetId value="ULdS"/>
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Structures"/>
+        <CmdButtonArray index="Load" DefaultButtonFace="BunkerLoad"/>
+        <CmdButtonArray index="UnloadAll" DefaultButtonFace="BunkerUnloadAll">
+            <Flags index="ToSelection" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="UnloadAt">
+            <Flags index="Hidden" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="UnloadUnit">
+            <Flags index="Hidden" value="1"/>
+        </CmdButtonArray>
+        <CmdButtonArray index="LoadAll">
+            <Flags index="Hidden" value="1"/>
+        </CmdButtonArray>
+        <Range value="0"/>
+        <MaxCargoCount value="4"/>
+        <MaxCargoSize value="2"/>
+        <TotalCargoSpace value="2"/>
+        <LoadCargoBehavior value="WatchTowerGarrisonCargoBuff"/>
+        <LoadCargoEffect value="UpdateCombatStats"/>
+        <LoadTransportBehavior value="WatchTowerGarrisonTransportBuff"/>
+        <UnloadCargoEffect value="UpdateCombatStats"/>
+        <TargetFilters value="Biological;Neutral,Enemy,Dead,Hidden"/>
+        <LoadValidatorArray value="TargetIsKobold"/>
+    </CAbilTransport>
+    <CAbilEffectInstant id="CollectTrophyAntlers">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CollectTrophyAntlers"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CookingStagStew">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/CookMeat"/>
+            <Cooldown Link="Abil/CookMeat"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CookingStagStew" Requirements="Cooking20"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CraftFishingRod">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CraftFishingRod"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CraftGravesingersClaw">
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CraftGravesingersClaw"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CraftStormwizardsRobes">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CraftStormwizardsRobes"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CraftRepeatingCrossbow">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CraftRepeatingCrossbow"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="FishingRod">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="FishingRodSet"/>
+        <Range value="9"/>
+        <Cost>
+            <Cooldown TimeUse="0.125"/>
+        </Cost>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="StructuralReinforcement">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="StructuralReinforcement"/>
+        <Flags index="Transient" value="1"/>
+        <SmartPriority value="300"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="LiquidatorSpellbladeCooldown">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge Location="Player"/>
+            <Cooldown Location="Player" TimeUse="10"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="LiquidatorSpellblade"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="JavelinCooldown">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge Link="Abil/LiquidatorSpellbladeCooldown" Location="Player"/>
+            <Cooldown Link="Abil/LiquidatorSpellbladeCooldown" Location="Player" TimeUse="5"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ViciousJavelin"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="Infirmary">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Infirmary"/>
+        <Flags index="Transient" value="1"/>
+        <SmartPriority value="200"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TheKingsSpeech">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="TheKingsSpeechSearch"/>
+        <Cost>
+            <Charge Link="Abil/WhirlingBlades"/>
+            <Cooldown Link="Abil/WhirlingBlades" TimeUse="30"/>
+        </Cost>
+        <FinishTime value="1.5"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TheKingsSpeech"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="EmpoweredLightning">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="EmpoweredLightningLM"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="5"/>
+            <Cooldown TimeStart="7" TimeUse="15"/>
+        </Cost>
+        <TargetFilters value="-;Player,Ally,Structure,Missile,Item,Cloaked,Dead,Hidden,Invulnerable"/>
+        <TargetSorts>
+            <SortArray value="TSRandom"/>
+        </TargetSorts>
+        <Range value="10"/>
+        <AutoCastFilters value="Visible;Player,Ally,Neutral,Structure,Missile,Item,Cloaked,Hidden,Invulnerable"/>
+        <AutoCastRange value="10"/>
+        <AutoCastValidatorArray value="EnemiesNearby10"/>
+        <AutoCastValidatorArray value="EmpoweredLightning"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EmpoweredLightning"/>
+        <AcquireAttackers value="1"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="ArcaneEruption">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="ArcaneEruptionDelay"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="10"/>
+            <Cooldown TimeStart="5" TimeUse="14"/>
+        </Cost>
+        <AutoCastRange value="3"/>
+        <AutoCastValidatorArray value="EnemiesNearby10"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ArcaneEruption"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="Barterer">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Barterer"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CraftCelestialOrb">
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CraftCelestialOrb"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CraftWarlocksVestments">
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CraftWarlocksVestments"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CraftMasterRangersMaille">
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CraftMasterRangersMaille"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="ForgeLiquidatorSpellblade">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ForgeLiquidatorSpellblade"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="GenericUseItem3Charges">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="GenericUseItemApplyCooldown"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge CountMax="3" CountStart="3" CountUse="1"/>
+            <Cooldown>
+                <Link value="Abil/GenericUseItem"/>
+                <Location value="Unit"/>
+                <TimeStart value="0.0625"/>
+                <TimeUse value="0.0625"/>
+            </Cooldown>
+        </Cost>
+        <AINotifyEffect value="GenericUseItemApplyCooldown"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="MysteriousArcaneRitual">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Vital index="Energy" value="200"/>
+            <Cooldown TimeUse="1000"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MysteriousArcaneRitual" Requirements="UnlimitedPower"/>
+        <ShowProgressArray index="Channel" value="1"/>
+        <CastOutroTime value="10"/>
+        <ProgressButtonArray index="Channel" value="MysteriousArcaneRitual"/>
+    </CAbilEffectInstant>
+    <CAbilInteract id="NeutralBuildShare">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="ShareControl" value="1"/>
+        <Range value="4"/>
+        <TargetFilters value="-;Dead"/>
+        <ValidatorArray value="TargetIsKobold"/>
+        <AutoCastFilters value="-;Dead"/>
+        <AutoCastRange value="4"/>
+        <AutoCastValidatorArray value="TargetIsKobold"/>
+    </CAbilInteract>
+    <CAbilEffectInstant id="InvestigateShrine">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout" TimeUse="0.25"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="InvestigateShrine" Requirements="InvestigateShrine"/>
+        <Effect index="0" value="VeilShrineActive"/>
+    </CAbilEffectInstant>
+    <CAbilInteract id="BuildingAllyShareInteract">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="ShareControl" value="1"/>
+        <Range value="6"/>
+        <TargetFilters value="-;Dead"/>
+        <ValidatorArray value="TargetIsKobold"/>
+        <ValidatorArray value="CasterIsNotLocked"/>
+        <ValidatorArray value="TargetIsAlly"/>
+        <AutoCastFilters value="-;Dead"/>
+        <AutoCastRange value="6"/>
+        <AutoCastValidatorArray value="TargetIsKobold"/>
+        <AutoCastValidatorArray value="CasterIsNotLocked"/>
+        <AutoCastValidatorArray value="TargetIsAlly"/>
+    </CAbilInteract>
+    <CAbilEffectInstant id="BuyBeer">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="BuyBeer"/>
+        <Flags index="BestUnit" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="BuyInfusedLumber">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="BuyInfusedLumber"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="BuyIronOre">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="BuyIronOre"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="BuyLeather">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="BuyLeather"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="BuyLumber">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="BuyLumber"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="BuyRadiantGem">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="BuyRadiantGem"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CraftLightLeatherShield">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CraftLightLeatherShield"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="Demonward">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Cooldown Location="Unit" TimeUse="180"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Demonward"/>
+        <Flags index="Transient" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="ForgeDemonward">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ForgeDemonward"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="ForgeViciousJavelin">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ForgeViciousJavelin"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="ForgeJudgmentGavel">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ForgeJudgmentGavel"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="RefillAmmunition">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="RefillAmmunition" Requirements="FullAmmo"/>
+        <Flags index="BestUnit" value="1"/>
+        <Flags index="Transient" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="BuyShadowstone">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="BuyShadowstone"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="BuyScrollofTransmutation">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="BuyScrollofTransmutation"/>
+        <Flags index="BestUnit" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="BuyStone">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="BuyStone"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="BuyWool">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="BuyWool"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="Caravan">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Caravan"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CollectTrophyBoneTalisman">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CollectTrophyBoneTalisman"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CollectTrophyTrollNoseBone">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CollectTrophyTrollNoseBone"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CollectTrophyWhiteBearFang">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CollectTrophyWhiteBearFang"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="Companionship">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Companionship"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="ConstructHuntersLodge">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="ConstructionTrigger"/>
+        <Cost>
+            <Charge Link="Abil/ConstructTent"/>
+            <Cooldown Link="Abil/ConstructTent"/>
+        </Cost>
+        <Range value="3"/>
+        <AINotifyEffect value="ConstructSmithy"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ConstructHuntersLodge" Requirements="Foraging5"/>
+        <PlaceUnit value="HuntersLodge"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ConstructWorkbench">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="ConstructionTrigger"/>
+        <Cost>
+            <Charge Link="Abil/ConstructTent"/>
+            <Cooldown Link="Abil/ConstructTent"/>
+        </Cost>
+        <Range value="3"/>
+        <AINotifyEffect value="ConstructSmithy"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ConstructWorkbench"/>
+        <PlaceUnit value="Workbench"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="CookingCleansingDraught">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/CookMeat"/>
+            <Cooldown Link="Abil/CookMeat"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CookingCleansingDraught" Requirements="Cooking15"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="ConsumeDraughtofDecay">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="UnlivingStrengthApply"/>
+        <Cost>
+            <Charge Link="Abil/EatCookedMeat"/>
+            <Cooldown Link="Abil/EatCookedMeat" TimeUse="1"/>
+        </Cost>
+        <Flags index="Transient" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CookingSmokedLambSirloin">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/CookMeat"/>
+            <Cooldown Link="Abil/CookMeat"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CookingSmokedLambSirloin" Requirements="SmokedLambSirloinReq"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CraftBearShamansShroud">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CraftBearShamansShroud"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CraftElderWand">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CraftElderWand"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CraftEnigmaticStaff">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CraftEnigmaticStaff"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="ForgeHeavyTowerShield">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ForgeHeavyTowerShield"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CraftHuntsmansJacket">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CraftHuntsmansJacket"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="ForgeIronShovel">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ForgeIronShovel" Requirements="IronShovelReq"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CraftMysticsTribalShield">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CraftMysticsTribalShield"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CraftObedienceRod">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CraftObedienceRod"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CraftSleepingBag">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CraftSleepingBag"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CraftVengefulMurlocSkull">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CraftVengefulMurlocSkull"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CraftVenomousArbalest">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CraftVenomousArbalest"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="Tether">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="TetherTrigger"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Flags index="BestUnit" value="0"/>
+        <Cost>
+            <Charge Link="Abil/WhirlingBlades"/>
+            <Cooldown Link="Abil/WhirlingBlades" TimeStart="12" TimeUse="25"/>
+        </Cost>
+        <Range value="10"/>
+        <AutoCastFilters value="Biological,Visible;Player,Ally,Missile,Item,Cloaked,Dead,Hidden,Invulnerable"/>
+        <AutoCastRange value="8"/>
+        <AutoCastValidatorArray value="EnemiesNearby10"/>
+        <AINotifyEffect value="CurseofBurdenSearch"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="DemonicSummon">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/RaiseDead"/>
+            <Cooldown Link="Abil/RaiseDead"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="DomesticatedSheep">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="DomesticatedSheep"/>
+        <Flags index="BestUnit" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="DouseFire">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="Kill"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="DouseFire"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="GenericUseItem">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="GenericUseItemApplyCooldown"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Cooldown Location="Unit" TimeStart="0.0625" TimeUse="0.0625"/>
+        </Cost>
+        <AINotifyEffect value="GenericUseItemApplyCooldown"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="DreadHowl">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="DreadHowlSet"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Cost>
+            <Charge Link="Abil/WhirlingBlades"/>
+            <Cooldown Link="Abil/WhirlingBlades" TimeStart="8" TimeUse="20"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="DreadHowl"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="Eatasnack">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/FastFood"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Eatasnack" Requirements="FastFoodReq"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="EquipMurloc">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="EquipMurloc"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="Firestorm">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Cost>
+            <Charge Link="Abil/WhirlingBlades"/>
+            <Cooldown Link="Abil/WhirlingBlades" TimeStart="4" TimeUse="12"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Firestorm"/>
+        <Effect index="0" value="FirestormTrigger"/>
+        <AINotifyEffect value="FirestormTrigger"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="ForgeBerserkersBattleAxe">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ForgeBerserkersBattleAxe"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="ForgeDreadplateArmor">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ForgeDreadplateArmor"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="ForgeGoldenPolearm">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ForgeGoldenPolearm"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="ForgeGoldenHauberk">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ForgeGoldenHauberk"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="ForgeIronStuddedVest">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ForgeIronStuddedVest"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="ForgeOutlandishHeartpiercer">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ForgeOutlandishHeartpiercer"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="PheasantBait">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="BestUnit" value="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PheasantBait"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="FrostNeedleTransform">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Cooldown TimeStart="10"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="FrostNeedle"/>
+        <Flags index="Transient" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="FrostBarrierTransform">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/FrostNeedleTransform"/>
+            <Cooldown Link="Abil/FrostNeedleTransform" TimeStart="10"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="FrostBarrier"/>
+        <Flags index="Transient" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="GenericUseItem2Charges">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="GenericUseItemApplyCooldown"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge CountMax="2" CountStart="2" CountUse="1"/>
+            <Cooldown>
+                <Link value="Abil/GenericUseItem"/>
+                <Location value="Unit"/>
+                <TimeStart value="0.0625"/>
+                <TimeUse value="0.0625"/>
+            </Cooldown>
+        </Cost>
+        <AINotifyEffect value="GenericUseItemApplyCooldown"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="GoldenHauberkHeal">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="GoldenHauberkTrigger"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Cooldown Location="Unit" TimeUse="90"/>
+        </Cost>
+        <AINotifyEffect value="GoldenHauberkHealTrigger"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="GoldenHauberk"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="GuardianSpirit">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="GuardianSpiritApply"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="90"/>
+            <Charge Link="Abil/FrostArmor"/>
+            <Cooldown Link="Abil/FrostArmor"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="GuardianSpirit" Requirements="NoActiveGuardianSpirit"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="InspirationalMaster">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="InspirationalMaster"/>
+    </CAbilEffectInstant>
+    <CAbilBuild id="KoboldTestBuild">
+        <FlagArray index="Interruptible" value="1"/>
+        <FlagArray index="ShowProgress" value="1"/>
+        <InfoArray index="Build1" Unit="Tent">
+            <Cooldown TimeUse="0.25"/>
+            <Button DefaultButtonFace="ConstructTent" State="Suppressed" Requirements="TentRequirement"/>
+        </InfoArray>
+        <InfoArray index="Build2" Unit="CampfireLit">
+            <Cooldown TimeUse="0.25"/>
+            <Button DefaultButtonFace="ConstructCampfire" Requirements="CampfireRequirement"/>
+        </InfoArray>
+        <InfoArray index="Build3" Unit="Farm">
+            <Cooldown TimeUse="0.25"/>
+            <Button DefaultButtonFace="ConstructFarm" Requirements="CampfireRequirement"/>
+            <ValidatorArray value="HasVespene"/>
+        </InfoArray>
+        <InfoArray index="Build4" Unit="Workbench">
+            <Cooldown TimeUse="0.25"/>
+            <Button DefaultButtonFace="ConstructWorkbench" State="Suppressed" Requirements="WorkbenchRequirement"/>
+        </InfoArray>
+        <InfoArray index="Build5" Unit="Smithy">
+            <Cooldown TimeUse="0.25"/>
+            <Button DefaultButtonFace="ConstructSmithy" State="Suppressed" Requirements="SmithyRequirement"/>
+        </InfoArray>
+        <InfoArray index="Build6" Unit="Tavern">
+            <Cooldown TimeUse="0.25"/>
+            <Button DefaultButtonFace="ConstructTavern" State="Restricted" Requirements="TavernRequirement"/>
+        </InfoArray>
+        <InfoArray index="Build7" Unit="StorageOutpost">
+            <Cooldown TimeUse="0.25"/>
+            <Button DefaultButtonFace="ConstructStorageHut" State="Restricted" Requirements="OutpostRequirement"/>
+        </InfoArray>
+        <InfoArray index="Build8" Unit="SpikeTrap">
+            <Cooldown TimeUse="0.25"/>
+            <Button DefaultButtonFace="ConstructSpikeTrap" Requirements="SpikeTrapRequirement"/>
+        </InfoArray>
+        <InfoArray index="Build9" Unit="HuntersLodge">
+            <Cooldown TimeUse="0.25"/>
+            <Button DefaultButtonFace="ConstructHuntersLodge" State="Restricted" Requirements="HuntersLodgeRequirement"/>
+        </InfoArray>
+        <InfoArray index="Build10" Unit="LorenorStatue" Time="45">
+            <Button DefaultButtonFace="ConstructLorenorStatue" State="Suppressed" Requirements="BarnetsMonument"/>
+        </InfoArray>
+        <InfoArray index="Build11" Unit="PalisadeHorizontal" Time="3">
+            <Button DefaultButtonFace="PalisadeHorizontal" State="Suppressed" Requirements="PalisadeRequirement"/>
+        </InfoArray>
+        <InfoArray index="Build12" Unit="PalisadeVertical" Time="3">
+            <Button DefaultButtonFace="PalisadeVertical" State="Suppressed" Requirements="PalisadeRequirement"/>
+        </InfoArray>
+        <InfoArray index="Build13" Unit="PalisadeDiagonal1" Time="3">
+            <Button DefaultButtonFace="PalisadeDiagonal1" State="Suppressed" Requirements="PalisadeRequirement"/>
+        </InfoArray>
+        <InfoArray index="Build14" Unit="PalisadeDiagonal2" Time="3">
+            <Button DefaultButtonFace="PalisadeDiagonal2" State="Suppressed" Requirements="PalisadeRequirement"/>
+        </InfoArray>
+        <InfoArray index="Build15" Unit="AutomatedDefenseTurret" Time="20">
+            <Button DefaultButtonFace="ConstructAutomatedDefenseTurret" Requirements="AutomatedDefenseTurretReq"/>
+        </InfoArray>
+        <InfoArray index="Build16" Unit="Palisade" Time="2">
+            <Button DefaultButtonFace="Palisade" State="Suppressed" Requirements="PalisadeRequirement"/>
+        </InfoArray>
+        <InfoArray index="Build17" Unit="Fortress" Time="30">
+            <Button DefaultButtonFace="ConstructFortress" Requirements="WatchTowerRequirement"/>
+        </InfoArray>
+        <ConstructionMover value="KoboldTestBuild"/>
+        <Range value="2"/>
+        <EffectArray index="Start" value="KoboldTestBuildFacing"/>
+    </CAbilBuild>
+    <CAbilEffectInstant id="LearnAffliction">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="LearnAffliction"/>
+        <Flags index="BestUnit" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="LearnGuardianSpirit">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="LearnGuardianSpirit"/>
+        <Flags index="BestUnit" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="LearnShadowCloak">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="LearnShadowCloak"/>
+        <Flags index="BestUnit" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="LightsOut">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Cost>
+            <Charge TimeStart="5" TimeUse="20"/>
+            <Cooldown TimeStart="5" TimeUse="20"/>
+        </Cost>
+        <CastOutroTime value="0.75"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="LightsOut"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="MurlocDropoffPoint">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="AllowMovement" value="1"/>
+        <Flags index="BestUnit" value="0"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="0.125"/>
+        </Cost>
+        <TargetFilters value="-;Ally,Neutral,Enemy,Missile,Item,Dead,Hidden"/>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MurlocDropoffPoint"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="MurlocOrderChef">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/MurlocOrderMineStone"/>
+            <Cooldown Link="Abil/MurlocOrderMineStone"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MurlocOrderChef"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="MurlocOrderDrop">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/MurlocOrderMineStone"/>
+            <Cooldown Link="Abil/MurlocOrderMineStone"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MurlocOrderDrop"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="MurlocOrderGatherLumber">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/MurlocOrderMineStone"/>
+            <Cooldown Link="Abil/MurlocOrderMineStone"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MurlocOrderGatherLumber"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="MurlocOrderMineGold">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/MurlocOrderMineStone"/>
+            <Cooldown Link="Abil/MurlocOrderMineStone"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MurlocOrderMineGold"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="MurlocOrderMineStone">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MurlocOrderMineStone"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="MurlocOrderPickBerries">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/MurlocOrderMineStone"/>
+            <Cooldown Link="Abil/MurlocOrderMineStone"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MurlocOrderPickBerries"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="MurlocOrderPickHerbs">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/MurlocOrderMineStone"/>
+            <Cooldown Link="Abil/MurlocOrderMineStone"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MurlocOrderPickHerbs"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="MurlocOrderReturn">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/MurlocOrderMineStone"/>
+            <Cooldown Link="Abil/MurlocOrderMineStone"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MurlocOrderReturn"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="MurlocOrderStop">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/MurlocOrderMineStone"/>
+            <Cooldown Link="Abil/MurlocOrderMineStone"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MurlocStop"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="MurlocDoomhammer">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="MurlocDoomhammerTrigger"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge Link="Abil/MurlocRage"/>
+            <Cooldown Link="Abil/MurlocRage" Location="Unit" TimeUse="90"/>
+        </Cost>
+        <AINotifyEffect value="MurlocRage"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MurlocDoomhammer"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="MurlocRush">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Cooldown TimeUse="7"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MurlocRush"/>
+        <Effect index="0" value="MurlocRushSearch"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="MurlocSkullFragments">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="NaturalTenacity">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="NaturalTenacity"/>
+    </CAbilEffectInstant>
+    <CAbilInventory id="PackBeaverInventory">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Range value="2"/>
+        <MaxDropRange value="2"/>
+        <InfoArray EmptyFace="PackHorseSlot">
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+            <Classes value="Armor"/>
+            <Classes value="Resource"/>
+        </InfoArray>
+    </CAbilInventory>
+    <CAbilEffectTarget id="Permafrost">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Cost>
+            <Cooldown TimeStart="6" TimeUse="14"/>
+        </Cost>
+        <TargetSorts>
+            <SortArray value="TSFarthestDistance"/>
+        </TargetSorts>
+        <Range value="8"/>
+        <AutoCastRange value="8"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Permafrost"/>
+        <Effect index="0" value="SpellAbsorbCheckPermafrost"/>
+        <AutoCastValidatorArray value="TargetHasNoFrostArmor"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="PredatoryKnowledge">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PredatoryKnowledge"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="PurchaseNightwisp">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PurchaseNightwisp"/>
+        <Flags index="BestUnit" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="RefreshCampfire">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="RefreshCampfire" Requirements="CampfireExpertDisabled"/>
+        <Flags index="BestUnit" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="RefreshCampfireExpert">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/RefreshCampfire"/>
+            <Cooldown Link="Abil/RefreshCampfire" TimeUse="30"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="RefreshCampfireExpert" Requirements="CampfireExpertEnabled"/>
+        <Flags index="BestUnit" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilBehavior id="Run">
+        <Alignment value="Positive"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <CmdButtonArray index="On" DefaultButtonFace="Run"/>
+        <CmdButtonArray index="Off" DefaultButtonFace="Walk"/>
+        <Flags index="Toggle" value="1"/>
+        <Flags index="ToggledOn" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="1"/>
+        </Cost>
+        <BehaviorArray value="Running"/>
+    </CAbilBehavior>
+    <CAbilBehavior id="LockStorage">
+        <Alignment value="Positive"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <CmdButtonArray index="On" DefaultButtonFace="LockStorage"/>
+        <CmdButtonArray index="Off" DefaultButtonFace="UnlockStorage"/>
+        <Flags index="Toggle" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Charge Link="Abil/Run"/>
+            <Cooldown Link="Abil/Run"/>
+        </Cost>
+        <BehaviorArray value="Locked"/>
+    </CAbilBehavior>
+    <CAbilEffectTarget id="SalvageStructure">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost/>
+        <TargetFilters value="Structure;Ally,Neutral,Enemy,Missile,Item,Dead,Hidden,Invulnerable"/>
+        <Range value="1"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SalvageStructure" Requirements="Salvage"/>
+        <CastIntroTime value="2"/>
+        <ShowProgressArray index="Cast" value="1"/>
+        <CancelableArray index="Cast" value="1"/>
+        <ProgressButtonArray index="Cast" value="SalvageStructure"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ScrollofTransmutation">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/UnknownAbility"/>
+            <Cooldown Link="Abil/UnknownAbility"/>
+        </Cost>
+        <Range value="5"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="SellInfusedLumber">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SellInfusedLumber"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="SellIronOre">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SellIronOre"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="SellLeather">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SellLeather"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="SellLumber">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SellLumber"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="SellRadiantGem">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SellRadiantGem"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="SellShadowstone">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SellShadowstone"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="SellStone">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SellStone"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="SellWool">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SellWool"/>
+    </CAbilEffectInstant>
+    <CAbilBehavior id="ShadowCloak">
+        <Alignment value="Positive"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <CmdButtonArray index="On" DefaultButtonFace="ShadowCloakOn"/>
+        <CmdButtonArray index="Off" DefaultButtonFace="ShadowCloakOff"/>
+        <Flags index="Toggle" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="60"/>
+            <Cooldown TimeUse="0.25"/>
+        </Cost>
+        <BehaviorArray value="ShadowCloak"/>
+    </CAbilBehavior>
+    <CAbilEffectInstant id="Sharpen">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Sharpen" Requirements="SpikeTrapSharpen"/>
+        <Flags index="BestUnit" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="BuySpellBook">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="BuySpellBook"/>
+        <Flags index="BestUnit" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CookingWolfSteak">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/CookMeat"/>
+            <Cooldown Link="Abil/CookMeat"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CookingWolfSteak"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CookingGrilledWolfEntrecote">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/CookMeat"/>
+            <Cooldown Link="Abil/CookMeat"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CookingGrilledWolfEntrecote" Requirements="Cooking5"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="FrostArmor">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Vital index="Energy" value="60"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="FrostArmor"/>
+        <Effect index="0" value="FrostArmorSet"/>
+        <Flags index="Transient" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="LearnFrostArmor">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="LearnFrostArmor"/>
+        <Flags index="BestUnit" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="LearnSiphonLife">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="LearnSiphonLife"/>
+        <Flags index="BestUnit" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="ShipmentArrived">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ShipmentArrived"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="SiphonLife">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Vital index="Energy" value="70"/>
+            <Charge Link="Abil/FrostArmor"/>
+            <Cooldown Link="Abil/FrostArmor"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SiphonLife" Requirements="SiphonLife"/>
+        <Effect index="0" value="SiphonLifeApply"/>
+        <Flags index="Transient" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="HireMurlocSlave">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="HireMurlocSlave"/>
+        <Flags index="BestUnit" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="LearnClairvoyance">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="LearnClairvoyance"/>
+        <Flags index="BestUnit" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilInventory id="MurlocPockets">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Range value="2"/>
+        <MaxDropRange value="2"/>
+        <InfoArray Container="MurlocPockets" EmptyFace="ResourceBackpack">
+            <Classes value="Resource"/>
+        </InfoArray>
+    </CAbilInventory>
+    <CAbilEffectInstant id="LearnNaturesGrace">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="LearnNaturesGrace"/>
+        <Flags index="BestUnit" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="ConstructForgeSmall">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/ConstructTent"/>
+            <Cooldown Link="Abil/ConstructTent"/>
+        </Cost>
+        <Range value="3"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ConstructSmithy"/>
+        <Effect index="0" value="ConstructionTrigger"/>
+        <AINotifyEffect value="ConstructSmithy"/>
+        <PlaceUnit value="Smithy"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ConstructSpikeTrap">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/ConstructTent"/>
+            <Cooldown Link="Abil/ConstructTent"/>
+        </Cost>
+        <Range value="3"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ConstructSpikeTrap" Requirements="Artisanship5"/>
+        <PlaceUnit value="SpikeTrap"/>
+        <Effect index="0" value="ConstructionTrigger"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ConstructTavern">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/ConstructTent"/>
+            <Cooldown Link="Abil/ConstructTent"/>
+        </Cost>
+        <Range value="3"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ConstructTavern"/>
+        <PlaceUnit value="Tavern"/>
+        <Effect index="0" value="ConstructionTrigger"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ConstructStorageHut">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/ConstructTent"/>
+            <Cooldown Link="Abil/ConstructTent"/>
+        </Cost>
+        <Range value="3"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ConstructStorageHut"/>
+        <PlaceUnit value="StorageOutpost"/>
+        <Effect index="0" value="ConstructionTrigger"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ConstructTent">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost/>
+        <Range value="3"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ConstructTent"/>
+        <PlaceUnit value="Tent"/>
+        <Effect index="0" value="ConstructionTrigger"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ConstructCampfire">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/ConstructTent"/>
+            <Cooldown Link="Abil/ConstructTent"/>
+        </Cost>
+        <Range value="3"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ConstructCampfire"/>
+        <PlaceUnit value="CampfireLit"/>
+        <Effect index="0" value="ConstructionTrigger"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="ConstructFarm">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/ConstructTent"/>
+            <Cooldown Link="Abil/ConstructTent"/>
+        </Cost>
+        <Range value="3"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ConstructFarm"/>
+        <PlaceUnit value="Farm"/>
+        <Effect index="0" value="ConstructionTrigger"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="CookingRoastedPheasantWithBlueberrySauce">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/CookMeat"/>
+            <Cooldown Link="Abil/CookMeat"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CookingRoastedPheasantWithBerrySauce2" Requirements="Cooking5"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CookingRoastedLamb">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/CookMeat"/>
+            <Cooldown Link="Abil/CookMeat"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CookingRoastedLamb"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="BuyRoastedLamb">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="BuyRoastedLamb"/>
+        <Flags index="BestUnit" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CookingSpicedLambFeast">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/CookMeat"/>
+            <Cooldown Link="Abil/CookMeat"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CookingSpicedLambFeast" Requirements="Cooking5"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CookingBeerBraisedPheasant">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/CookMeat"/>
+            <Cooldown Link="Abil/CookMeat"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CookingBeerBraisedPheasant" Requirements="Cooking10"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CraftRoughBlunderbuss">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CraftRoughBlunderbuss"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CraftLantern">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CraftLantern"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="DrinkBeer">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="WellFedBeerApply"/>
+        <Cost>
+            <Charge Link="Abil/EatCookedMeat"/>
+            <Cooldown Link="Abil/EatCookedMeat" TimeUse="1"/>
+        </Cost>
+        <Flags index="Transient" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="ForgeWolfsbane">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ForgeWolfsbane"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CraftLeatherCoat">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CraftLeatherCoat"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="ForgeHeavyIronBreastplate">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ForgeHeavyIronBreastplate"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CraftSturdyWoodenStick">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CraftSturdyWoodenStick"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="ForgeSharpIronPickaxe">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ForgeIronWeapon"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="ForgeIronBandedBuckler">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ForgeIronBandedBuckler"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="Gossip">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Gossip"/>
+        <Flags index="BestUnit" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="CraftWarmWoolTunic">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <Marker Link="Abil/HireScout"/>
+        <AINotifyEffect value="HireScout"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="CraftWarmWoolTunic"/>
+    </CAbilEffectInstant>
+    <CAbilInventory id="KoboldBackpack">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Range value="2"/>
+        <MaxDropRange value="2"/>
+        <InfoArray EmptyFace="InventoryMainHandEmpty">
+            <Classes value="MainHand"/>
+        </InfoArray>
+        <InfoArray EmptyFace="EmptyOffhandSlot">
+            <Classes value="Offhand"/>
+            <Classes value="OffhandHelper"/>
+        </InfoArray>
+        <InfoArray EmptyFace="InventoryArmorEmpty">
+            <Classes value="Armor"/>
+        </InfoArray>
+        <InfoArray Container="ResourceContainer20" EmptyFace="ResourceBackpack">
+            <Classes value="Resource"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+            <Classes value="Armor"/>
+        </InfoArray>
+        <CmdButtonArray index="ItemInstant" DefaultButtonFace="Candle"/>
+        <CmdButtonArray index="ItemTarget" DefaultButtonFace="Firestorm"/>
+    </CAbilInventory>
+    <CAbilEffectInstant id="LearnMineralTap">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="LearnMineralTap"/>
+        <Flags index="BestUnit" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="LightCampfire">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" removed="1"/>
+        <Cost/>
+        <AINotifyEffect value="LightCampfireSet"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="LightCampfire"/>
+        <CastIntroTime value="0.125"/>
+        <Flags index="BestUnit" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="LightTorch">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="LightTorch"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="NaturesGrace">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="NaturesGraceTrigger"/>
+        <Cost>
+            <Vital index="Energy" value="50"/>
+            <Cooldown TimeUse="0.25"/>
+        </Cost>
+        <TargetFilters value="-;Player,Ally,Enemy,Missile,Dead,Hidden"/>
+        <Range value="6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="NaturesGrace">
+            <Flags index="ShowInGlossary" value="0"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="MineralTap">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="MineralTapApply"/>
+        <Cost>
+            <Vital index="Energy" value="50"/>
+            <Charge Link="Abil/NaturesGrace"/>
+            <Cooldown Link="Abil/NaturesGrace"/>
+        </Cost>
+        <TargetFilters value="-;Player,Ally,Enemy,Dead,Hidden"/>
+        <Range value="6"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="MineralTap">
+            <Flags index="ShowInGlossary" value="0"/>
+        </CmdButtonArray>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="PlantTree">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Cooldown TimeUse="90"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="PlantTree"/>
+        <Range value="3"/>
+        <PlaceUnit value="MapleTree"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="Clairvoyance">
+        <EditorCategories value="Race:Terran,AbilityorEffectType:Units"/>
+        <Effect index="0" value="ClairvoyanceImpactSet"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Vital index="Energy" value="40"/>
+            <Charge Link="Abil/ScannerSweep"/>
+            <Cooldown Link="Abil/ScannerSweep"/>
+        </Cost>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Clairvoyance"/>
+    </CAbilEffectTarget>
+    <CAbilEffectTarget id="SendPackBeaver">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="SendPackHorseTrigger"/>
+        <Cost>
+            <Charge Link="Abil/SendCaravan"/>
+            <Cooldown Link="Abil/SendCaravan" TimeUse="0.75"/>
+        </Cost>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SendPackBeaver" Requirements="ShipmentAvailable"/>
+    </CAbilEffectTarget>
+    <CAbilBehavior id="AdrenalineRush">
+        <Alignment value="Positive"/>
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <CmdButtonArray index="On" DefaultButtonFace="AdrenalineRush" Requirements="AdrenalineRush"/>
+        <CmdButtonArray index="Off" DefaultButtonFace="AdrenalineRushOff"/>
+        <Flags index="Toggle" value="1"/>
+        <Flags index="Transient" value="1"/>
+        <Cost>
+            <Cooldown Link="" TimeUse="0.5"/>
+        </Cost>
+        <BehaviorArray value="AdrenalineRush"/>
+    </CAbilBehavior>
+    <CAbilEffectInstant id="SleepingBag">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="SleepingBagDelayApply"/>
+        <Cost>
+            <Cooldown TimeUse="5"/>
+        </Cost>
+    </CAbilEffectInstant>
+    <CAbilInventory id="StorageOutpostInventory">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <InfoArray EmptyFace="ShipmentBox">
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+            <Classes value="Resource"/>
+        </InfoArray>
+        <InfoArray Container="StorageOutpostContainer" EmptyFace="Inventory">
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+            <Classes value="Resource"/>
+        </InfoArray>
+        <Range value="4"/>
+        <MaxDropRange value="4"/>
+    </CAbilInventory>
+    <CAbilEffectInstant id="SummonMinions">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Cost>
+            <Charge Link="Abil/WhirlingBlades"/>
+            <Cooldown Link="Abil/WhirlingBlades" TimeStart="11" TimeUse="22"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="SummonMinions"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="Synergy">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Synergy"/>
+        <Flags index="BestUnit" value="1"/>
+    </CAbilEffectInstant>
+    <CAbilEffectTarget id="TameBird">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="TameBirdTrigger"/>
+        <Flags index="RequireTargetVision" value="0"/>
+        <Cost>
+            <Charge Link="Abil/SendCaravan"/>
+            <Cooldown Link="Abil/SendCaravan"/>
+        </Cost>
+        <Range value="500"/>
+        <Arc value="360"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TameBird" Requirements="BirdNesting"/>
+    </CAbilEffectTarget>
+    <CAbilEffectInstant id="ThickHide">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="ThickHide"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="TradeEfficiency">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="TradeEfficiency"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="Viciousness">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Viciousness"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="WarlordSpikes">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="WarlordSpikesSet"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Cost>
+            <Charge Link="Abil/WhirlingBlades"/>
+            <Cooldown Link="Abil/WhirlingBlades" TimeUse="7"/>
+        </Cost>
+        <AutoCastValidatorArray value="CasterIsAttacking"/>
+        <CastOutroTime value="2.25"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="WarlordSpikes"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="WhirlingBlades">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="WhirlingBladesApply"/>
+        <Flags index="AutoCast" value="1"/>
+        <Flags index="AutoCastOn" value="1"/>
+        <Cost>
+            <Cooldown TimeUse="15"/>
+        </Cost>
+        <AutoCastValidatorArray value="CasterIsAttacking"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="WhirlingBlades"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="Whirlwind">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Effect index="0" value="WhirlwindSet"/>
+        <Cost>
+            <Cooldown TimeUse="5"/>
+        </Cost>
+        <CmdButtonArray index="Execute" DefaultButtonFace="Whirlwind"/>
+    </CAbilEffectInstant>
+    <CAbilEffectInstant id="WoolPadding">
+        <EditorCategories value="AbilityorEffectType:Units"/>
+        <Cost>
+            <Charge Link="Abil/HireScout"/>
+            <Cooldown Link="Abil/HireScout"/>
+        </Cost>
+        <CastIntroTime value="0.0625"/>
+        <CmdButtonArray index="Execute" DefaultButtonFace="WoolPadding"/>
+        <Flags index="BestUnit" value="1"/>
+    </CAbilEffectInstant>
+</Catalog>

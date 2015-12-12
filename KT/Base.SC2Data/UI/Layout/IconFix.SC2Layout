@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Desc>
+    <Frame type="InfoPanel" name="GameUI/UIContainer/ConsoleUIContainer/InfoPanel" file="GameUI">
+        <Frame type="InfoPaneHero" name="InfoPaneHero">
+            <Frame type="EquipmentIcon" name="WeaponIcon">
+                <LayerCount val="3"/>
+                <LayerVisible val="false" layer="2"/>
+
+                <Frame type="Image" name="EquipmentIconBorder">
+                    <Texture val="Assets\Textures\ui_ingame_leaderboard_dropdownframe.dds"/>
+                    <TextureType val="Border"/>
+                    <RenderPriority val="50"/>
+                </Frame>
+
+                <Frame type="Label" name="LevelLabel">
+                    <Visible val="false"/>
+                </Frame>
+            </Frame>
+
+            <Frame type="EquipmentIcon" name="ArmorIcon">
+                <Frame type="Image" name="EquipmentIconBorder">
+                    <Texture val="Assets\Textures\ui_ingame_leaderboard_dropdownframe.dds"/>
+                    <TextureType val="Border"/>
+                    <RenderPriority val="50"/>
+                </Frame>
+
+                <Frame type="Label" name="LevelLabel">
+                    <Visible val="false"/>
+                </Frame>
+            </Frame>
+        </Frame>
+    </Frame>
+</Desc>

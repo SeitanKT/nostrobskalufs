@@ -1,0 +1,1456 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CSound id="Ambience_Hanson01Night">
+        <Volume value="-18.000000,-18.000000"/>
+    </CSound>
+    <CSound id="BallistaLaunch" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Sound - Combat\CrossbowLM01.ogg" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="1" File="Sound - Combat\CrossbowLM02.ogg" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="2" File="Sound - Combat\CrossbowLM03.ogg" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+        <Pitch value="-4.000000,-4.000000"/>
+        <Volume value="4.000000,4.000000"/>
+    </CSound>
+    <CSound id="FrostBeamLoopSound" parent="Combat">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="Assets\Sounds\Protoss\Mothership\Mothership_VortexLoop0.wav" Pitch="8.000000,8.000000" FacialGroup=""/>
+        <DupeMuteCount value="4"/>
+        <LoopCount value="-1"/>
+        <OffsetFadeIn Volume="-96.000000"/>
+        <OffsetFadeIn Time="100"/>
+        <OffsetFadeOut/>
+        <OffsetFadeOut Time="100" Volume="-96.000000"/>
+        <OverlapTimeDelta value="100"/>
+        <Pitch value="-1.000000,0.000000"/>
+        <SustainFade index="1" Time="100"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="FrostBeamStartSound" parent="Combat">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="Assets\Sounds\Uni_IceExplosions_Medium_00.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni_IceExplosions_Medium_01.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni_IceExplosions_Medium_02.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni_IceExplosions_Medium_03.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni_IceExplosions_Medium_04.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni_IceExplosions_Medium_05.wav" FacialGroup=""/>
+        <DupeDestroyCount value="4"/>
+        <Pitch value="-1.000000,1.640000"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="TrollRoar" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Sound\Units\TrollStand2A.ogg" Pitch="-1.000000,1.000000" FacialGroup=""/>
+        <AssetArray index="1" removed="1"/>
+        <AssetArray index="2" removed="1"/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+    </CSound>
+    <CSound id="AnnihilateImpactSound" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Assets\Sounds\Protoss\VoidSeeker\VoidSeeker_AttackImpact0.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="1" File="Assets\Sounds\Protoss\VoidSeeker\VoidSeeker_AttackImpact1.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="2" File="Assets\Sounds\Protoss\VoidSeeker\VoidSeeker_AttackImpact2.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="3" File="Assets\Sounds\Protoss\VoidSeeker\VoidSeeker_AttackImpact3.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="4" File="Assets\Sounds\Protoss\VoidSeeker\VoidSeeker_AttackImpact4.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+        <DupeDestroyCount value="16"/>
+        <DupeMaximumMethod value="Prevent"/>
+        <DupeMuteCount value="10"/>
+        <Pitch value="0.000000,3.000000"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="TrollDeath" parent="Combat">
+        <AssetArray File="Sound\Units\TrollDeathA.ogg" Pitch="-1.000000,1.000000" FacialGroup=""/>
+    </CSound>
+    <CSound id="StagDeath" parent="Combat">
+        <AssetArray File="Sound\Units\DeerDeathA.ogg" Pitch="0.000000,1.000000" FacialGroup=""/>
+        <AssetArray File="Sound\Units\DeerWoundA.ogg" Pitch="0.000000,1.000000" FacialGroup=""/>
+    </CSound>
+    <CSound id="DouseCampfire" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Assets\Sounds\Physics_SplashMedium00.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="1" File="Assets\Sounds\Physics_SplashMedium01.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="2" File="Assets\Sounds\Physics_SplashMedium02.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="3" File="Assets\Sounds\Physics_SplashMedium03.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+    </CSound>
+    <CSound id="MurlocDeath" parent="Combat">
+        <AssetArray File="Sound - Murloc\ChiefDeath.ogg" FacialGroup=""/>
+        <Pitch value="1.000000,2.000000"/>
+        <Volume value="-5.000000,-5.000000"/>
+    </CSound>
+    <CSound id="TombGuardianDeath" parent="Combat">
+        <AssetArray File="Sound\Units\ZombifiedVrykulAggro.ogg" FacialGroup=""/>
+        <Pitch value="-1.000000,0.000000"/>
+        <Volume value="-6.170000,-6.170000"/>
+    </CSound>
+    <CSound id="WolfAggro" parent="Combat">
+        <AssetArray File="Sound\Units\mWolfAggro1.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\mWolfAggro2.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\mWolfAggro3.ogg" FacialGroup=""/>
+        <Pitch value="-1.000000,0.000000"/>
+        <Volume value="-6.170000,-6.170000"/>
+    </CSound>
+    <CSound id="SmithyWorkSoundLoop" parent="Mothership_VortexLoop">
+        <AssetArray index="0" File="Assets\Sounds\Uni\Doodads\Doodad_FlameGeyserStandWorkLoop0.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni\Doodads\Doodad_FlameGeyserStandWorkLoop1.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni\Doodads\Doodad_FlameGeyserStandWorkLoop2.wav" FacialGroup=""/>
+        <Volume value="-5.000000,-5.000000"/>
+    </CSound>
+    <CSound id="FireballLoop" parent="Mothership_VortexLoop">
+        <AssetArray index="0" File="Sound\Effects\TorchFireLoop.ogg" Pitch="-2.000000,-1.000000" FacialGroup=""/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="FireballImpactSFX" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Assets\Sounds\Spell_Fireball_Impact_00.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="1" File="Assets\Sounds\Spell_Fireball_Impact_01.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="2" File="Assets\Sounds\Spell_Fireball_Impact_02.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="3" File="Assets\Sounds\Spell_Fireball_Impact_03.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="4" File="Assets\Sounds\Spell_Fireball_Impact_04.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="5" File="Assets\Sounds\Spell_Fireball_Impact_05.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+        <Pitch value="-2.000000,-1.000000"/>
+    </CSound>
+    <CSound id="TrebuchetLaunchSound" parent="Combat">
+        <AssetArray File="Assets\Sounds\Zerg\BroodLord\Broodlord_AttackLaunch1.wav" Pitch="-2.000000,-2.000000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Zerg\BroodLord\Broodlord_AttackLaunch2.wav" Pitch="-2.000000,-2.000000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Zerg\BroodLord\Broodlord_AttackLaunch3.wav" Pitch="-2.000000,-2.000000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Zerg\BroodLord\Broodlord_AttackLaunch4.wav" Pitch="-2.000000,-2.000000" FacialGroup=""/>
+        <Volume value="5.000000,6.000000"/>
+    </CSound>
+    <CSound id="ConstructionSound" parent="Combat">
+        <AssetArray File="Sound\Effects\ConstructionBegin.ogg" FacialGroup=""/>
+    </CSound>
+    <CSound id="FireballLaunch" parent="Combat">
+        <AssetArray File="Sound\Effects\FireCast.ogg" Pitch="-2.000000,-1.000000" FacialGroup=""/>
+    </CSound>
+    <CSound id="TrebuchetWhat">
+        <AssetArray File="Sound\Units\TrebuchetWhat.ogg" FacialGroup=""/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="TrebuchetImpactSound" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Assets\Sounds\Doodad_CollapsibleRockTower_Impact_1.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="1" File="Assets\Sounds\Doodad_CollapsibleRockTower_Impact_2.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="2" File="Assets\Sounds\Doodad_CollapsibleRockTower_Impact_3.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+        <Volume value="5.000000,6.000000"/>
+    </CSound>
+    <CSound id="WarHornSound" parent="Combat">
+        <AssetArray File="Sound\Effects\WarHorn.ogg" FacialGroup=""/>
+        <Volume value="5.000000,5.000000"/>
+    </CSound>
+    <CSound id="WatchTowerWhat">
+        <AssetArray File="Sound\Units\FortressWhat1.ogg" FacialGroup=""/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="KoboldPierceImpactFlesh" parent="Combat">
+        <AssetArray File="Sound - Combat\ArrowHitA.ogg" FacialGroup=""/>
+        <AssetArray File="Sound - Combat\ArrowHitB.ogg" FacialGroup=""/>
+        <AssetArray File="Sound - Combat\ArrowHitC.ogg" FacialGroup=""/>
+        <DupeDestroyCount value="4"/>
+        <Pitch value="0.000000,1.000000"/>
+        <Volume value="-1.000000,0.000000"/>
+    </CSound>
+    <CSound id="KoboldSharpImpactMetal" parent="Combat">
+        <AssetArray File="Sound\Combat\MetalMediumChopMetal1.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Combat\MetalMediumChopMetal2.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Combat\MetalMediumChopMetal3.ogg" FacialGroup=""/>
+        <DupeDestroyCount value="4"/>
+        <Pitch value="0.000000,1.000000"/>
+        <Volume value="-3.000000,-2.000000"/>
+    </CSound>
+    <CSound id="KoboldPierceImpactMetal" parent="Combat">
+        <AssetArray File="Sound\Combat\MetalLightSliceMetal1.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Combat\MetalLightSliceMetal2.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Combat\MetalLightSliceMetal3.ogg" FacialGroup=""/>
+        <DupeDestroyCount value="4"/>
+        <Pitch value="0.000000,1.000000"/>
+        <Volume value="-3.000000,-2.000000"/>
+    </CSound>
+    <CSound id="KoboldSharpImpactStone" parent="Combat">
+        <AssetArray File="Sound\Combat\MetalMediumChopStone1.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Combat\MetalMediumChopStone2.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Combat\MetalMediumChopStone3.ogg" FacialGroup=""/>
+        <DupeDestroyCount value="4"/>
+        <Pitch value="0.000000,1.000000"/>
+        <Volume value="-3.000000,-2.000000"/>
+    </CSound>
+    <CSound id="KoboldPierceImpactStone" parent="Combat">
+        <AssetArray File="Assets\Sounds\PhysicsImpactSound_Rock_Light00.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\PhysicsImpactSound_Rock_Light01.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\PhysicsImpactSound_Rock_Light02.wav" FacialGroup=""/>
+        <DupeDestroyCount value="4"/>
+        <Pitch value="0.000000,1.000000"/>
+        <Volume value="-3.000000,-2.000000"/>
+    </CSound>
+    <CSound id="KoboldSharpImpactWood" parent="Combat">
+        <AssetArray File="Sound\Combat\MetalMediumChopWood1.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Combat\MetalMediumChopWood2.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Combat\MetalMediumChopWood3.ogg" FacialGroup=""/>
+        <DupeDestroyCount value="4"/>
+        <Pitch value="0.000000,1.000000"/>
+        <Volume value="-3.000000,-2.000000"/>
+    </CSound>
+    <CSound id="KoboldEtheralImpactHeavy" parent="Combat">
+        <AssetArray File="Sound\Combat\EtherealHeavyHit1.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Combat\EtherealHeavyHit2.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Combat\EtherealHeavyHit3.ogg" FacialGroup=""/>
+        <DupeDestroyCount value="4"/>
+        <Pitch value="0.000000,1.000000"/>
+        <Volume value="-3.000000,-2.000000"/>
+    </CSound>
+    <CSound id="KoboldBluntImpactMetal" parent="Combat">
+        <AssetArray File="Sound\Combat\MetalMediumBashMetal1.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Combat\MetalMediumBashMetal2.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Combat\MetalMediumBashMetal3.ogg" FacialGroup=""/>
+        <DupeDestroyCount value="4"/>
+        <Pitch value="0.000000,1.000000"/>
+        <Volume value="-3.000000,-2.000000"/>
+    </CSound>
+    <CSound id="KoboldBluntImpactStone" parent="Combat">
+        <AssetArray File="Sound\Combat\MetalMediumBashStone1.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Combat\MetalMediumBashStone2.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Combat\MetalMediumBashStone3.ogg" FacialGroup=""/>
+        <DupeDestroyCount value="4"/>
+        <Pitch value="0.000000,1.000000"/>
+        <Volume value="-3.000000,-2.000000"/>
+    </CSound>
+    <CSound id="KoboldBluntImpactWood" parent="Combat">
+        <AssetArray File="Sound\Combat\MetalMediumBashWood1.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Combat\MetalMediumBashWood2.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Combat\MetalMediumBashWood3.ogg" FacialGroup=""/>
+        <DupeDestroyCount value="4"/>
+        <Pitch value="0.000000,1.000000"/>
+        <Volume value="-5.000000,-4.000000"/>
+    </CSound>
+    <CSound id="KoboldEtheralImpactLight" parent="Combat">
+        <AssetArray File="Sound\Combat\EtherealMediumHit1.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Combat\EtherealMediumHit2.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Combat\EtherealMediumHit3.ogg" FacialGroup=""/>
+        <DupeDestroyCount value="4"/>
+        <Pitch value="0.000000,1.000000"/>
+        <Volume value="-3.000000,-2.000000"/>
+    </CSound>
+    <CSound id="KoboldSharpImpactFlesh" parent="Combat">
+        <AssetArray File="Sound\Combat\MetalMediumChopFlesh1.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Combat\MetalMediumChopFlesh2.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Combat\MetalMediumChopFlesh3.ogg" FacialGroup=""/>
+        <DupeDestroyCount value="4"/>
+        <Pitch value="0.000000,1.000000"/>
+        <Volume value="-3.000000,-2.000000"/>
+    </CSound>
+    <CSound id="KoboldBluntImpactFlesh" parent="Combat">
+        <AssetArray File="Sound\Combat\MetalMediumBashFlesh1.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Combat\MetalMediumBashFlesh2.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Combat\MetalMediumBashFlesh3.ogg" FacialGroup=""/>
+        <DupeDestroyCount value="4"/>
+        <Pitch value="0.000000,1.000000"/>
+        <Volume value="-3.000000,-2.000000"/>
+    </CSound>
+    <CSound id="KoboldPierceImpactWood" parent="Combat">
+        <AssetArray File="Sound\Combat\MetalLightSliceWood1.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Combat\MetalLightSliceWood2.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Combat\MetalLightSliceWood3.ogg" FacialGroup=""/>
+        <DupeDestroyCount value="4"/>
+        <Pitch value="0.000000,1.000000"/>
+        <Volume value="-3.000000,-2.000000"/>
+    </CSound>
+    <CSound id="KoboldFireworksSound">
+        <AssetArray File="Assets\Sounds\Uni\Doodads\Uni_Fireworks0.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni\Doodads\Uni_Fireworks1.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni\Doodads\Uni_Fireworks2.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni\Doodads\Uni_Fireworks3.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni\Doodads\Uni_Fireworks4.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni\Doodads\Uni_Fireworks5.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni\Doodads\Uni_Fireworks6.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni\Doodads\Uni_Fireworks7.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni\Doodads\Uni_Fireworks8.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni\Doodads\Uni_Fireworks9.wav" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="StructureDeathLargeSound">
+        <AssetArray File="Sound\Units\StructureDeath001.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\StructureDeath002.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\StructureDeath003.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\StructureDeath004.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\StructureDeath005.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\StructureDeath006.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\StructureDeath007.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\StructureDeath008.ogg" FacialGroup=""/>
+        <Mode value="3DWorld"/>
+        <Volume value="-2.010000,-2.010000"/>
+        <Category value="Combat"/>
+    </CSound>
+    <CSound id="StructureDeathMassiveSound">
+        <AssetArray File="Assets\Sounds\FX_HeavyRockCrumbles_00.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\FX_HeavyRockCrumbles_01.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\FX_HeavyRockCrumbles_02.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\FX_HeavyRockCrumbles_03.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\FX_HeavyRockCrumbles_04.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\FX_HeavyRockCrumbles_05.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\FX_HeavyRockCrumbles_06.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\FX_HeavyRockCrumbles_07.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\FX_HeavyRockCrumbles_08.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\FX_HeavyRockCrumbles_09.wav" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="WatchTowerDeathSound">
+        <AssetArray File="Assets\Sounds\Doodad_CollapsibleRockTower_Impact_1.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Doodad_CollapsibleRockTower_Impact_2.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Doodad_CollapsibleRockTower_Impact_3.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Doodad_CollapsibleRockTower_Start_1.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Doodad_CollapsibleRockTower_Start_2.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Doodad_CollapsibleRockTower_Start_3.wav" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="StructureDeathMediumSound">
+        <AssetArray File="Sound\Units\StructureDeath001.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\StructureDeath002.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\StructureDeath003.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\StructureDeath004.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\StructureDeath005.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\StructureDeath006.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\StructureDeath007.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\StructureDeath008.ogg" FacialGroup=""/>
+        <Mode value="3DWorld"/>
+        <Volume value="-5.660000,-5.660000"/>
+        <Category value="Combat"/>
+    </CSound>
+    <CSound id="StructureDeathSmallSound">
+        <AssetArray File="Sound\Units\StructureSmallDeath001.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\StructureSmallDeath002.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\StructureSmallDeath003.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\StructureSmallDeath004.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\StructureSmallDeath005.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\StructureSmallDeath006.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\StructureSmallDeath007.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\StructureSmallDeath008.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\StructureSmallDeath009.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\StructureSmallDeath010.ogg" FacialGroup=""/>
+        <Mode value="3DWorld"/>
+        <Volume value="-3.470000,-3.470000"/>
+        <Category value="Combat"/>
+    </CSound>
+    <CSound id="StorageOutpostWhat">
+        <AssetArray File="Sound\Units\StorageOutpostWhat.ogg" FacialGroup=""/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="WhirlwindLaunchSound" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Sound\Effects\Warrior_BladestormStand1.ogg" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="1" File="Sound\Effects\Warrior_BladestormStand2.ogg" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="2" File="Sound\Effects\Warrior_BladestormStand3.ogg" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+    </CSound>
+    <CSound id="FishingSplashSound">
+        <AssetArray File="Assets\Sounds\Physics_SplashMedium00.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Physics_SplashMedium01.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Physics_SplashMedium02.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Physics_SplashMedium03.wav" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="StormwizardsRobesImpactSound">
+        <AssetArray File="Assets\Sounds\Protoss\Probe\Probe_AttackLaunch0.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Probe\Probe_AttackLaunch1.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Probe\Probe_AttackLaunch2.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Probe\Probe_AttackLaunch3.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Probe\Probe_AttackLaunch4.wav" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+        <Volume value="-8.570000,-8.570000"/>
+    </CSound>
+    <CSound id="SpellbreakerImpactSound" parent="Spell">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="Assets\Sounds\Protoss\Karass\Karass_AttackLaunch0.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Karass\Karass_AttackLaunch1.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Karass\Karass_AttackLaunch2.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Karass\Karass_AttackLaunch3.wav" FacialGroup=""/>
+    </CSound>
+    <CSound id="SynergyImpactSound" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Assets\Sounds\Zerg\Hybrid\HybridMaar_PlasmaBlastLaunch2.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="1" removed="1"/>
+        <AssetArray index="2" removed="1"/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+        <DupeMaximumMethod value="Prevent"/>
+    </CSound>
+    <CSound id="DemonLordSummon">
+        <AssetArray File="Sound\Units\U08Archimonde19.mp3" FacialGroup=""/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="RagingArcaneBeastKill1">
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Hybrid\Hybrid_Attack03.ogg" FacialGroup=""/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="RagingArcaneBeastKill2">
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Hybrid\Hybrid_What01.ogg" FacialGroup=""/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="RagingArcaneBeastKill3">
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Hybrid\Hybrid_What03.ogg" FacialGroup=""/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="RagingArcaneBeastKill4">
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Hybrid\Hybrid_Yes03.ogg" FacialGroup=""/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="RagingArcaneBeastKill5">
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Hybrid\Hybrid_Yes00.ogg" FacialGroup=""/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="RagingArcaneBeastSpawn">
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Hybrid\Hybrid_What00.ogg" FacialGroup=""/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="MysteriousArcaneRitualSound" parent="Mothership_VortexLoop">
+        <AssetArray index="0" File="Assets\Sounds\Protoss\Obelisk\Obelisk_WarpJumpLoop.wav" FacialGroup=""/>
+    </CSound>
+    <CSound id="MysteriousArcaneRitualImpactSound">
+        <AssetArray File="Assets\Sounds\Tempest_AirAttackImpact_08.wav" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="RagingArcaneBeastDeath">
+        <AssetArray File="LocalizedData\Sounds\ProtossVO\CampaignUnits\Hybrid\Hybrid_Attack02.ogg" FacialGroup=""/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="TheKingsSpeechSound" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Sound\Units\FurbolgRoar.ogg" Pitch="-0.500000,0.500000" FacialGroup=""/>
+        <DupeDestroyCount value="5"/>
+    </CSound>
+    <CSound id="EmpoweredLightningApplySound" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Assets\Sounds\Protoss\HighTemplar\HighTemplar_PhaseShiftLaunch0.wav" Pitch="0.000000,2.000000" FacialGroup=""/>
+        <AssetArray index="1" removed="1"/>
+        <AssetArray index="2" removed="1"/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+        <DupeDestroyCount value="16"/>
+        <DupeMaximumMethod value="Prevent"/>
+        <DupeMuteCount value="10"/>
+        <Volume value="-3.000000,-1.000000"/>
+    </CSound>
+    <CSound id="ArcaneEruptionSound">
+        <AssetArray File="Sound\Effects\ArcaneEruptionStart.ogg" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+        <Pitch value="0.000000,1.000000"/>
+        <SustainFade index="0" removed="1"/>
+        <SustainFade index="1" removed="1"/>
+        <Volume value="5.000000,5.000000"/>
+    </CSound>
+    <CSound id="EmpoweredLightningImpactSound" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Assets\Sounds\Protoss\Interceptor\Interceptor_AttackImpact0.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="1" File="Assets\Sounds\Protoss\Interceptor\Interceptor_AttackImpact1.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="2" File="Assets\Sounds\Protoss\Interceptor\Interceptor_AttackImpact2.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="3" File="Assets\Sounds\Protoss\Interceptor\Interceptor_AttackImpact3.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+        <DupeDestroyCount value="16"/>
+        <DupeMaximumMethod value="Prevent"/>
+        <DupeMuteCount value="10"/>
+        <Volume value="0.000000,2.000000"/>
+    </CSound>
+    <CSound id="LightningCloudImpactSound" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sound\Effects\LightningBolt.ogg" FacialGroup=""/>
+        <Pitch value="-2.000000,3.000000"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="FirestormContinuousSound" parent="Mothership_VortexLoop">
+        <AssetArray index="0" File="Assets\Sounds\Terran\SharedEffects\Fires\Terran_FireLarge0.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\Fires\Terran_FireLarge1.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Terran\SharedEffects\Fires\Terran_FireLarge2.wav" FacialGroup=""/>
+        <Volume value="6.000000,6.000000"/>
+    </CSound>
+    <CSound id="UnstableAnomalyZapSound" parent="Combat">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Sound\Effects\LightningBolt.ogg" FacialGroup=""/>
+        <Pitch value="-2.000000,3.000000"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="CelestialOrbHealSound" parent="Terran_ExplosionSmall">
+        <AssetArray index="0">
+            <File value="Sound\Effects\CelestialOrbHeal.ogg"/>
+            <Pitch value="-0.250000,0.250000"/>
+            <Volume value="-0.500000,0.500000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+        <AssetArray index="1" removed="1"/>
+        <AssetArray index="2" removed="1"/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+        <DupeMaximumMethod value="Prevent"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="CookingSound">
+        <AssetArray File="Sound\Effects\CookingPrepareB.ogg" Pitch="-1.000000,1.000000" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="CraftingStart">
+        <AssetArray File="Sound\Effects\Tailoring.ogg" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="CraftingFailed">
+        <AssetArray File="Sound\Effects\Aggro_Enter_Warning_State.ogg" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="ADTImpactSound" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Sound\Effects\m2hAxeHitFlesh1a.ogg" Pitch="-1.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="1" File="Sound\Effects\m2hAxeHitFlesh1b.ogg" Pitch="-1.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="2" File="Sound\Effects\m2hAxeHitFlesh1c.ogg" Pitch="-1.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+    </CSound>
+    <CSound id="CelestialOrbImpactSound" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Assets\Sounds\Protoss\VoidSeeker\VoidSeeker_AttackImpact0.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="1" File="Assets\Sounds\Protoss\VoidSeeker\VoidSeeker_AttackImpact1.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="2" File="Assets\Sounds\Protoss\VoidSeeker\VoidSeeker_AttackImpact2.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="3" File="Assets\Sounds\Protoss\VoidSeeker\VoidSeeker_AttackImpact3.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="4" File="Assets\Sounds\Protoss\VoidSeeker\VoidSeeker_AttackImpact4.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+        <DupeMaximumMethod value="Prevent"/>
+    </CSound>
+    <CSound id="DeathBowImpactSound">
+        <AssetArray File="Sound\Effects\LichMissileHit1.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Effects\LichMissileHit2.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Effects\LichMissileHit3.ogg" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+        <SustainFade index="0" removed="1"/>
+        <SustainFade index="1" removed="1"/>
+    </CSound>
+    <CSound id="UndeadSavageAttack" parent="Combat">
+        <AssetArray File="Sound\Effects\UndeadSavageHit01.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Effects\UndeadSavageHit02.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Effects\UndeadSavageHit03.ogg" FacialGroup=""/>
+        <Pitch value="-0.500000,0.500000"/>
+        <Volume value="-2.740000,-2.740000"/>
+    </CSound>
+    <CSound id="VeilShrineFailSound">
+        <AssetArray File="Assets\Sounds\Protoss\CyberneticsCore\CyberneticsCore_What.ogg" Pitch="-5.000000,-5.000000" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+        <SustainFade index="0" removed="1"/>
+        <SustainFade index="1" removed="1"/>
+    </CSound>
+    <CSound id="VeilShrinePadActivate">
+        <AssetArray File="Assets\Sounds\Protoss\HighTemplar\HighTemplar_PhaseShiftLaunch0.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\HighTemplar\HighTemplar_PhaseShiftLaunch1.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\HighTemplar\HighTemplar_PhaseShiftLaunch2.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\HighTemplar\HighTemplar_PhaseShiftLaunch3.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\HighTemplar\HighTemplar_PhaseShiftLaunch4.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\HighTemplar\HighTemplar_PhaseShiftLaunch5.wav" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+        <SustainFade index="0" removed="1"/>
+        <SustainFade index="1" removed="1"/>
+    </CSound>
+    <CSound id="VeilShrineFlashImpactSound">
+        <AssetArray File="Assets\Sounds\Protoss\Probe\Probe_AttackImpact0.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Probe\Probe_AttackImpact1.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Probe\Probe_AttackImpact2.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Probe\Probe_AttackImpact3.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Probe\Probe_AttackImpact4.wav" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+        <SustainFade index="0" removed="1"/>
+        <SustainFade index="1" removed="1"/>
+    </CSound>
+    <CSound id="MysteriousShrine">
+        <AssetArray File="Sound - Events\TreeFall1.mp3" FacialGroup=""/>
+        <AssetArray File="Sound - Events\TreeFall2.mp3" FacialGroup=""/>
+        <AssetArray File="Sound - Events\TreeFall3.mp3" FacialGroup=""/>
+        <Category value="Death"/>
+        <Mode value="3DWorld"/>
+        <Pitch value="-3.000000,-3.000000"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="MysteriousShrineZapImpactSound">
+        <AssetArray>
+            <File value="Assets\Sounds\Protoss\Archon\Archon_AttackLaunch0.wav"/>
+            <Pitch value="1.000000,1.000000"/>
+            <Volume value="2.000000,2.000000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+        <AssetArray>
+            <File value="Assets\Sounds\Protoss\Archon\Archon_AttackLaunch1.wav"/>
+            <Pitch value="1.000000,1.000000"/>
+            <Volume value="2.000000,2.000000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+        <AssetArray>
+            <File value="Assets\Sounds\Protoss\Archon\Archon_AttackLaunch2.wav"/>
+            <Pitch value="1.000000,1.000000"/>
+            <Volume value="2.000000,2.000000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+        <AssetArray>
+            <File value="Assets\Sounds\Protoss\Archon\Archon_AttackLaunch3.wav"/>
+            <Pitch value="1.000000,1.000000"/>
+            <Volume value="2.000000,2.000000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+        <AssetArray>
+            <File value="Assets\Sounds\Protoss\Archon\Archon_AttackLaunch4.wav"/>
+            <Pitch value="1.000000,1.000000"/>
+            <Volume value="2.000000,2.000000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+        <SustainFade index="0" removed="1"/>
+        <SustainFade index="1" removed="1"/>
+    </CSound>
+    <CSound id="ViciousSpearImpact" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Assets\Sounds\Zerg\SharedEffects\Attacks\Zerg_AttackImpactLargeSlice0.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="1" File="Assets\Sounds\Zerg\SharedEffects\Attacks\Zerg_AttackImpactLargeSlice1.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="2" File="Assets\Sounds\Zerg\SharedEffects\Attacks\Zerg_AttackImpactLargeSlice2.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="3" File="Assets\Sounds\Zerg\SharedEffects\Attacks\Zerg_AttackImpactLargeSlice3.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="4" File="Assets\Sounds\Zerg\SharedEffects\Attacks\Zerg_AttackImpactLargeSlice4.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+        <Pitch value="-2.000000,-2.000000"/>
+        <Volume value="-6.000000,-4.000000"/>
+    </CSound>
+    <CSound id="ViciousSpearLaunch" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Assets\Sounds\Zerg\BroodLord\Broodlord_AttackLaunch0.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="1" File="Assets\Sounds\Zerg\BroodLord\Broodlord_AttackLaunch1.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="2" File="Assets\Sounds\Zerg\BroodLord\Broodlord_AttackLaunch2.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="3" File="Assets\Sounds\Zerg\BroodLord\Broodlord_AttackLaunch3.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="4" File="Assets\Sounds\Zerg\BroodLord\Broodlord_AttackLaunch4.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+        <DupeMaximumMethod value="Prevent"/>
+    </CSound>
+    <CSound id="Eat">
+        <AssetArray File="Sound\Effects\iEating1.ogg" Pitch="-1.000000,1.000000" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="ForageSound">
+        <AssetArray File="Sound\Event\HerbalismSearchA.ogg" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="CampfireRefresh">
+        <AssetArray File="Sound\Effects\FireCast.ogg" Pitch="-1.000000,1.000000" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="GoldSpend">
+        <AssetArray File="Sound\Effects\LootCoinSmall.ogg" Pitch="-0.500000,0.500000" FacialGroup=""/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="GoldPickup">
+        <AssetArray File="Sound\Effects\LootCoinLarge.ogg" Pitch="-0.500000,0.500000" FacialGroup=""/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="LeatherSpend">
+        <AssetArray File="Sound\Effects\PickUpCloth_Leather01.ogg" FacialGroup=""/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="MurlocRageSound">
+        <AssetArray File="Sound\Effects\bloodlust_player_cast_head.ogg" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+        <Volume value="-5.000000,-5.000000"/>
+    </CSound>
+    <CSound id="NaturesGraceSound">
+        <AssetArray File="Sound\Effects\Druid_Flourish.ogg" Pitch="0.000000,1.000000" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+        <Volume value="-5.000000,-5.000000"/>
+    </CSound>
+    <CSound id="BloodcleaverHealSound">
+        <AssetArray File="Sound\Effects\Warrior_BladestormStand1.ogg" Pitch="-1.000000,0.000000" FacialGroup=""/>
+        <AssetArray File="Sound\Effects\Warrior_BladestormStand2.ogg" Pitch="-1.000000,0.000000" FacialGroup=""/>
+        <AssetArray File="Sound\Effects\Warrior_BladestormStand3.ogg" Pitch="-1.000000,0.000000" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+        <Volume value="-5.000000,-5.000000"/>
+    </CSound>
+    <CSound id="FrostArmorInitialSound">
+        <AssetArray File="Sound\Effects\FrostWardTarget.ogg" Pitch="-1.000000,2.000000" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+        <Volume value="-2.000000,-2.000000"/>
+    </CSound>
+    <CSound id="DiggingTrufflesLoopSound" parent="Mothership_VortexLoop">
+        <AssetArray index="0" File="Assets\Sounds\Zerg\SharedEffects\Burrowing\Zerg_BurrowLoop2.wav" Pitch="-1.000000,0.000000" FacialGroup=""/>
+        <Volume value="-4.000000,-4.000000"/>
+    </CSound>
+    <CSound id="AutomatedDefenseTurretWhat">
+        <AssetArray>
+            <File value="Sound - Buildings\Tent.mp3"/>
+            <Pitch value="-5.000000,-5.000000"/>
+            <Volume value="-5.000000,-5.000000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="ShadowCloakInitialSound">
+        <AssetArray File="Sound\Effects\Rogue_shadowdance_state.ogg" Pitch="-0.500000,0.500000" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+        <Volume value="-5.000000,-5.000000"/>
+    </CSound>
+    <CSound id="ResurrectionFinishSound">
+        <AssetArray File="Sound\Effects\Resurrection.ogg" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+        <Volume value="-5.000000,-5.000000"/>
+    </CSound>
+    <CSound id="PermafrostImpactSound">
+        <AssetArray File="Sound\Effects\IceSpike_Impact_newStand.ogg" Pitch="-1.000000,1.000000" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+        <Volume value="-5.000000,-5.000000"/>
+    </CSound>
+    <CSound id="GuardianSpiritStartSound" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Sound\Effects\Renew.ogg" Pitch="0.000000,0.500000" FacialGroup=""/>
+        <AssetArray index="1" removed="1"/>
+        <AssetArray index="2" removed="1"/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+        <DupeMaximumMethod value="Prevent"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="BlockSound" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Sound\Effects\MetalShieldBlock1.ogg" Pitch="-2.000000,1.000000" FacialGroup=""/>
+        <AssetArray index="1" File="Sound\Effects\MetalShieldBlock2.ogg" Pitch="-2.000000,1.000000" FacialGroup=""/>
+        <AssetArray index="2" File="Sound\Effects\MetalShieldBlock3.ogg" Pitch="-2.000000,1.000000" FacialGroup=""/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+        <DupeMaximumMethod value="Prevent"/>
+        <Volume value="-5.000000,-5.000000"/>
+    </CSound>
+    <CSound id="GoldenHauberkHealImpactSound" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Sound\Effects\HealingWave.ogg" Pitch="-1.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="1" removed="1"/>
+        <AssetArray index="2" removed="1"/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+        <DupeMaximumMethod value="Prevent"/>
+    </CSound>
+    <CSound id="FrostWitchSpawn">
+        <AssetArray File="Sound - Creatures\FrostWraithSpawn.ogg" FacialGroup=""/>
+    </CSound>
+    <CSound id="FrostWitchSpell">
+        <AssetArray File="Sound - Creatures\FrostWraithSpell01.ogg" FacialGroup=""/>
+        <AssetArray File="Sound - Creatures\FrostWraithSpell02.ogg" FacialGroup=""/>
+        <AssetArray File="Sound - Creatures\FrostWraithSpell03.ogg" FacialGroup=""/>
+    </CSound>
+    <CSound id="AfflictionApplySound" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Sound\Effects\FX_Curse_of_Fatigue_State_05.ogg" Pitch="-1.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="1" File="Sound\Effects\FX_Curse_of_Fatigue_State_06.ogg" Pitch="-1.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="2" File="Sound\Effects\FX_Curse_of_Fatigue_State_07.ogg" Pitch="-1.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+        <DupeMaximumMethod value="Prevent"/>
+        <Volume value="0.000000,0.000000"/>
+    </CSound>
+    <CSound id="SpellAbsorbSound" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Sound\Effects\AbsorbGetHitA.ogg" Pitch="-1.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="1" File="Sound\Effects\AbsorbGetHitB.ogg" Pitch="-1.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="2" File="Sound\Effects\AbsorbGetHitC.ogg" Pitch="-1.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+        <DupeMaximumMethod value="Prevent"/>
+        <Volume value="4.540000,4.540000"/>
+    </CSound>
+    <CSound id="PalisadeWhat">
+        <AssetArray>
+            <File value="Sound - Buildings\Tent.mp3"/>
+            <Pitch value="-5.000000,-5.000000"/>
+            <Volume value="-5.000000,-5.000000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="MurlocDoomhammerStunSound">
+        <AssetArray File="Sound\Effects\Warrior_BloodBath.ogg" Pitch="-2.000000,0.000000" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+        <Volume value="-5.000000,-5.000000"/>
+    </CSound>
+    <CSound id="PermafrostLoopSound" parent="Mothership_VortexLoop"/>
+    <CSound id="BearAggro" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Sound - Creatures\mBearAggroA.ogg" Pitch="-1.000000,1.000000" FacialGroup=""/>
+        <DupeDestroyCount value="5"/>
+        <Volume value="-6.170000,-6.170000"/>
+    </CSound>
+    <CSound id="BearAttackRoar" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Sound - Creatures\mBearAttackA.ogg" Pitch="-1.000000,1.000000" FacialGroup=""/>
+        <AssetArray File="Sound - Creatures\mBearAttackB.ogg" Pitch="-1.000000,1.000000" FacialGroup=""/>
+        <AssetArray File="Sound - Creatures\mBearAttackCriticalA.ogg" Pitch="-1.000000,1.000000" FacialGroup=""/>
+        <AssetArray File="Sound - Creatures\mBearAttackD.ogg" Pitch="-1.000000,1.000000" FacialGroup=""/>
+        <DupeDestroyCount value="5"/>
+        <Volume value="-6.170000,-6.170000"/>
+    </CSound>
+    <CSound id="BearDeath" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Sound - Creatures\mBearDeathA.ogg" Pitch="-1.000000,1.000000" FacialGroup=""/>
+        <DupeDestroyCount value="5"/>
+        <Volume value="-6.170000,-6.170000"/>
+    </CSound>
+    <CSound id="CravensFishStickerImpactSoundExplosive" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Assets\Sounds\Spell_Fireball_Impact_00.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="1" File="Assets\Sounds\Spell_Fireball_Impact_01.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="2" File="Assets\Sounds\Spell_Fireball_Impact_02.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="3" File="Assets\Sounds\Spell_Fireball_Impact_03.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="4" File="Assets\Sounds\Spell_Fireball_Impact_04.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="5" File="Assets\Sounds\Spell_Fireball_Impact_05.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+    </CSound>
+    <CSound id="MoltenSphereImpactSound" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Assets\Sounds\Terran\SharedEffects\Explosions\SiegeTank_ImpactMedium0.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="1" File="Assets\Sounds\Terran\SharedEffects\Explosions\SiegeTank_ImpactMedium1.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="2" File="Assets\Sounds\Terran\SharedEffects\Explosions\SiegeTank_ImpactMedium2.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="3" File="Assets\Sounds\Terran\SharedEffects\Explosions\SiegeTank_ImpactMedium3.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="4" File="Assets\Sounds\Terran\SharedEffects\Explosions\SiegeTank_ImpactMedium4.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="5" File="Assets\Sounds\Terran\SharedEffects\Explosions\SiegeTank_ImpactMedium5.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="6" File="Assets\Sounds\Terran\SharedEffects\Explosions\SiegeTank_ImpactMedium6.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="7" File="Assets\Sounds\Terran\SharedEffects\Explosions\SiegeTank_ImpactMedium7.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="8" File="Assets\Sounds\Terran\SharedEffects\Explosions\SiegeTank_ImpactMedium8.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="9" File="Assets\Sounds\Terran\SharedEffects\Explosions\SiegeTank_ImpactMedium9.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <DupeMaximumMethod value="Prevent"/>
+        <Volume value="-8.000000,-8.000000"/>
+    </CSound>
+    <CSound id="CrossbowImpact" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Sound - Combat\ArrowHitA.ogg" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="1" File="Sound - Combat\ArrowHitB.ogg" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="2" File="Sound - Combat\ArrowHitC.ogg" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+        <Volume value="-3.000000,-2.000000"/>
+    </CSound>
+    <CSound id="CrossbowLaunch" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Sound - Combat\CrossbowLM01.ogg" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="1" File="Sound - Combat\CrossbowLM02.ogg" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="2" File="Sound - Combat\CrossbowLM03.ogg" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+        <DupeMaximumMethod value="Prevent"/>
+    </CSound>
+    <CSound id="TetherImpactSound">
+        <AssetArray File="Assets\Sounds\Protoss\Karass\Karass_AttackImpact0.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Karass\Karass_AttackImpact1.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Karass\Karass_AttackImpact2.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Karass\Karass_AttackImpact3.wav" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+        <SustainFade index="0" removed="1"/>
+        <SustainFade index="1" removed="1"/>
+    </CSound>
+    <CSound id="TetherAttackSound">
+        <AssetArray File="Assets\Sounds\Protoss\Probe\Probe_AttackLaunch0.wav" Pitch="-3.000000,-3.000000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Probe\Probe_AttackLaunch1.wav" Pitch="-3.000000,-3.000000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Probe\Probe_AttackLaunch2.wav" Pitch="-3.000000,-3.000000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Probe\Probe_AttackLaunch3.wav" Pitch="-3.000000,-3.000000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Probe\Probe_AttackLaunch4.wav" Pitch="-3.000000,-3.000000" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+        <SustainFade index="0" removed="1"/>
+        <SustainFade index="1" removed="1"/>
+        <Volume value="-8.910000,-8.910000"/>
+    </CSound>
+    <CSound id="DeadnightCue">
+        <AssetArray File="Assets\Sounds\Zerg\Brutalisk\Brutalisk_Roar0.wav" Pitch="-3.000000,-3.000000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Zerg\Brutalisk\Brutalisk_Roar2.wav" Pitch="-3.000000,-3.000000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Zerg\HybridF\HybridF_Roar.wav" Pitch="-3.000000,-3.000000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Zerg\Ultralisk\Ultralisk_Roar0.wav" Pitch="-2.000000,-2.000000" FacialGroup=""/>
+        <Volume value="-10.000000,-10.000000"/>
+    </CSound>
+    <CSound id="DistantThunder" parent="Ambience_Map">
+        <AssetArray File="Assets\Sounds\Uni\Ambience\Tilesets\AmbientOneShot_Thunder1.ogg" Pitch="-3.000000,-3.000000"/>
+        <AssetArray File="Assets\Sounds\Uni\Ambience\Tilesets\AmbientOneShot_Thunder2.ogg" Pitch="-3.000000,-3.000000"/>
+        <AssetArray File="Assets\Sounds\Uni\Ambience\Tilesets\AmbientOneShot_Thunder3.ogg" Pitch="-3.000000,-3.000000"/>
+        <AssetArray File="Assets\Sounds\Uni\Ambience\Tilesets\AmbientOneShot_Thunder4.ogg" Pitch="-3.000000,-3.000000"/>
+        <AssetArray File="Assets\Sounds\Uni\Ambience\Tilesets\AmbientOneShot_Thunder5.ogg" Pitch="-3.000000,-3.000000"/>
+        <AssetArray File="Assets\Sounds\Uni\Ambience\Tilesets\AmbientOneShot_Thunder6.ogg" Pitch="-3.000000,-3.000000"/>
+        <AssetArray File="Assets\Sounds\Uni\Ambience\Tilesets\AmbientOneShot_Thunder7.ogg" Pitch="-3.000000,-3.000000"/>
+        <AssetArray File="Assets\Sounds\Uni\Ambience\Tilesets\AmbientOneShot_Thunder8.ogg" Pitch="-3.000000,-3.000000"/>
+        <DupeDestroyCount value="6"/>
+        <DupeMuteCount value="6"/>
+        <LoopCount value="0"/>
+        <OffsetFadeIn index="0" removed="1"/>
+        <OffsetFadeIn index="1" removed="1"/>
+    </CSound>
+    <CSound id="CampfireBurning" parent="Spell">
+        <AssetArray File="Sound - Buildings\CampfireBurning.ogg" FacialGroup=""/>
+        <LoopCount value="-1"/>
+    </CSound>
+    <CSound id="Clairvoyance" parent="Spell">
+        <EditorCategories value="Race:Terran"/>
+        <AssetArray File="Assets\Sounds\Protoss\Mothership\Mothership_Movement1.wav" Pitch="-1.000000,1.000000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Mothership\Mothership_Movement2.wav" Pitch="-1.000000,1.000000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Mothership\Mothership_Movement3.wav" Pitch="-1.000000,1.000000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Mothership\Mothership_Movement4.wav" Pitch="-1.000000,1.000000" FacialGroup=""/>
+    </CSound>
+    <CSound id="DreadHowlRoar" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Zerg\HybridF\HybridF_Roar.wav" FacialGroup=""/>
+        <DupeDestroyCount value="5"/>
+    </CSound>
+    <CSound id="DreadplateArmorFearSound">
+        <AssetArray File="Sound\Effects\Fear.ogg" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+        <SustainFade index="0" removed="1"/>
+        <SustainFade index="1" removed="1"/>
+        <Volume value="-4.800000,-4.800000"/>
+    </CSound>
+    <CSound id="ElderTreeDeath">
+        <AssetArray File="Sound - Events\TreeFall1.mp3" FacialGroup=""/>
+        <AssetArray File="Sound - Events\TreeFall2.mp3" FacialGroup=""/>
+        <AssetArray File="Sound - Events\TreeFall3.mp3" FacialGroup=""/>
+        <Category value="Death"/>
+        <Mode value="3DWorld"/>
+        <Pitch value="-3.000000,-3.000000"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="ElderWandImpactSound">
+        <AssetArray File="Assets\Sounds\Protoss\Archon\Archon_AttackImpact0.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Archon\Archon_AttackImpact1.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Archon\Archon_AttackImpact2.wav" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+        <SustainFade index="0" removed="1"/>
+        <SustainFade index="1" removed="1"/>
+    </CSound>
+    <CSound id="BarnetsMonumentSelect">
+        <AssetArray File="Assets\Sounds\Uni\UI\UI_GenericTransitionEnter_Normal_1.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni\UI\UI_GenericTransitionEnter_Normal_2.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni\UI\UI_GenericTransitionEnter_Normal_3.wav" FacialGroup=""/>
+        <Mode value="3DWorld"/>
+        <Volume value="-10.000000,-10.000000"/>
+    </CSound>
+    <CSound id="FelFireFearImpactSound">
+        <AssetArray File="Sound\Effects\HauntImpact1.ogg" Pitch="-1.000000,1.000000" FacialGroup=""/>
+        <AssetArray File="Sound\Effects\HauntImpact2.ogg" Pitch="-1.000000,1.000000" FacialGroup=""/>
+        <AssetArray File="Sound\Effects\HauntImpact3.ogg" Pitch="-1.000000,1.000000" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+        <SustainFade index="0" removed="1"/>
+        <SustainFade index="1" removed="1"/>
+    </CSound>
+    <CSound id="FrostArmorImpactSound">
+        <AssetArray File="Assets\Sounds\Uni_IceExplosions_Small_00.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni_IceExplosions_Small_01.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni_IceExplosions_Small_02.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni_IceExplosions_Small_03.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni_IceExplosions_Small_04.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni_IceExplosions_Small_05.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni_IceExplosions_Small_06.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Uni_IceExplosions_Small_07.wav" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+        <Volume value="-9.000000,-7.000000"/>
+    </CSound>
+    <CSound id="GoldenPolearmProximitySound">
+        <AssetArray>
+            <File value="Assets\Sounds\Protoss\Obelisk\Obelisk_ArgusLinkLaunch0.wav"/>
+            <Pitch value="-3.000000,3.000000"/>
+            <Volume value="-5.000000,-5.000000"/>
+            <FacialGroup value=""/>
+        </AssetArray>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="GuardianSpiritHealSound">
+        <AssetArray File="Assets\Sounds\Protoss\Karass\Karass_PlasmaSurgeLaunch0.wav" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+        <SustainFade index="0" removed="1"/>
+        <SustainFade index="1" removed="1"/>
+    </CSound>
+    <CSound id="KoboldAttackCrossbow" parent="Combat">
+        <AssetArray File="Assets\Sounds\Zerg\Hydralisk\Hydralisk_AttackLaunchRanged0.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Zerg\Hydralisk\Hydralisk_AttackLaunchRanged1.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Zerg\Hydralisk\Hydralisk_AttackLaunchRanged2.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Zerg\Hydralisk\Hydralisk_AttackLaunchRanged3.wav" FacialGroup=""/>
+    </CSound>
+    <CSound id="MurlocChieftainAggroCritter" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Sound - Murloc\ChiefAggroCritter.ogg" Pitch="-2.000000,3.000000" FacialGroup=""/>
+        <DupeDestroyCount value="5"/>
+        <Volume value="-7.860000,-6.860000"/>
+    </CSound>
+    <CSound id="MurlocChieftainChargePrep" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Sound - Events\mMurlocAggroC.ogg" FacialGroup=""/>
+        <DupeDestroyCount value="5"/>
+    </CSound>
+    <CSound id="MurlocChieftainDeath" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Sound - Murloc\ChiefDeath.ogg" FacialGroup=""/>
+        <DupeDestroyCount value="5"/>
+    </CSound>
+    <CSound id="FrostWitchDeath" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Sound - Creatures\FrostWraithDeath.ogg" FacialGroup=""/>
+        <DupeDestroyCount value="5"/>
+    </CSound>
+    <CSound id="MurlocChieftainEnrage" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Sound - Murloc\ChiefEnrage.ogg" FacialGroup=""/>
+        <DupeDestroyCount value="5"/>
+    </CSound>
+    <CSound id="FrostWitchAttackImpact" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Sound - Murloc\MetalHeavyBashFlesh1.ogg" FacialGroup=""/>
+        <AssetArray File="Sound - Murloc\MetalHeavyBashFlesh2.ogg" FacialGroup=""/>
+        <AssetArray File="Sound - Murloc\MetalHeavyBashFlesh3.ogg" FacialGroup=""/>
+        <DupeDestroyCount value="4"/>
+        <Pitch value="0.000000,3.000000"/>
+        <Volume value="-7.000000,-6.000000"/>
+    </CSound>
+    <CSound id="MurlocRushLaunch" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Assets\Sounds\Zerg\SharedEffects\Burrowing\Zerg_BurrowLarge0.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="1" File="Assets\Sounds\Zerg\SharedEffects\Burrowing\Zerg_BurrowLarge1.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="2" File="Assets\Sounds\Zerg\SharedEffects\Burrowing\Zerg_BurrowLarge2.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="3" File="Assets\Sounds\Zerg\SharedEffects\Burrowing\Zerg_BurrowLarge3.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="4" File="Assets\Sounds\Zerg\SharedEffects\Burrowing\Zerg_BurrowLarge4.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+        <DupeMaximumMethod value="Prevent"/>
+    </CSound>
+    <CSound id="NightwispAttackLaunchSound" parent="Battlecruiser_AirAttackLaunch">
+        <AssetArray index="0" File="Assets\Sounds\Protoss\Mothership\Mothership_AttackLaunch0.wav" FacialGroup=""/>
+        <AssetArray index="1" File="Assets\Sounds\Protoss\Mothership\Mothership_AttackLaunch1.wav" FacialGroup=""/>
+        <AssetArray index="2" File="Assets\Sounds\Protoss\Mothership\Mothership_AttackLaunch2.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Mothership\Mothership_AttackLaunch3.wav" FacialGroup=""/>
+    </CSound>
+    <CSound id="FrostArmorSpecialLoopSound" parent="Mothership_VortexLoop">
+        <AssetArray index="0" File="Assets\Sounds\Protoss\Mothership\Mothership_VortexLoop0.wav" Pitch="8.000000,8.000000" FacialGroup=""/>
+        <Volume value="-6.000000,-6.000000"/>
+    </CSound>
+    <CSound id="RotatingBladeImpactSound" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Sound\Effects\AttackSliceFlesh01.ogg" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="1" File="Sound\Effects\AttackSliceFlesh02.ogg" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="2" File="Sound\Effects\AttackSliceFlesh03.ogg" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+        <DupeMaximumMethod value="Prevent"/>
+    </CSound>
+    <CSound id="ScrollofTransmutationSound">
+        <AssetArray File="Assets\Sounds\Protoss\Colossus\Colossus_AttackImpact0.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Colossus\Colossus_AttackImpact1.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Colossus\Colossus_AttackImpact2.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Colossus\Colossus_AttackImpact3.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Colossus\Colossus_AttackImpact4.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Colossus\Colossus_AttackImpact5.wav" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+        <SustainFade index="0" removed="1"/>
+        <SustainFade index="1" removed="1"/>
+    </CSound>
+    <CSound id="ShadowCloakImpactSound">
+        <AssetArray File="Assets\Sounds\Protoss\Interceptor\Interceptor_AttackImpact0.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Interceptor\Interceptor_AttackImpact1.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Interceptor\Interceptor_AttackImpact2.wav" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Interceptor\Interceptor_AttackImpact3.wav" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+        <SustainFade index="0" removed="1"/>
+        <SustainFade index="1" removed="1"/>
+    </CSound>
+    <CSound id="ShovelDigSound" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Sound\Effects\m1hSwordHitStone1a.ogg" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="1" File="Sound\Effects\m1hSwordHitStone1b.ogg" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="2" File="Sound\Effects\m1hSwordHitStone1c.ogg" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+        <DupeMaximumMethod value="Prevent"/>
+        <Volume value="-6.170000,-6.170000"/>
+    </CSound>
+    <CSound id="SkeletalTransmutation">
+        <AssetArray File="Sound - Events\SkeletalTransmutation.ogg" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="SynergySound" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Protoss\Nexus\Nexus_ChronoBoostLaunch0.wav" Pitch="2.000000,2.000000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Nexus\Nexus_ChronoBoostLaunch1.wav" Pitch="2.000000,2.000000" FacialGroup=""/>
+        <AssetArray File="Assets\Sounds\Protoss\Nexus\Nexus_ChronoBoostLaunch2.wav" Pitch="2.000000,2.000000" FacialGroup=""/>
+        <DupeDestroyCount value="5"/>
+        <Volume value="-6.170000,-6.170000"/>
+    </CSound>
+    <CSound id="TrampleImpactSound" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Assets\Sounds\Zerg\BroodLord\Broodlord_AttackImpact0.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="1" File="Assets\Sounds\Zerg\BroodLord\Broodlord_AttackImpact1.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="2" File="Assets\Sounds\Zerg\BroodLord\Broodlord_AttackImpact2.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+        <DupeMaximumMethod value="Prevent"/>
+    </CSound>
+    <CSound id="TrollBossAttackImpact" parent="Combat">
+        <AssetArray File="Sound\Effects\AttackSliceFlesh01.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Effects\AttackSliceFlesh02.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Effects\AttackSliceFlesh03.ogg" FacialGroup=""/>
+        <Pitch value="-3.000000,3.000000"/>
+        <Volume value="-7.000000,-6.000000"/>
+    </CSound>
+    <CSound id="VenomousArbalestPoisonStart" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Assets\Sounds\Uni\Deaths\Uni_DeathFXAcid0.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="1" File="Assets\Sounds\Uni\Deaths\Uni_DeathFXAcid1.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="2" File="Assets\Sounds\Uni\Deaths\Uni_DeathFXAcid2.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="3" File="Assets\Sounds\Uni\Deaths\Uni_DeathFXAcid3.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="4" File="Assets\Sounds\Uni\Deaths\Uni_DeathFXAcid4.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="5" File="Assets\Sounds\Uni\Deaths\Uni_DeathFXAcid5.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="6" File="Assets\Sounds\Uni\Deaths\Uni_DeathFXAcid6.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+        <DupeMaximumMethod value="Prevent"/>
+        <Volume value="-6.170000,-6.170000"/>
+    </CSound>
+    <CSound id="SiphonLifeImpactSound">
+        <AssetArray File="Assets\Sounds\Protoss\HighTemplar\HighTemplar_PhaseShiftLaunch4.wav" Pitch="4.000000,6.000000" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+        <SustainFade index="0" removed="1"/>
+        <SustainFade index="1" removed="1"/>
+    </CSound>
+    <CSound id="RainIndoors" parent="Ambience_Map">
+        <AssetArray File="Sound - Events\RainIndoors.ogg" FacialGroup=""/>
+        <OffsetFadeIn index="1" Time="500"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="CampfireWhat">
+        <AssetArray File="Sound - Buildings\Campfire.mp3" FacialGroup=""/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="DawnCue">
+        <AssetArray File="Sound - Events\DaybreakRooster.mp3" FacialGroup=""/>
+    </CSound>
+    <CSound id="DuskCue">
+        <AssetArray File="Sound - Events\DuskWolf.mp3" FacialGroup=""/>
+    </CSound>
+    <CSound id="FarmWhat">
+        <AssetArray File="Sound - Buildings\Farm.mp3" FacialGroup=""/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="RainOutdoors" parent="Ambience_Map">
+        <AssetArray File="Sound - Events\RainOutdoors.ogg" FacialGroup=""/>
+        <OffsetFadeIn index="1" Time="500"/>
+        <Volume value="-5.000000,-5.000000"/>
+    </CSound>
+    <CSound id="SmithyWhat">
+        <AssetArray File="Sound - Buildings\Blacksmith.mp3" FacialGroup=""/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="KoboldAttack">
+        <AssetArray File="Sound - Kobold\KoboldYesAttack1.mp3" Pitch="-1.000000,0.000000" FacialGroup=""/>
+        <AssetArray File="Sound - Kobold\KoboldYesAttack2.mp3" Pitch="-1.000000,0.000000" FacialGroup=""/>
+        <AssetArray File="Sound - Kobold\KoboldYesAttack3.mp3" Pitch="-1.000000,0.000000" FacialGroup=""/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="KoboldMeleeBashSound" parent="Combat">
+        <AssetArray File="Sound - Kobold\MetalMediumBashFlesh1.mp3" FacialGroup=""/>
+        <AssetArray File="Sound - Kobold\MetalMediumBashFlesh2.mp3" FacialGroup=""/>
+        <AssetArray File="Sound - Kobold\MetalMediumBashFlesh3.mp3" FacialGroup=""/>
+        <Pitch value="-0.500000,0.500000"/>
+        <Volume value="-2.740000,-2.740000"/>
+    </CSound>
+    <CSound id="BlunderbussLaunchSound" parent="Combat">
+        <AssetArray File="Sound\Effects\BlunderbussAttack01.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Effects\BlunderbussAttack02.ogg" FacialGroup=""/>
+        <Pitch value="-1.000000,1.000000"/>
+    </CSound>
+    <CSound id="KoboldDeath">
+        <AssetArray File="Sound - Kobold\KoboldDeath.mp3" Pitch="-1.000000,0.000000" FacialGroup=""/>
+        <Category value="Death"/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="KoboldPissed">
+        <AssetArray File="Sound - Kobold\KoboldPissed1.mp3" Pitch="-1.000000,0.000000" FacialGroup=""/>
+        <AssetArray File="Sound - Kobold\KoboldPissed2.mp3" Pitch="-1.000000,0.000000" FacialGroup=""/>
+        <AssetArray File="Sound - Kobold\KoboldPissed3.mp3" Pitch="-1.000000,0.000000" FacialGroup=""/>
+        <AssetArray File="Sound - Kobold\KoboldPissed4.mp3" Pitch="-1.000000,0.000000" FacialGroup=""/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="KoboldReady">
+        <AssetArray File="Sound - Kobold\KoboldReady1.mp3" Pitch="-1.000000,0.000000" FacialGroup=""/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="KoboldWhat">
+        <AssetArray File="Sound - Kobold\KoboldWhat1.mp3" Pitch="-1.000000,0.000000" FacialGroup=""/>
+        <AssetArray File="Sound - Kobold\KoboldWhat2.mp3" Pitch="-1.000000,0.000000" FacialGroup=""/>
+        <AssetArray File="Sound - Kobold\KoboldWhat3.mp3" Pitch="-1.000000,0.000000" FacialGroup=""/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="KoboldYes">
+        <AssetArray File="Sound - Kobold\KoboldYes1.mp3" Pitch="-1.000000,0.000000" FacialGroup=""/>
+        <AssetArray File="Sound - Kobold\KoboldYes2.mp3" Pitch="-1.000000,0.000000" FacialGroup=""/>
+        <AssetArray File="Sound - Kobold\KoboldYes3.mp3" Pitch="-1.000000,0.000000" FacialGroup=""/>
+        <Volume value="-6.860000,-6.860000"/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="LevelUp">
+        <AssetArray File="Sound\Event\Levelupcaster.ogg" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="Defeat">
+        <AssetArray File="Sound\Event\QuestFailed.ogg" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="MiningSound">
+        <AssetArray File="Sound\Effects\MiningSound01.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Effects\MiningSound02.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Effects\MiningSound03.ogg" FacialGroup=""/>
+        <Mode value="3DWorld"/>
+        <Category value="Combat"/>
+        <Volume value="-6.860000,-6.860000"/>
+        <DupeDestroyCount value="5"/>
+        <DupeMuteCount value="5"/>
+    </CSound>
+    <CSound id="SpikeTrapTrigger">
+        <AssetArray File="Sound - Events\MetalMediumSliceFlesh1.wav" Pitch="-1.000000,1.000000" FacialGroup=""/>
+        <AssetArray File="Sound - Events\MetalMediumSliceFlesh2.wav" Pitch="-1.000000,1.000000" FacialGroup=""/>
+        <AssetArray File="Sound - Events\MetalMediumSliceFlesh3.wav" Pitch="-1.000000,1.000000" FacialGroup=""/>
+        <Category value="Combat"/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="OldTreeDeath">
+        <AssetArray File="Sound - Events\TreeFall1.mp3" FacialGroup=""/>
+        <AssetArray File="Sound - Events\TreeFall2.mp3" FacialGroup=""/>
+        <AssetArray File="Sound - Events\TreeFall3.mp3" FacialGroup=""/>
+        <Category value="Death"/>
+        <Mode value="3DWorld"/>
+        <Pitch value="-3.000000,-3.000000"/>
+        <Volume value="-3.000000,-3.000000"/>
+    </CSound>
+    <CSound id="TavernWhat">
+        <AssetArray File="Sound\Units\RiflemanPissed2.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\RiflemanPissed4.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\RiflemanPissed7.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\RiflemanWhat4.ogg" FacialGroup=""/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="TentWhat">
+        <AssetArray File="Sound - Buildings\Tent.mp3" FacialGroup=""/>
+        <Mode value="3DWorld"/>
+    </CSound>
+    <CSound id="MurlocDoomhammerImpact" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Sound - Murloc\MetalHeavyBashFlesh1.ogg" FacialGroup=""/>
+        <AssetArray File="Sound - Murloc\MetalHeavyBashFlesh2.ogg" FacialGroup=""/>
+        <AssetArray File="Sound - Murloc\MetalHeavyBashFlesh3.ogg" FacialGroup=""/>
+        <DupeDestroyCount value="4"/>
+        <Pitch value="0.000000,3.000000"/>
+        <Volume value="-7.000000,-6.000000"/>
+    </CSound>
+    <CSound id="TrollGroundSpikeLaunch" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Assets\Sounds\Zerg\SharedEffects\Burrowing\Zerg_UnburrowLarge0.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="1" File="Assets\Sounds\Zerg\SharedEffects\Burrowing\Zerg_UnburrowLarge1.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="2" File="Assets\Sounds\Zerg\SharedEffects\Burrowing\Zerg_UnburrowLarge2.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="3" File="Assets\Sounds\Zerg\SharedEffects\Burrowing\Zerg_UnburrowLarge3.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="4" File="Assets\Sounds\Zerg\SharedEffects\Burrowing\Zerg_UnburrowLarge4.wav" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+        <DupeMaximumMethod value="Prevent"/>
+    </CSound>
+    <CSound id="WhirlingBladesLaunch" parent="Terran_ExplosionSmall">
+        <AssetArray index="0" File="Sound - Events\HeadHunterYesAttack1.ogg" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="1" File="Sound - Events\HeadHunterYesAttack2.ogg" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="2" File="Sound - Events\HeadHunterYesAttack3.ogg" Pitch="0.000000,0.000000" FacialGroup=""/>
+        <AssetArray index="3" removed="1"/>
+        <AssetArray index="4" removed="1"/>
+        <AssetArray index="5" removed="1"/>
+        <AssetArray index="6" removed="1"/>
+        <AssetArray index="7" removed="1"/>
+        <AssetArray index="8" removed="1"/>
+        <AssetArray index="9" removed="1"/>
+        <DupeMaximumMethod value="Prevent"/>
+    </CSound>
+    <CSound id="BearAttackImpact" parent="Combat">
+        <EditorCategories value="Race:Zerg"/>
+        <AssetArray File="Assets\Sounds\Zerg\SharedEffects\Attacks\Zerg_AttackImpactSmallPiercing0.wav" Pitch="-5.000000,-5.000000"/>
+        <AssetArray File="Assets\Sounds\Zerg\SharedEffects\Attacks\Zerg_AttackImpactSmallPiercing1.wav" Pitch="-5.000000,-5.000000"/>
+        <AssetArray File="Assets\Sounds\Zerg\SharedEffects\Attacks\Zerg_AttackImpactSmallPiercing2.wav" Pitch="-5.000000,-5.000000"/>
+        <AssetArray File="Assets\Sounds\Zerg\SharedEffects\Attacks\Zerg_AttackImpactSmallPiercing3.wav" Pitch="-5.000000,-5.000000"/>
+        <AssetArray File="Assets\Sounds\Zerg\SharedEffects\Attacks\Zerg_AttackImpactSmallPiercing4.wav" Pitch="-5.000000,-5.000000"/>
+        <DupeDestroyCount value="4"/>
+        <Pitch value="0.000000,1.000000"/>
+        <Volume value="-3.000000,-2.000000"/>
+    </CSound>
+    <CSound id="LiquidatorSpellbladeImpactSound" parent="Spell">
+        <EditorCategories value="Race:Protoss"/>
+        <AssetArray File="Assets\Sounds\Protoss\Stalker\Stalker_Blink0.wav" Pitch="-0.250000,0.250000"/>
+        <Volume value="-6.120000,-6.120000"/>
+    </CSound>
+    <CSound id="TombGuardianAggro" parent="Combat">
+        <AssetArray File="Sound\Units\ZombifiedVrykulAttackA.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\ZombifiedVrykulAttackB.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\ZombifiedVrykulAttackC.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\ZombifiedVrykulAttackD.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\ZombifiedVrykulAttackE.ogg" FacialGroup=""/>
+        <Pitch value="-1.000000,0.000000"/>
+        <Volume value="-6.170000,-6.170000"/>
+    </CSound>
+    <CSound id="WolfDeath" parent="Combat">
+        <AssetArray File="Sound\Units\mWolfWound1.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\mWolfWound2.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\mWolfWound3.ogg" FacialGroup=""/>
+        <AssetArray File="Sound\Units\mWolfWound4.ogg" FacialGroup=""/>
+        <Pitch value="-1.000000,0.000000"/>
+        <Volume value="-6.170000,-6.170000"/>
+    </CSound>
+    <CSound id="MonstrosityDeath" parent="Combat">
+        <AssetArray File="Sound\Units\MonstrosityDeath.ogg" FacialGroup=""/>
+        <Pitch value="-1.000000,0.000000"/>
+        <Volume value="-6.170000,-6.170000"/>
+    </CSound>
+    <CSound id="TwinThrowingAxesSwing" parent="Combat">
+        <AssetArray File="Assets\Sounds\Zerg\SharedEffects\Attacks\Zerg_AttackLaunchSmallSwing0.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\SharedEffects\Attacks\Zerg_AttackLaunchSmallSwing1.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\SharedEffects\Attacks\Zerg_AttackLaunchSmallSwing2.wav"/>
+        <AssetArray File="Assets\Sounds\Zerg\SharedEffects\Attacks\Zerg_AttackLaunchSmallSwing3.wav"/>
+        <Pitch value="0.000000,3.000000"/>
+        <Volume value="-4.930000,-4.930000"/>
+    </CSound>
+    <CSound id="e_cmdCantBuildLocationInvalid">
+        <AssetArray index="0" File="Sound - Kobold\KoboldPissed1.mp3" FacialAnim="" FacialGroup=""/>
+        <AssetArray File="Sound - Kobold\KoboldPissed2.mp3" FacialGroup=""/>
+        <AssetArray File="Sound - Kobold\KoboldPissed3.mp3" FacialGroup=""/>
+        <AssetArray File="Sound - Kobold\KoboldPissed4.mp3" FacialGroup=""/>
+    </CSound>
+</Catalog>

@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CRequirementConst id="10">
+        <Tooltip value=""/>
+        <Value value="10"/>
+    </CRequirementConst>
+    <CRequirementConst id="11764370913">
+        <Value value="1"/>
+    </CRequirementConst>
+    <CRequirementAnd id="And1764370913GTECountUnitLumberInProgressOrBetterAtUnit1GTECountUnitLeatherInProgressOrBetterAtUnit1NotCountBehaviorArenaCombatantInProgressOrBetterAtUnit">
+        <OperandArray value="GTECountUnitLumberInProgressOrBetterAtUnit1"/>
+        <OperandArray value="GTECountUnitLeatherInProgressOrBetterAtUnit1"/>
+        <OperandArray value="NotCountBehaviorArenaCombatantInProgressOrBetterAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="And1764370913GTECountUnitLumberInProgressOrBetterAtUnit1GTECountUnitStoneInProgressOrBetterAtUnit1GTECountUnitLeatherInProgressOrBetterAtUnit1NotCountBehaviorArenaCombatantInProgressOrBetterAtUnit">
+        <OperandArray value="GTECountUnitLumberInProgressOrBetterAtUnit1"/>
+        <OperandArray value="GTECountUnitStoneInProgressOrBetterAtUnit1"/>
+        <OperandArray value="GTECountUnitLeatherInProgressOrBetterAtUnit1"/>
+        <OperandArray value="NotCountBehaviorArenaCombatantInProgressOrBetterAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="And1764370913GTECountUnitLumberInProgressOrBetterAtUnit1GTECountUnitStoneInProgressOrBetterAtUnit1NotCountBehaviorArenaCombatantInProgressOrBetterAtUnit">
+        <OperandArray value="GTECountUnitLumberInProgressOrBetterAtUnit1"/>
+        <OperandArray value="GTECountUnitStoneInProgressOrBetterAtUnit1"/>
+        <OperandArray value="NotCountBehaviorArenaCombatantInProgressOrBetterAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="And1764370913GTECountUnitLumberInProgressOrBetterAtUnit1OrGTECountUnitLeatherInProgressOrBetterAtUnit1GTECountUnitWoolInProgressOrBetterAtUnit1NotCountBehaviorArenaCombatantInProgressOrBetterAtUnit">
+        <OperandArray value="GTECountUnitLumberInProgressOrBetterAtUnit1"/>
+        <OperandArray value="OrGTECountUnitLeatherInProgressOrBetterAtUnit1GTECountUnitWoolInProgressOrBetterAtUnit1"/>
+        <OperandArray value="NotCountBehaviorArenaCombatantInProgressOrBetterAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="And1764370913GTECountUnitLumberInProgressOrBetterAtUnit9GTECountUnitStoneInProgressOrBetterAtUnit9">
+        <OperandArray value="GTECountUnitLumberInProgressOrBetterAtUnit9"/>
+        <OperandArray value="GTECountUnitStoneInProgressOrBetterAtUnit9"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="And1764370913GTESumCountUnitLumberInProgressOrBetterAtUnitCountUnitLumberPartsInProgressOrBetterAtUnit1NotCountBehaviorArenaCombatantInProgressOrBetterAtUnit">
+        <OperandArray value="GTESumCountUnitLumberInProgressOrBetterAtUnitCountUnitLumberPartsInProgressOrBetterAtUnit1"/>
+        <OperandArray value="NotCountBehaviorArenaCombatantInProgressOrBetterAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="And1853434226CountBehaviorNecromancersNecklaceInProgressOrBetterAtUnitCountBehaviorConjurersCharmInProgressOrBetterAtUnit">
+        <OperandArray value="CountBehaviorNecromancersNecklaceInProgressOrBetterAtUnit"/>
+        <OperandArray value="CountBehaviorConjurersCharmInProgressOrBetterAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndAndGTE2500158815CountUnitLumberInProgressOrBetterAtUnit1GTE3715153190CountUnitStoneInProgressOrBetterAtUnit1GTE1626786172CountUnitIronOreInProgressOrBetterAtUnit11764370913LT3079143258CountUnitAutomatedDefenseTurretInProgressOrBetterCountBehaviorADTAllowedStacksInProgressOrBetterAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="AndGTE2500158815CountUnitLumberInProgressOrBetterAtUnit1GTE3715153190CountUnitStoneInProgressOrBetterAtUnit1GTE1626786172CountUnitIronOreInProgressOrBetterAtUnit11764370913LT3079143258CountUnitAutomatedDefenseTurretInProgressOrBetterCountBehaviorADTAllowedStacksInProgressOrBetterAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndAndGTE3573744135CountUnitLumberInProgressOrBetterAtUnit10GTE2984890790CountUnitStoneInProgressOrBetterAtUnit6NotCountBehaviorArenaCombatantInProgressOrBetterAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="AndGTE3573744135CountUnitLumberInProgressOrBetterAtUnit10GTE2984890790CountUnitStoneInProgressOrBetterAtUnit6"/>
+        <OperandArray value="NotCountBehaviorArenaCombatantInProgressOrBetterAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountBehaviorCooking10InProgressOrBetter479621985">
+        <OperandArray value="CountBehaviorCooking10InProgressOrBetter479621985"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountBehaviorCooking15InProgressOrBetter1732521956">
+        <OperandArray value="CountBehaviorCooking15InProgressOrBetter1732521956"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountBehaviorCooking20InProgressOrBetter4085972241TechTreeCheat">
+        <Tooltip value=""/>
+        <OperandArray value="CountBehaviorCooking20InProgressOrBetter4085972241TechTreeCheat"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountBehaviorCooking5InProgressOrBetter2625724741">
+        <OperandArray value="CountBehaviorCooking5InProgressOrBetter2625724741"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountBehaviorForaging5InProgressOrBetter903969518TechTreeCheat">
+        <Tooltip value=""/>
+        <OperandArray value="CountBehaviorForaging5InProgressOrBetter903969518TechTreeCheat"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountBehaviorHeavyIronBreastplateInProgressOrBetterAtUnitCountBehaviorHeavyTowerShieldInProgressOrBetterAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="CountBehaviorHeavyIronBreastplateInProgressOrBetterAtUnit"/>
+        <OperandArray value="CountBehaviorHeavyTowerShieldInProgressOrBetterAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountBehaviorOutpostGotBirdInProgressOrBetterAtUnit814322279Not2641820968CountBehaviorVeilofDarknessGeneralInProgressOrBetterAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="CountBehaviorOutpostGotBirdInProgressOrBetterAtUnit814322279"/>
+        <OperandArray value="Not2641820968CountBehaviorVeilofDarknessGeneralInProgressOrBetterAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountBehaviorRepeatingCrossbowInProgressOrBetterAtUnitCountBehaviorBearShamansShroudInProgressOrBetterAtUnit">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountBehaviorRepeatingCrossbowInProgressOrBetterAtUnit"/>
+        <OperandArray value="CountBehaviorBearShamansShroudInProgressOrBetterAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountBehaviorWatchTowerStorageInProgressOrBetterAtUnit3053736559TechTreeCheat">
+        <Tooltip value=""/>
+        <OperandArray value="CountBehaviorWatchTowerStorageInProgressOrBetterAtUnit3053736559TechTreeCheat"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountUnitRadiantGemInProgressOrBetterAtUnitCountUnitShadowstoneInProgressOrBetterAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="CountUnitRadiantGemInProgressOrBetterAtUnit"/>
+        <OperandArray value="CountUnitShadowstoneInProgressOrBetterAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountUnitRepeatingCrossbowInProgressOrBetterAtUnitCountUnitBearShamansShroudInProgressOrBetterAtUnit">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountUnitRepeatingCrossbowInProgressOrBetterAtUnit"/>
+        <OperandArray value="CountUnitBearShamansShroudInProgressOrBetterAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndGTE2500158815CountUnitLumberInProgressOrBetterAtUnit1GTE3715153190CountUnitStoneInProgressOrBetterAtUnit1GTE1626786172CountUnitIronOreInProgressOrBetterAtUnit11764370913LT3079143258CountUnitAutomatedDefenseTurretInProgressOrBetterCountBehaviorADTAllowedStacksInProgressOrBetterAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="GTE2500158815CountUnitLumberInProgressOrBetterAtUnit1"/>
+        <OperandArray value="GTE3715153190CountUnitStoneInProgressOrBetterAtUnit1"/>
+        <OperandArray value="GTE1626786172CountUnitIronOreInProgressOrBetterAtUnit11764370913"/>
+        <OperandArray value="LT3079143258CountUnitAutomatedDefenseTurretInProgressOrBetterCountBehaviorADTAllowedStacksInProgressOrBetterAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndGTE3573744135CountUnitLumberInProgressOrBetterAtUnit10GTE2984890790CountUnitStoneInProgressOrBetterAtUnit6">
+        <Tooltip value=""/>
+        <OperandArray value="GTE3573744135CountUnitLumberInProgressOrBetterAtUnit10"/>
+        <OperandArray value="GTE2984890790CountUnitStoneInProgressOrBetterAtUnit6"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndGTECountUnitLumberInProgressOrBetterAtUnit1GTECountUnitLeatherInProgressOrBetterAtUnit3CountBehaviorArtisanship25InProgressOrBetterAtUnitNotCountBehaviorArenaCombatantInProgressOrBetterAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="GTECountUnitLumberInProgressOrBetterAtUnit1"/>
+        <OperandArray value="GTECountUnitLeatherInProgressOrBetterAtUnit3"/>
+        <OperandArray value="CountBehaviorArtisanship25InProgressOrBetterAtUnit"/>
+        <OperandArray value="NotCountBehaviorArenaCombatantInProgressOrBetterAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndGTECountUnitLumberInProgressOrBetterAtUnit1GTECountUnitStoneInProgressOrBetterAtUnit2CountBehaviorArtisanship25InProgressOrBetterAtUnitNotCountBehaviorArenaCombatantInProgressOrBetterAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="GTECountUnitLumberInProgressOrBetterAtUnit1"/>
+        <OperandArray value="GTECountUnitStoneInProgressOrBetterAtUnit2"/>
+        <OperandArray value="CountBehaviorArtisanship25InProgressOrBetterAtUnit"/>
+        <OperandArray value="NotCountBehaviorArenaCombatantInProgressOrBetterAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndGTECountUnitLumberInProgressOrBetterAtUnit2GTECountUnitLeatherInProgressOrBetterAtUnit3NotCountBehaviorArenaCombatantInProgressOrBetterAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="GTECountUnitLumberInProgressOrBetterAtUnit2"/>
+        <OperandArray value="GTECountUnitLeatherInProgressOrBetterAtUnit3"/>
+        <OperandArray value="NotCountBehaviorArenaCombatantInProgressOrBetterAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndGTECountUnitLumberInProgressOrBetterAtUnit2GTECountUnitStoneInProgressOrBetterAtUnit2NotCountBehaviorArenaCombatantInProgressOrBetterAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="GTECountUnitLumberInProgressOrBetterAtUnit2"/>
+        <OperandArray value="GTECountUnitStoneInProgressOrBetterAtUnit2"/>
+        <OperandArray value="NotCountBehaviorArenaCombatantInProgressOrBetterAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndGTECountUnitLumberInProgressOrBetterAtUnit2GTESumCountUnitWoolInProgressOrBetterAtUnitCountUnitLeatherInProgressOrBetterAtUnit2CountBehaviorArtisanship25InProgressOrBetterAtUnitNotCountBehaviorArenaCombatantInProgressOrBetterAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="GTECountUnitLumberInProgressOrBetterAtUnit2"/>
+        <OperandArray value="GTESumCountUnitWoolInProgressOrBetterAtUnitCountUnitLeatherInProgressOrBetterAtUnit2"/>
+        <OperandArray value="CountBehaviorArtisanship25InProgressOrBetterAtUnit"/>
+        <OperandArray value="NotCountBehaviorArenaCombatantInProgressOrBetterAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndGTECountUnitLumberInProgressOrBetterAtUnit3GTESumCountUnitWoolInProgressOrBetterAtUnitCountUnitLeatherInProgressOrBetterAtUnit2NotCountBehaviorArenaCombatantInProgressOrBetterAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="GTECountUnitLumberInProgressOrBetterAtUnit3"/>
+        <OperandArray value="GTESumCountUnitWoolInProgressOrBetterAtUnitCountUnitLeatherInProgressOrBetterAtUnit2"/>
+        <OperandArray value="NotCountBehaviorArenaCombatantInProgressOrBetterAtUnit"/>
+    </CRequirementAnd>
+    <CRequirementCountBehavior id="CountBehaviorADTAllowedStacksInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="ADTAllowedStacks" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorArenaCombatantInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="ArenaCombatant" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementAnd id="AndOr3621697714GTECountUnitBeerBraisedPheasantInProgressOrBetterAtUnit1GTECountUnitGrilledWolfEntrecoteInProgressOrBetterAtUnit1GTECountUnitRoastedLambInProgressOrBetterAtUnit1GTECountUnitRoastedPheasantWithBerrySauceInProgressOrBetterAtUnit1GTECountUnitSmokedLambSirloinInProgressOrBetterAtUnit1GTECountUnitSpicedLambFeastInProgressOrBetterAtUnit1GTECountUnitWolfSteakInProgressOrBetterAtUnit1GTECountUnitBeerInProgressOrBetterAtUnit1GTECountUnitHandfulofBerriesInProgressOrBetterAtUnit1GTECountUnitRawLambInProgressOrBetterAtUnit1GTECountUnitRawPheasantInProgressOrBetterAtUnit1GTECountUnitRawWolfMeatInProgressOrBetterAtUnit1GTECountUnitRawStagMeatInProgressOrBetterAtUnit1GTECountUnitStagStewInProgressOrBetterAtUnit1GTECountUnitGiantSunfishInProgressOrBetterAtUnit1GTECountUnitSlipperyEelInProgressOrBetterAtUnit1GTECountUnitForestTroutInProgressOrBetterAtUnit1GTECountUnitHighlandGuppyInProgressOrBetterAtUnit1GTECountUnitAlbinoCavefishInProgressOrBetterAtUnit1GTECountUnitStripedLurkerInProgressOrBetterAtUnit1GTECountUnitJewelDanioInProgressOrBetterAtUnit1GTECountUnitWaterScorpionInProgressOrBetterAtUnit1GTECountUnitFireAmmoniteInProgressOrBetterAtUnit1">
+        <Tooltip value=""/>
+        <OperandArray value="Or3621697714GTECountUnitBeerBraisedPheasantInProgressOrBetterAtUnit1GTECountUnitGrilledWolfEntrecoteInProgressOrBetterAtUnit1GTECountUnitRoastedLambInProgressOrBetterAtUnit1GTECountUnitRoastedPheasantWithBerrySauceInProgressOrBetterAtUnit1GTECountUnitSmokedLambSirloinInProgressOrBetterAtUnit1GTECountUnitSpicedLambFeastInProgressOrBetterAtUnit1GTECountUnitWolfSteakInProgressOrBetterAtUnit1GTECountUnitBeerInProgressOrBetterAtUnit1GTECountUnitHandfulofBerriesInProgressOrBetterAtUnit1GTECountUnitRawLambInProgressOrBetterAtUnit1GTECountUnitRawPheasantInProgressOrBetterAtUnit1GTECountUnitRawWolfMeatInProgressOrBetterAtUnit1GTECountUnitRawStagMeatInProgressOrBetterAtUnit1GTECountUnitStagStewInProgressOrBetterAtUnit1GTECountUnitGiantSunfishInProgressOrBetterAtUnit1GTECountUnitSlipperyEelInProgressOrBetterAtUnit1GTECountUnitForestTroutInProgressOrBetterAtUnit1GTECountUnitHighlandGuppyInProgressOrBetterAtUnit1GTECountUnitAlbinoCavefishInProgressOrBetterAtUnit1GTECountUnitStripedLurkerInProgressOrBetterAtUnit1GTECountUnitJewelDanioInProgressOrBetterAtUnit1GTECountUnitWaterScorpionInProgressOrBetterAtUnit1GTECountUnitFireAmmoniteInProgressOrBetterAtUnit1"/>
+    </CRequirementAnd>
+    <CRequirementCountBehavior id="CountBehaviorAdrenalineRushReadyInProgressOrBetterAtUnit768849980">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="AdrenalineRushReady" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorArtisanKnowledgeDreadplateArmorInProgressOrBetter463194432TechTreeCheat">
+        <Count Link="ArtisanKnowledgeDreadplateArmor" State="InProgressOrBetter"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorArtisanKnowledgeOutlandishHeartpiercerInProgressOrBetter1864640120TechTreeCheat">
+        <Count Link="ArtisanKnowledgeOutlandishHeartpiercer" State="InProgressOrBetter"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorArtisanKnowledgeVenomousArbalestInProgressOrBetter1777812149TechTreeCheat">
+        <Count Link="ArtisanKnowledgeVenomousArbalest" State="InProgressOrBetter"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorArtisanship10InProgressOrBetter49372639">
+        <Count Link="Artisanship10" State="InProgressOrBetter"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorArtisanship15InProgressOrBetter366465547">
+        <Count Link="Artisanship15" State="InProgressOrBetter"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorArtisanship20InProgressOrBetter3764517242TechTreeCheat">
+        <Count Link="Artisanship20" State="InProgressOrBetter"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorArtisanship25InProgressOrBetter3384357290TechTreeCheat">
+        <Count Link="Artisanship25" State="InProgressOrBetter"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorArtisanship25InProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="Artisanship25" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorArtisanship5InProgressOrBetter957008387">
+        <Count Link="Artisanship5" State="InProgressOrBetter"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorBearShamansShroudInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="BearShamansShroud" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorCanBecomeGateInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="CanBecomeGate" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorCanBuildWatchTowerInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="CanBuildWatchTower" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorBarnetsMonumentInProgressOrBetterAtUnitTechTreeCheat">
+        <Tooltip value=""/>
+        <Count Link="BarnetsMonument" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorCampfireExpertInProgressOrBetterTechTreeCheat">
+        <Tooltip value=""/>
+        <Count Link="CampfireExpert" State="InProgressOrBetter"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorConjurersCharmInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="ConjurersCharm" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorConjurersCharmInProgressOrBetterAtUnitTechTreeCheat">
+        <Tooltip value=""/>
+        <Count Link="ConjurersCharm" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorCooking10InProgressOrBetter479621985">
+        <Count Link="Cooking10" State="InProgressOrBetter"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorCooking15InProgressOrBetter1732521956">
+        <Count Link="Cooking15" State="InProgressOrBetter"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorCooking15InProgressOrBetterAtUnitTechTreeCheat">
+        <Tooltip value=""/>
+        <Count Link="Cooking15" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorCooking20InProgressOrBetter4085972241TechTreeCheat">
+        <Count Link="Cooking20" State="InProgressOrBetter"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorCooking5InProgressOrBetter2625724741">
+        <Count Link="Cooking5" State="InProgressOrBetter"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorCookingInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="Cooking" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorCraftingInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="Crafting" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorDullEdgeInProgressOrBetterAtUnit1429808821">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="DullEdge" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorFishingInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="Fishing" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorForaging5InProgressOrBetter903969518TechTreeCheat">
+        <Count Link="Foraging5" State="InProgressOrBetter"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorFullAmmoInProgressOrBetterAtUnitTechTreeCheat">
+        <Tooltip value=""/>
+        <Count Link="FullAmmo" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorGuardianSpiritInProgressOrBetterAtUnitTechTreeCheat">
+        <Tooltip value=""/>
+        <Count Link="GuardianSpirit" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorHeavyIronBreastplateInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="HeavyIronBreastplate" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorHeavyTowerShieldInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="HeavyTowerShield" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorInitiativeInProgressOrBetterAtUnit1297694111TechTreeCheat">
+        <Count Link="Initiative" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorKoboldBotNormalInProgressOrBetterAtUnitTechTreeCheat">
+        <Tooltip value=""/>
+        <Count Link="KoboldBotNormal" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorKoboldCanEatInProgressOrBetterAtUnit2536377718TechTreeCheat">
+        <Count Link="KoboldCanEat" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorMining15InProgressOrBetter1080069951TechTreeCheat">
+        <Count Link="Mining15" State="InProgressOrBetter"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorMining20InProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="Mining20" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorMiningGoldSmartInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="MiningGoldSmart" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorNecromancersNecklaceInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="NecromancersNecklace" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorMiningStoneSmartInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="MiningStoneSmart" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorNecromancersNecklaceInProgressOrBetterAtUnit1167997277TechTreeCheat">
+        <Count Link="NecromancersNecklace" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorNecromancersNecklaceInProgressOrBetterAtUnitTechTreeCheat">
+        <Tooltip value=""/>
+        <Count Link="NecromancersNecklace" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorOrbofDarknessDeniedInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="OrbofDarknessDenied" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorOutpostGotBirdInProgressOrBetterAtUnit814322279">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="OutpostGotBird" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorOutpostHasLeatherInProgressOrBetterAtUnit449645907TechTreeCheat">
+        <Count Link="OutpostHasLeather" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorOutpostHasStoneInProgressOrBetterAtUnit349332834TechTreeCheat">
+        <Count Link="OutpostHasStone" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorOutpostHasWoolInProgressOrBetterAtUnit3916060807TechTreeCheat">
+        <Count Link="OutpostHasWool" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorRepeatingCrossbowInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="RepeatingCrossbow" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorResurrectingInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="Resurrecting" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorPickingBerriesSmartInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="PickingBerriesSmart" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorPickingHerbsSmartInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="PickingHerbsSmart" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorSalvageAllowedInProgressOrBetterAtUnit3676018472TechTreeCheat">
+        <Count Link="SalvageAllowed" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorShipmentAvailableInProgressOrBetterAtUnit1746049535TechTreeCheat">
+        <Count Link="ShipmentAvailable" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorShovelKnowledgeInProgressOrBetterTechTreeCheat">
+        <Tooltip value=""/>
+        <Count Link="ShovelKnowledge" State="InProgressOrBetter"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorSiphonLifeInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="SiphonLife" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorSleepingBagInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="SleepingBag" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorSmokedLambSirloinReqInProgressOrBetterAtUnitTechTreeCheat">
+        <Tooltip value=""/>
+        <Count Link="SmokedLambSirloinReq" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorSpellBookInProgressOrBetterAtUnitTechTreeCheat">
+        <Tooltip value=""/>
+        <Count Link="SpellBook" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorTamedInProgressOrBetterAtUnitTechTreeCheat">
+        <Tooltip value=""/>
+        <Count Link="Tamed" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorTavernWizardInProgressOrBetterAtUnitTechTreeCheat">
+        <Tooltip value=""/>
+        <Count Link="TavernWizard" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorTheMurlocketInProgressOrBetterAtUnitTechTreeCheat">
+        <Tooltip value=""/>
+        <Count Link="TheMurlocket" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorTrebuchetLoadedStoneInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="TrebuchetLoadedStone" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorUnlockingChestSmartInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="UnlockingChestSmart" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorVeilShrineActiveInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="VeilShrineActive" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorVeilofDarknessGeneralInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="VeilofDarknessGeneral" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorWatchTowerArcaneSanctumInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="WatchTowerArcaneSanctum" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorWatchTowerArmoryInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="WatchTowerArmory" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorWatchTowerFullAmmoInProgressOrBetterAtUnitTechTreeCheat">
+        <Tooltip value=""/>
+        <Count Link="WatchTowerFullAmmo" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorWatchTowerMurlocMilitiaInProgressOrBetterAtUnit2831665971">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="WatchTowerMurlocMilitia" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorWatchTowerStorageInProgressOrBetterAtUnit3053736559">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="WatchTowerStorage" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorWatchTowerStorageInProgressOrBetterAtUnit3053736559TechTreeCheat">
+        <Count Link="WatchTowerStorage" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorWatchTowerWarHornInProgressOrBetterAtUnit2634937426">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Count Link="WatchTowerWarHorn" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountUnit id="CountUnitAlbinoCavefishInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="AlbinoCavefish" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitAlias_BarracksCompleteOnly789532539TechTreeCheat">
+        <Count Unlock="WatchTowerBarracks"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitAutomatedDefenseTurretInProgressOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="AutomatedDefenseTurret" State="InProgressOrBetter"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitAlias_BarracksCompleteOnlyAtUnit">
+        <Count Unlock="WatchTowerBarracks"/>
+    </CRequirementCountUnit>
+    <CRequirementCountBehavior id="CountBehaviorWizardsTrinketInProgressOrBetterAtUnit3752717162TechTreeCheat">
+        <Count Link="ConjurersCharm" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountBehavior id="CountBehaviorWolfsbaneTitleInProgressOrBetter1243223104TechTreeCheat">
+        <Count Link="WolfsbaneTitle" State="InProgressOrBetter"/>
+    </CRequirementCountBehavior>
+    <CRequirementCountUnit id="CountUnitBearInProgressOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="Bear" State="InProgressOrBetter"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitBearShamansShroudInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="BearShamansShroud" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitDogInProgressOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="Dog" State="InProgressOrBetter"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitBeerBraisedPheasantInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="BeerBraisedPheasant" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitFireAmmoniteInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="FireAmmonite" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitFrostBearInProgressOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="FrostBear" State="InProgressOrBetter"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitForestTroutInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="ForestTrout" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitGiantSunfishInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="GiantSunfish" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitBeerInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="Beer" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitHighlandGuppyInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="HighlandGuppy" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitLumberPartsInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="LumberParts" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitLyoteInProgressOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="Lyote" State="InProgressOrBetter"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitGrilledWolfEntrecoteInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="GrilledWolfEntrecote" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitNightwispInProgressOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="Nightwisp" State="InProgressOrBetter"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitJewelDanioInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="JewelDanio" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitHandfulofBerriesInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="HandfulofBerries" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitRadiantGemInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="RadiantGem" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitRawStagMeatInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="RawStagMeat" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitRepeatingCrossbowInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="RepeatingCrossbow" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitRoastedLambInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="RoastedLamb" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitSlipperyEelInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="SlipperyEel" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitRawLambInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="RawLamb" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitRawPheasantInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="RawPheasant" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitRawWolfMeatInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="RawWolfMeat" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitRoastedPheasantWithBerrySauceInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="RoastedPheasantWithBerrySauce" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitShadowstoneInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="Shadowstone" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitStripedLurkerInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="StripedLurker" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitWaterScorpionInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="WaterScorpion" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitSmokedLambSirloinInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="SmokedLambSirloin" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitSpicedLambFeastInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="SpicedLambFeast" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitStagStewInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="StagStew" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUpgrade id="CountUpgradePetUpgradeCompanionshipCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="PetUpgradeCompanionship" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradePetUpgradeInspirationalMasterCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="PetUpgradeInspirationalMaster" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradePetUpgradeNaturalTenacityCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="PetUpgradeNaturalTenacity" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementEq id="Eq646987027CountBehaviorWatchTowerFullAmmoInProgressOrBetterAtUnitTechTreeCheat0">
+        <OperandArray index="0" value="CountBehaviorWatchTowerFullAmmoInProgressOrBetterAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementCountUpgrade id="CountUpgradePetUpgradePredatoryKnowledgeCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="PetUpgradePredatoryKnowledge" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementGTE id="GTE1626786172CountUnitIronOreInProgressOrBetterAtUnit11764370913">
+        <OperandArray index="0" value="CountUnitIronOreInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="11764370913"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTE2984890790CountUnitStoneInProgressOrBetterAtUnit6">
+        <OperandArray index="0" value="CountUnitStoneInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="6"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTE2500158815CountUnitLumberInProgressOrBetterAtUnit1">
+        <OperandArray index="0" value="CountUnitLumberInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTE3573744135CountUnitLumberInProgressOrBetterAtUnit10">
+        <OperandArray index="0" value="CountUnitLumberInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="10"/>
+    </CRequirementGTE>
+    <CRequirementCountUpgrade id="CountUpgradePetUpgradeThickHideCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="PetUpgradeThickHide" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementGTE id="GTE3715153190CountUnitStoneInProgressOrBetterAtUnit1">
+        <OperandArray index="0" value="CountUnitStoneInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementCountUpgrade id="CountUpgradePetUpgradeViciousnessCompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="PetUpgradeViciousness" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementEq id="Eq1660618275CountBehaviorOrbofDarknessDeniedInProgressOrBetterAtUnit0">
+        <OperandArray index="0" value="CountBehaviorOrbofDarknessDeniedInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementGT id="GT4279902525SumCountUnitDogInProgressOrBetterCountUnitLyoteInProgressOrBetterCountUnitBearInProgressOrBetterCountUnitFrostBearInProgressOrBetterCountUnitNightwispInProgressOrBetter0">
+        <OperandArray index="0" value="SumCountUnitDogInProgressOrBetterCountUnitLyoteInProgressOrBetterCountUnitBearInProgressOrBetterCountUnitFrostBearInProgressOrBetterCountUnitNightwispInProgressOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementGT>
+    <CRequirementGTE id="GTECountUnitFireAmmoniteInProgressOrBetterAtUnit1">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitFireAmmoniteInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementEq id="Eq3329464127CountBehaviorVeilShrineActiveInProgressOrBetterAtUnit0">
+        <OperandArray index="0" value="CountBehaviorVeilShrineActiveInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementGTE id="GTECountUnitForestTroutInProgressOrBetterAtUnit1">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitForestTroutInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTECountUnitAlbinoCavefishInProgressOrBetterAtUnit1">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitAlbinoCavefishInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTECountUnitGiantSunfishInProgressOrBetterAtUnit1">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitGiantSunfishInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTECountUnitHighlandGuppyInProgressOrBetterAtUnit1">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitHighlandGuppyInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementCountUnit id="CountUnitIronOreInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="IronOre" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitWolfSteakInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="WolfSteak" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitLeatherInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="Leather" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitLumberInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="Lumber" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementEq id="Eq646987027CountBehaviorFullAmmoInProgressOrBetterAtUnitTechTreeCheat0">
+        <OperandArray index="0" value="CountBehaviorFullAmmoInProgressOrBetterAtUnitTechTreeCheat"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementGT id="GT01">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="0"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGT>
+    <CRequirementGTE id="GTECountUnitJewelDanioInProgressOrBetterAtUnit1">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitJewelDanioInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTECountUnitSlipperyEelInProgressOrBetterAtUnit1">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitSlipperyEelInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTECountUnitBeerBraisedPheasantInProgressOrBetterAtUnit1">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitBeerBraisedPheasantInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTECountUnitBeerInProgressOrBetterAtUnit1">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitBeerInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTECountUnitGrilledWolfEntrecoteInProgressOrBetterAtUnit1">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitGrilledWolfEntrecoteInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTECountUnitHandfulofBerriesInProgressOrBetterAtUnit1">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitHandfulofBerriesInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTECountUnitRawStagMeatInProgressOrBetterAtUnit1">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitRawStagMeatInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTECountUnitLumberInProgressOrBetterAtUnit9">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitLumberInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="9"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTECountUnitRoastedLambInProgressOrBetterAtUnit1">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitRoastedLambInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTECountUnitStripedLurkerInProgressOrBetterAtUnit1">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitStripedLurkerInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTECountUnitRawLambInProgressOrBetterAtUnit1">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitRawLambInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTECountUnitRawPheasantInProgressOrBetterAtUnit1">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitRawPheasantInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTECountUnitWaterScorpionInProgressOrBetterAtUnit1">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitWaterScorpionInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTECountUnitRawWolfMeatInProgressOrBetterAtUnit1">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitRawWolfMeatInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTECountUnitRoastedPheasantWithBerrySauceInProgressOrBetterAtUnit1">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitRoastedPheasantWithBerrySauceInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTECountUnitSmokedLambSirloinInProgressOrBetterAtUnit1">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitSmokedLambSirloinInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTECountUnitSpicedLambFeastInProgressOrBetterAtUnit1">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitSpicedLambFeastInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementCountUnit id="CountUnitStoneInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="Stone" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementCountUnit id="CountUnitWoolInProgressOrBetterAtUnit">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value=""/>
+        <Count Link="Wool" State="InProgressOrBetterAtUnit"/>
+    </CRequirementCountUnit>
+    <CRequirementGTE id="GTECountUnitStagStewInProgressOrBetterAtUnit1">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitStagStewInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementLT id="LT3079143258CountUnitAutomatedDefenseTurretInProgressOrBetterCountBehaviorADTAllowedStacksInProgressOrBetterAtUnit">
+        <OperandArray index="0" value="CountUnitAutomatedDefenseTurretInProgressOrBetter"/>
+        <OperandArray index="1" value="CountBehaviorADTAllowedStacksInProgressOrBetterAtUnit"/>
+    </CRequirementLT>
+    <CRequirementNot id="Not158058704OrCountBehaviorTrebuchetLoadedStoneInProgressOrBetterAtUnit">
+        <OperandArray index="0" value="OrCountBehaviorTrebuchetLoadedStoneInProgressOrBetterAtUnit"/>
+    </CRequirementNot>
+    <CRequirementGTE id="GTECountUnitStoneInProgressOrBetterAtUnit9">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitStoneInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="9"/>
+    </CRequirementGTE>
+    <CRequirementNot id="Not1909066809CountBehaviorWatchTowerArmoryInProgressOrBetterAtUnit">
+        <OperandArray index="0" value="CountBehaviorWatchTowerArmoryInProgressOrBetterAtUnit"/>
+    </CRequirementNot>
+    <CRequirementGTE id="GTECountUnitWolfSteakInProgressOrBetterAtUnit1">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitWolfSteakInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementNot id="Not2641820968CountBehaviorVeilofDarknessGeneralInProgressOrBetterAtUnit">
+        <OperandArray index="0" value="CountBehaviorVeilofDarknessGeneralInProgressOrBetterAtUnit"/>
+    </CRequirementNot>
+    <CRequirementNot id="Not2382461100CountBehaviorWatchTowerArcaneSanctumInProgressOrBetterAtUnit">
+        <OperandArray index="0" value="CountBehaviorWatchTowerArcaneSanctumInProgressOrBetterAtUnit"/>
+    </CRequirementNot>
+    <CRequirementNot id="Not4287374710OrCountBehaviorMiningGoldSmartInProgressOrBetterAtUnitCountBehaviorMiningStoneSmartInProgressOrBetterAtUnitCountBehaviorPickingBerriesSmartInProgressOrBetterAtUnitCountBehaviorPickingHerbsSmartInProgressOrBetterAtUnitCountBehaviorUnlockingChestSmartInProgressOrBetterAtUnitCountBehaviorResurrectingInProgressOrBetterAtUnitCountBehaviorCraftingInProgressOrBetterAtUnitCountBehaviorCookingInProgressOrBetterAtUnitCountBehaviorSleepingBagInProgressOrBetterAtUnitCountBehaviorFishingInProgressOrBetterAtUnit">
+        <OperandArray index="0" value="OrCountBehaviorMiningGoldSmartInProgressOrBetterAtUnitCountBehaviorMiningStoneSmartInProgressOrBetterAtUnitCountBehaviorPickingBerriesSmartInProgressOrBetterAtUnitCountBehaviorPickingHerbsSmartInProgressOrBetterAtUnitCountBehaviorUnlockingChestSmartInProgressOrBetterAtUnitCountBehaviorResurrectingInProgressOrBetterAtUnitCountBehaviorCraftingInProgressOrBetterAtUnitCountBehaviorCookingInProgressOrBetterAtUnitCountBehaviorSleepingBagInProgressOrBetterAtUnitCountBehaviorFishingInProgressOrBetterAtUnit"/>
+    </CRequirementNot>
+    <CRequirementNot id="Not447609479CountBehaviorSiphonLifeInProgressOrBetterAtUnit">
+        <OperandArray index="0" value="CountBehaviorSiphonLifeInProgressOrBetterAtUnit"/>
+    </CRequirementNot>
+    <CRequirementGTE id="GTESumCountUnitLumberInProgressOrBetterAtUnitCountUnitLumberPartsInProgressOrBetterAtUnit1">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="SumCountUnitLumberInProgressOrBetterAtUnitCountUnitLumberPartsInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementNot id="NotOrCountBehaviorCookingInProgressOrBetterAtUnitCountBehaviorCraftingInProgressOrBetterAtUnit">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="OrCountBehaviorCookingInProgressOrBetterAtUnitCountBehaviorCraftingInProgressOrBetterAtUnit"/>
+    </CRequirementNot>
+    <CRequirementOr id="Or1764370913AndGTECountUnitLumberInProgressOrBetterAtUnit2GTECountUnitLeatherInProgressOrBetterAtUnit3NotCountBehaviorArenaCombatantInProgressOrBetterAtUnitAndGTECountUnitLumberInProgressOrBetterAtUnit1GTECountUnitLeatherInProgressOrBetterAtUnit3CountBehaviorArtisanship25InProgressOrBetterAtUnitNotCountBehaviorArenaCombatantInProgressOrBetterAtUnit">
+        <OperandArray value="AndGTECountUnitLumberInProgressOrBetterAtUnit2GTECountUnitLeatherInProgressOrBetterAtUnit3NotCountBehaviorArenaCombatantInProgressOrBetterAtUnit"/>
+        <OperandArray value="AndGTECountUnitLumberInProgressOrBetterAtUnit1GTECountUnitLeatherInProgressOrBetterAtUnit3CountBehaviorArtisanship25InProgressOrBetterAtUnitNotCountBehaviorArenaCombatantInProgressOrBetterAtUnit"/>
+    </CRequirementOr>
+    <CRequirementGTE id="GTE1764370913CountUnitIronOreInProgressOrBetterAtUnit1">
+        <OperandArray index="0" value="CountUnitIronOreInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementNot id="NotCountBehaviorArenaCombatantInProgressOrBetterAtUnit">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountBehaviorArenaCombatantInProgressOrBetterAtUnit"/>
+    </CRequirementNot>
+    <CRequirementOr id="Or1764370913AndGTECountUnitLumberInProgressOrBetterAtUnit2GTECountUnitStoneInProgressOrBetterAtUnit2NotCountBehaviorArenaCombatantInProgressOrBetterAtUnitAndGTECountUnitLumberInProgressOrBetterAtUnit1GTECountUnitStoneInProgressOrBetterAtUnit2CountBehaviorArtisanship25InProgressOrBetterAtUnitNotCountBehaviorArenaCombatantInProgressOrBetterAtUnit">
+        <OperandArray value="AndGTECountUnitLumberInProgressOrBetterAtUnit2GTECountUnitStoneInProgressOrBetterAtUnit2NotCountBehaviorArenaCombatantInProgressOrBetterAtUnit"/>
+        <OperandArray value="AndGTECountUnitLumberInProgressOrBetterAtUnit1GTECountUnitStoneInProgressOrBetterAtUnit2CountBehaviorArtisanship25InProgressOrBetterAtUnitNotCountBehaviorArenaCombatantInProgressOrBetterAtUnit"/>
+    </CRequirementOr>
+    <CRequirementGTE id="GTECountUnitLeatherInProgressOrBetterAtUnit1">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitLeatherInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTECountUnitLeatherInProgressOrBetterAtUnit3">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitLeatherInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="3"/>
+    </CRequirementGTE>
+    <CRequirementOr id="Or1764370913AndGTECountUnitLumberInProgressOrBetterAtUnit3GTESumCountUnitWoolInProgressOrBetterAtUnitCountUnitLeatherInProgressOrBetterAtUnit2NotCountBehaviorArenaCombatantInProgressOrBetterAtUnitAndGTECountUnitLumberInProgressOrBetterAtUnit2GTESumCountUnitWoolInProgressOrBetterAtUnitCountUnitLeatherInProgressOrBetterAtUnit2CountBehaviorArtisanship25InProgressOrBetterAtUnitNotCountBehaviorArenaCombatantInProgressOrBetterAtUnit">
+        <OperandArray value="AndGTECountUnitLumberInProgressOrBetterAtUnit3GTESumCountUnitWoolInProgressOrBetterAtUnitCountUnitLeatherInProgressOrBetterAtUnit2NotCountBehaviorArenaCombatantInProgressOrBetterAtUnit"/>
+        <OperandArray value="AndGTECountUnitLumberInProgressOrBetterAtUnit2GTESumCountUnitWoolInProgressOrBetterAtUnitCountUnitLeatherInProgressOrBetterAtUnit2CountBehaviorArtisanship25InProgressOrBetterAtUnitNotCountBehaviorArenaCombatantInProgressOrBetterAtUnit"/>
+    </CRequirementOr>
+    <CRequirementOr id="Or3316995077CountBehaviorSpellBookInProgressOrBetterAtUnitTechTreeCheatCountBehaviorConjurersCharmInProgressOrBetterAtUnitTechTreeCheatCountBehaviorNecromancersNecklaceInProgressOrBetterAtUnitTechTreeCheatCountBehaviorTheMurlocketInProgressOrBetterAtUnitTechTreeCheat">
+        <OperandArray value="CountBehaviorSpellBookInProgressOrBetterAtUnitTechTreeCheat"/>
+        <OperandArray value="CountBehaviorConjurersCharmInProgressOrBetterAtUnitTechTreeCheat"/>
+        <OperandArray value="CountBehaviorNecromancersNecklaceInProgressOrBetterAtUnitTechTreeCheat"/>
+        <OperandArray value="CountBehaviorTheMurlocketInProgressOrBetterAtUnitTechTreeCheat"/>
+    </CRequirementOr>
+    <CRequirementGTE id="GTECountUnitLumberInProgressOrBetterAtUnit1">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitLumberInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTECountUnitLumberInProgressOrBetterAtUnit2">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitLumberInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="2"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTECountUnitLumberInProgressOrBetterAtUnit3">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitLumberInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="3"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTECountUnitStoneInProgressOrBetterAtUnit1">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitStoneInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTECountUnitStoneInProgressOrBetterAtUnit2">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitStoneInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="2"/>
+    </CRequirementGTE>
+    <CRequirementGTE id="GTECountUnitWoolInProgressOrBetterAtUnit1">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountUnitWoolInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="1"/>
+    </CRequirementGTE>
+    <CRequirementOr id="OrCountBehaviorMiningGoldSmartInProgressOrBetterAtUnitCountBehaviorMiningStoneSmartInProgressOrBetterAtUnitCountBehaviorPickingBerriesSmartInProgressOrBetterAtUnitCountBehaviorPickingHerbsSmartInProgressOrBetterAtUnitCountBehaviorUnlockingChestSmartInProgressOrBetterAtUnitCountBehaviorResurrectingInProgressOrBetterAtUnitCountBehaviorCraftingInProgressOrBetterAtUnitCountBehaviorCookingInProgressOrBetterAtUnitCountBehaviorSleepingBagInProgressOrBetterAtUnitCountBehaviorFishingInProgressOrBetterAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="CountBehaviorMiningGoldSmartInProgressOrBetterAtUnit"/>
+        <OperandArray value="CountBehaviorMiningStoneSmartInProgressOrBetterAtUnit"/>
+        <OperandArray value="CountBehaviorPickingBerriesSmartInProgressOrBetterAtUnit"/>
+        <OperandArray value="CountBehaviorPickingHerbsSmartInProgressOrBetterAtUnit"/>
+        <OperandArray value="CountBehaviorUnlockingChestSmartInProgressOrBetterAtUnit"/>
+        <OperandArray value="CountBehaviorResurrectingInProgressOrBetterAtUnit"/>
+        <OperandArray value="CountBehaviorCraftingInProgressOrBetterAtUnit"/>
+        <OperandArray value="CountBehaviorCookingInProgressOrBetterAtUnit"/>
+        <OperandArray value="CountBehaviorSleepingBagInProgressOrBetterAtUnit"/>
+        <OperandArray value="CountBehaviorFishingInProgressOrBetterAtUnit"/>
+    </CRequirementOr>
+    <CRequirementOr id="OrCountBehaviorCookingInProgressOrBetterAtUnitCountBehaviorCraftingInProgressOrBetterAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="CountBehaviorCookingInProgressOrBetterAtUnit"/>
+        <OperandArray value="CountBehaviorCraftingInProgressOrBetterAtUnit"/>
+    </CRequirementOr>
+    <CRequirementOr id="OrCountBehaviorTrebuchetLoadedStoneInProgressOrBetterAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="CountBehaviorTrebuchetLoadedStoneInProgressOrBetterAtUnit"/>
+    </CRequirementOr>
+    <CRequirementOr id="Or1732521956CountBehaviorSmokedLambSirloinReqInProgressOrBetterAtUnitTechTreeCheatCountBehaviorCooking15InProgressOrBetterAtUnitTechTreeCheat">
+        <OperandArray value="CountBehaviorSmokedLambSirloinReqInProgressOrBetterAtUnitTechTreeCheat"/>
+        <OperandArray value="CountBehaviorCooking15InProgressOrBetterAtUnitTechTreeCheat"/>
+    </CRequirementOr>
+    <CRequirementOr id="Or299854450CountBehaviorTavernWizardInProgressOrBetterAtUnitTechTreeCheatCountBehaviorKoboldBotNormalInProgressOrBetterAtUnitTechTreeCheat">
+        <OperandArray value="CountBehaviorTavernWizardInProgressOrBetterAtUnitTechTreeCheat"/>
+        <OperandArray value="CountBehaviorKoboldBotNormalInProgressOrBetterAtUnitTechTreeCheat"/>
+    </CRequirementOr>
+    <CRequirementSum id="SumCountUnitDogInProgressOrBetterCountUnitLyoteInProgressOrBetterCountUnitBearInProgressOrBetterCountUnitFrostBearInProgressOrBetterCountUnitNightwispInProgressOrBetter">
+        <Tooltip value=""/>
+        <OperandArray value="CountUnitDogInProgressOrBetter"/>
+        <OperandArray value="CountUnitLyoteInProgressOrBetter"/>
+        <OperandArray value="CountUnitBearInProgressOrBetter"/>
+        <OperandArray value="CountUnitFrostBearInProgressOrBetter"/>
+        <OperandArray value="CountUnitNightwispInProgressOrBetter"/>
+    </CRequirementSum>
+    <CRequirementGTE id="GTESumCountUnitWoolInProgressOrBetterAtUnitCountUnitLeatherInProgressOrBetterAtUnit2">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="SumCountUnitWoolInProgressOrBetterAtUnitCountUnitLeatherInProgressOrBetterAtUnit"/>
+        <OperandArray index="1" value="2"/>
+    </CRequirementGTE>
+    <CRequirementNot id="Not751573913CountBehaviorGuardianSpiritInProgressOrBetterAtUnitTechTreeCheat">
+        <OperandArray index="0" value="CountBehaviorGuardianSpiritInProgressOrBetterAtUnitTechTreeCheat"/>
+    </CRequirementNot>
+    <CRequirementOr id="Or3621697714GTECountUnitBeerBraisedPheasantInProgressOrBetterAtUnit1GTECountUnitGrilledWolfEntrecoteInProgressOrBetterAtUnit1GTECountUnitRoastedLambInProgressOrBetterAtUnit1GTECountUnitRoastedPheasantWithBerrySauceInProgressOrBetterAtUnit1GTECountUnitSmokedLambSirloinInProgressOrBetterAtUnit1GTECountUnitSpicedLambFeastInProgressOrBetterAtUnit1GTECountUnitWolfSteakInProgressOrBetterAtUnit1GTECountUnitBeerInProgressOrBetterAtUnit1GTECountUnitHandfulofBerriesInProgressOrBetterAtUnit1GTECountUnitRawLambInProgressOrBetterAtUnit1GTECountUnitRawPheasantInProgressOrBetterAtUnit1GTECountUnitRawWolfMeatInProgressOrBetterAtUnit1GTECountUnitRawStagMeatInProgressOrBetterAtUnit1GTECountUnitStagStewInProgressOrBetterAtUnit1GTECountUnitGiantSunfishInProgressOrBetterAtUnit1GTECountUnitSlipperyEelInProgressOrBetterAtUnit1GTECountUnitForestTroutInProgressOrBetterAtUnit1GTECountUnitHighlandGuppyInProgressOrBetterAtUnit1GTECountUnitAlbinoCavefishInProgressOrBetterAtUnit1GTECountUnitStripedLurkerInProgressOrBetterAtUnit1GTECountUnitJewelDanioInProgressOrBetterAtUnit1GTECountUnitWaterScorpionInProgressOrBetterAtUnit1GTECountUnitFireAmmoniteInProgressOrBetterAtUnit1">
+        <OperandArray value="GTECountUnitBeerBraisedPheasantInProgressOrBetterAtUnit1"/>
+        <OperandArray value="GTECountUnitGrilledWolfEntrecoteInProgressOrBetterAtUnit1"/>
+        <OperandArray value="GTECountUnitRoastedLambInProgressOrBetterAtUnit1"/>
+        <OperandArray value="GTECountUnitRoastedPheasantWithBerrySauceInProgressOrBetterAtUnit1"/>
+        <OperandArray value="GTECountUnitSmokedLambSirloinInProgressOrBetterAtUnit1"/>
+        <OperandArray value="GTECountUnitSpicedLambFeastInProgressOrBetterAtUnit1"/>
+        <OperandArray value="GTECountUnitWolfSteakInProgressOrBetterAtUnit1"/>
+        <OperandArray value="GTECountUnitBeerInProgressOrBetterAtUnit1"/>
+        <OperandArray value="GTECountUnitHandfulofBerriesInProgressOrBetterAtUnit1"/>
+        <OperandArray value="GTECountUnitRawLambInProgressOrBetterAtUnit1"/>
+        <OperandArray value="GTECountUnitRawPheasantInProgressOrBetterAtUnit1"/>
+        <OperandArray value="GTECountUnitRawWolfMeatInProgressOrBetterAtUnit1"/>
+        <OperandArray value="GTECountUnitRawStagMeatInProgressOrBetterAtUnit1"/>
+        <OperandArray value="GTECountUnitStagStewInProgressOrBetterAtUnit1"/>
+        <OperandArray value="GTECountUnitGiantSunfishInProgressOrBetterAtUnit1"/>
+        <OperandArray value="GTECountUnitSlipperyEelInProgressOrBetterAtUnit1"/>
+        <OperandArray value="GTECountUnitForestTroutInProgressOrBetterAtUnit1"/>
+        <OperandArray value="GTECountUnitHighlandGuppyInProgressOrBetterAtUnit1"/>
+        <OperandArray value="GTECountUnitAlbinoCavefishInProgressOrBetterAtUnit1"/>
+        <OperandArray value="GTECountUnitStripedLurkerInProgressOrBetterAtUnit1"/>
+        <OperandArray value="GTECountUnitJewelDanioInProgressOrBetterAtUnit1"/>
+        <OperandArray value="GTECountUnitWaterScorpionInProgressOrBetterAtUnit1"/>
+        <OperandArray value="GTECountUnitFireAmmoniteInProgressOrBetterAtUnit1"/>
+    </CRequirementOr>
+    <CRequirementNot id="NotCountBehaviorCampfireExpertInProgressOrBetterTechTreeCheat">
+        <Tooltip value=""/>
+        <OperandArray index="0" value="CountBehaviorCampfireExpertInProgressOrBetterTechTreeCheat"/>
+    </CRequirementNot>
+    <CRequirementOr id="OrGTECountUnitLeatherInProgressOrBetterAtUnit1GTECountUnitWoolInProgressOrBetterAtUnit1">
+        <Tooltip value=""/>
+        <OperandArray value="GTECountUnitLeatherInProgressOrBetterAtUnit1"/>
+        <OperandArray value="GTECountUnitWoolInProgressOrBetterAtUnit1"/>
+    </CRequirementOr>
+    <CRequirementSum id="SumCountUnitLumberInProgressOrBetterAtUnitCountUnitLumberPartsInProgressOrBetterAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="CountUnitLumberInProgressOrBetterAtUnit"/>
+        <OperandArray value="CountUnitLumberPartsInProgressOrBetterAtUnit"/>
+    </CRequirementSum>
+    <CRequirementSum id="SumCountUnitWoolInProgressOrBetterAtUnitCountUnitLeatherInProgressOrBetterAtUnit">
+        <Tooltip value=""/>
+        <OperandArray value="CountUnitWoolInProgressOrBetterAtUnit"/>
+        <OperandArray value="CountUnitLeatherInProgressOrBetterAtUnit"/>
+    </CRequirementSum>
+</Catalog>

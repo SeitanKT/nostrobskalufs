@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CItemContainer id="PackHorseContainer">
+        <Slots Row="0" Column="0">
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+            <Classes value="Resource"/>
+        </Slots>
+        <Slots Row="0" Column="1">
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+            <Classes value="Resource"/>
+        </Slots>
+        <Slots Row="0" Column="2">
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+            <Classes value="Resource"/>
+        </Slots>
+        <Slots Row="0" Column="3">
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+            <Classes value="Resource"/>
+        </Slots>
+        <Slots Row="0" Column="4">
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+            <Classes value="Resource"/>
+        </Slots>
+        <Slots Row="0" Column="5">
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+            <Classes value="Resource"/>
+        </Slots>
+    </CItemContainer>
+    <CItemContainer id="ResourceContainer20">
+        <Slots Row="0" Column="0">
+            <Classes value="Resource"/>
+            <Classes value="MainHand"/>
+            <Classes value="Armor"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="0" Column="1">
+            <Classes value="Resource"/>
+            <Classes value="MainHand"/>
+            <Classes value="Armor"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="0" Column="2">
+            <Classes value="Resource"/>
+            <Classes value="MainHand"/>
+            <Classes value="Armor"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="0" Column="3">
+            <Classes value="Resource"/>
+            <Classes value="MainHand"/>
+            <Classes value="Armor"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="1" Column="0">
+            <Classes value="Resource"/>
+            <Classes value="MainHand"/>
+            <Classes value="Armor"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="1" Column="1">
+            <Classes value="Resource"/>
+            <Classes value="MainHand"/>
+            <Classes value="Armor"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="1" Column="2">
+            <Classes value="Resource"/>
+            <Classes value="MainHand"/>
+            <Classes value="Armor"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="1" Column="3">
+            <Classes value="Resource"/>
+            <Classes value="MainHand"/>
+            <Classes value="Armor"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="2" Column="0">
+            <Classes value="Resource"/>
+            <Classes value="MainHand"/>
+            <Classes value="Armor"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="2" Column="1">
+            <Classes value="Resource"/>
+            <Classes value="MainHand"/>
+            <Classes value="Armor"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="2" Column="2">
+            <Classes value="Resource"/>
+            <Classes value="MainHand"/>
+            <Classes value="Armor"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="2" Column="3">
+            <Classes value="Resource"/>
+            <Classes value="MainHand"/>
+            <Classes value="Armor"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="3" Column="0">
+            <Classes value="Resource"/>
+            <Classes value="MainHand"/>
+            <Classes value="Armor"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="3" Column="1">
+            <Classes value="Resource"/>
+            <Classes value="MainHand"/>
+            <Classes value="Armor"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="3" Column="2">
+            <Classes value="Resource"/>
+            <Classes value="MainHand"/>
+            <Classes value="Armor"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="3" Column="3">
+            <Classes value="Resource"/>
+            <Classes value="MainHand"/>
+            <Classes value="Armor"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="4" Column="0">
+            <Classes value="Resource"/>
+            <Classes value="MainHand"/>
+            <Classes value="Armor"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="4" Column="1">
+            <Classes value="Resource"/>
+            <Classes value="MainHand"/>
+            <Classes value="Armor"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="4" Column="2">
+            <Classes value="Resource"/>
+            <Classes value="MainHand"/>
+            <Classes value="Armor"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="4" Column="3">
+            <Classes value="Resource"/>
+            <Classes value="MainHand"/>
+            <Classes value="Armor"/>
+            <Classes value="Offhand"/>
+        </Slots>
+    </CItemContainer>
+    <CItemContainer id="ResourceContainerExtra">
+        <Slots Row="0" Column="0">
+            <Classes value="Resource"/>
+            <Classes value="MainHand"/>
+            <Classes value="Armor"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="0" Column="1">
+            <Classes value="Resource"/>
+            <Classes value="MainHand"/>
+            <Classes value="Armor"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="0" Column="2">
+            <Classes value="Resource"/>
+            <Classes value="MainHand"/>
+            <Classes value="Armor"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="0" Column="3">
+            <Classes value="Resource"/>
+            <Classes value="MainHand"/>
+            <Classes value="Armor"/>
+            <Classes value="Offhand"/>
+        </Slots>
+    </CItemContainer>
+    <CItemContainer id="MurlocPockets">
+        <Slots Row="0" Column="0">
+            <Classes value="Resource"/>
+        </Slots>
+        <Slots Row="0" Column="1">
+            <Classes value="Resource"/>
+        </Slots>
+        <Slots Row="0" Column="2">
+            <Classes value="Resource"/>
+        </Slots>
+        <Slots Row="0" Column="3">
+            <Classes value="Resource"/>
+        </Slots>
+    </CItemContainer>
+    <CItemContainer id="StorageOutpostContainer">
+        <Slots Row="0" Column="0">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="0" Column="1">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="0" Column="2">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="0" Column="3">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="0" Column="4">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="1" Column="0">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="1" Column="1">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="1" Column="2">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="1" Column="3">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="1" Column="4">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="2" Column="0">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="2" Column="1">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="2" Column="2">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="2" Column="3">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="2" Column="4">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="3" Column="0">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="3" Column="1">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="3" Column="2">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="3" Column="3">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="3" Column="4">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="4" Column="0">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="4" Column="1">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="4" Column="2">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="4" Column="3">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="4" Column="4">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+    </CItemContainer>
+    <CItemContainer id="WatchTowerContainer">
+        <Slots Row="0" Column="0">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="0" Column="1">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="0" Column="2">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="0" Column="3">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="0" Column="4">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="1" Column="0">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="1" Column="1">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="1" Column="2">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="1" Column="3">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="1" Column="4">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="2" Column="0">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="2" Column="1">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="2" Column="2">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="2" Column="3">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="2" Column="4">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="3" Column="0">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="3" Column="1">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="3" Column="2">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="3" Column="3">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="3" Column="4">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="4" Column="0">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="4" Column="1">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="4" Column="2">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="4" Column="3">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="4" Column="4">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="5" Column="0">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="5" Column="1">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="5" Column="2">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="5" Column="3">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="5" Column="4">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="6" Column="0">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="6" Column="1">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="6" Column="2">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="6" Column="3">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="6" Column="4">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="7" Column="0">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="7" Column="1">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="7" Column="2">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="7" Column="3">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="7" Column="4">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+    </CItemContainer>
+    <CItemContainer id="StorageOutpostContainerShipment">
+        <Slots Row="0" Column="0">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="0" Column="1">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="0" Column="2">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="0" Column="3">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="0" Column="4">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="1" Column="0">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="1" Column="1">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="1" Column="2">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="1" Column="3">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="1" Column="4">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="2" Column="0">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="2" Column="1">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="2" Column="2">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="2" Column="3">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="2" Column="4">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="3" Column="0">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="3" Column="1">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="3" Column="2">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="3" Column="3">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="3" Column="4">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="4" Column="0">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="4" Column="1">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="4" Column="2">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="4" Column="3">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+        <Slots Row="4" Column="4">
+            <Classes value="Resource"/>
+            <Classes value="Armor"/>
+            <Classes value="MainHand"/>
+            <Classes value="Offhand"/>
+        </Slots>
+    </CItemContainer>
+</Catalog>

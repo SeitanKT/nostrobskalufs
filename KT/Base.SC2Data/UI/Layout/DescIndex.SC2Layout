@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Desc>
+    <Include path="UI/Layout/HotS_UnitStatus.SC2Layout"/>
+    <Include path="UI/Layout/KoboldStatusFrame.SC2Layout"/>
+    <Include path="UI/Layout/IconFix.SC2Layout"/>
+</Desc>

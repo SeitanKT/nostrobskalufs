@@ -1,0 +1,1184 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CButton id="AcquireTarget">
+        <Icon value="Icons\Abilities\AdrenalineRushOff.dds"/>
+    </CButton>
+    <CButton id="AdrenalineRushOff">
+        <Icon value="Icons\Abilities\AdrenalineRushOff.dds"/>
+    </CButton>
+    <CButton id="Affliction">
+        <Icon value="Assets\Textures\btn-ability-zerg-explode-color.dds"/>
+    </CButton>
+    <CButton id="AlbinoCavefish">
+        <Icon value="Icons\Items\AlbinoCavefish.dds"/>
+    </CButton>
+    <CButton id="BeaverScavenger"/>
+    <CButton id="BeaverScavengerFinish"/>
+    <CButton id="BlindRainfish">
+        <Icon value="Icons\Items\BlindRainfish.dds"/>
+    </CButton>
+    <CButton id="CheatItem">
+        <Icon value="Assets\Textures\ui_tip_questionmark.dds"/>
+    </CButton>
+    <CButton id="CommonArmor">
+        <Icon value="Icons\Items\CommonArmor.dds"/>
+    </CButton>
+    <CButton id="CommonBuckler">
+        <Icon value="Icons\Items\CommonBuckler.dds"/>
+    </CButton>
+    <CButton id="CommonSword">
+        <Icon value="Icons\Items\CommonSword.dds"/>
+    </CButton>
+    <CButton id="CraftIronbarkArmor">
+        <Icon value="Icons\Items\IronbarkArmor.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="CraftTrebuchet">
+        <Icon value="Icons\Units\Trebuchet.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="CullTheHerd">
+        <Icon value="Assets\Textures\btn-ability-zerg-explode-color.dds"/>
+    </CButton>
+    <CButton id="CreatePalisadeGate">
+        <Icon value="Icons\Units\GateOpen.dds"/>
+    </CButton>
+    <CButton id="ForgeTwinThrowingAxes">
+        <Icon value="Icons\Items\TwinThrowingAxes.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="GiveAllItemsToTarget"/>
+    <CButton id="IronbarkArmor">
+        <Icon value="Icons\Items\IronbarkArmor.dds"/>
+    </CButton>
+    <CButton id="Ballista">
+        <Icon value="Icons\AutomatedDefenseTurret.dds"/>
+    </CButton>
+    <CButton id="OffhandBlockedHelper">
+        <Icon value="Icons\Abilities\EquipmentOffHandDisabled.dds"/>
+    </CButton>
+    <CButton id="PalisadeGateClose">
+        <Icon value="Icons\Units\GateClosed.dds"/>
+        <AlertIcon value="Assets\Textures\btn-building-terran-supplydepotlowered.dds"/>
+    </CButton>
+    <CButton id="PackTrebuchet">
+        <Icon value="Icons\Abilities\WatchTowerStorage.dds"/>
+    </CButton>
+    <CButton id="PalisadeGateOpen">
+        <Icon value="Icons\Units\GateOpen.dds"/>
+        <AlertIcon value="Assets\Textures\btn-building-terran-supplydepot.dds"/>
+    </CButton>
+    <CButton id="ResumeAI"/>
+    <CButton id="TwinThrowingAxes">
+        <Icon value="Icons\Items\TwinThrowingAxes.dds"/>
+    </CButton>
+    <CButton id="BeaverPen">
+        <Icon value="Icons\Units\Beaver.dds"/>
+    </CButton>
+    <CButton id="WatchTowerRally">
+        <Icon value="Assets\Textures\btn-ability-terran-setrallypoint.dds"/>
+        <AlertIcon value="Assets\Textures\btn-ability-terran-setrallypoint.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+        <TintRacially value="1"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="TrebuchetPacked">
+        <Icon value="Icons\Abilities\WatchTowerStorage.dds"/>
+    </CButton>
+    <CButton id="WatchTowerArmory">
+        <Icon value="Icons\Abilities\WatchTowerArmory.dds"/>
+    </CButton>
+    <CButton id="HeavyJavelin">
+        <Icon value="PerkIcons\PerkSharp.dds"/>
+    </CButton>
+    <CButton id="TunnelerCrew">
+        <Icon value="PerkIcons\PerkExcavating.dds"/>
+    </CButton>
+    <CButton id="WarHorn">
+        <Icon value="Icons\Abilities\WatchTowerWarHorn.dds"/>
+    </CButton>
+    <CButton id="ConstructFortress">
+        <Icon value="Icons\Units\LorenorWatchTower.dds"/>
+    </CButton>
+    <CButton id="Groundskeeper">
+        <Icon value="Icons\Shovel.dds"/>
+    </CButton>
+    <CButton id="ArcaneSanctum">
+        <Icon value="Icons\Abilities\WatchTowerArcaneSanctum.dds"/>
+    </CButton>
+    <CButton id="MunitionsSquad">
+        <Icon value="Icons\Abilities\WatchTowerMunitionSquad.dds"/>
+    </CButton>
+    <CButton id="WatchTowerMurlocMilitia">
+        <Icon value="Icons\Abilities\WatchTowerMilitia.dds"/>
+    </CButton>
+    <CButton id="CalltoArms">
+        <Icon value="Icons\Abilities\WatchTowerMilitia.dds"/>
+    </CButton>
+    <CButton id="TrebuchetLoadStone">
+        <Icon value="Icons\Stone.dds"/>
+    </CButton>
+    <CButton id="WatchTowerWarHorn">
+        <Icon value="Icons\Abilities\WatchTowerWarHorn.dds"/>
+    </CButton>
+    <CButton id="WatchTowerRefillAmmunition">
+        <Icon value="Icons\Abilities\WatchTowerRefillAmmo.dds"/>
+    </CButton>
+    <CButton id="Lookout">
+        <Icon value="Icons\Abilities\WatchTowerLookout.dds"/>
+    </CButton>
+    <CButton id="WatchTowerStorage">
+        <Icon value="Icons\Abilities\WatchTowerStorage.dds"/>
+    </CButton>
+    <CButton id="Storage">
+        <Icon value="Icons\Abilities\WatchTowerStorage.dds"/>
+    </CButton>
+    <CButton id="CraftFishingRod">
+        <Icon value="Icons\Items\FishingRod.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="CraftStormwizardsRobes">
+        <Icon value="Icons\Items\StormwizardsRobes.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="CraftRepeatingCrossbow">
+        <Icon value="Icons\Items\RepeatingCrossbow.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="WatchTowerUpgrades">
+        <Icon value="Icons\Abilities\WatchTowerUpgrade2.dds"/>
+    </CButton>
+    <CButton id="EpicFishingRod">
+        <Icon value="Icons\Items\EpicFishingRod.dds"/>
+    </CButton>
+    <CButton id="FireAmmonite">
+        <Icon value="Icons\Items\FireAmmonite.dds"/>
+    </CButton>
+    <CButton id="Canteen">
+        <Icon value="Icons\Abilities\WatchTowerCanteen.dds"/>
+    </CButton>
+    <CButton id="WatchTowerBarracks">
+        <Icon value="Icons\Abilities\WatchTowerBarracks.dds"/>
+    </CButton>
+    <CButton id="StructuralReinforcement">
+        <Icon value="Icons\Abilities\WatchTowerReinforce.dds"/>
+    </CButton>
+    <CButton id="KoboldFireworks">
+        <Icon value="Icons\Items\Fireworks.dds"/>
+    </CButton>
+    <CButton id="LumberParts">
+        <Icon value="Icons\Items\LumberParts.dds"/>
+    </CButton>
+    <CButton id="MurlocTreat">
+        <Icon value="Icons\Items\MurlocTreat.dds"/>
+    </CButton>
+    <CButton id="Nightcrawler">
+        <Icon value="Icons\Items\Nightcrawler.dds"/>
+    </CButton>
+    <CButton id="StormwizardsRobes">
+        <Icon value="Icons\Items\StormwizardsRobes.dds"/>
+        <HotkeyAlias value="Lumber"/>
+    </CButton>
+    <CButton id="Infirmary">
+        <Icon value="Icons\Abilities\WatchTowerInfirmary.dds"/>
+    </CButton>
+    <CButton id="TheMurlocket">
+        <Icon value="Icons\Items\TheMurlocket.dds"/>
+    </CButton>
+    <CButton id="TigerGourami">
+        <Icon value="Icons\Items\TigerGourami.dds"/>
+    </CButton>
+    <CButton id="WatchTowerGarrison">
+        <Icon value="Icons\Abilities\WatchTowerGarrison.dds"/>
+    </CButton>
+    <CButton id="WaterScorpion">
+        <Icon value="Icons\Items\WaterScorpion.dds"/>
+    </CButton>
+    <CButton id="StripedLurker">
+        <Icon value="Icons\Items\StripedLurker.dds"/>
+    </CButton>
+    <CButton id="AncientArtifactFragment">
+        <Icon value="Icons\AncientRelic.dds"/>
+    </CButton>
+    <CButton id="Annihilate">
+        <Icon value="Assets\Textures\btn-ability-protoss-phasemine-zeratul.dds"/>
+    </CButton>
+    <CButton id="Antlers">
+        <Icon value="Icons\Items\Antlers.dds"/>
+    </CButton>
+    <CButton id="Candle">
+        <Icon value="Icons\Candle.dds"/>
+    </CButton>
+    <CButton id="CollectTrophyAntlers">
+        <Icon value="Icons\Items\Antlers.dds"/>
+    </CButton>
+    <CButton id="CookingStagStew">
+        <Icon value="Icons\Items\StagSoup.dds"/>
+    </CButton>
+    <CButton id="FishingRod">
+        <Icon value="Icons\Items\FishingRod.dds"/>
+    </CButton>
+    <CButton id="Palisade">
+        <Icon value="Icons\Units\GateClosed.dds"/>
+    </CButton>
+    <CButton id="CraftGravesingersClaw">
+        <Icon value="Icons\Items\GravesingersClaw.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="GravesingersRod">
+        <Icon value="Icons\Items\GravesingersClaw.dds"/>
+        <Tooltip value="Button/Tooltip/GravesingersClaw"/>
+    </CButton>
+    <CButton id="HighlandGuppy">
+        <Icon value="Icons\Items\HighlandGuppy.dds"/>
+    </CButton>
+    <CButton id="GiantSunfish">
+        <Icon value="Icons\Items\GiantSunfish.dds"/>
+        <HotkeyAlias value="Lumber"/>
+    </CButton>
+    <CButton id="RepeatingCrossbow">
+        <Icon value="Icons\Items\RepeatingCrossbow.dds"/>
+    </CButton>
+    <CButton id="SlipperyEel">
+        <Icon value="Icons\Items\SlipperyEel.dds"/>
+    </CButton>
+    <CButton id="StagStew">
+        <Icon value="Icons\Items\StagSoup.dds"/>
+    </CButton>
+    <CButton id="JewelDanio">
+        <Icon value="Icons\Items\JewelDanio.dds"/>
+    </CButton>
+    <CButton id="TheKingsSpeech">
+        <Icon value="Icons\BearBite.dds"/>
+    </CButton>
+    <CButton id="ConstructAutomatedDefenseTurret">
+        <Icon value="Icons\Units\ADT.dds"/>
+    </CButton>
+    <CButton id="EmpoweredLightning">
+        <Icon value="Assets\Textures\btn-ability-protoss-blink-color.dds"/>
+    </CButton>
+    <CButton id="ArcaneEruption">
+        <Icon value="Assets\Textures\btn-ability-protoss-blink-color.dds"/>
+    </CButton>
+    <CButton id="CelestialOrb">
+        <Icon value="Icons\Items\CelestialOrb.dds"/>
+    </CButton>
+    <CButton id="CraftArmor">
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Icons\EquipmentArmor.dds"/>
+        <HotkeyAlias value="Lumber"/>
+    </CButton>
+    <CButton id="CraftCelestialOrb">
+        <Icon value="Icons\Items\CelestialOrb.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="CraftWarlocksVestments">
+        <Icon value="Icons\Items\WarlocksVestments.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="CraftMasterRangersMaille">
+        <Icon value="Icons\Items\HighRangersChainmail.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="ForgeMainHand">
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Icons\EquipmentMainHand.dds"/>
+        <HotkeyAlias value="Lumber"/>
+    </CButton>
+    <CButton id="CraftMainHand">
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Icons\EquipmentMainHand.dds"/>
+        <HotkeyAlias value="Lumber"/>
+    </CButton>
+    <CButton id="ForgeOffhand">
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Icons\EquipmentOffHand.dds"/>
+        <HotkeyAlias value="Lumber"/>
+    </CButton>
+    <CButton id="CraftOffhand">
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Icons\EquipmentOffHand.dds"/>
+        <HotkeyAlias value="Lumber"/>
+    </CButton>
+    <CButton id="ForgeLiquidatorSpellblade">
+        <Icon value="Icons\Items\LiquidatorSpellblade.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="MasterRangersMaille">
+        <Icon value="Icons\Items\HighRangersChainmail.dds"/>
+    </CButton>
+    <CButton id="ForgeArmor">
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Icons\EquipmentArmor.dds"/>
+        <HotkeyAlias value="Lumber"/>
+    </CButton>
+    <CButton id="InvestigateShrine">
+        <Icon value="PerkIcons\PerkBudgetMage.dds"/>
+    </CButton>
+    <CButton id="BerserkersBattleAxe">
+        <Icon value="Icons\Axe.dds"/>
+    </CButton>
+    <CButton id="Barterer">
+        <Icon value="Icons\ThickHide.dds"/>
+    </CButton>
+    <CButton id="BearPelt">
+        <Icon value="Icons\BearPelt.dds"/>
+    </CButton>
+    <CButton id="PetBear">
+        <Icon value="Icons\Units\Bear.dds"/>
+    </CButton>
+    <CButton id="BearShamansShroud">
+        <Icon value="Icons\BearShamanShoulders.dds"/>
+    </CButton>
+    <CButton id="Bloodcleaver">
+        <Icon value="Icons\Bloodcleaver.dds"/>
+    </CButton>
+    <CButton id="BloodthirstyPirateHat">
+        <Icon value="Icons\PirateHat.dds"/>
+    </CButton>
+    <CButton id="BoneTalisman">
+        <Icon value="Icons\BoneTalisman.dds"/>
+    </CButton>
+    <CButton id="Buy">
+        <TooltipFlags index="ShowName" value="0"/>
+        <Icon value="Icons\Buy.dds"/>
+    </CButton>
+    <CButton id="BuyBeer">
+        <Icon value="Icons\Beer.dds"/>
+    </CButton>
+    <CButton id="BuyInfusedLumber">
+        <Icon value="Icons\InfusedLumber.dds"/>
+    </CButton>
+    <CButton id="BuyIronOre">
+        <Icon value="Icons\IronOre.dds"/>
+    </CButton>
+    <CButton id="BuyLeather">
+        <Icon value="Icons\Leather.dds"/>
+    </CButton>
+    <CButton id="BuyLumber">
+        <Icon value="Icons\Lumber.dds"/>
+    </CButton>
+    <CButton id="BuyRadiantGem">
+        <Icon value="Icons\Radiant Gem.dds"/>
+    </CButton>
+    <CButton id="BuyShadowstone">
+        <Icon value="Icons\Shadowstone.dds"/>
+    </CButton>
+    <CButton id="BuyScrollofTransmutation">
+        <Icon value="Icons\ScrollofTransmutation.dds"/>
+    </CButton>
+    <CButton id="BuyStone">
+        <Icon value="Icons\Stone.dds"/>
+    </CButton>
+    <CButton id="BuyWool">
+        <Icon value="Icons\Alt Wool.dds"/>
+    </CButton>
+    <CButton id="Caravan">
+        <Icon value="Icons\ThickHide.dds"/>
+    </CButton>
+    <CButton id="CleansingDraught">
+        <Icon value="Icons\CleansingDraught.dds"/>
+    </CButton>
+    <CButton id="CollectTrophyBoneTalisman">
+        <Icon value="Icons\BoneTalisman.dds"/>
+    </CButton>
+    <CButton id="CollectTrophyTrollNoseBone">
+        <Icon value="Icons\TrollNoseBone.dds"/>
+    </CButton>
+    <CButton id="CollectTrophyWhiteBearFang">
+        <Icon value="Icons\WhiteBearFang.dds"/>
+        <HotkeyAlias value=""/>
+    </CButton>
+    <CButton id="Companionship">
+        <Icon value="Icons\Companionship.dds"/>
+    </CButton>
+    <CButton id="ConstructLorenorStatue">
+        <Icon value="Icons\Units\BuilderStatue.dds"/>
+    </CButton>
+    <CButton id="CookingCleansingDraught">
+        <Icon value="Icons\CleansingDraught.dds"/>
+    </CButton>
+    <CButton id="ConstructHuntersLodge">
+        <Icon value="Icons\Units\HuntersLodge.dds"/>
+    </CButton>
+    <CButton id="ConstructWorkbench">
+        <Icon value="Icons\Workbench.dds"/>
+        <HotkeyAlias value=""/>
+    </CButton>
+    <CButton id="CookingSmokedLambSirloin">
+        <Icon value="Icons\SmokedLambSirloin.dds"/>
+    </CButton>
+    <CButton id="CrabShipment">
+        <Icon value="Icons\Shipment.dds"/>
+    </CButton>
+    <CButton id="ForgeHeavyTowerShield">
+        <Icon value="Icons\HeavyTowerShield.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="CraftBearShamansShroud">
+        <Icon value="Icons\BearShamanShoulders.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="CraftElderWand">
+        <Icon value="Icons\ElderWand.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="CraftEnigmaticStaff">
+        <Icon value="Icons\EnigmaticStaff.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="ForgeIronShovel">
+        <Icon value="Icons\Shovel.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="CraftHuntsmansJacket">
+        <Icon value="Icons\DoubleFurJacket.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="CraftLightLeatherShield">
+        <Icon value="Icons\LightLeatherShield.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="CraftMysticsTribalShield">
+        <Icon value="Icons\TribalShield.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="CraftObedienceRod">
+        <Icon value="Icons\ObedienceRod.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="CraftSleepingBag">
+        <Icon value="Icons\SleepingBag.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="CraftWarmWoolTunic">
+        <Icon value="Icons\Alt Vest.dds"/>
+        <HotkeyAlias value=""/>
+    </CButton>
+    <CButton id="CraftVengefulMurlocSkull">
+        <Icon value="Icons\VengefulMurlocSkull.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="CraftVenomousArbalest">
+        <Icon value="Icons\VenomousArbalest.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="CraftLeatherCoat">
+        <Icon value="Icons\Alt Coat.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="CravensFishSticker">
+        <Icon value="Icons\CravensFishSticker.dds"/>
+    </CButton>
+    <CButton id="CurseofBurden">
+        <Icon value="Assets\Textures\btn-unit-zerg-feederling.dds"/>
+    </CButton>
+    <CButton id="DeathchillArmor">
+        <Tooltip value="Button/Tooltip/DreadplateArmor"/>
+        <Icon value="Icons\DeathchillArmor.dds"/>
+    </CButton>
+    <CButton id="DemonicSoulPrison">
+        <Icon value="Icons\DemonPrison.dds"/>
+    </CButton>
+    <CButton id="Demonward">
+        <Icon value="Icons\Demonward.dds"/>
+    </CButton>
+    <CButton id="DomesticatedSheep">
+        <Icon value="Icons\Sheep.dds"/>
+    </CButton>
+    <CButton id="DouseFire">
+        <Icon value="Icons\Soaked.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="DraughtofDecay">
+        <Icon value="Icons\DraughtDecay.dds"/>
+    </CButton>
+    <CButton id="DreadHowl">
+        <Icon value="Assets\Textures\btn-ability-zerg-corruption_multi.dds"/>
+    </CButton>
+    <CButton id="DullPickaxe">
+        <Icon value="Icons\Alt Pick.dds"/>
+    </CButton>
+    <CButton id="Eatasnack">
+        <Icon value="Icons\FastFood.dds"/>
+    </CButton>
+    <CButton id="ElderWand">
+        <Icon value="Icons\ElderWand.dds"/>
+    </CButton>
+    <CButton id="EnigmaticStaff">
+        <Icon value="Icons\EnigmaticStaff.dds"/>
+    </CButton>
+    <CButton id="EquipMurloc">
+        <Icon value="Icons\Shipment.dds"/>
+    </CButton>
+    <CButton id="FelFireTorch">
+        <Icon value="Icons\Items\FelFireTorch.dds"/>
+    </CButton>
+    <CButton id="Firestorm">
+        <Icon value="Assets\Textures\btn-tips-walloffire.dds"/>
+    </CButton>
+    <CButton id="FistBlade">
+        <Icon value="Icons\FistWeapon.dds"/>
+        <Tooltip value="Button/Tooltip/ViciouslySharpArmblade"/>
+    </CButton>
+    <CButton id="ForgeBerserkersBattleAxe">
+        <Icon value="Icons\Axe.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="ForgeDemonward">
+        <Icon value="Icons\Demonward.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="ForgeViciousJavelin">
+        <Icon value="Icons\AutomatedDefenseTurret2.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="ForgeGoldenPolearm">
+        <Icon value="Icons\Items\RadiantBattlescythe.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="ForgeIronStuddedVest">
+        <Icon value="Icons\IronStuddedVest.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="ForgeDreadplateArmor">
+        <Icon value="Icons\DeathchillArmor.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="ForgeJudgmentGavel">
+        <Icon value="Icons\Items\JudgmentGavel.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="ForgeGoldenHauberk">
+        <Icon value="Icons\GoldenHauberk.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="ForgeOutlandishHeartpiercer">
+        <Icon value="Icons\OutlandishHeartpiercer.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="Fortified">
+        <Icon value="PerkIcons\PerkMasterCraftsman.dds"/>
+    </CButton>
+    <CButton id="PetFrostBear">
+        <Icon value="Icons\Units\FrostBear.dds"/>
+    </CButton>
+    <CButton id="PheasantBait">
+        <Icon value="Icons\HandfulofBerries.dds"/>
+    </CButton>
+    <CButton id="FrostBarrier">
+        <Icon value="Icons\FrostBarrier.dds"/>
+    </CButton>
+    <CButton id="FrostNeedle">
+        <Icon value="Icons\FrostNeedle.dds"/>
+    </CButton>
+    <CButton id="GoldenPolearm">
+        <Icon value="Icons\Items\RadiantBattlescythe.dds"/>
+    </CButton>
+    <CButton id="GarishGladiatorsGarb">
+        <Icon value="Icons\GarishGladiatorGarb.dds"/>
+    </CButton>
+    <CButton id="GuardianSpirit">
+        <Icon value="Icons\GuardianSpirit.dds"/>
+    </CButton>
+    <CButton id="HeavyTowerShield">
+        <Icon value="Icons\HeavyTowerShield.dds"/>
+    </CButton>
+    <CButton id="HuntingTrophies">
+        <Icon value="Icons\Trophy.dds"/>
+    </CButton>
+    <CButton id="HuntsmansJacket">
+        <Icon value="Icons\DoubleFurJacket.dds"/>
+    </CButton>
+    <CButton id="InfusedLumber">
+        <Icon value="Icons\InfusedLumber.dds"/>
+    </CButton>
+    <CButton id="InspirationalMaster">
+        <Icon value="Icons\InspirationalMaster.dds"/>
+    </CButton>
+    <CButton id="Inventory">
+        <Icon value="Icons\Shipment.dds"/>
+    </CButton>
+    <CButton id="InventoryMainHandEmpty">
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Icons\EquipmentMainHand.dds"/>
+        <HotkeyAlias value="Lumber"/>
+    </CButton>
+    <CButton id="IronShovel">
+        <Icon value="Icons\Shovel.dds"/>
+    </CButton>
+    <CButton id="IronStuddedVest">
+        <Icon value="Icons\IronStuddedVest.dds"/>
+    </CButton>
+    <CButton id="JudgmentGavel">
+        <Icon value="Icons\Items\JudgmentGavel.dds"/>
+    </CButton>
+    <CButton id="LearnAffliction">
+        <Icon value="Assets\Textures\btn-ability-zerg-explode-color.dds"/>
+    </CButton>
+    <CButton id="LearnGuardianSpirit">
+        <Icon value="Icons\GuardianSpirit.dds"/>
+    </CButton>
+    <CButton id="LearnShadowCloak">
+        <Icon value="Assets\Textures\btn-ability-protoss-permanentlycloaked-darktemplar.dds"/>
+    </CButton>
+    <CButton id="LightLeatherShield">
+        <Icon value="Icons\LightLeatherShield.dds"/>
+    </CButton>
+    <CButton id="LightsOut">
+        <Icon value="Icons\Frostbite.dds"/>
+    </CButton>
+    <CButton id="LiquidatorSpellblade">
+        <Icon value="Icons\Items\LiquidatorSpellblade.dds"/>
+    </CButton>
+    <CButton id="MagnificentChefsHat">
+        <Icon value="Icons\ChefsHat.dds"/>
+    </CButton>
+    <CButton id="LorenorStatue">
+        <Icon value="Icons\Units\BuilderStatue.dds"/>
+    </CButton>
+    <CButton id="MurlocDropoffPoint">
+        <Icon value="Assets\Textures\btn-ability-terran-setrallypoint.dds"/>
+    </CButton>
+    <CButton id="MurlocOrderChef">
+        <Icon value="Icons\Cooking.dds"/>
+    </CButton>
+    <CButton id="MurlocOrderDrop">
+        <Icon value="PerkIcons\PerkStorageMaster.dds"/>
+    </CButton>
+    <CButton id="MurlocOrderGatherLumber">
+        <Icon value="PerkIcons\PerkMasterCraftsman.dds"/>
+    </CButton>
+    <CButton id="MurlocOrderMineGold">
+        <Icon value="PerkIcons\PerkGoldenHands.dds"/>
+    </CButton>
+    <CButton id="MurlocOrderMineStone">
+        <Icon value="PerkIcons\PerkExcavating.dds"/>
+    </CButton>
+    <CButton id="MurlocOrderPickBerries">
+        <Icon value="PerkIcons\PerkNaturalForager.dds"/>
+    </CButton>
+    <CButton id="MurlocOrderPickHerbs">
+        <Icon value="PerkIcons\PerkHerbalist.dds"/>
+    </CButton>
+    <CButton id="MurlocOrderReturn">
+        <Icon value="PerkIcons\PerkScholar.dds"/>
+    </CButton>
+    <CButton id="MurlocRush">
+        <Icon value="Icons\Beer.dds"/>
+    </CButton>
+    <CButton id="MurlocSkull">
+        <Icon value="Icons\MurlocSkull.dds"/>
+    </CButton>
+    <CButton id="MurlocSkullFragment">
+        <Icon value="Icons\SkullFragment.dds"/>
+    </CButton>
+    <CButton id="MurlocStop">
+        <Icon value="Assets\Textures\btn-command-stop.dds"/>
+        <AlertIcon value="Assets\Textures\btn-command-stop.dds"/>
+        <EditorCategories value="Race:Neutral"/>
+        <TintRacially value="1"/>
+        <Universal value="1"/>
+    </CButton>
+    <CButton id="MysteriousArcaneRitual">
+        <Icon value="Assets\Textures\btn-ability-protoss-blink-color.dds"/>
+    </CButton>
+    <CButton id="MysticsTribalShield">
+        <Icon value="Icons\TribalShield.dds"/>
+    </CButton>
+    <CButton id="NaturalTenacity">
+        <Icon value="Icons\NaturalTenacity.dds"/>
+    </CButton>
+    <CButton id="PetDirewolf">
+        <Icon value="Icons\PetMastery.dds"/>
+    </CButton>
+    <CButton id="NecromancersNecklace">
+        <Icon value="Icons\Items\NecromancersNecklace.dds"/>
+    </CButton>
+    <CButton id="PetWolf">
+        <Icon value="Icons\PetMastery.dds"/>
+    </CButton>
+    <CButton id="PreviousPage">
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Assets\Textures\ui_research_frame_available_arrow_left.dds"/>
+        <HotkeyAlias value="Lumber"/>
+    </CButton>
+    <CButton id="Nightwisp">
+        <Icon value="Icons\Nightwisp.dds"/>
+    </CButton>
+    <CButton id="ObedienceRod">
+        <Icon value="Icons\ObedienceRod.dds"/>
+    </CButton>
+    <CButton id="OutlandishHeartpiercer">
+        <Icon value="Icons\OutlandishHeartpiercer.dds"/>
+    </CButton>
+    <CButton id="PackHorseSlot">
+        <Icon value="Assets\Textures\btn-border-transportslot-empty.dds"/>
+    </CButton>
+    <CButton id="Permafrost">
+        <Icon value="Icons\FrostArmor.dds"/>
+    </CButton>
+    <CButton id="PetMastery">
+        <Icon value="Icons\BearStrength.dds"/>
+    </CButton>
+    <CButton id="PredatoryKnowledge">
+        <Icon value="Icons\PredatoryWisdom.dds"/>
+    </CButton>
+    <CButton id="Priorities">
+        <Icon value="Icons\MurlocSlave.dds"/>
+    </CButton>
+    <CButton id="PurchaseNightwisp">
+        <Icon value="Icons\Nightwisp.dds"/>
+        <HotkeyAlias value=""/>
+    </CButton>
+    <CButton id="RawStagMeat">
+        <Icon value="Icons\Items\StagMeat.dds"/>
+    </CButton>
+    <CButton id="ReapersHand">
+        <Icon value="Icons\ReapersHand.dds"/>
+    </CButton>
+    <CButton id="OrbofDarkness">
+        <Icon value="Icons\Items\OrbOfDarkness.dds"/>
+    </CButton>
+    <CButton id="RefillAmmunition">
+        <Icon value="Icons\AutomatedDefenseTurret3.dds"/>
+    </CButton>
+    <CButton id="RefreshCampfire">
+        <Icon value="PerkIcons\PerkMasterCraftsman.dds"/>
+    </CButton>
+    <CButton id="RefreshCampfireExpert">
+        <Icon value="PerkIcons\PerkMasterCraftsman.dds"/>
+    </CButton>
+    <CButton id="Run">
+        <Icon value="Icons\RunWalk.dds"/>
+    </CButton>
+    <CButton id="LockStorage">
+        <Icon value="Icons\LockStorage.dds"/>
+    </CButton>
+    <CButton id="Sageberry">
+        <Icon value="Icons\Guileberry.dds"/>
+    </CButton>
+    <CButton id="SalvageStructure">
+        <Icon value="Icons\Salvage.dds"/>
+    </CButton>
+    <CButton id="ScrollofTransmutation">
+        <Icon value="Icons\ScrollofTransmutation.dds"/>
+    </CButton>
+    <CButton id="Sell">
+        <TooltipFlags index="ShowName" value="0"/>
+        <Icon value="Icons\Sell.dds"/>
+    </CButton>
+    <CButton id="SellInfusedLumber">
+        <Icon value="Icons\InfusedLumber.dds"/>
+    </CButton>
+    <CButton id="SellIronOre">
+        <Icon value="Icons\IronOre.dds"/>
+    </CButton>
+    <CButton id="SellLeather">
+        <Icon value="Icons\Leather.dds"/>
+    </CButton>
+    <CButton id="SellLumber">
+        <Icon value="Icons\Lumber.dds"/>
+    </CButton>
+    <CButton id="SellRadiantGem">
+        <Icon value="Icons\Radiant Gem.dds"/>
+    </CButton>
+    <CButton id="SellShadowstone">
+        <Icon value="Icons\Shadowstone.dds"/>
+        <HotkeyAlias value=""/>
+    </CButton>
+    <CButton id="SellStone">
+        <Icon value="Icons\Stone.dds"/>
+        <HotkeyAlias value=""/>
+    </CButton>
+    <CButton id="SellWool">
+        <Icon value="Icons\Alt Wool.dds"/>
+    </CButton>
+    <CButton id="ShadowCloakOff">
+        <Icon value="Assets\Textures\btn-ability-protoss-permanentlycloaked-darktemplar.dds"/>
+    </CButton>
+    <CButton id="ShadowCloakOn">
+        <Icon value="Assets\Textures\btn-ability-protoss-permanentlycloaked-darktemplar.dds"/>
+    </CButton>
+    <CButton id="Sharpen">
+        <Icon value="PerkIcons\PerkSharp.dds"/>
+    </CButton>
+    <CButton id="GoldenHauberk">
+        <Icon value="Icons\GoldenHauberk.dds"/>
+    </CButton>
+    <CButton id="ShipmentArrived"/>
+    <CButton id="ShipmentBox">
+        <Icon value="Assets\Textures\btn-border-transportslot-empty.dds"/>
+    </CButton>
+    <CButton id="ShowArtisanGuildInvite">
+        <Icon value="Icons\GuildInvite.dds"/>
+    </CButton>
+    <CButton id="AdrenalineRush">
+        <Icon value="Icons\Abilities\AdrenalineRushOn.dds"/>
+    </CButton>
+    <CButton id="SkeletalFinger">
+        <Icon value="Icons\SkeletalFinger.dds"/>
+    </CButton>
+    <CButton id="SmokedLambSirloin">
+        <Icon value="Icons\SmokedLambSirloin.dds"/>
+    </CButton>
+    <CButton id="SpellbreakerArmor">
+        <Icon value="Icons\Items\SpellbreakerArmor.dds"/>
+    </CButton>
+    <CButton id="SpikedShadowstoneScutum">
+        <Icon value="Icons\SpikedScutum.dds"/>
+    </CButton>
+    <CButton id="BuySpellBook">
+        <Icon value="Icons\SpellBook.dds"/>
+    </CButton>
+    <CButton id="CookingWolfSteak">
+        <Icon value="Icons\Wolf Steak.dds"/>
+        <HotkeyAlias value=""/>
+    </CButton>
+    <CButton id="CookingGrilledWolfEntrecote">
+        <Icon value="Icons\GrilledWolfEntrecote.dds"/>
+    </CButton>
+    <CButton id="FrostArmor">
+        <Icon value="Icons\FrostArmor.dds"/>
+    </CButton>
+    <CButton id="LearnFrostArmor">
+        <Icon value="Icons\FrostArmor.dds"/>
+    </CButton>
+    <CButton id="LearnSiphonLife">
+        <Icon value="Icons\SiphonLife.dds"/>
+    </CButton>
+    <CButton id="MurlocDoomhammer">
+        <Icon value="Icons\MurlocDoomhammer.dds"/>
+        <HotkeyAlias value="Lumber"/>
+    </CButton>
+    <CButton id="SiphonLife">
+        <Icon value="Icons\SiphonLife.dds"/>
+    </CButton>
+    <CButton id="HireMurlocSlave">
+        <Icon value="Icons\MurlocSlave.dds"/>
+    </CButton>
+    <CButton id="GrilledWolfEntrecote">
+        <Icon value="Icons\GrilledWolfEntrecote.dds"/>
+    </CButton>
+    <CButton id="LearnNaturesGrace">
+        <Icon value="Icons\NaturesGrace.dds"/>
+    </CButton>
+    <CButton id="ConstructStorageHut">
+        <Icon value="Icons\StorageOutpost.dds"/>
+    </CButton>
+    <CButton id="ForgeIronBandedBuckler">
+        <Icon value="Icons\Shield.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="Cooking">
+        <Icon value="Icons\Cooking.dds"/>
+    </CButton>
+    <CButton id="CookingRoastedPheasantWithBerrySauce2">
+        <Icon value="Icons\RoastedPheasantWithBerrySauce.dds"/>
+    </CButton>
+    <CButton id="CookingSpicedLambFeast">
+        <Icon value="Icons\SpicedLambFeast.dds"/>
+    </CButton>
+    <CButton id="CookingBeerBraisedPheasant">
+        <Icon value="Icons\BeerBraisedPheasant.dds"/>
+    </CButton>
+    <CButton id="CraftRoughBlunderbuss">
+        <Icon value="Icons\Blunderbuss.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="CraftLantern">
+        <Icon value="Icons\Lantern.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="EmptyOffhandSlot">
+        <Icon value="Icons\EquipmentOffHand.dds"/>
+        <HotkeyAlias value="Lumber"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+    </CButton>
+    <CButton id="ForgeWolfsbane">
+        <Icon value="Icons\Wolfsbane.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="IronBandedBuckler">
+        <Icon value="Icons\Shield.dds"/>
+    </CButton>
+    <CButton id="LambentSunflower">
+        <Icon value="Icons\Lambent Sunflower.dds"/>
+    </CButton>
+    <CButton id="Lantern">
+        <Icon value="Icons\Lantern.dds"/>
+    </CButton>
+    <CButton id="LearnMineralTap">
+        <Icon value="Icons\MineralTap.dds"/>
+    </CButton>
+    <CButton id="LearnClairvoyance">
+        <Icon value="Icons\Clairvoyance.dds"/>
+    </CButton>
+    <CButton id="NaturesGrace">
+        <Icon value="Icons\NaturesGrace.dds"/>
+    </CButton>
+    <CButton id="MineralTap">
+        <Icon value="Icons\MineralTap.dds"/>
+    </CButton>
+    <CButton id="Clairvoyance">
+        <Icon value="Icons\Clairvoyance.dds"/>
+    </CButton>
+    <CButton id="RadiantGem">
+        <Icon value="Icons\Radiant Gem.dds"/>
+    </CButton>
+    <CButton id="RawWolfMeat">
+        <Icon value="Icons\Raw Wolf Meat.dds"/>
+    </CButton>
+    <CButton id="RoughBlunderbuss">
+        <Icon value="Icons\Blunderbuss.dds"/>
+    </CButton>
+    <CButton id="SendPackBeaver">
+        <Icon value="Icons\Units\Beaver.dds"/>
+    </CButton>
+    <CButton id="Shadowstone">
+        <Icon value="Icons\Shadowstone.dds"/>
+    </CButton>
+    <CButton id="SleepingBag">
+        <Icon value="Icons\SleepingBag.dds"/>
+    </CButton>
+    <CButton id="SpellBook">
+        <Icon value="Icons\SpellBook.dds"/>
+    </CButton>
+    <CButton id="SubmenuSpellBook">
+        <Icon value="Icons\SpellBook.dds"/>
+    </CButton>
+    <CButton id="SpicyHerbs">
+        <Icon value="Icons\SpicyHerbs2.dds"/>
+        <HotkeyAlias value="Lumber"/>
+    </CButton>
+    <CButton id="HandfulofBerries">
+        <Icon value="Icons\HandfulofBerries.dds"/>
+        <HotkeyAlias value="Lumber"/>
+    </CButton>
+    <CButton id="Beer">
+        <Icon value="Icons\Beer.dds"/>
+        <HotkeyAlias value="Lumber"/>
+    </CButton>
+    <CButton id="PlantTree">
+        <Icon value="Icons\PlantTree.dds"/>
+    </CButton>
+    <CButton id="ForgeHeavyIronBreastplate">
+        <Icon value="Icons\Alt Breastplate.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="CraftSturdyWoodenStick">
+        <Icon value="Icons\Alt Stick.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="ForgeIronWeapon">
+        <Icon value="Icons\PickaxeSharp.dds"/>
+        <HotkeyAlias value="CraftWarmWoolTunic"/>
+    </CButton>
+    <CButton id="SummonMinions">
+        <Icon value="Assets\Textures\btn-unit-zerg-roach.dds"/>
+    </CButton>
+    <CButton id="Synergy">
+        <Icon value="Icons\Synergy.dds"/>
+    </CButton>
+    <CButton id="TameBird">
+        <Icon value="Icons\Bird.dds"/>
+    </CButton>
+    <CButton id="ThickHide">
+        <Icon value="Icons\ThickHide.dds"/>
+        <HotkeyAlias value=""/>
+    </CButton>
+    <CButton id="ThickWoolTunic">
+        <Tooltip value="Button/Tooltip/WarmWoolTunic"/>
+        <Icon value="Icons\Alt Vest.dds"/>
+        <HotkeyAlias value="Lumber"/>
+    </CButton>
+    <CButton id="ToxicFrog">
+        <Icon value="Icons\Items\ToxicFrog.dds"/>
+    </CButton>
+    <CButton id="TradeCommonResources">
+        <Icon value="Icons\TradeCommon.dds"/>
+    </CButton>
+    <CButton id="TradeEfficiency">
+        <Icon value="Icons\ThickHide.dds"/>
+    </CButton>
+    <CButton id="TradeRareResources">
+        <Icon value="Icons\TradeRare.dds"/>
+    </CButton>
+    <CButton id="TravelingWizardsServices">
+        <Icon value="Icons\TravelingWizard.dds"/>
+        <HotkeyAlias value=""/>
+    </CButton>
+    <CButton id="InventoryArmorEmpty">
+        <Icon value="Icons\EquipmentArmor.dds"/>
+        <HotkeyAlias value="Lumber"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+    </CButton>
+    <CButton id="HeavyIronBreastplate">
+        <Icon value="Icons\Alt Breastplate.dds"/>
+        <HotkeyAlias value="Lumber"/>
+    </CButton>
+    <CButton id="RawPheasant">
+        <Icon value="Icons\RawPheasant.dds"/>
+        <HotkeyAlias value="Lumber"/>
+    </CButton>
+    <CButton id="RoastedPheasantWithBerrySauce">
+        <Icon value="Icons\RoastedPheasantWithBerrySauce.dds"/>
+        <HotkeyAlias value="Lumber"/>
+    </CButton>
+    <CButton id="SharpIronPickaxe">
+        <Icon value="Icons\PickaxeSharp.dds"/>
+        <HotkeyAlias value="Lumber"/>
+    </CButton>
+    <CButton id="NextPage">
+        <TooltipFlags index="ShowHotkey" value="0"/>
+        <Icon value="Assets\Textures\ui_research_frame_available_arrow_right.dds"/>
+        <HotkeyAlias value="Lumber"/>
+    </CButton>
+    <CButton id="LightTorch">
+        <Icon value="Icons\Torch.dds"/>
+        <HotkeyAlias value=""/>
+    </CButton>
+    <CButton id="SpicedLambFeast">
+        <Icon value="Icons\SpicedLambFeast.dds"/>
+    </CButton>
+    <CButton id="BeerBraisedPheasant">
+        <Icon value="Icons\BeerBraisedPheasant.dds"/>
+    </CButton>
+    <CButton id="Torch">
+        <Icon value="Icons\Torch.dds"/>
+        <HotkeyAlias value="Lumber"/>
+    </CButton>
+    <CButton id="SturdyWoodenStick">
+        <Icon value="Icons\Alt Stick.dds"/>
+        <HotkeyAlias value="Lumber"/>
+    </CButton>
+    <CButton id="ResourceBackpack">
+        <Icon value="Icons\Backpack.dds"/>
+        <TooltipFlags index="ShowHotkey" value="0"/>
+    </CButton>
+    <CButton id="BuildMenu">
+        <Icon value="Icons\Construct.dds"/>
+    </CButton>
+    <CButton id="ConstructSmithy">
+        <Icon value="Icons\Smithy.dds"/>
+    </CButton>
+    <CButton id="ConstructSpikeTrap">
+        <Icon value="Spike Trap.dds"/>
+    </CButton>
+    <CButton id="ConstructTavern">
+        <Icon value="Tavern.dds"/>
+    </CButton>
+    <CButton id="ConstructTent">
+        <Icon value="Tent.dds"/>
+    </CButton>
+    <CButton id="ConstructCampfire">
+        <Icon value="Campfire.dds"/>
+    </CButton>
+    <CButton id="ConstructFarm">
+        <Icon value="Farm.dds"/>
+    </CButton>
+    <CButton id="CookingRoastedLamb">
+        <Icon value="Icons\RoastedLamb.dds"/>
+    </CButton>
+    <CButton id="BuyRoastedLamb">
+        <Icon value="Icons\RoastedLamb.dds"/>
+    </CButton>
+    <CButton id="Gossip">
+        <Icon value="Icons\Gossip.dds"/>
+    </CButton>
+    <CButton id="RawLamb">
+        <Icon value="Icons\RawLamb.dds"/>
+        <HotkeyAlias value="Lumber"/>
+    </CButton>
+    <CButton id="LightCampfire">
+        <Icon value="PerkIcons\PerkFireMaster.dds"/>
+    </CButton>
+    <CButton id="Lumber">
+        <Icon value="Icons\Lumber.dds"/>
+    </CButton>
+    <CButton id="RoastedLamb">
+        <Icon value="Icons\RoastedLamb.dds"/>
+        <HotkeyAlias value="Lumber"/>
+    </CButton>
+    <CButton id="Stone">
+        <Icon value="Icons\Stone.dds"/>
+        <HotkeyAlias value="Lumber"/>
+    </CButton>
+    <CButton id="TrollNoseBone">
+        <Icon value="Icons\TrollNoseBone.dds"/>
+    </CButton>
+    <CButton id="ForestTrout">
+        <Icon value="Icons\Items\ForestTrout.dds"/>
+    </CButton>
+    <CButton id="VengefulMurlocSkull">
+        <Icon value="Icons\VengefulMurlocSkull.dds"/>
+    </CButton>
+    <CButton id="VenomousArbalest">
+        <Icon value="Icons\VenomousArbalest.dds"/>
+    </CButton>
+    <CButton id="ViciousJavelin">
+        <Icon value="Icons\AutomatedDefenseTurret2.dds"/>
+    </CButton>
+    <CButton id="Viciousness">
+        <Icon value="Icons\Viciousness.dds"/>
+    </CButton>
+    <CButton id="Walk">
+        <Icon value="Icons\Walk.dds"/>
+        <HotkeyAlias value=""/>
+    </CButton>
+    <CButton id="UnlockStorage">
+        <Icon value="Icons\UnlockStorage.dds"/>
+        <HotkeyAlias value=""/>
+    </CButton>
+    <CButton id="WarlocksVestments">
+        <Icon value="Icons\Items\WarlocksVestments.dds"/>
+    </CButton>
+    <CButton id="WarlordSpikes">
+        <Icon value="Icons\GleamingSpear.dds"/>
+    </CButton>
+    <CButton id="WarmFurCoat">
+        <Icon value="Icons\Alt Coat.dds"/>
+        <HotkeyAlias value="Lumber"/>
+        <Tooltip value="Button/Tooltip/LeatherCoat"/>
+    </CButton>
+    <CButton id="WhirlingBlades">
+        <Icon value="Icons\FistWeapon.dds"/>
+    </CButton>
+    <CButton id="Whirlwind">
+        <Icon value="Icons\Units\Vrykul.dds"/>
+    </CButton>
+    <CButton id="WhiteBearFang">
+        <Icon value="Icons\WhiteBearFang.dds"/>
+    </CButton>
+    <CButton id="ConjurersCharm">
+        <Icon value="Icons\ConjurerCharm.dds"/>
+    </CButton>
+    <CButton id="WolfSteak">
+        <Icon value="Icons\Wolf Steak.dds"/>
+    </CButton>
+    <CButton id="Wolfsbane">
+        <Icon value="Icons\Wolfsbane.dds"/>
+    </CButton>
+    <CButton id="Wool">
+        <Icon value="Icons\Alt Wool.dds"/>
+        <HotkeyAlias value="Lumber"/>
+    </CButton>
+    <CButton id="Leather">
+        <Icon value="Icons\Leather.dds"/>
+        <HotkeyAlias value="Lumber"/>
+    </CButton>
+    <CButton id="IronOre">
+        <Icon value="Icons\IronOre.dds"/>
+        <HotkeyAlias value="Lumber"/>
+    </CButton>
+    <CButton id="WoolPadding">
+        <Icon value="Icons\Alt Wool.dds"/>
+        <HotkeyAlias value=""/>
+    </CButton>
+    <CButton id="WorkWork">
+        <Icon value="Assets\Textures\btn-ability-protoss-blackhole-color.dds"/>
+    </CButton>
+    <CButton id="WorkWorkCancel">
+        <Icon value="Assets\Textures\btn-ability-protoss-blackhole-color.dds"/>
+    </CButton>
+</Catalog>

@@ -1,0 +1,1769 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CModel id="CommonSwordAddon">
+        <Model value="Assets\Models\CommonSword.m3"/>
+        <ScaleMax value="0.900000,0.900000,0.900000"/>
+        <ScaleMin value="0.900000,0.900000,0.900000"/>
+    </CModel>
+    <CModel id="FrostBeamImpact" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Other\PhysicsImpactSnowLarge\PhysicsImpactSnowLarge.m3"/>
+    </CModel>
+    <CModel id="CommonBucklerAddon">
+        <Model value="Assets\Models\CommonBuckler.m3"/>
+    </CModel>
+    <CModel id="CommonArmorAddon">
+        <Model value="Assets\Models\CommonArmor.m3"/>
+    </CModel>
+    <CModel id="PhysicsTestBase" parent="Building" Race="Terran">
+        <Model value="Assets\Models\Physics Test Tower Base.m3"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+        <SelectionLayer value="2"/>
+        <SelectionRadius value="0.800000"/>
+        <SquibTypeDefault value="Rock"/>
+    </CModel>
+    <CModel id="FrostBeam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Terran\HellionUpgradeBeam\HellionUpgradeBeam.m3"/>
+        <RadiusLoose value="1.000000"/>
+    </CModel>
+    <CModel id="Qancakes" parent="Unit">
+        <Model value="Assets\Models\Kobold.m3"/>
+        <EditorCategories value=""/>
+        <Flags index="VariationPreload" value="0"/>
+        <ScaleMax value="1.500000,1.500000,1.500000"/>
+        <ScaleMin value="1.500000,1.500000,1.500000"/>
+    </CModel>
+    <CModel id="QancakesCandle">
+        <Model value="Assets\Models\Candle 01.m3"/>
+        <Radius value="0.100000"/>
+        <ScaleMax value="3.000000,3.000000,3.000000"/>
+        <ScaleMin value="3.000000,3.000000,3.000000"/>
+        <SelectionRadius value="0.100000"/>
+    </CModel>
+    <CModel id="TrebuchetImpactIndicator" parent="PersistentSpellFX">
+        <Model value="Assets\Models\TrebuchetIndicator.m3"/>
+        <ScaleMax value="2.000000,2.000000,1.000000"/>
+        <ScaleMin value="2.000000,2.000000,1.000000"/>
+    </CModel>
+    <CModel id="IronbarkArmorTreeFX" parent="PersistentSpellFX">
+        <Model value="Assets\Models\IronbarkArmorTreeFX.m3"/>
+    </CModel>
+    <CModel id="KoboldDeathRagdoll" parent="UnitDeathRagdoll"/>
+    <CModel id="LootFXGreen" parent="FX">
+        <Model value="Assets\Models\LootFXOrange.m3"/>
+    </CModel>
+    <CModel id="LootFXRed" parent="FX">
+        <Model value="Assets\Models\LootFXRed.m3"/>
+    </CModel>
+    <CModel id="FireballImpactFX" parent="UnitDeath" Race="Terran">
+        <Model value="Assets\Effects\Zerg\YagdraFireBallMissileImpact\YagdraFireBallMissileImpact.m3"/>
+        <ScaleMax value="0.500000,0.500000,0.750000"/>
+        <ScaleMin value="0.500000,0.500000,0.750000"/>
+    </CModel>
+    <CModel id="FireballMissile" parent="MissileFX">
+        <Model value="Assets\Effects\Zerg\YagdraFireBallMissile\YagdraFireBallMissile.m3"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+    </CModel>
+    <CModel id="InfestedCivilian">
+        <SquibTypeDefault value="Flesh"/>
+        <Tipability value="0.500000"/>
+    </CModel>
+    <CModel id="LanternLit">
+        <Model value="Assets\Models\LanternLit.m3"/>
+        <ScaleMax value="1.000000,1.000000,0.900000"/>
+        <ScaleMin value="1.000000,1.000000,0.900000"/>
+    </CModel>
+    <CModel id="MurlocMilitiaBuckler">
+        <Model value="shield_worgen_b_01.m3"/>
+        <ScaleMax value="3.000000,3.000000,3.000000"/>
+        <ScaleMin value="3.000000,3.000000,3.000000"/>
+    </CModel>
+    <CModel id="MurlocMilitia" parent="Unit">
+        <Model value="Assets\Models\Murloc.m3"/>
+        <SelectionRadius value="1.000000"/>
+        <SquibTypeDefault value="Flesh"/>
+        <Tipability value="0.500000"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+        <TextureDeclares Prefix="MurlocBlue_Diffuse">
+            <Adaptions TriggerOnSubstring="MurlocBlue_Diffuse" Slot="main"/>
+        </TextureDeclares>
+    </CModel>
+    <CModel id="MurlocMilitiaJavelin">
+        <Model value="Assets\Models\ArrowWithTrail.m3"/>
+        <ScaleMax value="2.000000,1.250000,2.000000"/>
+        <ScaleMin value="2.000000,1.250000,2.000000"/>
+    </CModel>
+    <CModel id="PalisadeGateOpen" parent="Building" Race="Terran">
+        <Model value="Assets\Models\PalisadeGate.m3"/>
+        <Radius value="1.250000"/>
+        <ScaleMax value="0.250000,0.250000,0.230000"/>
+        <ScaleMin value="0.250000,0.250000,0.230000"/>
+        <SelectionLayer value="2"/>
+        <SelectionRadius value="2.750000"/>
+        <SquibTypeDefault value="Dirt"/>
+        <Tipability value="0.500000"/>
+    </CModel>
+    <CModel id="PalisadeGateClosed" parent="Building" Race="Terran">
+        <Model value="Assets\Models\PalisadeGate.m3"/>
+        <Radius value="1.250000"/>
+        <ScaleMax value="0.250000,0.250000,0.230000"/>
+        <ScaleMin value="0.250000,0.250000,0.230000"/>
+        <SelectionLayer value="2"/>
+        <SelectionRadius value="2.750000"/>
+        <SquibTypeDefault value="Dirt"/>
+        <Tipability value="0.500000"/>
+    </CModel>
+    <CModel id="LootFXGrey" parent="FX">
+        <Model value="Assets\Models\LootFXGrey.m3"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+    </CModel>
+    <CModel id="TrebuchetProjectile" parent="MissileFX">
+        <Model value="Assets\Doodads\ChiseledRock\ChiseledRock_00.m3"/>
+        <ScaleMax value="0.400000,0.400000,0.400000"/>
+        <ScaleMin value="0.400000,0.400000,0.400000"/>
+    </CModel>
+    <CModel id="Trebuchet" parent="Building" Race="Protoss">
+        <Model value="Assets\Models\Trebuchet.m3"/>
+        <ScaleMax value="3.000000,3.000000,3.000000"/>
+        <ScaleMin value="3.000000,3.000000,3.000000"/>
+        <SelectionRadius value="0.400000"/>
+        <SquibTypeDefault value="Dirt"/>
+        <SelectionLayer value="2"/>
+    </CModel>
+    <CModel id="StructureDeathDustMassive" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Other\PhysicsImpactRockMassive\PhysicsImpactRockMassive.m3"/>
+    </CModel>
+    <CModel id="Monstrosity" parent="Unit">
+        <Model value="Assets\Models\Monstrosity.m3"/>
+        <SelectionRadius value="0.650000"/>
+        <SquibTypeDefault value="Flesh"/>
+        <Tipability value="0.500000"/>
+    </CModel>
+    <CModel id="TombGuardian" parent="Unit">
+        <Model value="Assets\Models\TombGuardian.m3"/>
+        <SelectionRadius value="0.700000"/>
+        <SquibTypeDefault value="Flesh"/>
+        <Tipability value="0.500000"/>
+    </CModel>
+    <CModel id="PirateShoulders">
+        <Model value="Assets\Models\PirateShoulders.m3"/>
+    </CModel>
+    <CModel id="IronbarkArmorAddon">
+        <Model value="Assets\Models\IronbarkArmor.m3"/>
+    </CModel>
+    <CModel id="TwinThrowingAxeMissile" parent="MissileFX">
+        <Model value="Assets\Models\TwinThrowingAxes.m3"/>
+    </CModel>
+    <CModel id="Fortress" parent="Building" Race="Terran">
+        <Model value="Assets\Models\LorenorTowerBase.m3"/>
+        <AttachProps Id="Ref_Weapon">
+            <Keys index="SetA" value="0"/>
+        </AttachProps>
+        <AttachProps Id="Ref_Weapon 01">
+            <Keys index="SetA" value="0"/>
+        </AttachProps>
+        <AttachProps Id="Ref_Weapon 02">
+            <Keys index="SetA" value="0"/>
+        </AttachProps>
+        <ScaleMax value="1.800000,1.800000,1.800000"/>
+        <ScaleMin value="1.800000,1.800000,1.800000"/>
+        <SelectionLayer value="2"/>
+        <SelectionRadius value="1.750000"/>
+        <SquibTypeDefault value="Dirt"/>
+    </CModel>
+    <CModel id="WatchTowerCanteenAddon">
+        <Model value="Assets\Models\LorenorTowerCanteen.m3"/>
+    </CModel>
+    <CModel id="WatchTowerGarrisonLight">
+        <Model value="Assets\Models\LorenorTowerNightLight.m3"/>
+    </CModel>
+    <CModel id="WatchTowerNoMineAddon">
+        <Model value="Assets\Models\LorenorTowerMineRockAddon.m3"/>
+    </CModel>
+    <CModel id="WatchTowerMineAddon">
+        <Model value="Assets\Models\LorenorTowerTunnelingAddon.m3"/>
+    </CModel>
+    <CModel id="WatchTowerStorageAddon">
+        <Model value="Assets\Models\LorenorTowerStorageAddon.m3"/>
+    </CModel>
+    <CModel id="WatchTowerNoStorageRopeAddon">
+        <Model value="Assets\Models\LorenorTowerStorageRopeAddon.m3"/>
+    </CModel>
+    <CModel id="WatchTowerLookoutAddon">
+        <Model value="Assets\Models\LorenorTowerLookout.m3"/>
+    </CModel>
+    <CModel id="WatchTowerStructuralAddon">
+        <Model value="Assets\Models\LorenorTowerStructuralAddon.m3"/>
+    </CModel>
+    <CModel id="WinterHolidayTree" parent="Doodad">
+        <Model value="Assets\Doodads\HavenTree\HavenTree_01.m3"/>
+    </CModel>
+    <CModel id="WinterHat">
+        <Model value="helm_cloth_holiday_christmas_a_01_hum.m3"/>
+    </CModel>
+    <CModel id="DemonLordJaryxSpawnImpact2" parent="UnitDeath" Race="Terran">
+        <Model value="Assets\Effects\Terran\CerberusYamatoMissileImpact\CerberusYamatoMissileImpact.m3"/>
+        <ScaleMax value="5.000000,5.000000,5.000000"/>
+        <ScaleMin value="5.000000,5.000000,5.000000"/>
+    </CModel>
+    <CModel id="KoboldArmored" parent="Unit" Race="Terran">
+        <Model value="Assets\Models\Kobold.m3"/>
+        <Radius value="1.000000"/>
+        <ScaleMax value="1.450000,1.450000,1.450000"/>
+        <ScaleMin value="1.450000,1.450000,1.450000"/>
+        <SelectionRadius value="0.400000"/>
+        <ShadowRadius value="1.000000"/>
+        <SquibTypeDefault value="Metal"/>
+        <Tipability value="0.500000"/>
+        <LowQualityModel value="KoboldArmored"/>
+    </CModel>
+    <CModel id="MurlocRebelAddon">
+        <Model value="Assets\Effects\Protoss\DetonateMissile\DetonateMissile.m3"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+    </CModel>
+    <CModel id="BelShirCurtain">
+        <Occlusion value="None"/>
+    </CModel>
+    <CModel id="JewelDanioPersistent" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Other\HighYieldActiveCrystals\HighYieldActiveCrystals.m3"/>
+    </CModel>
+    <CModel id="LumberParts">
+        <Model value="Assets\Doodads\AiurUnderbrush\AiurUnderbrush_01.m3"/>
+        <EditorCategories value="Race:Neutral"/>
+        <Flags index="AutoUnload" value="1"/>
+        <Occlusion value="Show"/>
+        <SelectionLayer value="100"/>
+    </CModel>
+    <CModel id="Roach">
+        <SquibTypeDefault value="Metal"/>
+    </CModel>
+    <CModel id="ShakurasArchonStatue">
+        <Occlusion value="None"/>
+    </CModel>
+    <CModel id="Sheep">
+        <SquibTypeDefault value="Flesh"/>
+        <Tipability value="0.500000"/>
+    </CModel>
+    <CModel id="StructureDeathDustLarge" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Other\PhysicsImpactRockMassive\PhysicsImpactRockMassive.m3"/>
+    </CModel>
+    <CModel id="StructureDeathDustMedium" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Other\PhysicsImpactRockLarge\PhysicsImpactRockLarge.m3"/>
+    </CModel>
+    <CModel id="StructureDeathDustSmall" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Other\PhysicsImpactRockLarge\PhysicsImpactRockLarge.m3"/>
+    </CModel>
+    <CModel id="WhirlwindLaunchModel" parent="UnitDeath" Race="Terran">
+        <Model value="Assets\Effects\Protoss\TemporalFieldImpact\TemporalFieldImpact.m3"/>
+    </CModel>
+    <CModel id="EpicFishingRodAddon">
+        <Model value="Assets\Models\EpicFishingRod.m3"/>
+        <ScaleMax value="0.550000,0.550000,0.550000"/>
+        <ScaleMin value="0.550000,0.550000,0.550000"/>
+    </CModel>
+    <CModel id="EpicFishingLine" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Terran\HunterSeekerTargetingBeam\HunterSeekerTargetingBeam.m3"/>
+    </CModel>
+    <CModel id="StormwizardsRobesImpact" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Protoss\ImmortalMissileImpact\ImmortalMissileImpact.m3"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+    </CModel>
+    <CModel id="StormwizardsRobesBeam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\ProbeBeam\ProbeBeam.m3"/>
+        <RadiusLoose value="1.000000"/>
+    </CModel>
+    <CModel id="CelestialOrbImpact" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Protoss\PhotonCannonMissileImpact\PhotonCannonMissileImpact.m3"/>
+    </CModel>
+    <CModel id="CrossbowImpact" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Other\PhysicsImpactDustMed\PhysicsImpactDustMed.m3"/>
+    </CModel>
+    <CModel id="Nightcrawler">
+        <Model value="Assets\Units\Zerg\Larva\Larva.m3"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+    </CModel>
+    <CModel id="FishingSplashImpact" parent="UnitDeath" Race="Terran">
+        <Model value="Assets\Doodads\WaterSplashLight\WaterSplashLight.m3"/>
+        <Occlusion value="Show"/>
+    </CModel>
+    <CModel id="DeathlySickness">
+        <Model value="Assets\Effects\Zerg\DisablingCloudImpact\DisablingCloudImpact.m3"/>
+    </CModel>
+    <CModel id="Candle">
+        <Model value="Assets\Models\Candle 01.m3"/>
+        <ScaleMax value="2.500000,2.500000,2.500000"/>
+        <ScaleMin value="2.500000,2.500000,2.500000"/>
+        <SelectionRadius value="0.100000"/>
+    </CModel>
+    <CModel id="FishingLine" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Terran\HunterSeekerTargetingBeam\HunterSeekerTargetingBeam.m3"/>
+    </CModel>
+    <CModel id="GravesingersClawActiveAddon">
+        <Model value="Assets\Effects\Protoss\DetonateMissile\DetonateMissile.m3"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+    </CModel>
+    <CModel id="GravesingersClawAddon">
+        <Model value="staff_2h_pvp410_c_01.m3"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+    </CModel>
+    <CModel id="MysteriousArcaneRitual">
+        <Model value="Assets\Effects\Zerg\PsionicShadowImpact\PsionicShadowImpact.m3"/>
+        <ScaleMax value="0.500000,0.500000,1.000000"/>
+        <ScaleMin value="0.500000,0.500000,1.000000"/>
+    </CModel>
+    <CModel id="MysteriousArcaneRitualImpact" parent="UnitDeath" Race="Terran">
+        <Model value="Assets\Effects\Zerg\KineticBlastImpact\KineticBlastImpact.m3"/>
+        <ScaleMax value="2.500000,2.500000,2.500000"/>
+        <ScaleMin value="2.500000,2.500000,2.500000"/>
+    </CModel>
+    <CModel id="DemonLordJaryxSpawnImpact" parent="UnitDeath" Race="Terran">
+        <Model value="Assets\Effects\Zerg\KerriganApocalypseExplosion\KerriganApocalypseExplosion.m3"/>
+    </CModel>
+    <CModel id="PalisadeCorner" parent="Building" Race="Terran">
+        <Model value="Assets\Models\PalisadeCorner.m3"/>
+        <Radius value="0.750000"/>
+        <ScaleMax value="0.600000,0.600000,0.400000"/>
+        <ScaleMin value="0.600000,0.600000,0.400000"/>
+        <SelectionRadius value="0.750000"/>
+        <ShadowRadius value="0.750000"/>
+        <SquibTypeDefault value="Dirt"/>
+        <SelectionLayer value="2"/>
+        <Tipability value="0.500000"/>
+    </CModel>
+    <CModel id="PalisadeLength" parent="Building" Race="Terran">
+        <Model value="Assets\Models\PalisadeWall.m3"/>
+        <Radius value="0.750000"/>
+        <ScaleMax value="0.300000,0.300000,0.300000"/>
+        <ScaleMin value="0.300000,0.300000,0.300000"/>
+        <SelectionRadius value="2.000000"/>
+        <ShadowRadius value="0.750000"/>
+        <SelectionLayer value="2"/>
+        <SquibTypeDefault value="Dirt"/>
+        <Tipability value="0.500000"/>
+    </CModel>
+    <CModel id="FishingTarget" parent="Unit">
+        <Model value="Assets\Doodads\ExplodingBarrelMedium\ExplodingBarrelMedium.m3"/>
+        <ScaleMax value="0.250000,0.250000,0.250000"/>
+        <ScaleMin value="0.250000,0.250000,0.250000"/>
+        <SelectionRadius value="0.250000"/>
+    </CModel>
+    <CModel id="FishItem">
+        <Model value="ts_fishingbasket_01.m3"/>
+        <SelectionRadius value="0.250000"/>
+    </CModel>
+    <CModel id="StormwizardsRobesLaunch" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Terran\CerberusYamatoMissileImpact\CerberusYamatoMissileImpact.m3"/>
+        <ScaleMax value="0.100000,0.100000,0.100000"/>
+        <ScaleMin value="0.100000,0.100000,0.100000"/>
+    </CModel>
+    <CModel id="TrollGroundSpike" parent="Unit">
+        <Model value="Assets\Doodads\ChainLinkFencePost\ChainLinkFencePost.m3"/>
+        <Occlusion value="Show"/>
+        <ScaleMax value="1.500000,1.500000,1.000000"/>
+        <ScaleMin value="1.500000,1.500000,1.000000"/>
+        <SelectionRadius value="0.250000"/>
+    </CModel>
+    <CModel id="StagStew">
+        <Model value="be_meat01.m3"/>
+        <ScaleMax value="3.250000,3.250000,3.250000"/>
+        <ScaleMin value="3.250000,3.250000,3.250000"/>
+        <SelectionRadius value="0.100000"/>
+    </CModel>
+    <CModel id="SynergyBeamModelSmall" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\MothershipPhotonBeam\MothershipPhotonBeam_Low.m3"/>
+        <EditorCategories value="Race:Terran"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+    </CModel>
+    <CModel id="SynergyImpact" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Zerg\KerriganRespawnImpact\KerriganRespawnImpact.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+    </CModel>
+    <CModel id="SynergyBeamModel" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Zerg\KerriganApocalypseBeam\KerriganApocalypseBeam.m3"/>
+        <EditorCategories value="Race:Terran"/>
+    </CModel>
+    <CModel id="CravensFishStickerImpactExplosive" parent="UnitDeath" Race="Terran">
+        <Model value="Assets\Effects\Zerg\YagdraFireBallMissileImpact\YagdraFireBallMissileImpact.m3"/>
+        <ScaleMax value="0.500000,0.500000,0.750000"/>
+        <ScaleMin value="0.500000,0.500000,0.750000"/>
+    </CModel>
+    <CModel id="TheKingsSpeechImpact" parent="UnitDeath" Race="Terran">
+        <Model value="Assets\Effects\Protoss\DarkBlinkIn\DarkBlinkIn.m3"/>
+        <Occlusion value="Show"/>
+        <ScaleMax value="3.000000,3.000000,2.000000"/>
+        <ScaleMin value="3.000000,3.000000,2.000000"/>
+    </CModel>
+    <CModel id="RawStagMeat">
+        <Model value="Assets\Models\StagMeat.m3"/>
+        <SelectionRadius value="0.350000"/>
+        <ShadowRadius value="0.000000"/>
+    </CModel>
+    <CModel id="TetherAttackBeam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Terran\LaserDrillTargetingBeam\LaserDrillTargetingBeam.m3"/>
+        <EditorCategories value="Race:Terran"/>
+    </CModel>
+    <CModel id="Spellbroken">
+        <Model value="Assets\Effects\Zerg\HybridEnergizeImpact\HybridEnergizeImpact.m3"/>
+        <ScaleMax value="0.200000,0.200000,0.200000"/>
+        <ScaleMin value="0.200000,0.200000,0.200000"/>
+    </CModel>
+    <CModel id="SpellbreakerImpact" parent="UnitDeath" Race="Terran">
+        <Model value="Assets\Effects\Zerg\HybridPlasmaMissileImpact\HybridPlasmaMissileImpact.m3"/>
+        <ScaleMax value="0.600000,0.600000,0.600000"/>
+        <ScaleMin value="0.600000,0.600000,0.600000"/>
+    </CModel>
+    <CModel id="ArcaneEruptionStart" parent="UnitDeath" Race="Terran">
+        <Model value="Assets\Effects\Zerg\HybridWarpOut\HybridWarpOut.m3"/>
+        <ScaleMax value="0.400000,0.400000,0.400000"/>
+        <ScaleMin value="0.400000,0.400000,0.400000"/>
+    </CModel>
+    <CModel id="LightningCloudAddon">
+        <Model value="Assets\Effects\Zerg\KerriganSearchFlashImpact\KerriganSearchFlashImpact.m3"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <TextureDeclares Prefix="EnergyRing3Orange">
+            <Adaptions TriggerOnSubstring="EnergyRing3Orange" Slot="main.emissive"/>
+        </TextureDeclares>
+    </CModel>
+    <CModel id="Stag" parent="Unit">
+        <Model value="Assets\Models\Stag.m3"/>
+        <SelectionRadius value="0.650000"/>
+        <SquibTypeDefault value="Flesh"/>
+        <Tipability value="0.500000"/>
+        <ScaleMax value="1.100000,1.100000,1.100000"/>
+        <ScaleMin value="1.100000,1.100000,1.100000"/>
+    </CModel>
+    <CModel id="BurningPersistent" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Terran\FireImpact\FireImpact.m3"/>
+        <ScaleMax value="4.000000,4.000000,4.000000"/>
+        <ScaleMin value="4.000000,4.000000,4.000000"/>
+    </CModel>
+    <CModel id="UnstableAnomalyHelperBeam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Terran\LaserDrillTargetingBeam\LaserDrillTargetingBeam.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CModel>
+    <CModel id="UnstableAnomalyHelperSplat" parent="Splat">
+        <Model value="Assets\UI\Feedback\AOEPreTargetAirUnitProtossSplat\AOEPreTargetAirUnitProtossSplat.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CModel>
+    <CModel id="UnstableAnomalyZapAttackBeam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Terran\LaserDrillBeam\LaserDrillBeam.m3"/>
+        <LowQualityModel value="DiamondbackAttackBeamLow"/>
+        <EditorCategories value="Race:Terran"/>
+    </CModel>
+    <CModel id="UnstableAnomaly" parent="Unit">
+        <Model value="Assets\Units\Test\HitTestSphere\HitTestSphere.m3"/>
+        <SquibTypeDefault value="Shield"/>
+    </CModel>
+    <CModel id="SpellbreakerArmorAddon">
+        <Model value="Assets\Models\SpellbreakerArmor.m3"/>
+        <ScaleMax value="0.700000,0.500000,0.700000"/>
+        <ScaleMin value="0.700000,0.500000,0.700000"/>
+    </CModel>
+    <CModel id="EmpoweredLightningImpact" parent="UnitDeath" Race="Terran">
+        <Model value="Assets\Effects\Protoss\PhaseShiftImpact\PhaseShiftImpact.m3"/>
+        <Occlusion value="Show"/>
+    </CModel>
+    <CModel id="EmpoweredLightningAddon">
+        <Model value="Assets\Effects\Protoss\DetonateMissile\DetonateMissile.m3"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+    </CModel>
+    <CModel id="EmpoweredLightningPersistent">
+        <Model value="Assets\Effects\Protoss\PsiStormImpact\PsiStormImpact.m3"/>
+        <ScaleMax value="1.750000,1.750000,1.000000"/>
+        <ScaleMin value="1.750000,1.750000,1.000000"/>
+    </CModel>
+    <CModel id="AnnihilateImpact" parent="UnitDeath" Race="Terran">
+        <Model value="Assets\Effects\Protoss\PlasmaSurgeImpact\PlasmaSurgeImpact.m3"/>
+        <Occlusion value="Show"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+    </CModel>
+    <CModel id="EmpoweredLightningMissile" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\PhotonMissile\PhotonMissile.m3"/>
+    </CModel>
+    <CModel id="LightningCloudAttackBeam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Zerg\HybridBeam\HybridBeam.m3"/>
+        <LowQualityModel value="DiamondbackAttackBeamLow"/>
+        <EditorCategories value="Race:Terran"/>
+    </CModel>
+    <CModel id="LightningCloud" parent="Unit">
+        <Model value="Assets\Units\Test\HitTestSphere\HitTestSphere.m3"/>
+    </CModel>
+    <CModel id="RagingArcaneBeast" parent="Unit" Race="Protoss">
+        <Model value="Assets\Units\Protoss\Archon\Archon.m3"/>
+        <LowQualityModel value="ArchonLow"/>
+        <PlanetPanelCamera value="Star2CameraHigher09"/>
+        <Radius value="0.675000"/>
+        <ScaleMax value="0.800000,0.800000,0.800000"/>
+        <ScaleMin value="0.800000,0.800000,0.800000"/>
+        <SelectionRadius value="1.093700"/>
+        <ShadowRadius value="1.093700"/>
+        <TechPurchaseCamera value="Star2CameraHigher09"/>
+        <UnitGlossaryCamera value="Star2CameraHigher09"/>
+        <SquibTypeDefault value="Shield"/>
+    </CModel>
+    <CModel id="HitTestSphere12">
+        <Model value="Assets\Units\Test\HitTestSphere\HitTestSphere.m3"/>
+        <ScaleMax value="1.200000,1.200000,1.200000"/>
+        <ScaleMin value="1.200000,1.200000,1.200000"/>
+    </CModel>
+    <CModel id="FieryCrown">
+        <Model value="helm_circlet_firelands_d_01_wom.m3"/>
+    </CModel>
+    <CModel id="DeathBowMissile" parent="MissileFX">
+        <Model value="Assets\Models\ArrowWithTrail.m3"/>
+    </CModel>
+    <CModel id="CelestialOrbHealImpact" parent="UnitDeath" Race="Terran">
+        <Model value="Assets\Effects\Protoss\PlasmaSurgeImpact\PlasmaSurgeImpact.m3"/>
+        <Occlusion value="Show"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+    </CModel>
+    <CModel id="AdrenalineRushAddon">
+        <Model value="Assets\Effects\Protoss\DetonateMissile\DetonateMissile.m3"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+    </CModel>
+    <CModel id="GuardianSpiritDeath" parent="ImpactFX">
+        <Model value="Assets\Effects\Protoss\PhoenixOverloadImpact\PhoenixOverloadImpact.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+        <ScaleMax value="1.500000,1.500000,1.500000"/>
+        <ScaleMin value="1.500000,1.500000,1.500000"/>
+    </CModel>
+    <CModel id="HitTestSphere10">
+        <Model value="Assets\Units\Test\HitTestSphere\HitTestSphere.m3"/>
+    </CModel>
+    <CModel id="HitTestSphere17">
+        <Model value="Assets\Units\Test\HitTestSphere\HitTestSphere.m3"/>
+        <ScaleMax value="1.700000,1.700000,1.700000"/>
+        <ScaleMin value="1.700000,1.700000,1.700000"/>
+    </CModel>
+    <CModel id="AnnihilateProjectile" parent="Unit">
+        <Model value="Assets\Effects\Protoss\ArcadePlasmaMissile\ArcadePlasmaMissile.m3"/>
+        <ScaleMax value="1.750000,1.750000,1.750000"/>
+        <ScaleMin value="1.750000,1.750000,1.750000"/>
+        <SelectionRadius value="0.250000"/>
+    </CModel>
+    <CModel id="VeilBowAddon">
+        <Model value="bow_1h_northrend_c_02.m3"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+    </CModel>
+    <CModel id="Energized" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Other\HighYieldActiveCrystals\HighYieldActiveCrystals.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+        <ScaleMax value="1.500000,1.500000,1.500000"/>
+        <ScaleMin value="1.500000,1.500000,1.500000"/>
+    </CModel>
+    <CModel id="MasterRangersMailleAddon">
+        <Model value="Assets\Models\MasterRangersChainmail.m3"/>
+        <ScaleMax value="0.600000,0.600000,0.700000"/>
+        <ScaleMin value="0.600000,0.600000,0.700000"/>
+    </CModel>
+    <CModel id="CelestialOrbAddon">
+        <Model value="mace_1h_ulduarraid_d_01.m3"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+    </CModel>
+    <CModel id="CelestialOrbMissile" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\PhotonMissile\PhotonMissile.m3"/>
+    </CModel>
+    <CModel id="SavageSwordAddon">
+        <Model value="sword_2h_northrend_c_01.m3"/>
+        <ScaleMax value="2.750000,2.750000,2.750000"/>
+        <ScaleMin value="2.750000,2.750000,2.750000"/>
+    </CModel>
+    <CModel id="VeilGuardian" parent="Unit">
+        <Model value="zombiefiedvrykul.m3"/>
+        <Occlusion value="Show"/>
+        <ScaleMax value="0.650000,0.650000,0.650000"/>
+        <ScaleMin value="0.650000,0.650000,0.650000"/>
+        <SelectionRadius value="0.750000"/>
+        <SquibTypeDefault value="Flesh"/>
+        <Tipability value="0.500000"/>
+    </CModel>
+    <CModel id="LightningCloudZapBeam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Zerg\HybridBeam\HybridBeam.m3"/>
+        <EditorCategories value="Race:Terran"/>
+    </CModel>
+    <CModel id="LiquidatorSpellbladeAddon">
+        <Model value="LiquidatorSpellblade.m3"/>
+    </CModel>
+    <CModel id="RepeatingCrossbowAddon">
+        <Model value="bow_2h_crossbow_pvehorde_d_01.m3"/>
+    </CModel>
+    <CModel id="RepeatingCrossbowAddonBack">
+        <Model value="bow_2h_crossbow_pvehorde_d_01.m3"/>
+    </CModel>
+    <CModel id="GenericWoodenBolt" parent="MissileFX">
+        <Model value="Assets\Models\ArrowWithTrail.m3"/>
+    </CModel>
+    <CModel id="WarlocksVestmentsAddon">
+        <Model value="Assets\Models\WarlocksVestments.m3"/>
+        <ScaleMax value="0.650000,0.650000,0.750000"/>
+        <ScaleMin value="0.650000,0.650000,0.750000"/>
+    </CModel>
+    <CModel id="MysteriousShrineZapBeam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Terran\LaserDrillBeam\LaserDrillBeam.m3"/>
+        <EditorCategories value="Race:Terran"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+    </CModel>
+    <CModel id="MysteriousShrine" parent="Building" Race="Terran">
+        <Model value="Assets\Doodads\XelNagaColumn\XelNagaColumn.m3"/>
+        <Radius value="0.750000"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+        <SelectionRadius value="1.350000"/>
+        <ShadowRadius value="0.750000"/>
+        <SquibTypeDefault value="Metal"/>
+        <SelectionLayer value="2"/>
+    </CModel>
+    <CModel id="DemonwardAddon">
+        <Model value="Assets\Models\Demonward.m3"/>
+        <ScaleMax value="0.600000,0.600000,0.600000"/>
+        <ScaleMin value="0.600000,0.600000,0.600000"/>
+    </CModel>
+    <CModel id="LightLeatherShieldAddon">
+        <Model value="Assets\Models\LightLeatherShield.m3"/>
+        <ScaleMax value="0.400000,0.400000,0.400000"/>
+        <ScaleMin value="0.400000,0.400000,0.400000"/>
+    </CModel>
+    <CModel id="JudgmentGavelAddon">
+        <Model value="Assets\Models\JudgmentGavel.m3"/>
+    </CModel>
+    <CModel id="BloodcleaverHealImpact" parent="UnitDeath" Race="Terran">
+        <Model value="Assets\Effects\Protoss\WarpGateWarpCast\WarpGateWarpCast.m3"/>
+        <Occlusion value="Show"/>
+        <TextureDeclares Prefix="EnergyFlash2">
+            <Adaptions TriggerOnSubstring="EnergyFlash2" Slot="main"/>
+        </TextureDeclares>
+    </CModel>
+    <CModel id="MurlocRageImpact" parent="UnitDeath" Race="Terran">
+        <Model value="Assets\Effects\Terran\UltraSonicMissileImpact\UltraSonicMissileImpact.m3"/>
+        <Occlusion value="Show"/>
+    </CModel>
+    <CModel id="GoldenHauberkHealImpact" parent="UnitDeath" Race="Terran">
+        <Model value="Assets\Effects\Protoss\WarpGateWarpCast\WarpGateWarpCast.m3"/>
+        <Occlusion value="Show"/>
+        <TextureDeclares Prefix="EnergyFlash2">
+            <Adaptions TriggerOnSubstring="EnergyFlash2" Slot="main"/>
+        </TextureDeclares>
+    </CModel>
+    <CModel id="KingFurbeastIV" parent="Unit">
+        <Model value="direfurbolg.m3"/>
+        <Occlusion value="Show"/>
+        <ScaleMax value="1.500000,1.500000,1.500000"/>
+        <ScaleMin value="1.500000,1.500000,1.500000"/>
+        <SelectionRadius value="0.450000"/>
+        <SquibTypeDefault value="Flesh"/>
+    </CModel>
+    <CModel id="VeilShrineFlashBeam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\SoulHunterBeam2\SoulHunterBeam2.m3"/>
+        <EditorCategories value="Race:Terran"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+    </CModel>
+    <CModel id="FrostNeedleAddon">
+        <Model value="Assets\Models\FrostNeedle.m3"/>
+    </CModel>
+    <CModel id="FrostBarrierAddon">
+        <Model value="Assets\Models\FrostBarrier.m3"/>
+    </CModel>
+    <CModel id="Candle2">
+        <Model value="Assets\Models\Candle 01.m3"/>
+        <SelectionRadius value="0.750000"/>
+    </CModel>
+    <CModel id="LorenorStatue" parent="Building" Race="Terran">
+        <Model value="Assets\Models\BuilderStatue.m3"/>
+        <SelectionLayer value="2"/>
+        <SelectionRadius value="1.800000"/>
+        <SquibTypeDefault value="Dirt"/>
+    </CModel>
+    <CModel id="BarnetsHammer">
+        <Model value="hammer_1h_standard_c_01.m3"/>
+    </CModel>
+    <CModel id="FrostArmorDrainBeam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Terran\DominationBeam\DominationBeam.m3"/>
+        <EditorCategories value="Race:Terran"/>
+    </CModel>
+    <CModel id="FrostWitch" parent="Unit">
+        <Model value="Assets\Models\FrostWitch.m3"/>
+        <ScaleMax value="2.500000,2.500000,2.500000"/>
+        <ScaleMin value="2.500000,2.500000,2.500000"/>
+        <SquibTypeDefault value="Rock"/>
+        <Tipability value="0.500000"/>
+    </CModel>
+    <CModel id="GoldenHauberkAddon">
+        <Model value="Assets\Models\GoldenHauberk.m3"/>
+        <ScaleMax value="0.600000,0.500000,0.600000"/>
+        <ScaleMin value="0.600000,0.500000,0.600000"/>
+    </CModel>
+    <CModel id="AutomatedDefenseTurret" parent="Building" Race="Terran">
+        <Model value="Assets\Models\ADT.m3"/>
+        <ScaleMax value="0.350000,0.350000,0.350000"/>
+        <ScaleMin value="0.350000,0.350000,0.350000"/>
+        <SelectionLayer value="2"/>
+        <SelectionRadius value="1.400000"/>
+        <ShadowRadius value="0.750000"/>
+        <SquibTypeDefault value="Metal"/>
+    </CModel>
+    <CModel id="SpellAbsorbFX" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\DragoonForceShield\DragoonForceShield.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+        <ScaleMax value="1.250000,1.250000,1.500000"/>
+        <ScaleMin value="1.250000,1.250000,1.500000"/>
+    </CModel>
+    <CModel id="VeilShrinePad" parent="Building" Race="Terran">
+        <Model value="Assets\Doodads\Shapes\ShapeCylinder\ShapeCylinder.m3"/>
+        <Radius value="0.750000"/>
+        <ScaleMax value="1.000000,1.000000,0.050000"/>
+        <ScaleMin value="1.000000,1.000000,0.050000"/>
+        <SelectionRadius value="0.750000"/>
+        <ShadowRadius value="0.750000"/>
+        <SquibTypeDefault value="Metal"/>
+        <Tipability value="1.000000"/>
+        <SelectionLayer value="2"/>
+    </CModel>
+    <CModel id="Sombrero">
+        <Model value="helm_cloth_mexico_a_01_hum.m3"/>
+    </CModel>
+    <CModel id="Affliction" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Zerg\DiseaseMissileImpact\DiseaseMissileImpact.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CModel>
+    <CModel id="BerserkersBattleAxeAddon">
+        <Model value="Assets\Models\BerserkerBattleAxe.m3"/>
+        <ScaleMax value="0.600000,0.600000,0.600000"/>
+        <ScaleMin value="0.600000,0.600000,0.600000"/>
+    </CModel>
+    <CModel id="AfflictionPersistent">
+        <Model value="Assets\Effects\Zerg\DiseaseCloud\DiseaseCloud.m3"/>
+    </CModel>
+    <CModel id="Bear" parent="Unit">
+        <Model value="Assets\Models\TheNewBear.m3"/>
+        <ScaleMax value="0.650000,0.650000,0.650000"/>
+        <ScaleMin value="0.650000,0.650000,0.650000"/>
+        <SelectionRadius value="1.500000"/>
+        <SquibTypeDefault value="Flesh"/>
+        <Tipability value="0.500000"/>
+    </CModel>
+    <CModel id="BearPelt">
+        <Model value="tradeskill_leatherworking_01.m3"/>
+        <EditorCategories value="Race:Neutral"/>
+        <Flags index="AutoUnload" value="1"/>
+        <Occlusion value="Show"/>
+        <ScaleMax value="0.800000,0.800000,1.000000"/>
+        <ScaleMin value="0.800000,0.800000,1.000000"/>
+        <SelectionLayer value="100"/>
+        <SelectionRadius value="0.800000"/>
+    </CModel>
+    <CModel id="BearShamansShroudAdd2">
+        <Model value="Assets\Models\BearShamanShoulders.m3"/>
+        <ScaleMax value="0.600000,0.550000,0.600000"/>
+        <ScaleMin value="0.600000,0.550000,0.600000"/>
+    </CModel>
+    <CModel id="Bird" parent="Unit">
+        <Model value="Assets\Models\Bird.m3"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+    </CModel>
+    <CModel id="BloodthirstyPirateHatAddon">
+        <Model value="helm_cloth_b_01pirate_hum.m3"/>
+    </CModel>
+    <CModel id="Bolt" parent="MissileFX">
+        <Model value="Assets\Models\ArrowWithTrail.m3"/>
+    </CModel>
+    <CModel id="MoltenSphere" parent="Unit">
+        <Model value="Assets\Doodads\CharRock\CharRock_00.m3"/>
+        <ScaleMax value="0.750000,0.750000,1.000000"/>
+        <ScaleMin value="0.750000,0.750000,1.000000"/>
+        <SelectionRadius value="0.300000"/>
+    </CModel>
+    <CModel id="MoltenSphereFire">
+        <Model value="Assets\Doodads\FireMedium\FireMedium.m3"/>
+    </CModel>
+    <CModel id="BurningBoulder" parent="PersistentSpellFX">
+        <Model value="Assets\Doodads\CharRock\CharRock_00.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+    </CModel>
+    <CModel id="ChallengeBanner" parent="Unit" Race="Terran">
+        <Model value="Assets\Doodads\TerrainObjectXelNagaPrisonCrystal\TerrainObjectXelNagaPrisonCrystal.m3"/>
+        <Occlusion value="Show"/>
+        <PlanetPanelCamera value="Star2CameraMid05"/>
+        <Radius value="0.450000"/>
+        <SelectionRadius value="0.300000"/>
+        <ShadowRadius value="0.468700"/>
+        <SquibTypeDefault value="Flesh"/>
+        <TechPurchaseCamera value=""/>
+        <Tipability value="0.750000"/>
+        <UnitGlossaryCamera value="Star2CameraMid05"/>
+    </CModel>
+    <CModel id="ChefsHat">
+        <Model value="helm_cloth_chefhat_a_01_hum.m3"/>
+    </CModel>
+    <CModel id="CleansingDraught">
+        <Model value="Assets\Models\WoodenBarrel.m3"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+    </CModel>
+    <CModel id="CrabShipment">
+        <Model value="Assets\Models\WoodenCrate.m3"/>
+    </CModel>
+    <CModel id="Crossbow">
+        <Model value="bow_2h_crossbow_northrend_b_02.m3"/>
+        <ScaleMax value="1.350000,1.350000,1.350000"/>
+        <ScaleMin value="1.350000,1.350000,1.350000"/>
+    </CModel>
+    <CModel id="TetherPersistent" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Zerg\TerrorcystInfection\TerrorcystInfection.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+    </CModel>
+    <CModel id="TetherImpact" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\AdeptSoulMissileImpact\AdeptSoulMissileImpact.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+        <TextureDeclares Prefix="FireStreak7Blue">
+            <Adaptions TriggerOnSubstring="BlueStarFlash" Slot="main"/>
+            <Adaptions TriggerOnSubstring="FireStreak7Blue" Slot="main"/>
+        </TextureDeclares>
+    </CModel>
+    <CModel id="CrossbowBack">
+        <Model value="bow_2h_crossbow_northrend_b_02.m3"/>
+        <ScaleMax value="1.350000,1.350000,1.350000"/>
+        <ScaleMin value="1.350000,1.350000,1.350000"/>
+    </CModel>
+    <CModel id="DemonLordJaryx" parent="Unit" Race="Protoss">
+        <Model value="Assets\Units\Zerg\HybridZerg\HybridZerg.m3"/>
+        <Events>
+            <Anim value="Attack,00"/>
+            <Name value="HybridSounds"/>
+            <Type value="Sound"/>
+            <Time value="0.100000"/>
+            <Payload value="HybridViper_AttackLaunch"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,00"/>
+            <Name value="HybridSounds"/>
+            <Type value="Sound"/>
+            <Time value="0.200000"/>
+            <Payload value="HybridViper_AttackLaunch"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,00"/>
+            <Name value="HybridSounds"/>
+            <Type value="Sound"/>
+            <Time value="0.390000"/>
+            <Payload value="HybridViper_AttackImpact"/>
+        </Events>
+        <Events>
+            <Anim value="Attack,00"/>
+            <Name value="HybridSounds"/>
+            <Type value="Sound"/>
+            <Time value="0.530000"/>
+            <Payload value="HybridViper_AttackImpact"/>
+        </Events>
+        <PlanetPanelCamera value="Star2CameraHigher16"/>
+        <Radius value="1.000000"/>
+        <ScaleMax value="0.650000,0.650000,0.650000"/>
+        <ScaleMin value="0.650000,0.650000,0.650000"/>
+        <SelectionRadius value="2.000000"/>
+        <ShadowRadius value="1.250000"/>
+        <TechPurchaseCamera value="Star2CameraHigher16"/>
+        <UnitGlossaryCamera value="Star2CameraHigher16"/>
+        <SquibTypeDefault value="Metal"/>
+        <Tipability value="0.500000"/>
+    </CModel>
+    <CModel id="Fez">
+        <Model value="fezhat_doodad.m3"/>
+    </CModel>
+    <CModel id="Direwolf" parent="Unit">
+        <Model value="Assets\Models\WolfOfDreanor.m3"/>
+        <SelectionRadius value="0.800000"/>
+        <SquibTypeDefault value="Flesh"/>
+        <Tipability value="0.500000"/>
+    </CModel>
+    <CModel id="DraughtofDecay">
+        <Model value="Assets\Models\WoodenBarrel.m3"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+    </CModel>
+    <CModel id="DreadHowlImpact" parent="UnitDeath" Race="Terran">
+        <Model value="Assets\Effects\Protoss\DarkBlinkIn\DarkBlinkIn.m3"/>
+        <Occlusion value="Show"/>
+        <ScaleMax value="3.000000,3.000000,2.000000"/>
+        <ScaleMin value="3.000000,3.000000,2.000000"/>
+    </CModel>
+    <CModel id="DreadplateArmorAddon">
+        <Model value="Assets\Models\DreadplateArmor.m3"/>
+        <ScaleMax value="0.600000,0.550000,0.600000"/>
+        <ScaleMin value="0.600000,0.550000,0.600000"/>
+    </CModel>
+    <CModel id="DullPickaxeAddon">
+        <Model value="Assets\Models\Pickaxe.m3"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.550000,0.550000,0.550000"/>
+    </CModel>
+    <CModel id="ElderTree" parent="Building" Race="Terran">
+        <Model value="ElderTreeBlenderAttachments.m3"/>
+        <Radius value="0.750000"/>
+        <ScaleMax value="1.000000,1.000000,1.500000"/>
+        <ScaleMin value="1.000000,1.000000,1.500000"/>
+        <ShadowRadius value="0.750000"/>
+        <SquibTypeDefault value="Dirt"/>
+        <SelectionLayer value="2"/>
+    </CModel>
+    <CModel id="ElderWandAddon">
+        <Model value="wand_1h_pandaraid_d_01.m3"/>
+    </CModel>
+    <CModel id="ElderWandImpact" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Protoss\ImmortalMissileImpact\ImmortalMissileImpact.m3"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+    </CModel>
+    <CModel id="EnigmaticStaffAddon">
+        <Model value="Assets\Models\EnigmaticStaff.m3"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+    </CModel>
+    <CModel id="FearContinued" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Zerg\CorruptedMissileImpact\CorruptedMissileImpact.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+        <TextureDeclares Prefix="PhotonEnergyAnim1">
+            <Adaptions TriggerOnSubstring="PhotonEnergyAnim1" Slot="main"/>
+        </TextureDeclares>
+    </CModel>
+    <CModel id="FelFireFearImpact" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\ImmortalMissileImpact\ImmortalMissileImpact.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+        <TextureDeclares Prefix="PhotonEnergyAnim1">
+            <Adaptions TriggerOnSubstring="PhotonEnergyAnim1" Slot="main"/>
+        </TextureDeclares>
+    </CModel>
+    <CModel id="FelFireTorch">
+        <Model value="Assets\Models\FelFireTorch.m3"/>
+        <ScaleMax value="0.650000,0.650000,0.650000"/>
+        <ScaleMin value="0.650000,0.650000,0.650000"/>
+    </CModel>
+    <CModel id="FelFlames">
+        <Model value="Assets\Effects\Terran\TerranBuildingFireSmall\TerranBuildingFireSmall.m3"/>
+        <ScaleMax value="1.500000,1.500000,1.500000"/>
+        <ScaleMin value="1.500000,1.500000,1.500000"/>
+        <TextureDeclares Prefix="NewBoom1">
+            <Adaptions TriggerOnSubstring="NewBoom1" Slot="main"/>
+        </TextureDeclares>
+    </CModel>
+    <CModel id="FirestormFlame" parent="Building" Race="Terran">
+        <Model value="Assets\Effects\Terran\TerranBuildingFireMedium\TerranBuildingFireMedium.m3"/>
+        <Radius value="0.750000"/>
+        <SelectionRadius value="0.150000"/>
+        <ShadowRadius value="0.750000"/>
+        <SquibTypeDefault value="Metal"/>
+        <SelectionLayer value="2"/>
+    </CModel>
+    <CModel id="FishingRodAddon">
+        <Model value="Assets\Models\FishingRod3.m3"/>
+        <ScaleMax value="0.600000,0.600000,0.600000"/>
+        <ScaleMin value="0.600000,0.600000,0.600000"/>
+    </CModel>
+    <CModel id="FishCrate">
+        <Model value="ts_fishingbasket_01.m3"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+    </CModel>
+    <CModel id="DevoutCap">
+        <Model value="helm_cloth_c_01mitre_hum.m3"/>
+    </CModel>
+    <CModel id="MonkHeadwear">
+        <Model value="helm_cloth_panda_b_02_hum.m3"/>
+    </CModel>
+    <CModel id="TopHat">
+        <Model value="helm_cloth_gilneashat_a_01_hum.m3"/>
+    </CModel>
+    <CModel id="FistBladeAddon">
+        <Model value="Assets\Models\Armblade.m3"/>
+        <ScaleMax value="2.500000,2.500000,1.000000"/>
+        <ScaleMin value="2.500000,2.500000,1.000000"/>
+    </CModel>
+    <CModel id="Flower" parent="Doodad">
+        <Model value="Assets\Doodads\BelShirFlowers\BelShirFlowers_04.m3"/>
+    </CModel>
+    <CModel id="FrostBear" parent="Unit">
+        <Model value="Assets\Models\TheNewBear.m3"/>
+        <ScaleMax value="0.650000,0.650000,0.650000"/>
+        <ScaleMin value="0.650000,0.650000,0.650000"/>
+        <SelectionRadius value="1.500000"/>
+        <SquibTypeDefault value="Flesh"/>
+        <Tipability value="0.500000"/>
+        <TextureDeclares Prefix="TheNewBear_Diffuse">
+            <Adaptions TriggerOnSubstring="TheNewBear_Diffuse" Slot="main"/>
+        </TextureDeclares>
+    </CModel>
+    <CModel id="GarishGladiatorsGarbAddon">
+        <Model value="Assets\Models\GarishGladiatorsBarb.m3"/>
+        <ScaleMax value="0.650000,0.500000,0.600000"/>
+        <ScaleMin value="0.650000,0.500000,0.600000"/>
+    </CModel>
+    <CModel id="GoldenPolearmAddon">
+        <Model value="Assets\Models\RadiantBattlescythe.m3"/>
+    </CModel>
+    <CModel id="GoldPurse">
+        <Model value="Assets\Doodads\Shapes\ShapeMoneyBag\ShapeMoneyBag.m3"/>
+        <EditorCategories value="Race:Neutral"/>
+        <Flags index="AutoUnload" value="1"/>
+        <Occlusion value="Show"/>
+        <ScaleMax value="0.800000,0.800000,0.800000"/>
+        <ScaleMin value="0.800000,0.800000,0.800000"/>
+        <SelectionLayer value="100"/>
+        <SelectionRadius value="0.600000"/>
+    </CModel>
+    <CModel id="GuardianSpirit" parent="Unit">
+        <Model value="Assets\Effects\Protoss\ArcadePlasmaMissile\ArcadePlasmaMissile.m3"/>
+        <SelectionRadius value="0.300000"/>
+        <TextureDeclares Prefix="Grad_GlowLine2Green">
+            <Adaptions TriggerOnSubstring="XelNagaGlass" Slot="main"/>
+            <Adaptions TriggerOnSubstring="Grad_GlowLine2Green" Slot="main"/>
+        </TextureDeclares>
+    </CModel>
+    <CModel id="GuardianSpiritHealImpact" parent="UnitDeath" Race="Terran">
+        <Model value="Assets\Effects\Protoss\WarpGateWarpCast\WarpGateWarpCast.m3"/>
+        <Occlusion value="Show"/>
+    </CModel>
+    <CModel id="HeavyTowerShieldAddon">
+        <Model value="shield_northrend_c_02.m3"/>
+        <ScaleMax value="1.200000,1.200000,1.200000"/>
+        <ScaleMin value="1.200000,1.200000,1.200000"/>
+    </CModel>
+    <CModel id="SunHat">
+        <Model value="helm_cloth_sunhat_b_01_hum.m3"/>
+    </CModel>
+    <CModel id="HuntersLodge" parent="Building" Race="Terran">
+        <Model value="Assets\Models\HuntersLodge.m3"/>
+        <Radius value="0.750000"/>
+        <ScaleMax value="0.600000,0.600000,0.600000"/>
+        <ScaleMin value="0.600000,0.600000,0.600000"/>
+        <SelectionRadius value="3.000000"/>
+        <ShadowRadius value="0.750000"/>
+        <SquibTypeDefault value="Dirt"/>
+        <SelectionLayer value="2"/>
+    </CModel>
+    <CModel id="HuntsmansJacketAddon">
+        <Model value="Assets\Models\HuntsmansJacket.m3"/>
+        <ScaleMax value="0.800000,0.700000,0.700000"/>
+        <ScaleMin value="0.800000,0.700000,0.700000"/>
+    </CModel>
+    <CModel id="InfusedLumber">
+        <Model value="Assets\Doodads\AiurUnderbrush\AiurUnderbrush_01.m3"/>
+        <EditorCategories value="Race:Neutral"/>
+        <Flags index="AutoUnload" value="1"/>
+        <Occlusion value="Show"/>
+        <ScaleMax value="1.250000,1.250000,1.250000"/>
+        <ScaleMin value="1.250000,1.250000,1.250000"/>
+        <SelectionLayer value="100"/>
+        <SelectionRadius value="0.600000"/>
+    </CModel>
+    <CModel id="IronStuddedVestAddon">
+        <Model value="Assets\Models\IronStuddedVest.m3"/>
+        <ScaleMax value="0.650000,0.550000,0.650000"/>
+        <ScaleMin value="0.650000,0.550000,0.650000"/>
+    </CModel>
+    <CModel id="LeatherCoatAddon">
+        <Model value="Assets\Models\LeatherCoat.m3"/>
+        <ScaleMax value="0.600000,0.600000,0.600000"/>
+        <ScaleMin value="0.600000,0.600000,0.600000"/>
+    </CModel>
+    <CModel id="LodgeDeath" parent="BuildingDeath" Race="Terran">
+        <Model value="Assets\Effects\Terran\TerranLargeBuildingDeath\TerranLargeBuildingDeath.m3"/>
+        <LowQualityModel value="TerranLargeBuildingDeathLow"/>
+        <Occlusion value="Show"/>
+    </CModel>
+    <CModel id="MurlocRush">
+        <Model value="Assets\Effects\Zerg\BioPlasmaMissile\BioPlasmaMissile.m3"/>
+    </CModel>
+    <CModel id="MurlocSkull">
+        <Model value="Assets\Models\MurlocSkull.m3"/>
+        <SelectionRadius value="0.300000"/>
+    </CModel>
+    <CModel id="Nightwisp" parent="Unit">
+        <Model value="Assets\Doodads\Shapes\ShapeEgg\ShapeEgg.m3"/>
+        <SelectionRadius value="0.300000"/>
+        <TextureDeclares Prefix="Grad_GlowLine2Green">
+            <Adaptions TriggerOnSubstring="XelNagaGlass" Slot="main"/>
+            <Adaptions TriggerOnSubstring="Grad_GlowLine2Green" Slot="main"/>
+        </TextureDeclares>
+        <SquibTypeDefault value="Shield"/>
+    </CModel>
+    <CModel id="NightwispAttackImpact" parent="BattlecruiserAirAttackImpact">
+        <Model value="Assets\Effects\Protoss\PhotonCannonMissileImpact\PhotonCannonMissileImpact.m3"/>
+    </CModel>
+    <CModel id="NightwispBeam" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Terran\GhostSnipeBeam\GhostSnipeBeam.m3"/>
+        <EditorCategories value="Race:Terran"/>
+    </CModel>
+    <CModel id="NightwispSphere">
+        <Model value="Assets\Effects\Protoss\ZeratulMissile\ZeratulMissile.m3"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+    </CModel>
+    <CModel id="ObedienceRodAddon">
+        <Model value="Assets\Models\ObedienceRod.m3"/>
+        <ScaleMax value="0.650000,0.650000,0.650000"/>
+        <ScaleMin value="0.650000,0.650000,0.650000"/>
+    </CModel>
+    <CModel id="OutlandishHeartpiercerAddon">
+        <Model value="knife_1h_pvppandarias1_c_02.m3"/>
+    </CModel>
+    <CModel id="OutpostDeath" parent="BuildingDeath" Race="Terran">
+        <Model value="Assets\Effects\Terran\TerranLargeBuildingDeath\TerranLargeBuildingDeath.m3"/>
+        <LowQualityModel value="TerranLargeBuildingDeathLow"/>
+        <Occlusion value="Show"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+    </CModel>
+    <CModel id="Pheasant" parent="Unit">
+        <Model value="Assets\Units\Critters\CarrionBird\CarrionBird.m3"/>
+        <SelectionRadius value="0.400000"/>
+        <SquibTypeDefault value="Flesh"/>
+        <Tipability value="0.500000"/>
+    </CModel>
+    <CModel id="HeavyIronBreastplateAddon">
+        <Model value="Assets\Models\HeavyIronBreastplate.m3"/>
+        <ScaleMax value="0.700000,0.500000,0.500000"/>
+        <ScaleMin value="0.700000,0.500000,0.500000"/>
+    </CModel>
+    <CModel id="ResurrectionBeam" parent="PersistentSpellFX">
+        <Model value="Assets\Models\Resurrection.m3"/>
+        <ScaleMax value="0.600000,0.600000,0.600000"/>
+        <ScaleMin value="0.600000,0.600000,0.600000"/>
+    </CModel>
+    <CModel id="RotatingBlade" parent="Unit">
+        <Model value="Assets\Models\Armblade.m3"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+    </CModel>
+    <CModel id="RotatingBladeImpactSplash" parent="PersistentSpellFX">
+        <Model value="Assets\Units\Terran\TerranBloodDeathLow\TerranBloodDeathLow.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CModel>
+    <CModel id="Sageberry">
+        <Model value="Assets\Doodads\Shapes\ShapeCherry\ShapeCherry.m3"/>
+        <EditorCategories value="Race:Neutral"/>
+        <Flags index="AutoUnload" value="1"/>
+        <Occlusion value="Show"/>
+        <SelectionLayer value="100"/>
+        <SelectionRadius value="0.300000"/>
+    </CModel>
+    <CModel id="ScrollofTransmutationImpact" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\HybridEnergyMissileImpact\HybridEnergyMissileImpact.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CModel>
+    <CModel id="ShadowCloakImpact" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\AdeptSoulMissileImpact\AdeptSoulMissileImpact.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+    </CModel>
+    <CModel id="SkeletalFinger" parent="Doodad">
+        <Model value="Assets\Doodads\MarSaraBones\MarSaraBones_00.m3"/>
+        <ScaleMax value="1.500000,1.500000,1.500000"/>
+        <ScaleMin value="1.500000,1.500000,1.500000"/>
+        <SelectionRadius value="0.300000"/>
+    </CModel>
+    <CModel id="Snow" parent="Doodad"/>
+    <CModel id="SnowDrift" parent="Doodad">
+        <Model value="Assets\Doodads\SnowDrifts\SnowDrifts_00.m3"/>
+    </CModel>
+    <CModel id="TheOldMammoth" parent="Unit">
+        <Model value="Assets\Units\Critters\UrsadakMale\UrsadakMale.m3"/>
+        <ScaleMax value="0.900000,0.900000,0.900000"/>
+        <ScaleMin value="0.900000,0.900000,0.900000"/>
+        <SelectionRadius value="1.400000"/>
+        <SquibTypeDefault value="Flesh"/>
+    </CModel>
+    <CModel id="AdmiralHat">
+        <Model value="helm_cloth_b_03admiral_hum.m3"/>
+    </CModel>
+    <CModel id="AutomatedDefenseTurretProjectile" parent="MissileFX">
+        <Model value="Assets\Models\ArrowWithTrail.m3"/>
+    </CModel>
+    <CModel id="ViciousSpearMissile" parent="MissileFX">
+        <Model value="Assets\Models\ArrowWithTrail.m3"/>
+        <ScaleMax value="1.000000,1.500000,1.500000"/>
+        <ScaleMin value="1.000000,1.500000,1.500000"/>
+    </CModel>
+    <CModel id="ViciousJavelinAddon">
+        <Model value="Assets\Models\ViciousJavelin.m3"/>
+    </CModel>
+    <CModel id="WizardsHat">
+        <Model value="helm_cloth_a_02_hum.m3"/>
+    </CModel>
+    <CModel id="TorchAddon">
+        <Model value="Assets\Models\Torch.m3"/>
+    </CModel>
+    <CModel id="SpikedShadowstoneScutumAddon">
+        <Model value="Assets\Models\Scutum.m3"/>
+    </CModel>
+    <CModel id="TreasureChest" parent="Building" Race="Terran">
+        <Model value="Assets\Doodads\Shapes\ShapeTreasureChestClosed\ShapeTreasureChestClosed.m3"/>
+        <SelectionRadius value="0.450000"/>
+        <ShadowRadius value="0.750000"/>
+        <SquibTypeDefault value="Metal"/>
+        <SelectionLayer value="2"/>
+    </CModel>
+    <CModel id="TribalShield">
+        <Model value="shield_zulgurub_d_01.m3"/>
+    </CModel>
+    <CModel id="StormwizardsRobesAddon">
+        <Model value="Assets\Models\StormwizardsRobes.m3"/>
+        <ScaleMax value="0.600000,0.550000,0.600000"/>
+        <ScaleMin value="0.600000,0.550000,0.600000"/>
+    </CModel>
+    <CModel id="TwinThrowingAxeAddon">
+        <Model value="Assets\Models\TwinThrowingAxes.m3"/>
+    </CModel>
+    <CModel id="PhysicsTestBox">
+        <Model value="Assets\Models\Physics Test Tower Box.m3"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+    </CModel>
+    <CModel id="WatchTowerArmorySanctumAddon">
+        <Model value="Assets\Models\LorenorTowerArmorySanctum.m3"/>
+    </CModel>
+    <CModel id="ZerusLargeTree">
+        <Occlusion value="None"/>
+    </CModel>
+    <CModel id="Zulrogg" parent="Unit">
+        <Model value="Assets\Models\Troll.m3"/>
+        <SelectionRadius value="0.600000"/>
+        <SquibTypeDefault value="Flesh"/>
+        <Tipability value="0.500000"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+    </CModel>
+    <CModel id="TrollBossBlade">
+        <Model value="Assets\Models\Armblade.m3"/>
+        <ScaleMax value="1.500000,1.500000,0.500000"/>
+        <ScaleMin value="1.500000,1.500000,0.500000"/>
+    </CModel>
+    <CModel id="VengefulMurlocSkullAddon">
+        <Model value="Assets\Models\VengefulMurlocSkull.m3"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+    </CModel>
+    <CModel id="VenomousArbalestAddon">
+        <Model value="VenomousArbalest.m3"/>
+    </CModel>
+    <CModel id="VenomousArbalestBack">
+        <Model value="VenomousArbalest.m3"/>
+    </CModel>
+    <CModel id="VenomousArbalestBolt" parent="MissileFX">
+        <Model value="Assets\Models\ArrowWithTrail.m3"/>
+    </CModel>
+    <CModel id="VenomousArbalestPoisonImpact" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Zerg\SwarmGuardianMissileImpact\SwarmGuardianMissileImpact.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CModel>
+    <CModel id="ElderWandMissile" parent="MissileFX">
+        <Model value="Assets\Effects\Protoss\MothershipMissile\MothershipMissile.m3"/>
+    </CModel>
+    <CModel id="FlowerBoquet">
+        <Model value="Assets\Models\FlowerBoquet.m3"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+    </CModel>
+    <CModel id="Wolf" parent="Unit">
+        <Model value="Assets\Models\WolfOfDreanor.m3"/>
+        <SquibTypeDefault value="Flesh"/>
+        <Tipability value="0.500000"/>
+        <SelectionRadius value="0.800000"/>
+        <TextureDeclares Prefix="wolf_diff">
+            <Adaptions TriggerOnSubstring="wolf_diff" Slot="main"/>
+        </TextureDeclares>
+    </CModel>
+    <CModel id="Candle1">
+        <Model value="Assets\Models\Candle 01.m3"/>
+        <SelectionRadius value="0.750000"/>
+    </CModel>
+    <CModel id="BloodcleaverAddon">
+        <Model value="Assets\Models\BloodCleaver.m3"/>
+        <ScaleMax value="0.600000,0.600000,0.600000"/>
+        <ScaleMin value="0.600000,0.600000,0.600000"/>
+    </CModel>
+    <CModel id="WoodenCrate">
+        <Model value="Assets\Models\WoodenCrate.m3"/>
+    </CModel>
+    <CModel id="FrostArmorImpact" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\ArchonBeamImpact\ArchonBeamImpact.m3"/>
+    </CModel>
+    <CModel id="FrostArmor" parent="PersistentSpellFX">
+        <Model value="Frost_form_precast.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+        <ScaleMax value="2.500000,5.000000,1.500000"/>
+        <ScaleMin value="2.500000,5.000000,1.500000"/>
+    </CModel>
+    <CModel id="MurlocChieftain" parent="Unit">
+        <Model value="Assets\Models\Murloc.m3"/>
+        <SelectionRadius value="1.000000"/>
+        <SquibTypeDefault value="Flesh"/>
+        <Tipability value="0.500000"/>
+        <ScaleMax value="1.500000,1.500000,1.500000"/>
+        <ScaleMin value="1.500000,1.500000,1.500000"/>
+        <TextureDeclares Prefix="MurlocBlue_Diffuse">
+            <Adaptions TriggerOnSubstring="MurlocBlue_Diffuse" Slot="main"/>
+        </TextureDeclares>
+    </CModel>
+    <CModel id="MurlocDoomhammerAddon">
+        <Model value="Assets\Models\MurlocDoomhammer.m3"/>
+        <ScaleMax value="0.600000,0.600000,0.600000"/>
+        <ScaleMin value="0.600000,0.600000,0.600000"/>
+    </CModel>
+    <CModel id="SiphonLifeImpact" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Zerg\BloodImpactSmear\BloodImpactSmear.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+    </CModel>
+    <CModel id="NaturesGrace" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Protoss\DarkImmortalMissileImpact\DarkImmortalMissileImpact.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+    </CModel>
+    <CModel id="MurlocSlave" parent="Unit">
+        <Model value="Assets\Models\Murloc.m3"/>
+        <SelectionRadius value="1.000000"/>
+        <SquibTypeDefault value="Flesh"/>
+        <Tipability value="0.500000"/>
+        <ScaleMax value="0.650000,0.650000,0.650000"/>
+        <ScaleMin value="0.650000,0.650000,0.650000"/>
+        <TextureDeclares Prefix="MurlocBlue_Diffuse">
+            <Adaptions TriggerOnSubstring="MurlocBlue_Diffuse" Slot="main"/>
+        </TextureDeclares>
+    </CModel>
+    <CModel id="WolfMeat">
+        <Model value="be_meat01.m3"/>
+        <ScaleMax value="2.500000,2.500000,2.500000"/>
+        <ScaleMin value="2.500000,2.500000,2.500000"/>
+        <SelectionRadius value="0.125000"/>
+        <ShadowRadius value="0.000000"/>
+    </CModel>
+    <CModel id="ClairvoyanceModel" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Terran\ComSatScanner\ComSatScanner.m3"/>
+        <EditorCategories value="Race:Terran"/>
+    </CModel>
+    <CModel id="ScannerSweepCursorSplat">
+        <ScaleMax value="1.000000,1.000000,1.000000"/>
+        <ScaleMin value="1.000000,1.000000,1.000000"/>
+    </CModel>
+    <CModel id="WolfSteak">
+        <Model value="be_meat01.m3"/>
+        <EditorCategories value="Race:Neutral"/>
+        <Flags index="AutoUnload" value="1"/>
+        <Occlusion value="Show"/>
+        <SelectionLayer value="100"/>
+        <SelectionRadius value="0.400000"/>
+    </CModel>
+    <CModel id="SleepingBagAddon">
+        <Model value="taurensack03.m3"/>
+        <ScaleMax value="2.000000,2.600000,3.000000"/>
+        <ScaleMin value="2.000000,2.600000,3.000000"/>
+    </CModel>
+    <CModel id="Berry" parent="Building" Race="Terran">
+        <Model value="Assets\Doodads\Shapes\ShapeCherry\ShapeCherry.m3"/>
+        <SquibTypeDefault value="Metal"/>
+        <ShadowRadius value="0.750000"/>
+        <SelectionLayer value="2"/>
+    </CModel>
+    <CModel id="BlunderbussLaunch" parent="LaunchFX">
+        <Model value="Assets\Effects\Terran\MarauderMissileLaunch\MarauderMissileLaunch.m3"/>
+        <ScaleMax value="3.000000,3.000000,3.000000"/>
+        <ScaleMin value="3.000000,3.000000,3.000000"/>
+    </CModel>
+    <CModel id="RadiantGem">
+        <Model value="Assets\Doodads\CharRockHuge\CharRockHuge_00.m3"/>
+        <EditorCategories value="Race:Neutral"/>
+        <Flags index="AutoUnload" value="1"/>
+        <Occlusion value="Show"/>
+        <ScaleMax value="0.100000,0.100000,0.100000"/>
+        <ScaleMin value="0.100000,0.100000,0.100000"/>
+        <SelectionLayer value="100"/>
+        <SelectionRadius value="4.000000"/>
+    </CModel>
+    <CModel id="ResurrectionShrine" parent="Building" Race="Terran">
+        <Model value="Assets\Doodads\TempleStatue\TempleStatue_00.m3"/>
+        <Radius value="0.750000"/>
+        <SquibTypeDefault value="Metal"/>
+        <SelectionRadius value="1.250000"/>
+        <ShadowRadius value="0.750000"/>
+        <SelectionLayer value="2"/>
+    </CModel>
+    <CModel id="ResurrectionShrineSouth" parent="Building" Race="Terran">
+        <Model value="Assets\Doodads\TempleStatue\TempleStatue_01.m3"/>
+        <Radius value="0.750000"/>
+        <SquibTypeDefault value="Metal"/>
+        <SelectionRadius value="1.250000"/>
+        <ShadowRadius value="0.750000"/>
+        <SelectionLayer value="2"/>
+    </CModel>
+    <CModel id="LambentSunflower">
+        <Model value="Assets\Doodads\BelShirFlowers\BelShirFlowers_07.m3"/>
+        <EditorCategories value="Race:Neutral"/>
+        <Flags index="AutoUnload" value="1"/>
+        <Occlusion value="Show"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+        <SelectionLayer value="100"/>
+        <SelectionRadius value="0.300000"/>
+    </CModel>
+    <CModel id="Shadowstone">
+        <Model value="Assets\Doodads\CharRock\CharRock_00.m3"/>
+        <EditorCategories value="Race:Neutral"/>
+        <Flags index="AutoUnload" value="1"/>
+        <Occlusion value="Show"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+        <SelectionLayer value="100"/>
+        <SelectionRadius value="1.000000"/>
+    </CModel>
+    <CModel id="GrilledWolfEntrecote">
+        <Model value="meat_04.m3"/>
+        <EditorCategories value="Race:Neutral"/>
+        <Flags index="AutoUnload" value="1"/>
+        <Occlusion value="Show"/>
+        <SelectionLayer value="100"/>
+        <SelectionRadius value="0.400000"/>
+    </CModel>
+    <CModel id="WolfsbaneAddon">
+        <Model value="Assets\Models\Wolfsbane.m3"/>
+        <ScaleMax value="0.800000,0.800000,0.800000"/>
+        <ScaleMin value="0.800000,0.800000,0.800000"/>
+    </CModel>
+    <CModel id="Sparkle" parent="FX">
+        <Model value="Assets\Effects\Other\ActiveCrystals\ActiveCrystals.m3"/>
+        <EditorCategories value="Race:Neutral"/>
+        <TextureDeclares Prefix="Glow_Blue2">
+            <Adaptions TriggerOnSubstring="Glow_Blue2" Slot="main"/>
+        </TextureDeclares>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+    </CModel>
+    <CModel id="LanternUnlit">
+        <Model value="Assets\Models\LanternUnlit.m3"/>
+        <ScaleMax value="1.000000,1.000000,0.900000"/>
+        <ScaleMin value="1.000000,1.000000,0.900000"/>
+    </CModel>
+    <CModel id="CulinaryHerb" parent="Building" Race="Terran">
+        <Model value="Assets\Doodads\Shapes\ShapeGrape\ShapeGrape.m3"/>
+        <SquibTypeDefault value="Metal"/>
+        <ShadowRadius value="0.750000"/>
+        <SelectionLayer value="2"/>
+    </CModel>
+    <CModel id="CulinaryHerbBush" parent="Building" Race="Terran">
+        <Model value="Assets\Doodads\HavenFoliage\HavenFoliage_00.m3"/>
+        <SquibTypeDefault value="Metal"/>
+        <SelectionRadius value="0.250000"/>
+        <ShadowRadius value="0.750000"/>
+        <SelectionLayer value="2"/>
+    </CModel>
+    <CModel id="PackBeaver" parent="Unit">
+        <Model value="Assets\Models\Beaver.m3"/>
+        <ScaleMax value="1.500000,1.500000,1.500000"/>
+        <ScaleMin value="1.500000,1.500000,1.500000"/>
+        <SelectionRadius value="0.250000"/>
+        <SquibTypeDefault value="Flesh"/>
+        <Tipability value="0.500000"/>
+    </CModel>
+    <CModel id="Pickaxe">
+        <Model value="Assets\Models\Pickaxe.m3"/>
+        <ScaleMax value="0.650000,0.650000,0.650000"/>
+        <ScaleMin value="0.650000,0.650000,0.650000"/>
+    </CModel>
+    <CModel id="Gun">
+        <Model value="firearm_2h_rifle_a_02.m3"/>
+        <ScaleMax value="1.100000,1.100000,1.100000"/>
+        <ScaleMin value="1.100000,1.100000,1.100000"/>
+    </CModel>
+    <CModel id="Stick">
+        <Model value="Assets\Models\SturdyWoodenStick.m3"/>
+        <ScaleMax value="0.600000,0.600000,0.600000"/>
+        <ScaleMin value="0.600000,0.600000,0.600000"/>
+    </CModel>
+    <CModel id="Buckler">
+        <Model value="shield_worgen_b_01.m3"/>
+        <ScaleMax value="1.200000,1.200000,1.200000"/>
+        <ScaleMin value="1.200000,1.200000,1.200000"/>
+    </CModel>
+    <CModel id="StorageHut" parent="Building" Race="Terran">
+        <Model value="Assets\Models\StorageOutpost.m3"/>
+        <Radius value="0.750000"/>
+        <SelectionRadius value="4.000000"/>
+        <ShadowRadius value="2.000000"/>
+        <ScaleMax value="0.350000,0.350000,0.450000"/>
+        <ScaleMin value="0.350000,0.350000,0.450000"/>
+        <SquibTypeDefault value="Dirt"/>
+        <SelectionLayer value="2"/>
+    </CModel>
+    <CModel id="SpicyHerbs">
+        <Model value="Assets\Doodads\Shapes\ShapeGrape\ShapeGrape.m3"/>
+        <EditorCategories value="Race:Neutral"/>
+        <Flags index="AutoUnload" value="1"/>
+        <Occlusion value="Show"/>
+        <SelectionLayer value="100"/>
+        <SelectionRadius value="0.300000"/>
+    </CModel>
+    <CModel id="HandfulofBerries">
+        <Model value="Assets\Doodads\Shapes\ShapeCherry\ShapeCherry.m3"/>
+        <EditorCategories value="Race:Neutral"/>
+        <Flags index="AutoUnload" value="1"/>
+        <Occlusion value="Show"/>
+        <SelectionLayer value="100"/>
+        <SelectionRadius value="0.300000"/>
+    </CModel>
+    <CModel id="Farm" parent="Building" Race="Terran">
+        <Model value="Assets\Models\Farm.m3"/>
+        <SquibTypeDefault value="Dirt"/>
+        <ScaleMax value="0.600000,0.800000,0.800000"/>
+        <ScaleMin value="0.600000,0.800000,0.800000"/>
+        <SelectionRadius value="2.750000"/>
+        <SelectionLayer value="2"/>
+    </CModel>
+    <CModel id="Beer">
+        <Model value="Assets\Models\WoodenBarrel.m3"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
+    </CModel>
+    <CModel id="MapleTree" parent="Building" Race="Terran">
+        <Model value="TreeBlenderAttachments.m3"/>
+        <Radius value="0.750000"/>
+        <ShadowRadius value="0.750000"/>
+        <SquibTypeDefault value="Dirt"/>
+        <SelectionLayer value="2"/>
+    </CModel>
+    <CModel id="RawPheasant">
+        <Model value="meat_04.m3"/>
+        <SelectionRadius value="0.450000"/>
+        <ScaleMax value="0.800000,0.800000,0.800000"/>
+        <ScaleMin value="0.800000,0.800000,0.800000"/>
+        <ShadowRadius value="0.000000"/>
+    </CModel>
+    <CModel id="RoastedPheasantWithBerrySauce">
+        <Model value="Assets\Doodads\AnimalCorpse\AnimalCorpse_07.m3"/>
+        <EditorCategories value="Race:Neutral"/>
+        <Flags index="AutoUnload" value="1"/>
+        <Occlusion value="Show"/>
+        <SelectionLayer value="100"/>
+        <SelectionRadius value="0.300000"/>
+    </CModel>
+    <CModel id="BeerBraisedPheasant">
+        <Model value="Assets\Doodads\AnimalCorpse\AnimalCorpse_07.m3"/>
+        <EditorCategories value="Race:Neutral"/>
+        <Flags index="AutoUnload" value="1"/>
+        <Occlusion value="Show"/>
+        <SelectionLayer value="100"/>
+        <SelectionRadius value="0.300000"/>
+    </CModel>
+    <CModel id="SpikeTrap" parent="Building" Race="Terran">
+        <Model value="Assets\Doodads\ChainLinkFencePost\ChainLinkFencePost.m3"/>
+        <Radius value="0.750000"/>
+        <SquibTypeDefault value="Metal"/>
+        <SelectionRadius value="0.150000"/>
+        <ShadowRadius value="0.750000"/>
+        <SelectionLayer value="2"/>
+    </CModel>
+    <CModel id="GenericEquipment">
+        <Model value="Assets\Doodads\Shapes\ShapeTreasureChestClosed\ShapeTreasureChestClosed.m3"/>
+    </CModel>
+    <CModel id="BerryBush" parent="Building" Race="Terran">
+        <Model value="Assets\Doodads\HavenFoliage\HavenFoliage_04.m3"/>
+        <SquibTypeDefault value="Metal"/>
+        <SelectionRadius value="0.250000"/>
+        <ShadowRadius value="0.750000"/>
+        <SelectionLayer value="2"/>
+    </CModel>
+    <CModel id="Tavern" parent="Building" Race="Terran">
+        <Model value="Assets\Models\Tavern.m3"/>
+        <SelectionRadius value="2.500000"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+        <SquibTypeDefault value="Dirt"/>
+        <SelectionLayer value="2"/>
+    </CModel>
+    <CModel id="Kobold" parent="Unit" Race="Terran">
+        <Model value="Assets\Models\Kobold.m3"/>
+        <Radius value="1.000000"/>
+        <ScaleMax value="1.450000,1.450000,1.450000"/>
+        <ScaleMin value="1.450000,1.450000,1.450000"/>
+        <SelectionRadius value="0.400000"/>
+        <ShadowRadius value="1.000000"/>
+        <SquibTypeDefault value="Flesh"/>
+        <Tipability value="0.500000"/>
+        <LowQualityModel value="CrowdKobold"/>
+        <TextureDeclares Prefix="2015Kobold_">
+            <Adaptions TriggerOnSubstring="_Diffuse" Slot="main"/>
+        </TextureDeclares>
+    </CModel>
+    <CModel id="OldTree" parent="Building" Race="Terran">
+        <Model value="Assets\Doodads\TyphonTree\TyphonTree_06.m3"/>
+        <Radius value="0.750000"/>
+        <SquibTypeDefault value="Metal"/>
+        <SelectionRadius value="0.750000"/>
+        <ShadowRadius value="0.750000"/>
+        <SelectionLayer value="2"/>
+    </CModel>
+    <CModel id="CampfireLit" parent="Building" Race="Terran">
+        <Model value="Assets\Models\CampfireLit.m3"/>
+        <SquibTypeDefault value="Dirt"/>
+        <SelectionRadius value="0.800000"/>
+        <SelectionLayer value="2"/>
+    </CModel>
+    <CModel id="CampfireEffect" parent="PersistentSpellFX">
+        <Model value="Assets\Doodads\FireMedium\FireMedium.m3"/>
+    </CModel>
+    <CModel id="Lumber">
+        <Model value="Assets\Doodads\AiurUnderbrush\AiurUnderbrush_01.m3"/>
+        <EditorCategories value="Race:Neutral"/>
+        <Flags index="AutoUnload" value="1"/>
+        <SelectionLayer value="100"/>
+        <Occlusion value="Show"/>
+    </CModel>
+    <CModel id="IronOre">
+        <Model value="Assets\Doodads\NewFolsomRockSmall\NewFolsomRockSmall_02.m3"/>
+        <EditorCategories value="Race:Neutral"/>
+        <Flags index="AutoUnload" value="1"/>
+        <SelectionLayer value="100"/>
+        <Occlusion value="Show"/>
+    </CModel>
+    <CModel id="StoneDeposit" parent="Building" Race="Terran">
+        <Model value="Assets\Doodads\AgriaRockLarge\AgriaRockLarge_00.m3"/>
+        <SquibTypeDefault value="Metal"/>
+        <ShadowRadius value="0.750000"/>
+        <SelectionRadius value="0.450000"/>
+        <SelectionLayer value="2"/>
+    </CModel>
+    <CModel id="Stone">
+        <Model value="Assets\Doodads\HavenRock\HavenRock_02.m3"/>
+        <EditorCategories value="Race:Neutral"/>
+        <Flags index="AutoUnload" value="1"/>
+        <SelectionLayer value="100"/>
+        <Occlusion value="Show"/>
+    </CModel>
+    <CModel id="GenericBarrel">
+        <Model value="Assets\Models\WoodenBarrel.m3"/>
+        <SelectionRadius value="0.750000"/>
+    </CModel>
+    <CModel id="GoldDeposit" parent="Building" Race="Terran">
+        <Model value="Assets\Doodads\MarSaraRockLarge\MarSaraRockLarge_00.m3"/>
+        <SquibTypeDefault value="Metal"/>
+        <SelectionRadius value="0.400000"/>
+        <ShadowRadius value="0.750000"/>
+        <SelectionLayer value="2"/>
+    </CModel>
+    <CModel id="Smithy" parent="Building" Race="Terran">
+        <Model value="Assets\Models\Smithy.m3"/>
+        <SquibTypeDefault value="Rock"/>
+        <ScaleMax value="2.000000,2.000000,2.000000"/>
+        <ScaleMin value="2.000000,2.000000,2.000000"/>
+        <SelectionRadius value="0.850000"/>
+        <SelectionLayer value="2"/>
+    </CModel>
+    <CModel id="WoodenBeam">
+        <Model value="redridgedocksbeam01.m3"/>
+        <ScaleMax value="0.250000,0.250000,0.250000"/>
+        <ScaleMin value="0.250000,0.250000,0.250000"/>
+    </CModel>
+    <CModel id="UnstableAnomalyAddon">
+        <Model value="Assets\Effects\Protoss\PhasePrismUnload\PhasePrismUnload.m3"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+    </CModel>
+    <CModel id="CrowdKobold">
+        <Model value="Assets\Models\Kobold.m3"/>
+        <ScaleMax value="1.100000,1.100000,1.100000"/>
+        <ScaleMin value="1.100000,1.100000,1.100000"/>
+    </CModel>
+    <CModel id="Wool">
+        <Model value="Assets\Doodads\BelShirCliffRocks\BelShirCliffRocks_00.m3"/>
+        <EditorCategories value="Race:Neutral"/>
+        <Flags index="AutoUnload" value="1"/>
+        <ScaleMax value="0.500000,0.500000,0.200000"/>
+        <ScaleMin value="0.300000,0.300000,0.200000"/>
+        <SelectionLayer value="100"/>
+        <Occlusion value="Show"/>
+        <SelectionRadius value="0.600000"/>
+    </CModel>
+    <CModel id="Tent" parent="Building" Race="Terran">
+        <Model value="Assets\Models\Tent.m3"/>
+        <SquibTypeDefault value="Dirt"/>
+        <SelectionRadius value="3.000000"/>
+        <ScaleMax value="0.650000,0.650000,0.650000"/>
+        <ScaleMin value="0.650000,0.650000,0.650000"/>
+        <SelectionLayer value="2"/>
+    </CModel>
+    <CModel id="CampfireDead" parent="Building" Race="Terran">
+        <Model value="Assets\Models\CampfireDead.m3"/>
+        <ScaleMax value="0.900000,0.900000,0.900000"/>
+        <ScaleMin value="0.900000,0.900000,0.900000"/>
+        <SelectionRadius value="0.900000"/>
+        <SquibTypeDefault value="Rock"/>
+        <SelectionLayer value="2"/>
+    </CModel>
+    <CModel id="Leather">
+        <Model value="tradeskill_leatherworking_01.m3"/>
+        <EditorCategories value="Race:Neutral"/>
+        <Flags index="AutoUnload" value="1"/>
+        <ScaleMax value="0.250000,0.250000,3.000000"/>
+        <ScaleMin value="0.250000,0.250000,3.000000"/>
+        <SelectionLayer value="100"/>
+        <Occlusion value="Show"/>
+        <SelectionRadius value="1.000000"/>
+    </CModel>
+    <CModel id="LambMeat">
+        <Model value="Assets\Models\Lamb.m3"/>
+        <ScaleMax value="1.500000,1.500000,1.500000"/>
+        <ScaleMin value="1.500000,1.500000,1.500000"/>
+        <SelectionRadius value="0.225000"/>
+        <ShadowRadius value="0.000000"/>
+    </CModel>
+    <CModel id="WarmWoolTunicAddon">
+        <Model value="Assets\Models\WarmWoolTunic.m3"/>
+        <ScaleMax value="0.700000,0.600000,0.600000"/>
+        <ScaleMin value="0.700000,0.600000,0.600000"/>
+    </CModel>
+    <CModel id="Workbench" parent="Building" Race="Terran">
+        <Model value="Assets\Models\Workbench.m3"/>
+        <Radius value="0.750000"/>
+        <ScaleMax value="1.100000,1.100000,1.250000"/>
+        <ScaleMin value="1.100000,1.100000,1.250000"/>
+        <SelectionRadius value="0.900000"/>
+        <ShadowRadius value="1.000000"/>
+        <SquibTypeDefault value="Dirt"/>
+        <SelectionLayer value="2"/>
+    </CModel>
+    <CModel id="LiquidatorSpellbladeImpact" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Protoss\ZeratulBlinkIn\ZeratulBlinkIn.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+    </CModel>
+    <CModel id="LiquidatorSpellbladeLaunch" parent="OneShotSpellFX">
+        <Model value="Assets\Effects\Protoss\ZeratulBlinkOut\ZeratulBlinkOut.m3"/>
+        <EditorCategories value="Race:Protoss"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+    </CModel>
+</Catalog>

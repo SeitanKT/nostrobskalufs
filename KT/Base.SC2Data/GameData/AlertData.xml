@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+    <CAlert id="AllyBeingResurrected" parent="Attack">
+        <Display index="Self" value="0"/>
+        <Display index="Ally" value="1"/>
+        <Icon value="Icons\GuardianSpirit.dds"/>
+        <Life value="30.000000"/>
+        <OverlapDuration value="0.000000"/>
+        <PingColor value="255,0,255,0"/>
+        <Sound value="UI_BriefingUnitSelect"/>
+        <Peripheral value="SelfUnitRevived"/>
+        <OverlapGlobalCount value="1"/>
+        <Flags index="Combine" value="0"/>
+    </CAlert>
+    <CAlert id="AttackTownAlly_Terr">
+        <Sound value=""/>
+    </CAlert>
+    <CAlert id="AttackUnitAlly_Terr">
+        <Sound value=""/>
+    </CAlert>
+    <CAlert id="BeingResurrected" parent="Attack">
+        <Icon value="Icons\GuardianSpirit.dds"/>
+        <Life value="30.000000"/>
+        <OverlapDuration value="0.000000"/>
+        <PingColor value="255,0,255,0"/>
+        <Sound value="UI_BriefingUnitSelect"/>
+        <Peripheral value="SelfUnitRevived"/>
+        <OverlapGlobalCount value="1"/>
+        <Flags index="Combine" value="0"/>
+    </CAlert>
+    <CAlert id="BuildComplete_Terr">
+        <Icon value="Icons\Construct.dds"/>
+    </CAlert>
+    <CAlert id="Freezing" parent="Attack">
+        <Icon value="Icons\Frostbite.dds"/>
+        <OverlapDuration value="0.000000"/>
+        <Sound value="Alert_UniObjectiveFailed"/>
+        <Voice value="Pissed"/>
+        <Peripheral value="SelfUnitUnderAttack"/>
+        <OverlapGlobalCount value="1"/>
+        <Flags index="Combine" value="0"/>
+    </CAlert>
+    <CAlert id="WatchTowerAttacked" parent="Attack">
+        <Display index="Ally" value="1"/>
+        <Display index="Observer" value="1"/>
+        <Flags index="Combine" value="0"/>
+        <Icon value="Icons\Units\WatchTower.dds"/>
+        <OverlapDuration value="0.000000"/>
+        <OverlapGlobalCount value="1"/>
+        <Sound value="Alert_UniObjectiveFailed"/>
+        <Peripheral value="SelfUnitUnderAttack"/>
+    </CAlert>
+    <CAlert id="Starving" parent="Attack">
+        <Icon value="Icons\RoastedLamb.dds"/>
+        <OverlapDuration value="0.000000"/>
+        <Sound value="Alert_UniObjectiveFailed"/>
+        <Voice value="Pissed"/>
+        <Peripheral value="SelfUnitUnderAttack"/>
+        <OverlapGlobalCount value="1"/>
+        <Flags index="Combine" value="0"/>
+    </CAlert>
+    <CAlert id="WatchTowerDamaged" parent="Attack">
+        <Display index="Ally" value="1"/>
+        <Display index="Observer" value="1"/>
+        <Flags index="Combine" value="0"/>
+        <Icon value="Icons\Units\WatchTower.dds"/>
+        <OverlapDuration value="0.000000"/>
+        <OverlapGlobalCount value="1"/>
+        <Sound value="UI_MissionFailed"/>
+        <Peripheral value="SelfUnitUnderAttack"/>
+    </CAlert>
+    <CAlert id="SelfResurrectionAlert" parent="Attack">
+        <Display index="Other" value="0"/>
+        <Flags index="Combine" value="0"/>
+        <Flags index="Ping" value="0"/>
+        <Icon value="Icons\Candle.dds"/>
+        <OverlapDuration value="0.000000"/>
+        <OverlapGlobalCount value="1"/>
+        <Sound value="UI_TerranHint"/>
+        <Peripheral value="BuildingComplete"/>
+    </CAlert>
+</Catalog>
